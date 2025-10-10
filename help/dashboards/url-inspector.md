@@ -1,9 +1,9 @@
 ---
 title: URL檢查器
-description: 這是文章概述。
-source-git-commit: e35ddb9b055d2f974fd94b3a21e13e92d05c8799
+description: 瞭解如何使用URL Inspector來協助分析網域上的特定頁面如何在AI搜尋中執行。
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 * **平台** — 選擇要分析的AI引擎。
 * **管道** — 在贏取、競爭者和社交等管道之間篩選。
 * **地區** — 依地理位置篩選結果。 並非所有區域在啟動時都可使用。
-選取想要的篩選器後，按一下&#x200B;**套用篩選器**，將選取專案套用至儀表板。
+選取想要的篩選器後，按一下**套用篩選器**，將選取專案套用至儀表板。
 
 ## 總覽量度
 

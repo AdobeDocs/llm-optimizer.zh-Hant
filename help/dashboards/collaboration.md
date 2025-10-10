@@ -1,10 +1,10 @@
 ---
 title: 協作
-description: 這是文章概述。
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: 瞭解如何使用共同作業儀表板來邀請團隊成員加入您組織的LLM Optimizer工作區。
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
