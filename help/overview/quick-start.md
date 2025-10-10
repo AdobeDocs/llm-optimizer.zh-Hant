@@ -1,9 +1,9 @@
 ---
 title: 快速開始
-description: 瞭解如何開始使用LLM Optimizer並完成上線流程。
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+description: 開始使用Adobe LLM Optimizer — 加入您的品牌、解鎖AI可見度深入分析，並探索儀表板以提高搜尋效能。
+source-git-commit: db42183c922e6156a890e4e56732f348c26e7e44
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ### AEM Cloud客戶
 
-AEM Cloud客戶(Cloud Service/Managed Services/ Edge Delivery Service)將看到可透過[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的產品公告卡試用LLM Optimizer的選項。
+AEM Cloud客戶(Cloud Service/Managed Services/ Edge Delivery Service)將看到可透過[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的產品公告卡試用LLM Optimizer的選項。
 
 >[!NOTE]
 >處理完成前，新新增的提示不會出現在品牌顯示中。 AEM Cloud客戶(Cloud Service、Managed Services/ Edge Delivery Service)可使用LLM Optimizer的免費試用版。 使用200個以上的提示需要單獨的授權合約。 存取權係依「現況」及「可用性」提供，並可由Adobe隨時修改、限制或移除。 如需詳細資訊，請洽詢您的[帳戶代表]。
