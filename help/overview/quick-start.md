@@ -1,37 +1,67 @@
 ---
 title: 快速開始
 description: 這是快速入門文章。
-source-git-commit: 7616a692d1ed0f3523fa7de084bb1b8dab26dab5
+source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 1%
+source-wordcount: '618'
+ht-degree: 0%
 
 ---
 
 
-# 概觀
+# 快速開始
 
-待定
+若要開始使用LLM Optimizer，您必須完成上線流程。 之後，您將擁有LLM Optimizer儀表板的完整存取權和完整功能。
 
 ## 入門概觀
 
-待定
+上線流程從上線您的網域開始。 此程式會因您是否為AEM Cloud客戶而有所不同。 完成程式後，您需要提供CDN記錄轉送的資訊，以及最後自訂類別、主題和提示。
 
 ### 步驟1：將您的網域上線
 
-**新增AEM和非AEM客戶的資訊。TBD**
+### AEM Cloud客戶
+
+AEM Cloud客戶(Cloud Service/Managed Services/ Edge Delivery Service)將看到可透過[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中的產品公告卡試用LLM Optimizer的選項。
+
+>[!NOTE]
+>處理完成前，新新增的提示不會出現在品牌顯示中。 AEM Cloud客戶(Cloud Service、Managed Services/ Edge Delivery Service)可使用LLM Optimizer的免費試用版。 使用200個以上的提示需要單獨的授權合約。 存取權係依「現況」及「可用性」提供，並可由Adobe隨時修改、限制或移除。 如需詳細資訊，請洽詢您的[帳戶代表]。
+
+![LLM Optimizer試用版](/help/overview/assets/llm-trial.png)
+
+按一下&#x200B;**試用LLM Optimizer**&#x200B;按鈕後，系統會將您重新導向至[https://llmo.now](https://llmo.now) 。 接著，您需要透過IMS登入。 登入後，您將透過提供網域和品牌名稱來開始入門流程。
+
+![LLM Optimizer網域](/help/overview/assets/domain.png)
+
+>[!NOTE]
+>您提供的網域將由您組織的每個使用者使用，且無法變更。
+
+若要觸發品牌顯示狀態分析，您必須提供類別、主題和提示。
+
+![品牌狀態分析](/help/overview/assets/bp-analysis.png)
+
+此外，您也需要設定CDN記錄轉送以進行流量分析。 LLM Optimizer需要代理和反向連結流量的Brand Presence資料和深入分析，以識別機會並提供規範性建議，協助客戶提升其AI可見度。
+
+### 非AEM雲端客戶
+
+在您簽署合約後，系統會透過slackbot命令將您加入，並附上您想要加入LLM Optimizer的網域。 此上線完成後，您將能夠透過[https://llmo.now](https://llmo.now)登入LLM Optimizer。
 
 ### 步驟2：自動預先填入深入分析
 
 您的網域上線後，LLM Optimizer會自動填入以下內容：
 
-**類別** — 與您的網域相關的廣泛內容區域。
-**主題** — 與您的網域關聯的大量非品牌關鍵字相連結的特定主題。
-**提示** — 查詢（品牌和非品牌）以提供基線可見度。
+* **類別** — 與您的網域相關的廣泛內容區域。
+* **主題** — 與您的網域關聯的大量非品牌關鍵字相連結的特定主題。
+* **提示** — 查詢（品牌和非品牌）以提供基線可見度。
 
-這可確保在新增自訂設定/輸入之前，您就能看到品牌可見度的初始見解。
+這可確保在新增自訂設定和輸入之前，您就能看到品牌可見度的初始見解。
 
 ### 步驟3：自訂類別、主題和提示
+
+按一下[客戶設定儀表板](/help/dashboards/customer-configuration.md)以開始自訂您的類別、主題和提示。
+
+![客戶設定儀表板](/help/dashboards/assets/customer-config.png)
+
+從此控制面板，您可以：
 
 * 新增符合您業務優先順序的新類別。
 * 輸入需要追蹤的自訂主題或子主題。
@@ -41,10 +71,10 @@ ht-degree: 1%
 
 ### 步驟4：提供CDN記錄轉送的資訊
 
-若要解除鎖定代理流量和反向連結流量深入分析，請提供CDN記錄轉送的相關資訊。 如需詳細資訊，請參閱每個特定頁面：
+若要解除鎖定代理流量和反向連結流量深入分析，您必須提供CDN記錄轉送的相關資訊。 如需如何設定記錄檔轉送的詳細資訊，請參閱每個特定頁面：
 
 * [代理流量](/help/dashboards/agentic-traffic.md)
-* [反向連結流量](/help/dashboards/referral-traffic.md)
+* [反向連結流量](/help/dashboards/referral-traffic.md#setup#cdn-setup)
 
 ### 步驟5：探索儀表板並採取行動
 
@@ -55,20 +85,4 @@ ht-degree: 1%
 * 使用[機會](/help/dashboards/opportunities.md)來識別內容與技術改進。
 * 匯出資料並與您的團隊共同作業，或邀請您的同事使用產品。
 
-請參閱下節中的可用控制面板。
-
-## 可用的儀表板
-
-登入時，您會看到可存取下列專案的主要導覽：
-
-**待定** — 新增下方每個控制面板的主熒幕擷圖和連結
-
-* 品牌存在 — 追蹤AI回應中的可見度、品牌提及、引用和SOV。
-* 代理流量 — 檢視哪些AI編目程式造訪您的網站，以及他們存取哪些頁面。
-* 反向連結流量 — 測量來自AI產生之引文的人類造訪。
-* URL檢查器 — 檢查您擁有的URL表現情形以及需要改善之處。
-* 機會 — 檢視最佳化機會並採取行動，提高AI搜尋的可見度。
-* Collaboration — 邀請同事、共用資料，以及在團隊間工作。
-* 客戶組態 — 定義品牌存在分析的類別、主題、提示和別名。
-
-右上角的網域選擇器可讓您在已上線的網域之間切換。
+若要完全瞭解LLM最佳化程式的功能，請探索所有可用的[儀表板](/help/dashboards/dashboards-overview.md)。
