@@ -1,9 +1,9 @@
 ---
 title: LLM Optimizer基礎知識
 description: 瞭解Adobe LLM Optimizer如何在AI導向的搜尋中提升品牌可見度。 追蹤提及次數、引文和深入分析。 立即開始最佳化，以提升參與度和影響力。
-source-git-commit: 227eb378bd5484fad2fb4165822394b0b605747b
+source-git-commit: b39a6acbcb86c91d23c3aab790266f37b579f651
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -62,75 +62,9 @@ Adobe LLM Optimizer提供一套工具，專門針對產生式引擎最佳化而�
 **啟用Team Collaboration** — 共用儀表板、指派提示或類別的擁有者，並確保在行銷、SEO和通訊功能間追蹤可見度目標。
 
 
-## 參照
-
-在此新增更多連結和詳細資料。
 
 
 
-
-
-
-
-
-<!--## Understanding Brand Visibility and AI Search
-
-Use these as guidelines for creating tutorials - some may be covered already in docs
-
-## Using the Brand Presence Dashboard
-
-* Visibility Score
-* Mentions and Citations
-* Competitor Benchmarking
-* Sentiment Trend Analysis
-
-
-## Exploring the Data Insights Table
-
-* Topic-Level Performance
-* Sentiment and Position Analysis
-* Citation Breakdown
-* Optimization Prioritization
-
-
-## Tracking Agentic Traffic from AI Crawlers
-
-* Setup and Activation
-* Traffic Distribution and Trends
-* User Agent and URL Performance Analysis
-
-
-## Measuring Referral Traffic from AI Citations
-
-* Setup and Activation
-* Source, Region, and Channel Filters
-* Top Referral URLs and Traffic Quality
-
-
-## Inspecting URL Performance in AI Responses
-
-* Cited URLs and Prompt Coverage
-* Competing URLs and Citation Trends
-
-
-## Identifying Optimization Opportunities
-
-* Content Fixes (Headings, FAQs, Canonicals)
-* Technical Fixes (Blocked Agents, Errors)
-* Third-Party Influence Strategies
-
-## Collaborating Across Teams
-
-* Workspace Sharing
-* Role-Based Dashboards
-* Prompt and Category Ownership
-
-
-## Configuring Your Brand Monitoring Setup
-
-* Categories and Topics
-* Brand and Competitor Aliases
-* Domain Switching and Customization -->
 
 
 

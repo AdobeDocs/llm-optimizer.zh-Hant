@@ -1,9 +1,9 @@
 ---
-title: 最佳作法指南
-description: 這是文章概述。 包括SEO分析師以及PR和通訊管理員
-source-git-commit: c5f99f6665ab44ca23cd4a41f9d4b3ccf2e4007e
+title: LLM Optimizer最佳作法
+description: 探索LLM最佳化的最佳實務，以提升AI搜尋中的品牌可見度。 基準測試與最佳化內容的深入分析。
+source-git-commit: 70d0b8c042cbdd87bab1c9ef3139af9c72a4a09d
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -11,44 +11,44 @@ ht-degree: 0%
 
 # 最佳做法
 
+[草稿]
+
+LLM Optimization (也稱為Generative Engine Optimization (GEO)，或Answer Engine Optimization (AEO)，或AI Optimization (AIO))是您如何透過AI產生的答案（包括ChatGPT、Perplexity、Copilot、Gemini和其他LLM導向的助理），讓您的品牌和內容可見、值得信賴且可擷取。
+
+如果傳統的SEO能協助您贏得第一頁排名，LLM最佳化能協助您贏得AI引文及答案引擎內的可見度。 Adobe LLM Optimizer可讓您測量並改善品牌在回應引擎內的可見度。
+
+本文介紹使用Adobe LLM Optimizer在AI驅動搜尋環境中測量及增強可見度和影響力的最佳實務。
+
 ## 解鎖LLM品牌可見性
 
 大型語言模型(LLM)最佳化正在改變在AI驅動環境中探索和參考品牌的方式。 Adobe的LLM Optimizer提供有條理的方式來提升品牌可見度。
 
-如果您遵循這些步驟，您就可以著手改善LLM的可見度：
+請依照下列步驟改善您的LLM可見性：
 
-1. 分析：檢閱您的品牌在各種LLM的關鍵客戶提示中的顯示方式。
-2. 計畫：針對目標行銷活動設定具有類似意圖的提示叢集。
-3. 動作：匯入變更並監控LLM可見度在一段時間內的變化。
-4. 調整：根據最佳化處理程式的可操作見解來調整策略。
-5. 瞭解並利用這些步驟可協助品牌在AI成為資訊探索的中心時保持相關性。
+1. **分析：**&#x200B;檢閱您的品牌在跨不同學習記憶體的重要客戶提示中的顯示方式。
+2. **計畫：**&#x200B;目標提示叢集，這些提示與重點行銷活動的意圖類似。
+3. **實際：**&#x200B;實作變更並監控LLM可見度在一段時間內的變化。
+4. **調整：**&#x200B;根據最佳化工具可操作的深入分析調整策略。
+
+<!--insert image-->
+
+瞭解並利用這些步驟可協助您的品牌在AI成為資訊探索的中心時保持相關性。
 
 ## LLM與SEO：主要差異
 
-針對LLM最佳化與傳統的SEO有根本的差異：
+良好的LLM策略建立在良好的SEO策略之上。 SEO策略是任何LLM最佳化的基礎。 目前，SEO流量仍然是大多數網站流量的最大驅動因素，因此對品牌的可見度策略非常重要。
 
-* LLM使用權杖，而非索引：結果是從訓練的資料產生，而不是從索引的網頁產生。
-* 品牌提及比連結更重要：LLM會優先處理內容相關性和品牌顯示情形，而非反向連結。
-* 透過RAG的即時資訊：Retrieval-Enhanced Generation可讓LLM擷取最新資訊，減少幻覺。
+請務必瞭解，針對LLM最佳化與傳統SEO不同，因為兩者有一些主要差異：
+
+* LLM使用權杖，而不是索引：結果是從經過訓練的資料產生，而不是從已編制索引的網頁產生，但LLM確實使用搜尋引擎透過擷取增強產生(RAG)來增強提示答案。
+* 透過RAG的即時資訊：搜尋引擎會使用即時資料，而RAG可讓LLM擷取最新資訊，減少幻覺。
 * 使用者端JS轉譯受限： LLM目前不會處理使用者端JavaScript，而會影響可見的內容。
-* 無連結授權歸因：與SEO不同，LLM不會使用連結來決定授權。
-* 識別這些差異對於有效的LLM最佳化至關重要。
 
+由於其中的一些根本差異，在使用LLM策略時，您需要考慮以下事項：
 
-## 可操作的最佳化步驟
-
-LLM Optimizer會在「機會」控制面板中建議最佳化機會。
-
-以下是一些在LLM中提升品牌知名度的實用動作：
-
-* 更新Wikipedia頁面：確保公司和被引頁面為最新版本且相關。
-* 啟用LLM存取：監視robots.txt和CDN設定以防止封鎖AI機器人。
-* 改版內容：重新整理10-15%的頁面內容、新增引用，以及使用標頭(H1、H2、H3)改善結構。
-* 新增常見問題集：根據提示分析整合相關的常見問題集，以處理使用者查詢。
-* 增加Reddit/Quora上的品牌提及次數：貢獻至使用者產生的內容平台，這些平台提供LLM的來源引文。
-
-貫徹執行這些步驟可以顯著提升您的品牌在AI驅動搜尋結果中的影響力。
-
+* 品牌提及對LLM而言比連結更重要：LLM會優先處理內容相關性和品牌存在，而非反向連結。 與SEO不同，LLM不會使用連結來決定許可權。
+* 內容新鮮度很重要： LLM會優先處理最近更新的內容。 （搜尋引擎也會將此優先用於時效性要求高的查詢，但更依賴其他值。）
+* 以提及和引文的形式獲得（第三方）收益非常重要。
 
 ## 策略性行銷活動規劃
 
@@ -62,224 +62,64 @@ LLM Optimizer會在「機會」控制面板中建議最佳化機會。
 此策略方法可確保針對LLM可見度資料導向的改善。
 
 
-此報表旨在協助您瞭解品牌在大型語言模型(LLM)中的可見度如何隨著時間而改變。 它會引導您逐步追蹤、改善和評估品牌在LLM產生的回應中的存在。
+## 可操作的最佳化步驟
 
-什麼是LLM可見度？
-LLM可見度全都是關於您的品牌在多大程度上經常出現在由ChatGPT或其他AI模型等工具產生的答案中。 這取決於：
+LLM Optimizer建議在[機會](/help/dashboards/opportunities.md)儀表板中提供最佳化機會。
 
-提及次數：您的品牌在回應中被提及的次數。
-引文： LLM使用您的內容或來源回答問題的頻率。
-情緒：提及您的品牌是正面、中性或負面的。
-位置：回應中提及您的品牌的位置（例如，第一個、中間或最後一個）。
+以下是一些在LLM中提升品牌知名度的實用動作：
 
-所有這些因素結合為可見度分數，可告訴您品牌在LLM回應中的表現有多強烈。
+* 更新Wikipedia頁面：確保公司和被引頁面為最新版本且相關。
+* 啟用LLM存取：監視robots.txt和CDN設定以防止封鎖AI機器人。
+* 改版內容：重新整理10-15%的頁面內容、新增引用，以及使用標頭(H1、H2、H3)改善結構。
+* 新增常見問題集：根據提示分析整合相關的常見問題集，以處理使用者查詢。
+* 增加Reddit/Quora上的品牌提及次數：貢獻至使用者產生的內容平台，這些平台提供LLM的來源引文。 觸發時請務必留意操作方式
 
-<!--How to Track Visibility Changes
-Here's how you can keep an eye on your brand's visibility in LLMs:
-Step 1: Check Your Current Visibility
+貫徹執行這些步驟可以顯著提升您的品牌在AI驅動搜尋結果中的影響力。
 
-Use tools like Adobe LLM Optimizer to see how often your brand is mentioned in LLM responses.
-Look at the prompts (questions) where your brand is mentioned and where it's missing.
-Compare your visibility to your competitors to see how you stack up.
 
-Step 2: Plan Your Strategy
 
-Group similar prompts together based on what people are asking.
-Focus on the prompts that are most important to your customers.
-Check if your brand has a good chance of being mentioned for certain prompts. Make sure your content shows your expertise, trustworthiness, and authority.
+## 什麼是LLM可見度？
 
-Step 3: Improve Your Content
+LLM可見度全都是關於您的品牌在多大程度上經常出現在由ChatGPT或其他AI模型等工具產生的答案中。
 
-Update your website and other content to make it more relevant to the prompts you want to target.
-Add FAQs to your pages that answer common questions people might ask.
-Make sure your content is easy for LLMs to find and read. Fix any issues like blocked pages or problems with your website's code.
+## 如何測量您的LLM進度
 
-Step 4: Keep Improving
+若要設定網站可見度的基準，並瞭解您的努力運作情況，請追蹤下列關鍵量度：
 
-Use Adobe LLM Optimizer to track how your visibility changes over time.
-If you notice competitors getting mentioned more often, adjust your strategy to stay ahead.
-Keep updating your content to match what people are searching for and asking about.
+* **提及次數：**&#x200B;您的品牌在回應中被提及的次數。
+* **引文：** LLM使用您的內容或來源回答問題的頻率。
+* **情緒：**&#x200B;您的品牌提及是正面、中性或負面。
+* **位置：**&#x200B;回應中提及您品牌的位置（例如，第一個、中間或最後一個）。
 
+所有這些因素結合為&#x200B;**可見度**&#x200B;分數，可告訴您品牌在LLM回應中的存在程度。
 
-Tools You Can Use
-Here are some tools that can help you track and improve your visibility:
+## 如何追蹤可見度變更
 
-Adobe LLM Optimizer: This tool shows you how visible your brand is, what prompts you're mentioned in, and how you compare to competitors.
-Google Search Console: Use this to find out what people are searching for and turn those searches into LLM prompts.
-SEO Tools: Tools like Ahrefs or SEMrush can help you find keywords and questions people are asking online.
-User-Generated Content Platforms: Platforms like Reddit, Quora, and Wikipedia are often used by LLMs to find information. Make sure your brand is visible there.
+以下說明如何在LLM中留意您品牌的知名度：
 
+1. 檢查您目前的可見度
+   * Adobe LLM Optimizer會顯示提及和引用您品牌的頻率，以及LLM回應中的情緒。 請參閱「品牌是否存在」儀表板。
+   * 檢視您的品牌在哪裡被提及以及缺少的提示（問題）。
+   * 比較您與競爭對手的可見度，瞭解您的棧疊方式。
+   * 檢查您在Reddit、Quora和Wikipedia等使用者產生的平台中的顯示方式，因為這些平台通常由LLM引用以尋找資訊。
+   * 檢查您在代理流量中的顯示方式。 代理程式流量通常不會前往首頁 — 值得一看代理程式造訪哪些頁面。
+   * 確定您的內容對LLM可見且可存取。 您可以使用Chrome外掛程式來檢視AI代理程式可以檢視哪些內容。
 
-How to Measure Your Progress
-To see how well your efforts are working, track these key metrics:
+1. 規劃您的策略
+   * 根據人們詢問的內容將類似的提示分組在一起。
+   * 專注於對客戶最重要的提示。
+   * 檢查您的品牌是否有很好的機會被提及某些提示。
+   * 確保您的內容顯示您的專業知識、信任度和許可權(EEAT)。
 
-Mentions: How many times your brand is mentioned in LLM responses.
-Citations: How often LLMs use your content or sources.
-Sentiment: Are the mentions positive, neutral, or negative?
-Position: Is your brand mentioned first, in the middle, or last in the response?
-Visibility Score: This is a number that combines all the above metrics to show your overall visibility.
-
-
-5. Real-Life Examples
-Here are some examples of how you can improve your visibility:
-Example 1: Fixing Website Issues
-If LLMs can't access your website because of blocked pages or coding problems, they won't mention your brand. You can use Adobe LLM Optimizer to fix these issues and make sure your content is easy for LLMs to find.
-Example 2: Updating Wikipedia
-Since LLMs often use Wikipedia for information, make sure your company's page is accurate and up-to-date. You can also add your brand to other Wikipedia pages where it's relevant.
-Example 3: Engaging on Reddit and Quora
-LLMs use platforms like Reddit and Quora to find answers. You can join discussions and share helpful information about your brand to increase visibility.
-
-6. Challenges You Might Face
-
-Understanding Metrics: It can be tricky to figure out what visibility scores mean. Use tools like Adobe LLM Optimizer to get clear explanations.
-Technical Problems: If your website has blocked pages or coding issues, LLMs might not be able to access your content.
-Keeping Content Relevant: You'll need to make sure your content matches what people are asking about.
-
-
-7. Tips for Success
-
-Learn how to use Adobe LLM Optimizer to track your visibility and improve your content.
-Make sure your website is easy for LLMs to access by fixing any technical issues.
-Use data from search tools and user-generated content platforms to find out what people are asking about.
-Keep updating your content to stay relevant and ahead of your competitors.
-
-
-Conclusion
-Improving your brand's visibility in LLMs is an ongoing process. By tracking your visibility, updating your content, and using the right tools, you can make sure your brand is mentioned more often and in a positive way. This report gives you the steps and tools you need to get started and succeed in LLM optimization.
-What can I help with next?
-Simplify the report further for a middle school audience.
-Create a step-by-step LLM visibility improvement checklist.
-
-
-Marketer's guide to Generative Engine Optimization (GEO)
-
-Generative Engine Optimization (GEO), also called Answer Engine Optimization (AEO), is how you make your brand and content visible, trustworthy, and retrievable within AI-generated answers - across ChatGPT, Perplexity, Copilot, Gemini, and other LLM-driven assistants.
-
-If traditional SEO helped you win page-one rankings, GEO helps you win AI citations and visibility inside answer engines. The Adobe LLM Optimizer lets you measure how your brand and content is visible inside those answer engines.
-
-This article describes how to measure and enhance your visibility and influence in AI-driven search environments whether you're an SEO analyst/specialist, public relations (PR) or communication strategist, or a marketing manager.
-
-
-<!-- brands enhance their visibility, accuracy, and influence in AI-driven search environments. It provides insights into brand presence in AI-generated answers, offers prescriptive content recommendations, and automates optimization fixes -->
-
-<!-- Alva - don't forget to add to TOC -->
-
-<!-- ## How GEO is changing your world
-
-May remove this - Traditional SEO focuses on rankings in Google SERPs and GEO shifts focus to visibility within AI-generated answers and citation frequency.
-
-Think about semantic visibility and retrieval relevance - not just keyword rankings. -->
-
-SEO分析師的Generative Engine Optimization (GEO)/Answer Engine Optimization (AEO)指南
-
-身為SEO專業人員/分析人員，您的目標是儘可能提高可發現性，並將品牌內容納入創作AI回應中。 您可確保最佳化的頁面能順利出現、被引用，並帶來可衡量的流量或參與度。
-
-您的重點是排名、前10名位置、搜尋引擎結果頁面(SERP)結果和關鍵字分享。 現在，隨著創作型AI系統直接回答使用者問題，可見度正在轉移，您需要檢視一些額外的量度。 您不僅在檢視您的網站&#x200B;**排名較高**，而且您的內容&#x200B;**更常被擷取**。
-
-SEO分析師的熱門KPI
-
-在Adobe的LLM Optimizer中，熱門KPI可直接在工具中使用。
-
-<!-- * AI Visibility Tracking: You need to see when and how your pages are appearing in AI-generated answers. This includes **citations** and **mentions** and sentiment. See [Brand Presence dashboard](/help/dashboards/brand-presence.md)
-
-* Agentic Traffic Measurement: You need to understand traffic coming from AI-driven referrals or summaries. See [Agentic Traffic dashboard](/help/dashboards/agentic-traffic.md)-->
-
-<!-- Not sure llm optimizer has all these - remove those not relevant-->
-
-查詢對答案對應：您希望insight出現在提示，並有意向引導AI使用您的內容。
-
-內容可擷取性評分：您需要知道您的內容結構、結構描述和語意是否讓LLM容易「理解」。
-
-競爭者AI基準：您想要瞭解哪些競爭者主導AI回答，以及它們在哪裡獲得可見度。
-
-程式碼片段歸因分析：您想要追蹤AI從網站提取的確切措辭或段落。
-
-
-在產生式搜尋結果中可見您的品牌和內容
-追蹤引數和歸因
-
-當人們詢問有關您的品牌、產品或專業領域的問題時，您的網站是否成功取決於AI系統找到、使用和引用內容的頻率。
-
-### 您從GEO工具(如Adobe LLM Optimizer)需要的功能
-
-* AI可見性追蹤：您需要檢視頁面何時以及如何出現在AI產生的答案中。
-* 代理流量測量：您需要瞭解來自AI驅動型轉介或摘要的流量。
-
-查詢對答案對應：您希望insight出現在提示，並有意向引導AI使用您的內容。
-
-內容可擷取性評分：您需要知道您的內容結構、結構描述和語意是否讓LLM容易「理解」。
-
-競爭者AI基準：您想要瞭解哪些競爭者主導AI回答，以及它們在哪裡獲得可見度。
-
-程式碼片段歸因分析：您想要追蹤AI從網站提取的確切措辭或段落。
-
-
-Adobe Analytics整合：您想要將這些GEO訊號與現有的儀表板和KPI整合。
-
-### 為什麼這很重要
-
-您可以透過測量「AI分享聲音」來證明您在關鍵字貼後的世界中的價值。
-
-當使用者從搜尋結果移動到AI答案時，您可以確保您的策略不會過時。
-
-您可以建構不僅可找到，而且可引數的內容，以搭接SEO和品牌。
-
-### 您的地理KPI
-
-AI分享語音（在AI答案中可見）
-
-品牌引用頻率
-
-內容擷取分數
-
-AI驅動點選或提及
-
-結構化資料涵蓋範圍
-
-## PR與通訊管理員的產生式引擎最佳化(GEO)/回應引擎最佳化(AEO)指南
-
-身為公關與溝通經理，您的目標是控制媒體報導，不僅管理記者的言論，也管理AI系統的言論。 當有人向AI機器人詢問您的品牌、產品或CEO時，模式是綜合來自網路的資料，包括新聞稿、維基百科、評論和第三方提及。
-
-您專注於塑造和保護這個新AI生態系統中的品牌敘事。
-
-您從地理工具中所需的功能
-
-* AI品牌監控：您需要瞭解主要AI系統如何描述您的品牌、主管和產品。
-* 情緒與語調追蹤：您想要評估AI回應是否反映您想要的語調和情緒語調。
-* Source影響對應：您需要知道哪些媒體、評論網站和協力廠商頁面在塑造AI輸出方面最具影響力。
-* 敘述準確度分數：您想要驗證事實準確度，並偵測過時或不正確的資料。
-* 危機偵測警示：您想要在AI模型散佈錯誤陳述時立即通知。
-* 內容驗證工具：想要將正確、結構化、權威的資料注入生態系統（透過結構、Wikipedia和知識圖表）。
-
-您的重點領域
-焦點區域    您的工作    為什麼重要
-品牌敘述稽核    檢查AI如何描述您的品牌    確保正確性和一致性
-影響對應    識別AI答案的來源    排定外聯和更正的優先順序
-實際管理    讓品牌資料在權威來源中保持最新    避免資訊過時或不正確
-情緒調整    衡量語調與核准的訊息    保護品牌信譽
-危機管理    取得AI錯誤陳述的警示    啟用快速回應
-
-品牌無法再仰賴控制其品牌。 如果您的網站可讀性，則需要廠商（第三方）內容，這點相當重要
-
-<!-- Add table and also the PR and Comm manager mission and Marketing manager mission (see chatgpt and copilot-->
-
-他們的品牌在ai搜尋中的顯示方式
-但他們也會得到建議
-您不需要任何其他Adobe產品。
-
-增加市場份額
-
-代理流量並不一定都會前往首頁。
-
-規範性建議 — 是具體的。 它會部署核准的最佳化以啟用
-
-使用案例
-
-22分鐘
-
-
-
-
+1. 改善您的內容
+   * 利用LLM Optimizer機會識別您的網站，並做出明確建議的即時變更。 檢視[機會](/help/dashboards/opportunities.md) （然後測量結果）。 請定期檢閱機會區段，並根據提供的建議採取行動。
+   * 更新您的網站和其他內容，使其與您想要鎖定的提示更相關。
+   * 新增常見問題集至您的頁面，解答人們可能會問的常見問題。
+   * 確保您的內容可讓LLM輕鬆尋找和閱讀。 修正封鎖的頁面或網站程式碼問題等任何問題。
+   * 確保對Wikipedia和Reddit等平台的貢獻無偏見、非商業化，並增加價值。
+   * 使用Adobe LLM Optimizer追蹤可見度隨時間的變化。
+   * 如果您發現競爭者被提及的頻率增加，請調整您的策略以保持領先地位。
+   * 持續更新您的內容，以符合人們正在搜尋及詢問的內容。
 
 
 <!-- Use the "Share of Voice" feature to see which competitors are dominating specific topics and adjust your strategy accordingly.-->
@@ -288,14 +128,11 @@ AI驅動點選或提及
 Insight:
 
 This feature shows the percentage of visibility your brand has for specific topics compared to competitors.
-For example, you can see how many mentions your brand has versus competitors like Canva or Microsoft for a topic like "design creation."
 
 
 Best Practice:
 
-Use this insight to identify gaps in your visibility and focus on improving your presence in underperforming topics.-->
-
-
+Use this insight to identify gaps in your visibility and focus on improving your presence in under-performing topics.-->
 
 <!--6. Content Visibility
 
@@ -308,22 +145,8 @@ It provides a percentage of content visibility, highlighting areas where LLMs ma
 
 Best Practice:
 
-Use the "LLM Optimizer on the Edge" feature to render static HTML versions of your pages for LLM bots, ensuring full content visibility.
-Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.
+Use nametbd feature to render static HTML versions of your pages for LLM bots, ensuring full content visibility.
+Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.-->
 
 
-
-7. Opportunities
-
-Purpose: Identify actionable steps to improve visibility.
-Insight:
-
-The dashboard highlights opportunities for optimization, such as updating Wikipedia pages, contributing to Reddit or Quora threads, or improving page structure.
-It provides specific recommendations, such as adding FAQs to pages or improving headers (H1, H2, H3).
-
-
-Best Practice:
-
-Review the opportunities section regularly and take action on the recommendations provided.
-Ensure contributions to platforms like Wikipedia and Reddit are unbiased, non-commercial, and add value.-->
 
