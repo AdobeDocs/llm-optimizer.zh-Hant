@@ -1,15 +1,15 @@
 ---
 title: 協作
 description: 瞭解如何使用共同作業儀表板來邀請團隊成員加入您組織的LLM Optimizer工作區。
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Colaboration
+# 協作
 
 Collaboration可讓您邀請團隊成員加入貴組織的LLM Optimizer工作區，讓每個人都可以從一個位置存取見解和分析。 透過新增同事，您可確保行銷、SEO、PR和技術團隊能夠順暢地共同改善品牌可見度、分享發現，並對機會採取協調一致的行動。
 

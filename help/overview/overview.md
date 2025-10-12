@@ -1,9 +1,9 @@
 ---
 title: LLM Optimizer概觀
 description: 瞭解Adobe LLM Optimizer如何在AI導向的搜尋中提升品牌可見度。 追蹤提及次數、引文和深入分析。 立即開始最佳化，以提升參與度和影響力。
-source-git-commit: bb3e3e4ebc7499fb8c8dfc165eb87595b40a4b4c
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,8 @@ LLM最佳化變得越來越重要：
 
 * [快速入門](/help/overview/quick-start.md)讓您快速上手並執行。
 * [儀表板總覽](/help/dashboards/dashboards-overview.md)說明LLM Optimizer中可用的所有儀表板。
-* [最佳實務](/help/tutorials/best-practices.md)會引導您逐步瞭解如何使用工具來取得品牌所需的深入分析。
+* [設定類別、主題、提示和競爭者的最佳實務](/help/overview/best-practices-topics-prompts.md)包含設定LLM Optimizer的基本資訊。
+* [最佳實務](/help/tutorials/best-practices.md)可讓您探索LLM最佳化的最佳實務，以提升AI搜尋中的品牌可見度。
 
 
 
