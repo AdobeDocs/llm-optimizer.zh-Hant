@@ -1,9 +1,9 @@
 ---
 title: LLM Optimizer概觀
 description: 瞭解Adobe LLM Optimizer如何在AI導向的搜尋中提升品牌可見度。 追蹤提及次數、引文和深入分析。 立即開始最佳化，以提升參與度和影響力。
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,11 @@ LLM最佳化變得越來越重要：
 
 透過Adobe LLM Optimizer，您可以：
 
-**測量品牌可見度** — 追蹤在AI支援的搜尋結果中提及您品牌的時間、地點和頻率。 透過清晰的可見度分數，超越猜測的距離，您可以進行一段時間內的基準測試。
-**設定競爭者基準** — 瞭解您的品牌如何與產生式引擎中的競爭者進行棧疊比較。 找出語音差距的份額，發掘競爭優勢。
-**探索可操作的商機** — 找出直接增加提及次數和引述次數的技術商機（例如常見問題集、摘要、結構描述）和技術商機（可編目性、索引問題）。
-**追蹤來自AI的流量影響** — 監視代理流量（來自AI助理）和轉介流量（來自引文的使用者點按）到您擁有的屬性。 將GEO可見性與實際參與度繫結。
-**啟用Team Collaboration** — 共用儀表板、指派提示或類別的擁有者，並確保在行銷、SEO和通訊功能間追蹤可見度目標。
-
+**測量品牌可見度** — 追蹤在AI支援的搜尋結果中提及您品牌的時間、地點和頻率。 透過清晰的可見度分數，超越猜測的距離，您可以進行一段時間內的基準測試。 檢視[品牌顯示狀態儀表板](/help/dashboards/brand-presence.md)。
+**設定競爭者基準** — 瞭解您的品牌如何與產生式引擎中的競爭者進行棧疊比較。 找出語音差距的份額，發掘競爭優勢。 檢視[品牌顯示狀態儀表板](/help/dashboards/brand-presence.md)。
+**探索可操作的商機** — 找出直接增加提及次數和引述次數的技術商機（例如常見問題集、摘要、結構描述）和技術商機（可編目性、索引問題）。 檢視[機會儀表板](/help/dashboards/opportunities.md)。
+**追蹤來自AI的流量影響** — 監視代理流量（來自AI助理）和轉介流量（來自引文的使用者點按）到您擁有的屬性。 將GEO可見性與實際參與度繫結。 檢視[代理流量儀表板](/help/dashboards/agentic-traffic.md)和[轉介流量儀表板](/help/dashboards/referral-traffic.md)。
+**啟用Team Collaboration** — 共用儀表板、指派提示或類別的擁有者，並確保在行銷、搜尋引擎最佳化(SEO)和通訊功能間追蹤可見度目標。 請參閱[Collaboration儀表板](/help/dashboards/collaboration.md)。
 
 ## 了解更多
 
