@@ -1,9 +1,9 @@
 ---
 title: 反向連結流量
 description: 瞭解如何使用反向連結流量儀表板，以檢視訪客如何從外部平台、AI引文和反向連結進入您的網站。
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # 反向連結流量
 
-反向連結流量會顯示訪客如何從外部平台、AI引文和反向連結進入您的網站。 它會追蹤及分析來自外部網站與平台的流量來源、反向連結模式與轉換量度。 這可協助您瞭解哪些來源、地區和頁面是吸引最多人流量的原因。 資料來源為CDN記錄檔或AEM作業遙測。 這兩個來源都有保護隱私權，且不會擷取個人使用者資料。
+反向連結流量會顯示訪客如何從外部平台、AI引文和反向連結進入您的網站。 它會追蹤及分析來自外部網站與平台的流量來源、反向連結模式與轉換量度。 這可協助您瞭解哪些來源、地區和頁面是吸引最多人流量的原因。 資料來源為CDN記錄檔或[AEM作業遙測](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service)。 這兩個來源都有保護隱私權，且不會擷取個人使用者資料。 也有可自訂的篩選器，可協助您調整顯示的資料。
 
-也有可自訂的篩選器，可協助您調整顯示的資料。
+![轉介頁面](/help/dashboards/assets/referral-traffic.png)
 
 此頁面詳細說明下列專案：
 
