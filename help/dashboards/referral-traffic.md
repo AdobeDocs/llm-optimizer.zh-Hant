@@ -1,7 +1,7 @@
 ---
 title: 反向連結流量
 description: 瞭解如何使用反向連結流量儀表板，以檢視訪客如何從外部平台、AI引文和反向連結進入您的網站。
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -78,10 +78,10 @@ The Top Referral URLs list surfaces your site’s most visited pages from referr
 
 「反向連結來源詳細資料」檢視會劃分來自不同平台(例如OpenAI、Microsoft、Google和Perplexity)的流量。 它會顯示關鍵量度，例如造訪次數、跳出率和管道型別，協助您瞭解哪些AI和搜尋來源為您的網站帶來最多參與流量。
 
-**Source** — 轉介流量的來源。
-**造訪** — 每個來源的造訪總數。
-**跳出率** — 來自沒有參與事件的轉介來源的工作階段百分比。
-**管道** — 來源的管道，可以是earned、paid或兩者。
+* **Source** — 轉介流量的來源。
+* **造訪** — 每個來源的造訪總數。
+* **跳出率** — 來自沒有參與事件的轉介來源的工作階段百分比。
+* **管道** — 來源的管道，可以是earned、paid或兩者。
 
 >[!TAB URL效能分析]
 
