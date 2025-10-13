@@ -1,9 +1,9 @@
 ---
 title: 快速開始
 description: 開始使用Adobe LLM Optimizer — 加入您的品牌、解鎖AI可見度深入分析，並探索儀表板以提高搜尋效能。
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 
 ### AEM Cloud客戶
 
-如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
+如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
 
 >[!NOTE]
 >處理完成之前，新新增的提示不會出現在[品牌顯示狀態儀表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客戶可使用免費試用版的LLM Optimizer。 使用200個以上的提示需要單獨的授權合約。 存取權係依「現況」及「可用性」提供，並可由Adobe隨時修改、限制或移除。 如需詳細資訊，請洽詢您的客戶代表。
@@ -68,14 +68,14 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 * 輸入您想要追蹤的&#x200B;**自訂主題**&#x200B;或子主題。 主題可以是與您的領域關聯的大量非品牌關鍵字相連的特定主題。
 * 建立&#x200B;**您的提示**&#x200B;以監視特定查詢中的可見性。 提示是提供基線可見性的查詢（品牌和非品牌）。 系統只會根據您提供的類別和主題自動產生有限數量的提示。
 * 定義提及&#x200B;**別名**，以確保擷取並計入品牌的所有提及。
-* 定義&#x200B;**競爭者別名**&#x200B;以準確追蹤競爭者。
+* 定義&#x200B;**其他別名**&#x200B;以精確追蹤其他品牌。
 
 >[!NOTE]
 >您詢問LLM的確切提示不會公開提供，因為LLM不會公開這些提示。
 
 >[!NOTE]
 >
-> 如需有關如何設定類別、主題、提示和競爭者的詳細資訊，請參閱[設定類別、主題、提示和競爭者的最佳實務](/help/overview/best-practices-topics-prompts.md)頁面。
+> 如需有關如何設定類別、主題、提示的詳細資訊，請參閱[設定類別、主題、提示的最佳實務](/help/overview/best-practices-topics-prompts.md)頁面。
 
 ### 步驟3：自動預先填入深入分析
 
@@ -96,7 +96,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 
 提供CDN記錄轉送的資訊後，您可以：
 
-* 檢視[品牌存在](/help/dashboards/brand-presence.md)儀表板、檢視您的可見度分數，並追蹤您相對於競爭對手的績效。
+* 檢視[品牌存在](/help/dashboards/brand-presence.md)儀表板，並檢視您的可見度分數，以及追蹤您相對於其他品牌的績效。
 * 如果已經設定CDN記錄轉送，請探索[代理程式](/help/dashboards/agentic-traffic.md)和[轉介流量](/help/dashboards/referral-traffic.md)儀表板。
 * 使用[機會](/help/dashboards/opportunities.md)來識別內容與技術改進。
 * 匯出資料並與您的團隊共同作業，或邀請您的同事使用產品。

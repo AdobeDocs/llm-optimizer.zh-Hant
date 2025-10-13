@@ -1,7 +1,7 @@
 ---
 title: URL檢查器
 description: 瞭解如何使用URL Inspector來協助分析網域上的特定頁面如何在AI搜尋中執行。
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -65,7 +65,7 @@ ht-degree: 0%
 提供下列量度：
 
 * **URL** — 分析過的URL
-* **內容型別** — 內容型別（擁有、社交、盈餘、競爭者）。
+* **內容型別** — 內容的型別（擁有、社交、盈餘、其他）。
 * **引證次數** — 在AI產生的答案中引證URL的次數。
 * **在**&#x200B;中引用的提示 — 引用URL的唯一AI提示數目。
 * **類別** — 與URL相關聯的產品類別或主題。
