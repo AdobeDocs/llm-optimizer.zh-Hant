@@ -1,9 +1,9 @@
 ---
 title: Adobe LLM Optimizer
 description: 透過Adobe LLM Optimizer提升您的品牌。 追蹤提及、發掘見解，並主導AI導向的搜尋。 掌控您的可見度 — 立即開始最佳化！
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: 2a723770b33a0c93e13e1b123962892fb3f9505b
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '326'
 ht-degree: 3%
 
 ---
@@ -19,16 +19,16 @@ Adobe LLM Optimizer是創作AI優先的應用程式，適用於Generative Engine
 
 <!-- CARDS
 
+* ./overview/overview.md
+  {title= LLM Optimizer overview}
+  {image= /help/assets/overview/llm-overview-card.png}
+  {description= Learn about how Adobe LLM Optimizer boosts brand visibility in AI-driven search.}
+  {target=_blank}
+  {cta=Learn more}
 * ./overview/quick-start.md
   {title= Quickstart guide}
   {description= Learn how to quickly get up and running with the LLM Optimizer.}
   {image= /help/assets/overview/agentic-traffic-card.png}
-  {target=_blank}
-  {cta=Learn more}
-* ./overview/best-practices-topics-prompts.md
-  {title= Best practices for setting up categories, topics, prompts, and competitors}
-  {description= Learn how to configure LLM Optimizer for tailored brand monitoring and strategic content analysis.}
-  {image= /help/assets/overview/customer-configuration-card.png}
   {target=_blank}
   {cta=Learn more}
 * ./dashboards/dashboards-overview.md
@@ -40,6 +40,29 @@ Adobe LLM Optimizer是創作AI優先的應用程式，適用於Generative Engine
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="LLM Optimizer overview">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./overview/overview.md" title="LLM Optimizer概觀" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/llm-overview-card.png" alt="LLM Optimizer概觀"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./overview/overview.md" target="_blank" rel="referrer" title="LLM Optimizer概觀">LLM Optimizer概觀</a>
+                    </p>
+                    <p class="is-size-6">瞭解Adobe LLM Optimizer如何在AI導向的搜尋中提升品牌可見度。</p>
+                </div>
+                <a href="./overview/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Quickstart guide">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
@@ -58,29 +81,6 @@ Adobe LLM Optimizer是創作AI優先的應用程式，適用於Generative Engine
                     <p class="is-size-6">瞭解如何快速上手並執行LLM Optimizer。</p>
                 </div>
                 <a href="./overview/quick-start.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Best practices for setting up categories, topics, prompts, and competitors">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="./overview/best-practices-topics-prompts.md" title="設定類別、主題、提示和競爭者的最佳實務" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="設定類別、主題、提示和競爭者的最佳實務"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="設定類別、主題、提示和競爭者的最佳實務">設定類別、主題、提示和競爭者的最佳實務</a>
-                    </p>
-                    <p class="is-size-6">瞭解如何設定LLM Optimizer以進行量身打造的品牌監控和策略性內容分析。</p>
-                </div>
-                <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
                 </a>
             </div>
@@ -118,8 +118,14 @@ Adobe LLM Optimizer是創作AI優先的應用程式，適用於Generative Engine
 
 <!-- CARDS
 
+* ./overview/best-practices-topics-prompts.md
+  {title= Best practices for setting up categories, topics, prompts, and tracking others}
+  {description= Learn how to configure LLM Optimizer for tailored brand monitoring and strategic content analysis.}
+  {image= /help/assets/overview/customer-configuration-card.png}
+  {target=_blank}
+  {cta=Learn more}
 * ./tutorials/best-practices.md
-  {title= Best practices for marketers and SEO analysts}
+  {title= Best practices for LLM optimization using Adobe LLM Optimizer}
   {image= /help/assets/overview/best-practices-card.png}
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
 * https://business.adobe.com/products/llm-optimizer.html
@@ -131,12 +137,12 @@ Adobe LLM Optimizer是創作AI優先的應用程式，適用於Generative Engine
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Best practices for marketers and SEO analysts">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Best practices for setting up categories, topics, prompts, and tracking others">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./tutorials/best-practices.md" title="行銷人員和SEO分析師的最佳作法" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/best-practices-card.png" alt="行銷人員和SEO分析師的最佳作法"
+                    <a href="./overview/best-practices-topics-prompts.md" title="設定類別、主題、提示和追蹤其他專案的最佳實務" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="設定類別、主題、提示和追蹤其他專案的最佳實務"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -144,7 +150,30 @@ Adobe LLM Optimizer是創作AI優先的應用程式，適用於Generative Engine
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" title="行銷人員和SEO分析師的最佳作法">行銷人員和SEO分析師的最佳作法</a>
+                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="設定類別、主題、提示和追蹤其他專案的最佳實務">設定類別、主題、提示和追蹤其他專案的最佳實務</a>
+                    </p>
+                    <p class="is-size-6">瞭解如何設定LLM Optimizer以進行量身打造的品牌監控和策略性內容分析。</p>
+                </div>
+                <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Best practices for LLM optimization using Adobe LLM Optimizer">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./tutorials/best-practices.md" title="使用Adobe LLM Optimizer進行LLM最佳化的最佳作法" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/best-practices-card.png" alt="使用Adobe LLM Optimizer進行LLM最佳化的最佳作法"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" title="使用Adobe LLM Optimizer進行LLM最佳化的最佳作法">使用Adobe LLM Optimizer進行LLM最佳化的最佳實務</a>
                     </p>
                     <p class="is-size-6">瞭解LLM Optimizer如何協助您在AI搜尋和探索中提升品牌威信。</p>
                 </div>

@@ -1,9 +1,9 @@
 ---
 title: LLM Optimizer最佳作法
 description: 探索LLM最佳化的最佳實務，以提升AI搜尋中的品牌可見度。 基準測試與最佳化內容的深入分析。
-source-git-commit: a76d348a94495682d648ef0aad268e835e321017
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ LLM最佳化的其他考量事項：
 建立成功的LLM最佳化行銷活動涉及：
 
 * 識別符合客戶意向的高價值主題。 將即時意圖與業務目標和客戶需求對應起來。
-* 將競爭對手提及的資料點選出來，以找出差距和機會。 著重於引用競爭者的提示，指出品牌包含的機會。
+* 將提及他人的情況點選至其他人（包括競爭對手），以找出差距和機會。 專注於引用其他人的提示，指示品牌包含的機會。
 * 使用主題叢集，依意圖將提示分組：使用主題和搜尋欄位，將類似的使用者目標叢集化，以便進行效能標竿可視性。
 * 使用EEAT （經驗、專業知識、授權、可信度）和YMYL （您的金錢或生活）標準來評估品牌可信度。
 
@@ -109,7 +109,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 
    * 使用[機會儀表板](/help/dashboards/opportunities.md)來識別建議並採取行動。
    * 追蹤可見度分數、情緒和引文頻率。
-   * 根據競爭者活動和提示趨勢進行調整。
+   * 根據其他人的活動（包括競爭對手）和提示趨勢進行調整。
 
 ## 離站最佳化 — 擴展您的品牌足跡
 
@@ -158,11 +158,11 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 1. 設定您目前可見度的基準。
    * 識別提及和引用您品牌的頻率與位置，以及Adobe LLM Optimizer中的情緒。 檢視[品牌存在](/help/dashboards/brand-presence.md)儀表板。
    * 分析您的品牌出現位置和不出現位置的提示。
-   * 比較競爭對手的可見度。
+   * 與包括競爭對手的其他專案比較可見度（在&#x200B;**客戶設定儀表板**&#x200B;的[其他追蹤](/help/dashboards/customer-configuration.md)中）。
    * 檢閱Reddit、Quora和Wikipedia等使用者產生的平台的可見度。 依平台分段(ChatGPT、Google AI模式等)
    * 監視代理流量，以瞭解LLM造訪的頁面。 代理程式流量通常&#x200B;**不會**&#x200B;移至首頁，但會移至階層中較低的其他頁面。 檢視[代理流量](/help/assets/overview/agentic-traffic-card.png)儀表板。
 1. 監視一段時間的變化。
-   * 使用時間篩選器來追蹤每週和每月的班次
+   * 使用時間篩選器來追蹤每週和每月的班次。
    * 留意可見度分數是否出現尖峰或下降。
    * 分析情緒趨勢以瞭解品牌認知度。
 1. 將可見度與流量、參與和轉換建立關聯。
@@ -176,7 +176,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
    * 請確定您的內容可讓LLM輕鬆尋找及閱讀。 修正封鎖的頁面或網站程式碼問題等任何問題。
    * 確保對Wikipedia和Reddit等平台的貢獻無偏見、非商業化，並增加價值。
    * 使用Adobe LLM Optimizer追蹤可見度隨時間的變化。
-   * 如果您發現競爭者被提及的頻率增加，請調整您的策略以保持領先地位。
+   * 如果您注意到其他人（包括競爭者）更常被提及，請調整您的策略以保持領先地位。
    * 持續更新您的內容，以符合人們正在搜尋及詢問的內容。
 1. 根據深入分析調整[站外](#offsite-optimization---expanding-your-brand-footprint)和[站上](#onsite-optimization---strengthening-your-owned-content)策略。
 
@@ -226,7 +226,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 * 檢閱robots.txt和CDN設定，確保可編目性。
 * 使用[URL檢測器](/help/dashboards/url-inspector.md)來分析URL效能。
 * 存取[代理流量儀表板](/help/dashboards/agentic-traffic.md)中的CDN記錄檔以追蹤機器人行為。
-* 細分流量以瞭解業務成果。 檢視[類別、主題、提示和競爭者的最佳做法](/help/overview/best-practices-topics-prompts.md)。
+* 細分流量以瞭解業務成果。 檢視[類別、主題和提示的最佳實務](/help/overview/best-practices-topics-prompts.md)。
 
 以下是要監控的量度：
 
