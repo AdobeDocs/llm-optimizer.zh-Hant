@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 反向連結流量
 
-反向連結流量會顯示訪客如何從外部平台、AI引文和反向連結進入您的網站。 它會追蹤及分析來自外部網站與平台的流量來源、反向連結模式與轉換量度。 這可協助您瞭解哪些來源、地區和頁面是吸引最多人流量的原因。 資料來源為CDN記錄檔或[AEM作業遙測](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service)。 這兩個來源都有保護隱私權，且不會擷取個人使用者資料。 也有可自訂的篩選器，可協助您調整顯示的資料。
+反向連結流量會顯示訪客如何從外部平台、AI引文和反向連結進入您的網站。 它會追蹤及分析來自外部網站與平台的流量來源、反向連結模式與轉換量度。 這可協助您瞭解哪些來源、地區和頁面是吸引最多人流量的原因。 資料來源為CDN記錄檔或[AEM作業遙測](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service)。 這兩個來源都有保護隱私權，且不會擷取個人使用者資料。 也有可自訂的篩選器，可協助您調整顯示的資料。
 
 ![轉介頁面](/help/dashboards/assets/referral-traffic.png)
 
