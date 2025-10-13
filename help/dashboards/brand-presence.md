@@ -1,7 +1,7 @@
 ---
 title: 品牌存在
 description: 瞭解如何使用Brand Presence儀表板來瞭解在AI產生的回應層級如何看待您的品牌。
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Brand Presence儀表板提供在AI產生的回應層級如何看待品牌的詳細概觀。 它會顯示提及您品牌的位置、頻率以及在哪個情境中。 您可以使用控制面板來測量可見度、追蹤引文及探索情緒趨勢。 儀表板分為數個區段，每個區段提供不同的深入分析。 也有可自訂的篩選器，可協助您調整顯示的資料。
 
-![品牌存在](/help/dashboards/assets/brand-main1.png)
+![品牌存在](/help/dashboards/assets/brand-main.png)
 
 此頁面詳細說明下列專案：
 
@@ -60,7 +60,7 @@ Brand Presence儀表板提供在AI產生的回應層級如何看待品牌的詳�
 
 在「其他比較」區段，您可以選取最多5個其他品牌，並將其提及次數和引用次數與您的品牌進行比較。 如此一來，您就可以檢視和設定您與其他品牌相關的績效。
 
-![其他比較](/help/dashboards/assets/competitor-comparison1.png)
+![其他比較](/help/dashboards/assets/other-comparison.png)
 
 從下拉式清單中選取其他品牌，當您按一下&#x200B;**套用篩選器**&#x200B;時，圖表會更新。 圖表會並排顯示每週提及次數和每週引用次數。 您也可以將滑鼠移至圖表上，檢視資料在每週時間範圍內的演變。
 

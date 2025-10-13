@@ -1,10 +1,10 @@
 ---
 title: 客戶組態
 description: 使用客戶設定來定義如何在LLM最佳化工具平台中監控及分析您的品牌。
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 在&#x200B;**內建CDN提供者**&#x200B;視窗上：
 
-1. 選取您的CDN提供者(例如Akamai、Adobe-managed Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare或其他)。
+1. 選取您的CDN提供者。
 2. 按一下&#x200B;**內建**&#x200B;以啟用記錄轉送。
 
 如果您選取&#x200B;**其他**，則必須連絡Adobe以尋求協助。
