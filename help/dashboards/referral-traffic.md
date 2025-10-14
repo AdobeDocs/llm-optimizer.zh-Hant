@@ -1,7 +1,8 @@
 ---
 title: 反向連結流量
 description: 瞭解如何使用反向連結流量儀表板，以檢視訪客如何從外部平台、AI引文和反向連結進入您的網站。
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+feature: Referral Traffic
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -62,7 +63,7 @@ ht-degree: 0%
 
 <!--## Top Referral URLs {#top-referrals}
 
-The Top Referral URLs list surfaces your site’s most visited pages from referrals.
+The Top Referral URLs list surfaces your site's most visited pages from referrals.
 
 ![Top Referral URLs](/help/dashboards/assets/top-url.png)-->
 

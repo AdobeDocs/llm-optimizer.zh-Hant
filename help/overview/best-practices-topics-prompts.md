@@ -1,7 +1,8 @@
 ---
 title: 類別、主題、提示和其他的最佳實務
 description: 透過設定類別、主題、提示和其他品牌來追蹤（包括量身打造的品牌監控和策略內容分析的競爭對手），最佳化LLM深入分析。
-source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
+feature: Best Practices, Customer Configuration
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%

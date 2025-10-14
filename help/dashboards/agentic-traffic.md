@@ -1,7 +1,8 @@
 ---
 title: 代理流量
 description: 瞭解如何使用代理流量儀表板，以檢視AI代理程式如何與您的網站互動。
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+feature: Agentic Traffic
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -37,7 +38,7 @@ ht-degree: 0%
 在此標籤上，選取&#x200B;**內建CDN**。 並顯示CDN提供者視窗。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在&#x200B;**內建CDN提供者**&#x200B;視窗上：
+在**內建CDN提供者**&#x200B;視窗上：
 
 1. 選取您的CDN提供者(例如Akamai、Adobe-managed Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare或其他)。
 2. 按一下&#x200B;**內建**&#x200B;以啟用記錄轉送。

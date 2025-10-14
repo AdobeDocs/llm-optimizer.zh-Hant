@@ -1,7 +1,8 @@
 ---
 title: LLM Optimizer概觀
 description: 瞭解Adobe LLM Optimizer如何在AI導向的搜尋中提升品牌可見度。 追蹤提及次數、引文和深入分析。 立即開始最佳化，以提升參與度和影響力。
-source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
+feature: Onboarding
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -10,6 +11,8 @@ ht-degree: 0%
 
 
 # LLM Optimizer概觀
+
+>[!SLIDE](llm-optimizer-overview)
 
 本頁面概述開始使用工具前，您需要瞭解有關Adobe LLM Optimizer的所有內容：
 

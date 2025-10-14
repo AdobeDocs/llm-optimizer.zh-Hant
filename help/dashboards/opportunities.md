@@ -1,7 +1,8 @@
 ---
 title: 最佳化機會
 description: 瞭解如何使用機會儀表板自動偵測您的網站如何改善，以提高品牌知名度。
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+feature: Opportunities
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
