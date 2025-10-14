@@ -1,9 +1,9 @@
 ---
 title: 快速開始
 description: 開始使用Adobe LLM Optimizer — 加入您的品牌、解鎖AI可見度深入分析，並探索儀表板以提高搜尋效能。
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 
 ### AEM Cloud客戶
 
-如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
+如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
 
 >[!NOTE]
 >處理完成之前，新新增的提示不會出現在[品牌顯示狀態儀表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客戶可使用免費試用版的LLM Optimizer。 使用200個以上的提示需要單獨的授權合約。 存取權係依「現況」及「可用性」提供，並可由Adobe隨時修改、限制或移除。 如需詳細資訊，請洽詢您的客戶代表。
@@ -83,11 +83,11 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 
 ### 步驟4：提供CDN記錄轉送的資訊 {#step-4}
 
-若要解除鎖定代理流量和反向連結流量深入分析，您必須提供CDN記錄轉送的相關資訊。 您可以導覽至「[CDN設定](/help/dashboards/customer-configuration.md)」標籤，然後按一下「**內建CDN**」，從「**客戶設定」儀表板**&#x200B;新增此專案。
+若要解除鎖定代理流量和反向連結流量深入分析，您必須提供CDN記錄轉送的相關資訊。 您可以導覽至「[CDN設定](/help/dashboards/customer-configuration.md#cdn-configuration)」標籤，然後按一下「**內建CDN**」，從「**客戶設定」儀表板**&#x200B;新增此專案。
 
 ![客戶組態CDN](/help/overview/assets/cc-cdn.png)
 
-或者，如果事先沒有新增與上述範例類似的CDN提供者，則在您第一次存取代理和轉介流量儀表板時，系統會提示您新增CDN記錄轉送。 如需詳細資訊，請參閱：
+或者，如果事先沒有新增CDN提供者（如上所述），則在第一次存取代理和轉介流量控制面板時，系統會提示您新增CDN記錄轉送。 如需詳細資訊，請參閱：
 
 * [代理流量](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [反向連結流量](/help/dashboards/referral-traffic.md#setup#setup)

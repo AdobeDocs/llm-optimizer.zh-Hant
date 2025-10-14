@@ -1,9 +1,9 @@
 ---
 title: 反向連結流量
 description: 瞭解如何使用反向連結流量儀表板，以檢視訪客如何從外部平台、AI引文和反向連結進入您的網站。
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 反向連結流量
 
-反向連結流量會顯示訪客如何從外部平台、AI引文和反向連結進入您的網站。 它會追蹤及分析來自外部網站與平台的流量來源、反向連結模式與轉換量度。 這可協助您瞭解哪些來源、地區和頁面是吸引最多人流量的原因。 資料來源為CDN記錄檔或[AEM作業遙測](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service)。 這兩個來源都有保護隱私權，且不會擷取個人使用者資料。 也有可自訂的篩選器，可協助您調整顯示的資料。
+反向連結流量會顯示訪客如何從外部平台、AI引文和反向連結進入您的網站。 它會追蹤及分析來自外部網站與平台的流量來源、反向連結模式與轉換量度。 這可協助您瞭解哪些來源、地區和頁面是吸引最多人流量的原因。 <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.-->也有可自訂的篩選器，可協助您調整顯示的資料。
 
 ![轉介頁面](/help/dashboards/assets/referral-traffic.png)
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 設定 {#setup}
 
-首次登入時，反向連結流量控制面板可能會顯示空白。 若要檢視您的資料，您必須選取&#x200B;**[移至組態]**，以設定轉介流量提供者。
+首次登入時，反向連結流量控制面板可能會顯示空白。 若要檢視您的資料，您必須選取[移至設定](/help/dashboards/customer-configuration.md#cdn-configuration)，以設定&#x200B;**CDN記錄轉送**。
 
 ![轉介設定](/help/dashboards/assets/referral-setup1.png)
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-選取轉介流量提供者後，控制面板會填入轉介流量量度。
+啟用後，控制面板會填入轉介流量量度。
 
 ## 篩選器 {#filters}
 

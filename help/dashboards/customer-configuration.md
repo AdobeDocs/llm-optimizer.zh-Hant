@@ -1,10 +1,10 @@
 ---
 title: 客戶組態
 description: 使用客戶設定來定義如何在LLM最佳化工具平台中監控及分析您的品牌。
-source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 1%
+source-wordcount: '802'
+ht-degree: 0%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 ## CDN 設定 {#cdn-configuration}
 
-您可以在此標籤設定CDN串流，讓Adobe LLM Optimizer分析您的CDN資料。 此資料將用於加強儀表板（例如代理流量），提供流量模式、績效量度和最佳化機會的深入分析。 若要加入CDN提供者，請按一下&#x200B;**加入CDN**。
+您可以在此標籤設定CDN串流，讓Adobe LLM Optimizer分析您的CDN資料。 此資料將用於加強儀表板（例如代理和反向連結流量），提供流量模式、績效量度和最佳化機會的深入分析。 若要加入CDN提供者，請按一下&#x200B;**加入CDN**。
 
 ![客戶組態CDN](/help/overview/assets/cc-cdn.png)
 
@@ -101,4 +101,4 @@ ht-degree: 1%
 1. 選取您的CDN提供者。
 2. 按一下&#x200B;**內建**&#x200B;以啟用記錄轉送。
 
-如果您選取&#x200B;**其他**，則必須連絡Adobe以尋求協助。
+如果您選取&#x200B;**其他**，則必須連絡llmo-now@adobe.com以取得協助。
