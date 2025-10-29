@@ -2,9 +2,9 @@
 title: URL檢查器
 description: 瞭解如何使用URL Inspector來協助分析網域上的特定頁面如何在AI搜尋中執行。
 feature: URL Inspector
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,14 @@ ht-degree: 0%
 * **唯一提示總數** — 唯一AI提示總數。
 * **唯一被引用的URL** — 被引用的唯一擁有的URL數目。
 * **引證的總次數** — 擁有的URL在AI產生的答案中被引證的總次數。
-<!-- * **Total agentic hits** - The total number of hits from AI agents on your URLs.
-* **Referral hits from LLMs** - The total number of hits directed from AI-generated answers to your URLs.-->
+* **代理程式點選總數** — 您URL上來自AI代理程式的點選總數。
+* **來自LLM的轉介點選** — 從AI產生的回應導向至您URL的點選總數。
 
 每個概觀量度的趨勢指標會顯示這些值與上一個時段相比如何隨著時間改變。
 
 ## 您引用的URL
 
-引證的URL檢視會列出在AI產生的答案中引證的來自您品牌的所有URL，以及支援的量度。 資料表格也有搜尋欄位，可快速存取特定URL。 此外，您可以使用&#x200B;**匯出**&#x200B;選項來下載資料表.csv，並與您的團隊共用深入分析或將資料表納入執行報告中。
+引證的URL檢視會列出在AI產生的答案中引證的來自您品牌的所有URL，以及支援的量度。 兩個表格都有搜尋欄位，可快速存取主題，您可以按一下&#x200B;**設定欄**&#x200B;按鈕，自訂要顯示的量度。 此外，您可以使用&#x200B;**匯出**&#x200B;選項來下載資料表.csv，並與您的團隊共用深入分析或將資料表納入執行報告中。
 
 ![個被引用的URL](/help/dashboards/assets/cited-urls.png)
 
@@ -74,6 +74,6 @@ ht-degree: 0%
 
 ### 詳細資訊視窗
 
-針對引用和趨勢檢視，當您將滑鼠停留在特定URL上時，URL會有&#x200B;**詳細資料**&#x200B;按鈕。 按一下按鈕將顯示另一個視窗，其中包含其他詳細資訊。 詳細資料視窗會顯示URL被引用的頻率、AI回應中被提及的情緒、它出現的主題和提示，以及代理和反向連結流量隨時間變化的趨勢（針對擁有的URL）。
+對於引述和趨勢檢視，URL在每列的末尾都有&#x200B;**詳細資料**&#x200B;按鈕。 按一下按鈕將顯示另一個視窗，其中包含其他詳細資訊。 詳細資料視窗顯示URL被引述的頻率、<!--the sentiment of AI responses where it is mentioned,-->其中出現的主題和提示，以及代理和轉介流量在一段時間內的趨勢（針對擁有的URL）。
 
 ![詳細資料視窗](/help/dashboards/assets/details-url.png)

@@ -2,9 +2,9 @@
 title: 反向連結流量
 description: 瞭解如何使用反向連結流量儀表板，以檢視訪客如何從外部平台、AI引文和反向連結進入您的網站。
 feature: Referral Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-啟用後，控制面板會填入轉介流量量度。
+在啟動後，控制面板中將會填入轉介流量量度。
 
 ## 篩選器 {#filters}
 
@@ -54,12 +54,13 @@ ht-degree: 0%
 控制面板會顯示關鍵量度，以強調整體轉介效能，包括：
 
 * **總轉介流量** — 來自所有來源的總轉介流量。
+* **來自LLM的轉介流量** — 來自LLM的轉介流量總計。
 * **同意率** — 接受同意提示的訪客百分比。
 * **跳出率** — 來自沒有參與事件的轉介來源的工作階段百分比。
 
 ![轉介頁面](/help/dashboards/assets/referral-traffic.png)
 
-除了上述的整體績效量度外，**排名最前的區域**&#x200B;面板還會依地理區域劃分流量。 同時，**熱門反向連結來源**&#x200B;面板會顯示帶動最多造訪的平台。 量度的趨勢指標會顯示這些值與上一期間相比隨時間的變化。
+除了上述的整體績效量度外，另有三個面板顯示跨不同市場、反向連結來源和頁面意圖類別<!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->的流量分佈
 
 <!--## Top Referral URLs {#top-referrals}
 
@@ -90,4 +91,4 @@ The Top Referral URLs list surfaces your site's most visited pages from referral
 
 >[!ENDTABS]
 
-在這兩個表格上，您可以使用&#x200B;**匯出**&#x200B;選項來下載表格.csv，並與您的團隊共用深入分析，或在執行報告中包含轉介流量表格。
+在這兩個表格上，您可以使用&#x200B;**匯出**&#x200B;選項來下載表格.csv，並與您的團隊共用深入分析或將表格納入執行報告。 此外，對於這兩個表格，您可以按一下&#x200B;**設定欄**&#x200B;按鈕，以自訂要顯示的量度。
