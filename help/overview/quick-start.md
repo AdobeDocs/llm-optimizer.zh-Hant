@@ -2,9 +2,9 @@
 title: 快速開始
 description: 開始使用Adobe LLM Optimizer — 加入您的品牌、解鎖AI可見度深入分析，並探索儀表板以提高搜尋效能。
 feature: Quickstart, Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 48f7f64cd68c442f4a6837c5f4b7b29c3b175d1b
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 
 ### AEM Cloud客戶
 
-如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
+如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
 
 >[!NOTE]
 >處理完成之前，新新增的提示不會出現在[品牌顯示狀態儀表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客戶可使用免費試用版的LLM Optimizer。 使用200個以上的提示需要單獨的授權合約。 存取權係依「現況」及「可用性」提供，並可由Adobe隨時修改、限制或移除。 如需詳細資訊，請洽詢您的客戶代表。
@@ -47,7 +47,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 >[!NOTE]
 >您提供的網域將由您組織的每個人使用，且無法變更。
 
-若要觸發品牌顯示狀態分析，您必須提供類別、主題和提示。
+在上線階段將生成一小部分類別、主題和提示。 您的網站上線後不久，將可使用針對這些提示的品牌目前狀態分析。
 
 ![品牌狀態分析](/help/overview/assets/bp-analysis.png)
 
@@ -59,7 +59,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 
 ### 步驟2：自訂類別、主題和提示
 
-為了觸發Brand Presence分析並在控制面板中填入品牌可見度的深入分析，您需要自訂「類別」、「主題」和「提示」。 此設定是在[客戶設定儀表板](/help/dashboards/customer-configuration.md)上建立。
+您的網站上線後，您可以根據上線階段自動產生的一小組提示來檢視品牌目前狀態分析。 往後，您可以自訂品牌的類別、主題和提示。 此設定是在[客戶設定儀表板](/help/dashboards/customer-configuration.md)上建立。
 
 ![客戶設定儀表板](/help/overview/assets/prompt-creation.png)
 
@@ -78,9 +78,9 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 >
 > 如需有關如何設定類別、主題、提示的詳細資訊，請參閱[設定類別、主題、提示的最佳實務](/help/overview/best-practices-topics-prompts.md)頁面。
 
-### 步驟3：自動預先填入深入分析
+### 步驟3：品牌存在分析
 
-您的網域上線且您已提供類別和主題後，LLM Optimizer會自動觸發品牌目前狀態分析。
+您的網域上線後，您將會根據上線期間自動產生的提示，在「品牌存在」檢視中看到初始見解。 一旦您自訂自己的類別、主題和提示，LLM Optimizer就會根據您提供的提示自動觸發品牌目前狀態分析，結果將在24小時後提供。
 
 ### 步驟4：提供CDN記錄轉送的資訊 {#step-4}
 
