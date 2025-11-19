@@ -2,9 +2,9 @@
 title: LLM Optimizer最佳作法
 description: 探索LLM最佳化的最佳實務，以提升AI搜尋中的品牌可見度。 基準測試與最佳化內容的深入分析。
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 
 >[!TIP]
 >
->LLM Optimizer會在[機會](/help/dashboards/opportunities.md)儀表板中為您建議站上和離站最佳化機會。 這些機會會因您的網站而異。 它通常可以將最佳化功能直接部署至您的網站。
+>LLM Optimizer會在[機會](/help/dashboards/opportunities.md)儀表板中為您建議站上和離站最佳化機會。 這些機會會因您的網站而異。 其中許多建議都可使用LLM Optimizer直接部署至您的網站。
 
 以下是一些最佳化最佳實務：
 
@@ -118,7 +118,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 
 >[!TIP]
 >
->LLM Optimizer會在[機會](/help/dashboards/opportunities.md)儀表板中為您建議站上和離站最佳化機會。 這些機會會因您的網站而異。 它通常可以將最佳化功能直接部署至您的網站。
+>LLM Optimizer會在[機會](/help/dashboards/opportunities.md)儀表板中為您建議站上和離站最佳化機會。 這些機會會因您的網站而異。 其中許多建議都可使用LLM Optimizer直接部署至您的網站。
 
 
 主要異地管道：
