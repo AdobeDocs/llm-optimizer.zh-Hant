@@ -2,9 +2,9 @@
 title: 快速開始
 description: 開始使用Adobe LLM Optimizer — 加入您的品牌、解鎖AI可見度深入分析，並探索儀表板以提高搜尋效能。
 feature: Quickstart, Onboarding
-source-git-commit: 3068247d9d13d0c3cd22e2077daa06fd1680d6b3
+source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 
 ### AEM Cloud客戶
 
-如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
+如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
 
 >[!NOTE]
 >處理完成之前，新新增的提示不會出現在[品牌顯示狀態儀表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客戶可使用免費試用版的LLM Optimizer。 使用200個以上的提示需要單獨的授權合約。 存取權係依「現況」及「可用性」提供，並可由Adobe隨時修改、限制或移除。 如需詳細資訊，請洽詢您的客戶代表。
@@ -60,7 +60,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 
 在上線階段將生成一小部分類別、主題和提示。 您的網站上線後不久，將可使用針對這些提示的品牌目前狀態分析。
 
-![品牌狀態分析](/help/overview/assets/bp-analysis.png)
+<!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
 
 此外，您還需要設定[CDN記錄轉送](#step-4)以進行流量分析。 LLM Optimizer需要來自代理和反向連結流量的品牌存在資料和深入分析，以識別機會並提供規範性建議，從而提高AI可見度。
 

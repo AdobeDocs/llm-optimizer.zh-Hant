@@ -2,9 +2,9 @@
 title: 品牌存在
 description: 瞭解如何使用Brand Presence儀表板來瞭解在AI產生的回應層級如何看待您的品牌。
 feature: Brand Presence
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Brand Presence儀表板提供在AI產生的回應層級如何看待品牌的詳�
 * **日期範圍** — 選取所顯示資料的時間範圍。 例如最近4週。 您也可選擇選取&#x200B;**自訂周數**&#x200B;選項，以自訂時段。
 * **類別** — 依照預先定義的類別或自訂類別來篩選顯示的結果。
 * **主題** — 依主題篩選，以分析您的品牌出現在AI回應中的內容主題和主題區域。
-* **平台** — 選擇要分析的AI引擎。
+* **平台** — 選擇要分析的AI引擎。 LLM Optimizer目前支援ChatGPT、Google AI概述、Google AI模式、Microsoft Co-pilot、Google Gemini和Perplexity。
 * **提示來源** — 選擇提示來源。 來源可以是使用者輸入或AI產生。
 * **提示品牌** — 依據品牌提示或非品牌提示篩選結果。
 * **地區** — 依地理位置篩選結果。 並非所有區域在啟動時都可使用。
