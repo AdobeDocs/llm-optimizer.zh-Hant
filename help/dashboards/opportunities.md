@@ -2,9 +2,9 @@
 title: 最佳化機會
 description: 瞭解如何使用機會儀表板自動偵測您的網站如何改善，以提高品牌知名度。
 feature: Opportunities
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 533565d089076d651bb633ea7e426b0a4282de97
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ ht-degree: 0%
 | 偵測封鎖的代理程式流量 | 技術地理位置 | 分析CDN記錄檔中來自已知AI代理程式（例如GPTBot、PerplexityBot）的封鎖請求。 報告受影響的URL和代理程式。 | 更新robots.txt或伺服器設定，以便在適當時允許受支援的AI編目程式存取。 |
 | 偵測404s / 403s / 5xx問題 | 技術地理位置 | 監視CDN記錄檔的錯誤回應。 報表頻率、受影響的URL以及預估的點選遺失。 | 修正中斷的連結、更新許可權，並解決伺服器端問題，使關鍵內容傳回200個回應。 |
 | 復原內容可見度（搶先存取） | 技術地理位置 | 標示對AI代理程式隱藏重要內容的頁面。 顯示受影響的URL和可復原的預期內容。 | 預先轉譯頁面，讓AI代理無需執行JavaScript即可使用更多內容。 |
+
+## 自動最佳化 {#auto-optimization}
+
+自動最佳化可讓您按一下即可部署建議的最佳化，減少手動工作量和實現價值的時間。 最佳化可在內容來源或CDN邊緣套用。 特定商機的「搶先存取」功能目前提供Edge式自動最佳化。 如需詳細資訊，請參閱[在Edge最佳化](/help/dashboards/optimize-at-edge.md)頁面。
 
 ### 復原內容可見性的機會 {#recover-contet}
 
