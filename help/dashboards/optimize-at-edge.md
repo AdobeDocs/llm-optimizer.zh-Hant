@@ -2,9 +2,9 @@
 title: 在Edge最佳化
 description: 瞭解如何在CDN邊緣的LLM Optimizer中提供最佳化，而不需要任何編寫變更。
 feature: Opportunities
-source-git-commit: 522abddcabaf02ce86fb4d7978ef7fa4d6eb0358
+source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2224'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Edge最佳化是LLM Optimizer中的邊緣型部署功能，可為LLM使用者代理提供人工智慧易用的變更。 在目前的內容中，「Edge」表示最佳化會套用在CDN層。 由於它在CDN層提供最佳化，因此不需要在內容管理系統(CMS)中進行製作變更，因此您的原始CMS保持不變。 此分隔可讓您在不變更現有發佈工作流程的情況下改善LLM可見性。 它只會鎖定代理程式流量，不影響人類使用者或SEO機器人。 當LLM Optimizer偵測到最佳化頁面的機會時，使用者可以直接在CDN邊緣部署修正。
 
-Edge最佳化是需要複雜工程作業的傳統修正的替代方案，而且速度更快、更精簡。 如前所述，完成一次性設定後，就不需要變更平台或延長開發週期即可套用變更。 您可以在幾分鐘內發佈改善功能，而不需要開發人員的參與。 這是一種低風險、無程式碼的方式，可讓AI代理最佳化您的網站。
+Edge最佳化是需要複雜工程作業的傳統修正的替代方案，而且速度更快、更精簡。 如前所述，完成一次性設定後，就不需要變更平台或延長開發週期即可套用變更。 您可以在幾分鐘內發佈改善功能，而不需要開發人員的參與。 這是針對AI代理最佳化您的網站的非程式碼方式。
 
 Edge最佳化專為行銷、SEO、內容和數位策略團隊中的業務使用者設計。 這可讓業務使用者完成LLM Optimizer的完整歷程：識別機會、瞭解建議，並輕鬆部署修正。 透過Edge中的最佳化，使用者可以預覽變更、在CDN邊緣快速部署變更，以及驗證最佳化是否即時。 可在LLM Optimizer生態系統中追蹤效能。
 
@@ -29,7 +29,7 @@ Edge最佳化專為行銷、SEO、內容和數位策略團隊中的業務使用�
 
 * **僅限AI的傳遞：**&#x200B;僅將最佳化的HTML提供給AI代理程式，不會對人類訪客或SEO機器人造成影響。
 * **更快的週期：**&#x200B;在幾分鐘內即可發佈變更，而非數週。 不需要變更平台或延長工程週期。
-* **低風險且可還原：**&#x200B;支援一鍵式回覆功能，可在數分鐘內回覆頁面。
+* **可回覆：**&#x200B;支援一鍵回覆功能，可在數分鐘內回覆頁面。
 * **沒有效能影響：**&#x200B;以Edge為基礎的最佳化和快取不會影響網站延遲。
 * **CDN與CMS無關：**&#x200B;可與任何CDN設定和前端設定搭配使用，無論內容管理系統為何。
 
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
+路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
 
 * 決定要路由的網域
 * 決定要路由的路徑
@@ -83,9 +83,9 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 
 若要部署規則，您需要：
 
-* 建立[設定管道](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* 建立[設定管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * 認可存放庫中的`cdn.yaml`設定檔
-* 將api金鑰部署為[秘密環境變數](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+* 將api金鑰部署為[秘密環境變數](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 * 執行設定管道
 
 
@@ -482,10 +482,10 @@ if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
 ### 復原內容可見性
 
 此機會會標籤因使用者端轉譯而為AI代理隱藏關鍵內容的頁面。 對於每個已識別的頁面，它都會精確顯示AI代理程式檢視中缺少哪些內容、醒目提示可見度差距，並可讓您直接套用變更以復原隱藏的內容。 當您透過Edge的「最佳化」部署此商機時，系統會為LLM使用者代理程式提供預先轉譯的AI最佳化頁面版本，讓他們無需執行Javascript即可存取完整內容。
-這可確保AI代理程式先完全看到頁面。 在該預先轉譯的HTML上套用其他增強功能。
+這可確保頁面首先對AI代理完全可見。 在該預先轉譯的HTML上套用其他增強功能。
 
 >[!IMPORTANT]
->透過Edge的「最佳化」部署時，此預先呈現功能會自動套用至下列所有機會。
+>此預先呈現功能在Edge部署最佳化時自動套用至下面顯示的所有機會，以確保AI代理程式完全可看見頁面。
 
 ### 最佳化LLM的標題
 
@@ -505,7 +505,7 @@ if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
 
 ## 在Edge自動最佳化
 
-您可以針對每個機會在邊緣預覽、編輯、部署、即時預覽和復原最佳化。
+您可以針對每個機會，在邊緣預覽、編輯、部署、檢視即時和復原最佳化。
 
 ### 預覽
 
@@ -566,4 +566,3 @@ The CDN is where the optimized version of the page is assembled and delivered to
 問：Edge預先轉譯的「最佳化」與傳統伺服器端轉譯(SSR)有何不同？
 
 兩者都可以解決不同的問題，並共同作業。 傳統SSR會呈現伺服器端內容，但不包含稍後在瀏覽器中載入的內容。 在Edge預先呈現時最佳化會在JavaScript和使用者端資料載入後擷取頁面，在CDN邊緣產生完整組合的版本。 SSR著重於改善人類體驗，而Edge最佳化則能改善LLM的網頁體驗。
-

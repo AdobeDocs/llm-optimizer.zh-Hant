@@ -2,9 +2,9 @@
 title: 最佳化機會
 description: 瞭解如何使用機會儀表板自動偵測您的網站如何改善，以提高品牌知名度。
 feature: Opportunities
-source-git-commit: 533565d089076d651bb633ea7e426b0a4282de97
+source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ ht-degree: 0%
 
 自動最佳化可讓您按一下即可部署建議的最佳化，減少手動工作量和實現價值的時間。 最佳化可在內容來源或CDN邊緣套用。 特定商機的「搶先存取」功能目前提供Edge式自動最佳化。 如需詳細資訊，請參閱[在Edge最佳化](/help/dashboards/optimize-at-edge.md)頁面。
 
-### 復原內容可見性的機會 {#recover-contet}
+<!--### Recover Content Visibility Opportunity {#recover-contet}
 
-如上所述，內容可見性機會會標示關鍵內容因使用者端轉譯而遺失的頁面。 對於每個已識別的頁面，它都會精確顯示AI代理程式檢視中缺少哪些內容，協助您找出可見度差距。 此外，邊緣型預先呈現功能也支援這項功能，可在不變更內容管理系統(CMS)的情況下，為一般流量提供更多HTML內容。 此功能目前正在搶先使用，且需要LLM Optimizer團隊設定。 請聯絡`llmo-at-edge@adobe.com`以啟動內容可見度機會。
+As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.-->
 
 ### 其他工具
 
