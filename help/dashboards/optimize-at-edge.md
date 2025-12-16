@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
+路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
 
 * 決定要路由的網域
 * 決定要路由的路徑
@@ -83,9 +83,9 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 
 若要部署規則，您需要：
 
-* 建立[設定管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* 建立[設定管道](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * 認可存放庫中的`cdn.yaml`設定檔
-* 將api金鑰部署為[秘密環境變數](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+* 將api金鑰部署為[秘密環境變數](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 * 執行設定管道
 
 
