@@ -2,9 +2,9 @@
 title: 在Edge最佳化
 description: 瞭解如何在CDN邊緣的LLM Optimizer中提供最佳化，而不需要任何編寫變更。
 feature: Opportunities
-source-git-commit: 52984ea987ecacbd6d3bb08a6d04ff634fdf2779
+source-git-commit: 1ef457043d1ad06dc7fa19363fab232562b30d6c
 workflow-type: tm+mt
-source-wordcount: '2206'
+source-wordcount: '2178'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
+路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
 
 * 決定要路由的網域
 * 決定要路由的路徑
@@ -82,7 +82,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 
 若要部署規則，您需要：
 
-* 建立[設定管道](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* 建立[設定管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * 認可存放庫中的`cdn.yaml`設定檔
 * 執行設定管道
 
@@ -555,7 +555,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 問：在來源更新內容時會發生什麼事？
 
-只要基礎來源頁面未變更，我們就會從快取中提供頁面的最佳化版本。 不過，當來源確實變更時，我們的系統會自動重新整理，讓AI代理程式一律會收到最新的內容。 這是因為我們使用低快取存留時間(TTL)設定（依分鐘數順序），因此您網站上的任何內容更新都會觸發該視窗中的新最佳化。 由於沒有適合每個網站的通用TTL，因此我們可以根據您的快取失效規則來設定此TTL，以確保兩個系統保持同步。
+只要基礎來源頁面未變更，我們就會從快取中提供頁面的最佳化版本。 不過，當來源確實變更時，我們的系統會自動重新整理，讓AI代理程式一律會收到最新的內容。 這是因為我們使用低快取存留時間(TTL)設定（依分鐘數順序），因此您網站上的任何內容更新都會觸發該視窗中的新最佳化。<!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 問：Edge最佳化是否僅適用於使用Adobe Edge Delivery Service (EDS)的網站？
 
