@@ -2,9 +2,9 @@
 title: 在Edge最佳化
 description: 瞭解如何在CDN邊緣的LLM Optimizer中提供最佳化，而不需要任何編寫變更。
 feature: Opportunities
-source-git-commit: 24585a5743a3291d2440c98f91495416bbbe1760
+source-git-commit: 3986fec2dcb9537f5b8f94ce9c72558845aba376
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2191'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 本頁提供如何在CDN邊緣傳遞最佳化，而不會變更編寫內容的詳細概觀。 內容包括入門流程、可用的最佳化機會，以及如何在Edge自動最佳化。
 
 >[!NOTE]
->此功能目前正在搶先使用。 您可以[在此](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)進一步瞭解搶先存取計畫。
+>此功能目前正在搶先使用。 您可以[在此](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)進一步瞭解搶先存取計畫。
 
 ## 什麼是Edge的最佳化？
 
@@ -28,9 +28,9 @@ Edge最佳化專為行銷、SEO、內容和數位策略團隊中的業務使用�
 ### 主要優點
 
 * **僅限AI的傳遞：**&#x200B;僅將最佳化的HTML提供給AI代理程式，不會對人類訪客或SEO機器人造成影響。
-* **更快的週期：**&#x200B;在幾分鐘內即可發佈變更，而非數週。 不需要變更平台或延長工程週期。
+* **更快的週期：**&#x200B;在幾分鐘內發佈變更，而不是幾週。 不需要變更平台或延長工程週期。
 * **可回覆：**&#x200B;支援一鍵回覆功能，可在數分鐘內回覆頁面。
-* **沒有效能影響：**&#x200B;以Edge為基礎的最佳化和快取不會影響網站延遲。
+* **沒有效能影響：**&#x200B;以Edge為基礎的最佳化和快取，讓網站延遲不受影響。
 * **CDN與CMS無關：**&#x200B;可與任何CDN設定和前端設定搭配使用，無論內容管理系統為何。
 
 ### Edge的最佳化支援哪些機會？
@@ -39,7 +39,7 @@ Edge的「最佳化」可支援改善代理程式網頁體驗的商機。 在[�
 
 ## 上線
 
-您應該聯絡您的Adobe客戶團隊或FDE團隊以開始入門流程。 您的IT或CDN團隊也必須完成先決條件和設定程式。 此外，您也可以透過`llmo-at-edge@adobe.com`聯絡我們的團隊以取得進一步的入門協助。
+您應該聯絡您的Adobe客戶團隊或FDE團隊以開始入門流程。 您的IT或CDN團隊也必須完成先決條件和設定程式。 此外，您也可以聯絡`llmo-at-edge@adobe.com`以取得進一步的入門協助。
 
 在Edge上線最佳化的先決條件：
 
@@ -55,7 +55,7 @@ Edge的「最佳化」可支援改善代理程式網頁體驗的商機。 在[�
 * 請確定`robots.txt`未封鎖任何要鎖定的使用者代理。
 * 在LLM Optimizer介面中確認Edge路由最佳化。
 
-以下提供許多CDN設定的設定範例，以指導設定流程。 這些範例應該根據您的實際即時設定進行調整。 我們建議先在較低層級環境中套用變更。
+為引導設定流程，以下提供若干CDN設定的設定範例。 請記住，這些範例應該根據您的實際即時設定進行調整。 我們建議先在較低層級環境中套用變更。
 
 >[!NOTE]
 >在以下程式碼範例中，您可能會看到「tokowaka」的參照，這是Edge最佳化的有效專案名稱。 出於相容性的目的，這些識別碼會保留在程式碼中，並參考本檔案中描述的相同功能。
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
+路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
 
 * 決定要路由的網域
 * 決定要路由的路徑
@@ -82,7 +82,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 
 若要部署規則，您需要：
 
-* 建立[設定管道](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* 建立[設定管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * 認可存放庫中的`cdn.yaml`設定檔
 * 執行設定管道
 
@@ -503,7 +503,7 @@ if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
 
 您可以針對每個機會，在邊緣預覽、編輯、部署、檢視即時和復原最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
