@@ -2,9 +2,9 @@
 title: 類別、主題、提示和其他的最佳實務
 description: 透過設定類別、主題、提示和其他品牌來追蹤（包括量身打造的品牌監控和策略內容分析的競爭對手），最佳化LLM深入分析。
 feature: Best Practices, Customer Configuration
-source-git-commit: a4dd9b1aece2936fb95a2e831ec8b41946bc5f46
+source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,12 @@ ht-degree: 0%
 
 若要使用產業提示程式庫：
 
-1. 導覽至&#x200B;**客戶組態**&#x200B;儀表板，從LLM Optimizer下載提示程式庫檔案。
-2. 在個別標籤上檢閱您品牌產業的建議&#x200B;**主題**&#x200B;和&#x200B;**提示**，並選擇最相關的選項。
-3. 請檢閱&#x200B;**Customer Journey Stage欄**，以檢視整個客戶生命週期的提示選項（例如，從探索轉換為保留）。 funnel提示的早期階段/頂端是高優先順序，但也會考慮後期選項來提升保留率、啟用客戶支援等。
-4. 視需要修改主題或提示，以便在上傳至Adobe LLM Optimizer之前以最好的方式支援您的目的和目標（例如，新增您的品牌/產品名稱、新增品牌內術語）。 可以使用提供的&#x200B;*.csv*&#x200B;範本，手動或大量上傳提示至LLMO。
+1. 導覽至&#x200B;**客戶組態**&#x200B;儀表板。
+1. 選取&#x200B;**下載提示程式庫**從LLM Optimizer下載程式庫檔案。
+   ![產業提示程式庫下載](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. 檢閱個別標籤上品牌產業的建議&#x200B;**主題**&#x200B;和&#x200B;**提示**，並選擇最相關的選項。
+1. 請檢閱&#x200B;**Customer Journey Stage欄**，以檢視整個客戶生命週期的提示選項（例如，從探索轉換為保留）。 funnel提示的早期階段/頂端是高優先順序，但也會考慮後期選項來提升保留率、啟用客戶支援等。
+1. 視需要修改主題或提示，以便在上傳主題和提示至Adobe LLM Optimizer之前以最佳方式支援您的目的和目標（例如，新增您的品牌/產品名稱、新增品牌專用術語）。 可手動或使用提供的&#x200B;*.csv*&#x200B;範本透過大量上傳將提示新增至LLM Optimizer。
 
 >[!TIP]
 >
