@@ -29,7 +29,7 @@ ht-degree: 0%
 若要使用產業提示程式庫：
 
 1. 導覽至&#x200B;**客戶組態**&#x200B;儀表板。
-1. 選取&#x200B;**下載提示程式庫**從LLM Optimizer下載程式庫檔案。
+1. 選取&#x200B;**下載提示程式庫**&#x200B;從LLM Optimizer下載程式庫檔案。
    ![產業提示程式庫下載](/help/assets/best-practices/customer-configuration-prompts-library.png)
 1. 檢閱個別標籤上品牌產業的建議&#x200B;**主題**&#x200B;和&#x200B;**提示**，並選擇最相關的選項。
 1. 請檢閱&#x200B;**Customer Journey Stage欄**，以檢視整個客戶生命週期的提示選項（例如，從探索轉換為保留）。 funnel提示的早期階段/頂端是高優先順序，但也會考慮後期選項來提升保留率、啟用客戶支援等。
