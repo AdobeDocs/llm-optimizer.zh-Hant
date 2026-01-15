@@ -2,10 +2,10 @@
 title: 客戶組態
 description: 使用客戶設定來定義如何在LLM最佳化工具平台中監控及分析您的品牌。
 feature: Customer Configuration
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 1%
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
@@ -18,15 +18,43 @@ ht-degree: 1%
 
 為了設定LLM Optimizer如何跨不同市場和競爭環境監視和分析您的品牌存在，您可以存取以下標籤：
 
+* [提示](#prompts-brand)
 * [類別](#categories)
-* [其他追蹤](#others-tracking)
+* [其他品牌](#other-brands)
 * [品牌別名](#brand-aliases)
-* [資料分析](#data-insights)
 * [CDN 設定](#agentic-cdn)
 
 >[!IMPORTANT]
 >
 > 如需有關如何設定類別、主題、提示的詳細資訊，請參閱[設定類別、主題、提示的最佳實務](/help/overview/best-practices-topics-prompts.md)頁面。
+
+## 提示 {#prompts-brand}
+
+您可以從此標籤檢閱、管理及自訂提示。 您可以上傳[Brand Presence分析](/help/dashboards/brand-presence.md) .csv，而且清單會填入該分析的提示和主題，或[下載Adobe建立的提示資料庫](/help/overview/best-practices-topics-prompts.md)。 您也可以視需要刪除、修改和新增主題及其相關提示。
+
+若要匯入資料深入分析.csv檔案，您必須先從Brand Presence儀表板匯出檔案。 請參閱[資料深入分析](/help/dashboards/brand-presence.md#data-insights)章節以瞭解如何操作。 取得檔案後：
+
+1. 在儀表板上，按一下&#x200B;**上傳CSV**。
+2. 在匯入資料深入分析視窗上，拖放或手動選擇檔案。
+3. 按一下&#x200B;**上傳資料**。
+
+您也可以從&#x200B;**匯入資料分析**&#x200B;視窗下載範本，以建立新的CSV檔案。 取得範本後，請開啟範本，並以新行輸入主題及其相關的提示、類別和區域。
+
+若要瞭解如何下載和使用Adobe建立的產業提示程式庫，請參閱[本頁](/help/overview/best-practices-topics-prompts.md)的產業提示程式庫一節
+
+此外，您也可以在CSV檔案或提示程式庫之外，單獨將主題/提示新增至清單。 若要完成此操作，在控制面板上，您需要：
+
+1. 按一下&#x200B;**新增主題**&#x200B;按鈕。
+2. 在新的設定視窗中，選取&#x200B;**類別**。 先前建立的類別將顯示在這裡。
+3. 輸入主題名稱。
+4. 新增提示文字。
+5. 選取地區。
+6. 按一下&#x200B;**新增提示**，含有提示的主題就會出現在清單中。
+
+>[!NOTE]
+>處理完成前，新新增的提示不會出現在品牌顯示中。
+
+在清單中，您可以按一下每個主題，相關的提示就會顯示。若要刪除主題及其相關的提示，請按一下清單中的刪除圖示。
 
 ## 類別 {#categories}
 
@@ -41,7 +69,7 @@ ht-degree: 1%
 
 若要刪除類別，請按一下類別清單中的刪除圖示。 請小心，因為&#x200B;**刪除類別也會刪除連結至該特定類別的相關專案** （如品牌別名）。
 
-## 其他追蹤 {#others-tracking}
+## 其他品牌 {#others-tracking}
 
 透過使用此標籤，您可以追蹤不同類別和區域中他人與您品牌的關係。 監控其在您市場區段中的現況和效能。 若要自訂追蹤：
 
@@ -64,32 +92,6 @@ ht-degree: 1%
 5. 按一下&#x200B;**儲存**，品牌別名就會出現在清單中。
 
 若要刪除品牌別名，請按一下別名清單中的刪除圖示。
-
-## 資料分析 {#data-insights}
-
-您可以從此標籤檢閱、管理及自訂提示。 您可以上傳[Brand Presence資料深入分析](/help/dashboards/brand-presence.md#data-insights) .csv，清單中會填入該分析的提示和主題。 您也可以視需要刪除、修改和新增主題及其相關提示。
-
-若要匯入資料深入分析.csv檔案，您必須先從Brand Presence儀表板匯出檔案。 請參閱[資料深入分析](/help/dashboards/brand-presence.md#data-insights)章節以瞭解如何操作。 取得檔案後：
-
-1. 在儀表板上，按一下&#x200B;**上傳CSV**。
-2. 在匯入資料深入分析視窗上，拖放或手動選擇檔案。
-3. 按一下&#x200B;**上傳資料**。
-
-您也可以從&#x200B;**匯入資料分析**&#x200B;視窗下載範本，以建立新的CSV檔案。 取得範本後，請開啟範本，並以新行輸入主題及其相關的提示、類別和區域。
-
-此外，您也可以在CSV檔案以外單獨將主題/提示新增至清單。 若要完成此操作，在控制面板上，您需要：
-
-1. 按一下&#x200B;**新增主題**&#x200B;按鈕。
-2. 在新的設定視窗中，選取&#x200B;**類別**。 先前建立的類別將顯示在這裡。
-3. 輸入主題名稱。
-4. 新增提示文字。
-5. 選取地區。
-6. 按一下&#x200B;**新增提示**，含有提示的主題就會出現在清單中。
-
->[!NOTE]
->處理完成前，新新增的提示不會出現在品牌顯示中。
-
-在清單中，您可以按一下每個主題，相關的提示就會顯示。若要刪除主題及其相關的提示，請按一下清單中的刪除圖示。
 
 ## CDN 設定 {#cdn-configuration}
 
