@@ -2,9 +2,9 @@
 title: 代理流量
 description: 瞭解如何使用代理流量儀表板，以檢視AI代理程式如何與您的網站互動。
 feature: Agentic Traffic
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 2993f840c7451adeccf4f11a0132b91a9bc81803
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 在此標籤上，選取&#x200B;**內建CDN**。 並顯示CDN提供者視窗。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在&#x200B;**內建CDN提供者**&#x200B;視窗上：
+在**內建CDN提供者**&#x200B;視窗上：
 
 1. 選取您的CDN提供者(例如Akamai、Adobe-managed Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare或其他)。
 2. 按一下&#x200B;**內建**&#x200B;以啟用記錄轉送。
@@ -46,6 +46,18 @@ ht-degree: 0%
 如果您選取&#x200B;**其他**，則必須連絡llmo-now@adobe.com以取得協助。
 
 在啟用後，系統會擷取記錄檔，且控制面板會填入像是代理程式互動總數、成功率、市場點選、使用者代理程式分析和URL層級效能的量度。
+
+LLM Optimizer只會從CDN記錄檔擷取及處理欄位子集。 雖然原始記錄欄位名稱會因CDN提供者而異，但是它們會標準化並顯示為：
+
+* URL （僅限路徑）
+* user_agent
+* 狀態
+* referer
+* 主機
+* Ttfb （第一位元組的時間）
+* cdn_provider
+
+這些標準化欄位會透過代理檢視公開。 在[轉介流量](/help/dashboards/referral-traffic.md)儀表板上，會使用CDN記錄來顯示頁面點選量度。 CDN記錄擷取或後續資料處理的任何階段都不會處理或儲存任何個人識別資訊(PII)。
 
 ## 篩選器 {#filters}
 
