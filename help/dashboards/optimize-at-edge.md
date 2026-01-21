@@ -2,9 +2,9 @@
 title: 在Edge最佳化
 description: 瞭解如何在CDN邊緣的LLM Optimizer中提供最佳化，而不需要任何編寫變更。
 feature: Opportunities
-source-git-commit: 2311bd2990c6ff7ecee22ca82b25987df10e7e1c
+source-git-commit: 09fa235f39d61daa343a8c9cc043574a6ea2a1cc
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2149'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 本頁提供如何在CDN邊緣傳遞最佳化，而不會變更編寫內容的詳細概觀。 內容包括入門流程、可用的最佳化機會，以及如何在Edge自動最佳化。
 
 >[!NOTE]
->此功能目前正在搶先使用。 您可以[在此](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)進一步瞭解搶先存取計畫。
+>此功能目前正在搶先使用。 您可以[在此](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)進一步瞭解搶先存取計畫。
 
 ## 什麼是Edge的最佳化？
 
@@ -57,24 +57,21 @@ Edge的「最佳化」可支援改善代理程式網頁體驗的商機。 在[�
 
 為引導設定流程，以下提供若干CDN設定的設定範例。 請記住，這些範例應該根據您的實際即時設定進行調整。 我們建議先在較低層級環境中套用變更。
 
->[!NOTE]
->在以下程式碼範例中，您可能會看到「tokowaka」的參照，這是Edge最佳化的有效專案名稱。 出於相容性的目的，這些識別碼會保留在程式碼中，並參考本檔案中描述的相同功能。
-
 >[!BEGINTABS]
 
 >[!TAB Adobe Managed CDN]
 
 **Adobe Managed CDN**
 
-此設定的目的是使用代理使用者代理程式來設定請求，這些代理使用者代理程式將路由傳送至最佳化處理程式服務（`edge.tokowaka.now`後端）。 若要測試設定，安裝程式完成之後，請在回應中尋找標頭`x-tokowaka-request-id`。
+此設定的目的是使用代理使用者代理程式來設定請求，這些代理使用者代理程式將路由傳送至最佳化處理程式服務（`live.edgeoptimize.net`後端）。 若要測試設定，安裝程式完成之後，請在回應中尋找標頭`x-edge-optimize-request-id`。
 
 ```
 curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatgpt-user"
 < HTTP/2 200
-< x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+< x-edge-optimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
+路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
 
 * 決定要路由的網域
 * 決定要路由的路徑
@@ -82,7 +79,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 
 若要部署規則，您需要：
 
-* 建立[設定管道](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* 建立[設定管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * 認可存放庫中的`cdn.yaml`設定檔
 * 執行設定管道
 
@@ -91,16 +88,16 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 kind: "CDN"
 version: "1"
 data:
-  # Origin selectors to route to Tokowaka backend
+  # Origin selectors to route to Edge Optimize backend
   originSelectors:
     rules:
-      - name: route-to-tokowaka-backend
+      - name: route-to-edge-optimize-backend
         when:
           allOf:
-            - reqHeader: x-tokowaka-request
-              exists: false # avoid loops when requests comes from Tokowaka
+            - reqHeader: x-edge-optimize-request
+              exists: false # avoid loops when requests comes from Edge Optimize
             - reqHeader: user-agent
-              matches: "(?i)(Tokowaka-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)" # routed user agents
+              matches: "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)" # routed user agents
             - reqProperty: domain
               equals: "example.com" # routed domain
             - reqProperty: originalPath
@@ -110,10 +107,10 @@ data:
               - { reqProperty: originalPath, like: "/dir/*" } # routed pages, wildcard path matching
         action:
           type: selectOrigin
-          originName: tokowaka-backend
+          originName: edge-optimize-backend
     origins:
-      - name: tokowaka-backend
-        domain: "edge.tokowaka.now"
+      - name: edge-optimize-backend
+        domain: "live.edgeoptimize.net"
 ```
 
 若要測試設定，請執行curl並預期出現以下情況：
@@ -121,7 +118,7 @@ data:
 ```
 curl -svo page.html https://www.example.com/page.html --header "user-agent: chatgpt-user"
 < HTTP/2 200
-< x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+< x-edge-optimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
 <!-- >>[!TAB Akamai (BYOCDN)]
@@ -402,7 +399,7 @@ Important considerations:
 
 >[!TAB Fastly (BYOCDN)]
 
-**Tokowaka BYOCDN - Fastly - VCL**
+**Edge最佳化BYOCDN - Fastly - VCL**
 
 ![Fastly VCL](/help/assets/optimize-at-edge/fastly-vcl.png)
 
@@ -411,40 +408,40 @@ Important considerations:
 **vcl_recv程式碼片段**
 
 ```
-unset req.http.x-tokowaka-url;
-unset req.http.x-tokowaka-config;
-unset req.http.x-tokowaka-api-key;
+unset req.http.x-edge-optimize-url;
+unset req.http.x-edge-optimize-config;
+unset req.http.x-edge-optimize-api-key;
 
-if (!req.http.x-tokowaka-request
-    && req.http.user-agent ~ "(?i)(Tokowaka-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)") {
+if (!req.http.x-edge-optimize-request
+    && req.http.user-agent ~ "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)") {
   set req.http.x-fowarded-host = req.http.host; # required for identifying the original host
-  set req.http.x-tokowaka-url = req.url; # required for identifying the original url
-  set req.http.x-tokowaka-config = "LLMCLIENT=true"; # required for cache key
-  set req.http.x-tokowaka-api-key = "<YOUR API KEY>"; # required for identifying the client
-  set req.backend = F_Tokowaka;
+  set req.http.x-edge-optimize-url = req.url; # required for identifying the original url
+  set req.http.x-edge-optimize-config = "LLMCLIENT=true"; # required for cache key
+  set req.http.x-edge-optimize-api-key = "<YOUR API KEY>"; # required for identifying the client
+  set req.backend = F_EDGE_OPTIMIZE;
 }
 ```
 
 **vcl_hash程式碼片段**
 
 ```
-if (req.http.x-tokowaka-config) {
-  set req.hash += "tokowaka";
-  set req.hash += req.http.x-tokowaka-config;
+if (req.http.x-edge-optimize-config) {
+  set req.hash += "edge-optimize";
+  set req.hash += req.http.x-edge-optimize-config;
 }
 ```
 
 **vcl_deliver程式碼片段**
 
 ```
-if (req.http.x-tokowaka-config && resp.status >= 400) {
-  set req.http.x-tokowaka-request = "failover";
+if (req.http.x-edge-optimize-config && resp.status >= 400) {
+  set req.http.x-edge-optimize-request = "failover";
   set req.backend = F_Default_Origin;
   restart;
 }
 
-if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
-  set resp.http.x-tokowaka-fo = "1";
+if (!req.http.x-edge-optimize-config && req.http.x-edge-optimize-request == "failover") {
+  set resp.http.x-edge-optimize-fo = "1";
 }
 ```
 
@@ -503,7 +500,7 @@ if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
 
 您可以針對每個機會，在邊緣預覽、編輯、部署、檢視即時和復原最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
