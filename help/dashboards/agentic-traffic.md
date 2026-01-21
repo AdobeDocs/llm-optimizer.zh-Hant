@@ -2,9 +2,9 @@
 title: 代理流量
 description: 瞭解如何使用代理流量儀表板，以檢視AI代理程式如何與您的網站互動。
 feature: Agentic Traffic
-source-git-commit: a75ce71dc0ab9ffe7956a3dbd09dca23ea5f7096
+source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 在此標籤上，選取&#x200B;**內建CDN**。 並顯示CDN提供者視窗。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在&#x200B;**內建CDN提供者**&#x200B;視窗上：
+在**內建CDN提供者**&#x200B;視窗上：
 
 1. 選取您的CDN提供者(例如Akamai、Adobe-managed Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare或其他)。
 2. 按一下&#x200B;**內建**&#x200B;以啟用記錄轉送。
@@ -96,7 +96,7 @@ LLM Optimizer會處理CDN記錄中的欄位子集。 雖然原始記錄欄位名
 
 ## 頂端和底部移動器 {#top-bottom-movers}
 
-「排名最前和排名最下者」檢視會反白標示在代理流量中每週最大變更的URL — 存取您內容的AI系統的造訪或點選。 **排名最前的移動者**&#x200B;顯示頁面獲得可見度或參與度，而&#x200B;**排名最下方的移動者**&#x200B;顯示下滑最劇烈的URL。 這可協助您快速識別哪些內容呈上升趨勢、哪些內容可能需要注意，以及AI驅動的探索模式正在轉變的位置。
+「排名最前和排名最下者」檢視會反白標示在代理流量中每週最大變更的URL — 存取您內容的AI系統的造訪或點選。 **排名最前的移動者**&#x200B;顯示頁面獲得可見度或參與度，而&#x200B;**排名最下方的移動者**&#x200B;顯示下滑最劇烈的URL。 這可幫助您快速識別哪些內容呈上升趨勢、哪些內容可能需要注意，以及AI驅動的探索模式正在轉變的位置。
 
 ![最上層與最下層移動器](/help/dashboards/assets/movers.png)
 
@@ -140,4 +140,4 @@ URL效能表格有搜尋欄位，可快速存取URL，您可以按一下&#x200B;
 
 >[!ENDTABS]
 
-在這兩個表格上，您可以使用&#x200B;**匯出**&#x200B;選項來下載表格.csv，並與您的團隊共用深入分析或將表格納入執行報告。
+在這兩個表格上，您可以使用&#x200B;**匯出**&#x200B;選項來下載表格`.csv`，並與您的團隊共用深入分析或將表格納入執行報告。
