@@ -2,7 +2,7 @@
 title: 在Edge最佳化
 description: 瞭解如何在CDN邊緣的LLM Optimizer中提供最佳化，而不需要任何編寫變更。
 feature: Opportunities
-source-git-commit: c1040edc78480f0df9ea3c29cc15009d0596941f
+source-git-commit: 0e48118b823686d3b86fb3bb83a091340ca577b8
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 本頁提供如何在CDN邊緣傳遞最佳化，而不會變更編寫內容的詳細概觀。 內容包括入門流程、可用的最佳化機會，以及如何在Edge自動最佳化。
 
 >[!NOTE]
->此功能目前正在搶先使用。 您可以[在此](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)進一步瞭解搶先存取計畫。
+>此功能目前正在搶先使用。 您可以[在此](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)進一步瞭解搶先存取計畫。
 
 ## 什麼是Edge的最佳化？
 
@@ -63,15 +63,15 @@ Edge的「最佳化」可支援改善代理程式網頁體驗的商機。 在[�
 
 **Adobe Managed CDN**
 
-此設定的目的是使用代理使用者代理程式來設定請求，這些代理使用者代理程式將路由傳送至最佳化處理程式服務（`live.edgeoptimize.net`後端）。 若要測試設定，安裝程式完成之後，請在回應中尋找標頭`x-edge-optimize-request-id`。
+此設定的目的是使用代理使用者代理程式來設定請求，這些代理使用者代理程式將路由傳送至最佳化處理程式服務（`live.edgeoptimize.net`後端）。 若要測試設定，安裝程式完成之後，請在回應中尋找標頭`x-edgeoptimize-request-id`。
 
 ```
 curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatgpt-user"
 < HTTP/2 200
-< x-edge-optimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
+路由設定是使用[originSelector CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors)完成。 先決條件如下：
 
 * 決定要路由的網域
 * 決定要路由的路徑
@@ -79,7 +79,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 
 若要部署規則，您需要：
 
-* 建立[設定管道](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* 建立[設定管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * 認可存放庫中的`cdn.yaml`設定檔
 * 執行設定管道
 
@@ -94,7 +94,7 @@ data:
       - name: route-to-edge-optimize-backend
         when:
           allOf:
-            - reqHeader: x-edge-optimize-request
+            - reqHeader: x-edgeoptimize-request
               exists: false # avoid loops when requests comes from Edge Optimize
             - reqHeader: user-agent
               matches: "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)" # routed user agents
@@ -118,7 +118,7 @@ data:
 ```
 curl -svo page.html https://www.example.com/page.html --header "user-agent: chatgpt-user"
 < HTTP/2 200
-< x-edge-optimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
 <!-- >>[!TAB Akamai (BYOCDN)]
@@ -408,16 +408,16 @@ Important considerations:
 **vcl_recv程式碼片段**
 
 ```
-unset req.http.x-edge-optimize-url;
-unset req.http.x-edge-optimize-config;
-unset req.http.x-edge-optimize-api-key;
+unset req.http.x-edgeoptimize-url;
+unset req.http.x-edgeoptimize-config;
+unset req.http.x-edgeoptimize-api-key;
 
-if (!req.http.x-edge-optimize-request
+if (!req.http.x-edgeoptimize-request
     && req.http.user-agent ~ "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)") {
   set req.http.x-fowarded-host = req.http.host; # required for identifying the original host
-  set req.http.x-edge-optimize-url = req.url; # required for identifying the original url
-  set req.http.x-edge-optimize-config = "LLMCLIENT=true"; # required for cache key
-  set req.http.x-edge-optimize-api-key = "<YOUR API KEY>"; # required for identifying the client
+  set req.http.x-edgeoptimize-url = req.url; # required for identifying the original url
+  set req.http.x-edgeoptimize-config = "LLMCLIENT=true"; # required for cache key
+  set req.http.x-edgeoptimize-api-key = "<YOUR API KEY>"; # required for identifying the client
   set req.backend = F_EDGE_OPTIMIZE;
 }
 ```
@@ -425,23 +425,23 @@ if (!req.http.x-edge-optimize-request
 **vcl_hash程式碼片段**
 
 ```
-if (req.http.x-edge-optimize-config) {
+if (req.http.x-edgeoptimize-config) {
   set req.hash += "edge-optimize";
-  set req.hash += req.http.x-edge-optimize-config;
+  set req.hash += req.http.x-edgeoptimize-config;
 }
 ```
 
 **vcl_deliver程式碼片段**
 
 ```
-if (req.http.x-edge-optimize-config && resp.status >= 400) {
-  set req.http.x-edge-optimize-request = "failover";
+if (req.http.x-edgeoptimize-config && resp.status >= 400) {
+  set req.http.x-edgeoptimize-request = "failover";
   set req.backend = F_Default_Origin;
   restart;
 }
 
-if (!req.http.x-edge-optimize-config && req.http.x-edge-optimize-request == "failover") {
-  set resp.http.x-edge-optimize-fo = "1";
+if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failover") {
+  set resp.http.x-edgeoptimize-fo = "1";
 }
 ```
 
@@ -500,7 +500,7 @@ if (!req.http.x-edge-optimize-config && req.http.x-edge-optimize-request == "fai
 
 您可以針對每個機會，在邊緣預覽、編輯、部署、檢視即時和復原最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
