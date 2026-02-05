@@ -1,6 +1,6 @@
 ---
 title: LLM Optimizer最佳作法
-description: 探索LLM最佳化的最佳實務，以提升AI搜尋中的品牌可見度。 基準測試與最佳化內容的深入分析。
+description: 探索LLM最佳化的最佳實務，以提升AI 搜尋的品牌可見度。 基準測試與最佳化內容的深入分析。
 feature: Best Practices, Agentic Traffic, Brand Presence
 source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
 workflow-type: tm+mt
@@ -43,7 +43,7 @@ LLM Optimization (也稱為Generative Engine Optimization (GEO)，或Answer Engi
 
 *雖然LLM結果不使用索引頁面，但LLM確實會使用搜尋引擎，透過Retrievel-Augmented Generation (RAG)增強提示答案。
 
-** LLM會優先處理內容相關性和品牌顯示情形，而非反向連結。
+** LLM會優先處理內容關聯性和品牌存在感，而非反向連結。
 
 *** RAG減少幻覺
 
@@ -63,7 +63,7 @@ LLM最佳化的其他考量事項：
 
 此策略方法可確保針對LLM可見度資料導向的改善。
 
-### 解鎖LLM品牌可見性
+### 解除鎖定LLM品牌可見度
 
 LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及顯著程度。
 
@@ -92,7 +92,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 
 1. 確保技術協助工具
 
-   * 檢閱robots.txt和CDN設定，允許AI代理程式對您的網站進行編目。
+   * 檢閱robots.txt和CDN設定，允許AI代理程式抓取您的網站。
    * 使用「URL檢測器」來識別封鎖或無法存取的頁面。 請參閱[URL檢測器](/help/dashboards/url-inspector.md)。
 
 2. 重新整理並建構內容
@@ -124,7 +124,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 主要異地管道：
 
 * Wikipedia：確保頁面為最新、來源完善且中立撰寫。
-* Reddit與Quora：參與討論，提供正直、有用的稿件及品牌提及。
+* Reddit與Quora：透過真實而有幫助的貢獻與品牌提及參與討論。
 * 附屬文章和評論：與發佈者共同作業以取得高品質的內容。
 * YouTube和社群媒體：建立可回答常見問題的影片和貼文。
 * 新聞與公關：在知名媒體上提供安全的報導。
@@ -132,7 +132,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 最佳實務：
 
 * 分散您的異地空間。
-* 使用Adobe LLM Optimizer監控引文。 檢視[品牌顯示狀態儀表板](/help/dashboards/brand-presence.md)。
+* 使用Adobe LLM Optimizer監控引文。 檢視[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
 * 更新過時內容並尋找新的包含機會。
 * 與PR及社交團隊協調。
 * 確保貢獻內容不帶偏見且資訊豐富。
@@ -150,25 +150,25 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 * **情緒：**&#x200B;您的品牌提及是正面、中性或負面。
 * **位置：**&#x200B;回應中提及您品牌的位置（例如，第一個、中間或最後一個）。
 
-這些量度合併為&#x200B;**可見度**&#x200B;分數，可告訴您品牌在LLM回應中的存在程度。 檢視[品牌存在](/help/dashboards/brand-presence.md)展示板。
+這些量度合併為&#x200B;**可見度**&#x200B;分數，可告訴您品牌在LLM回應中的存在程度。 檢視[品牌存在感](/help/dashboards/brand-presence.md)展示板。
 
 ### 追蹤策略
 
 您可以依照下列步驟來監控進度：
 
 1. 設定您目前可見度的基準。
-   * 識別提及和引用您品牌的頻率與位置，以及Adobe LLM Optimizer中的情緒。 檢視[品牌存在](/help/dashboards/brand-presence.md)儀表板。
+   * 識別提及和引用您品牌的頻率與位置，以及Adobe LLM Optimizer中的情緒。 檢視[品牌存在感](/help/dashboards/brand-presence.md)儀表板。
    * 分析您的品牌出現位置和不出現位置的提示。
    * 與包括競爭對手的其他專案比較可見度（在&#x200B;**客戶設定儀表板**&#x200B;的[其他追蹤](/help/dashboards/customer-configuration.md)中）。
    * 檢閱Reddit、Quora和Wikipedia等使用者產生的平台的可見度。 依平台分段(ChatGPT、Google AI模式等)
    * 監視代理流量，以瞭解LLM造訪的頁面。 代理程式流量通常&#x200B;**不會**&#x200B;移至首頁，但會移至階層中較低的其他頁面。 檢視[代理流量](/help/assets/overview/agentic-traffic-card.png)儀表板。
 1. 監視一段時間的變化。
    * 使用時間篩選器來追蹤每週和每月的班次。
-   * 留意可見度分數是否出現尖峰或下降。
+   * 留意可見度分數的尖峰或下降。
    * 分析情緒趨勢以瞭解品牌認知度。
 1. 將可見度與流量、參與和轉換建立關聯。
-   * 使用歸因功能，將可見度改善連線到流量、參與和轉換。 Adobe LLM Optimizer中的歸因功能可協助您將可見度量度（提及次數、引用次數、情緒）的改善與網站流量、使用者參與和轉換等實際業務結果連結在一起。 這證明了您最佳化工作的ROI。
-   * 追蹤代理和反向連結流量的變更，以驗證最佳化ROI。
+   * 使用歸因功能，將可見度改善連線到流量、參與和轉換。 Adobe LLM Optimizer中的歸因功能可協助您將可見度量度(提及次數、引用次數、情緒)的改善與網站流量、使用者參與和轉換等實際業務結果連結在一起。 這證明了您最佳化工作的ROI。
+   * 追蹤代理和引薦流量的變更，以驗證最佳化ROI。
 1. 改善您的內容
    * 使用LLM Optimizer的[機會儀表板](/help/dashboards/opportunities.md)識別您的網站，並做出明確建議的立即變更。 檢視[機會](/help/dashboards/opportunities.md) （然後測量結果）。 請定期檢閱機會區段，並根據提供的建議採取行動。
    * 優先處理可見度下降的頁面。
@@ -187,7 +187,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 
 ## 瞭解代理流量
 
-代理流量指的是來自AI代理程式(例如ChatGPT、Google的AI模式/概觀、Copilot或複雜性)的造訪。 這些代理程式會編目您的網站，以收集資訊以產生答案。
+代理流量指的是來自AI代理程式(例如ChatGPT、Google的AI模式/概觀、Copilot或複雜性)的造訪。 這些代理程式會抓取您的網站，收集資訊以產生答案。
 
 無代理流量有兩種顯示方式：零點按體驗和無點按的可見度。
 
@@ -209,7 +209,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 
 這些機器人會執行下列動作：
 
-1. 對頁面進行編目，以擷取事實、結構和內容。
+1. 抓取您的頁面以擷取事實、結構和內容。
 2. 使用這些資料為使用者產生答案。
 3. 可能會引用您的品牌或內容 — 即使從來沒有人點進。
 
@@ -224,7 +224,7 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 
 若要針對代理流量最佳化：
 
-* 檢閱robots.txt和CDN設定，確保可編目性。
+* 檢閱robots.txt和CDN設定以確保可抓取性。
 * 使用[URL檢測器](/help/dashboards/url-inspector.md)來分析URL效能。
 * 存取[代理流量儀表板](/help/dashboards/agentic-traffic.md)中的CDN記錄檔以追蹤機器人行為。
 * 細分流量以瞭解業務成果。 檢視[類別、主題和提示的最佳實務](/help/overview/best-practices-topics-prompts.md)。
@@ -234,8 +234,8 @@ LLM可見度全都是關於您的品牌在AI產生的答案中出現的頻率及
 * 每個URL的代理程式點選數
 * 機器人請求成功率
 * 每頁的引文頻率
-* 品牌提及的情緒和位置
-* 可見度分數在一段時間內的趨勢
+* 品牌提及的情緒和放置
+* 可見度分數一段時間的趨勢
 
 <!-- Add screenshot when available in demo environment>
 

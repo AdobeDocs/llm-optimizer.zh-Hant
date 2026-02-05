@@ -1,28 +1,28 @@
 ---
-title: 客戶組態
+title: 客戶設定
 description: 使用客戶設定來定義如何在LLM最佳化工具平台中監控及分析您的品牌。
 feature: Customer Configuration
 source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# 客戶組態 {#customer-configuration}
+# 客戶設定 {#customer-configuration}
 
 「客戶設定儀表板」是一個功能強大的工具，可讓您深入瞭解品牌在LLM中的可見度。 透過正確設定類別、主題、提示，您可以確保您的品牌處於適當位置，可出現在LLM產生的回應中。 此設定可確保平台根據您的業務內容量身打造深入分析，實現準確的可見度、流量和機會分析。
 
 ![客戶設定儀表板](/help/dashboards/assets/customer-config.png)
 
-為了設定LLM Optimizer如何跨不同市場和競爭環境監視和分析您的品牌存在，您可以存取以下標籤：
+為了設定LLM Optimizer如何跨不同市場和競爭環境監視和分析您的品牌存在感，您可以存取以下標籤：
 
 * [提示](#prompts-brand)
 * [類別](#categories)
 * [其他品牌](#other-brands)
 * [品牌別名](#brand-aliases)
-* [CDN 設定](#agentic-cdn)
+* [內容傳遞網路設定](#agentic-cdn)
 
 >[!IMPORTANT]
 >
@@ -30,9 +30,9 @@ ht-degree: 0%
 
 ## 提示 {#prompts-brand}
 
-您可以從此標籤檢閱、管理及自訂提示。 您可以上傳[Brand Presence分析](/help/dashboards/brand-presence.md) .csv，而且清單會填入該分析的提示和主題，或[下載Adobe建立的提示資料庫](/help/overview/best-practices-topics-prompts.md)。 您也可以視需要刪除、修改和新增主題及其相關提示。
+您可以從此標籤檢閱、管理及自訂提示。 您可以上傳[品牌存在感分析](/help/dashboards/brand-presence.md) .csv，清單中將會填入該分析的提示和主題，或者[下載Adobe建立的提示庫](/help/overview/best-practices-topics-prompts.md)。 您也可以視需要刪除、修改和新增主題及其相關提示。
 
-若要匯入資料深入分析.csv檔案，您必須先從Brand Presence儀表板匯出檔案。 請參閱[資料深入分析](/help/dashboards/brand-presence.md#data-insights)章節以瞭解如何操作。 取得檔案後：
+若要匯入資料深入分析.csv檔案，您必須先從品牌存在感儀表板匯出檔案。 請參閱[資料深入分析](/help/dashboards/brand-presence.md#data-insights)章節以瞭解如何操作。 取得檔案後：
 
 1. 在儀表板上，按一下&#x200B;**上傳CSV**。
 2. 在匯入資料深入分析視窗上，拖放或手動選擇檔案。
@@ -52,7 +52,7 @@ ht-degree: 0%
 6. 按一下&#x200B;**新增提示**，含有提示的主題就會出現在清單中。
 
 >[!NOTE]
->處理完成前，新新增的提示不會出現在品牌顯示中。
+>新增加的提示在處理完成前，不會顯示在品牌曝光情況中。
 
 在清單中，您可以按一下每個主題，相關的提示就會顯示。若要刪除主題及其相關的提示，請按一下清單中的刪除圖示。
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 若要刪除品牌別名，請按一下別名清單中的刪除圖示。
 
-## CDN 設定 {#cdn-configuration}
+## 內容傳遞網路設定 {#cdn-configuration}
 
 您可以在此標籤設定CDN串流，讓Adobe LLM Optimizer分析您的CDN資料。 此資料將用於加強儀表板（例如代理流量），提供流量模式、績效量度和最佳化機會的深入分析。 若要加入CDN提供者，請按一下&#x200B;**加入CDN**。
 

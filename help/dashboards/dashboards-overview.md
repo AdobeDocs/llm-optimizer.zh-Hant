@@ -12,9 +12,9 @@ ht-degree: 5%
 
 # 控制面板概觀
 
-歡迎使用儀表板概觀。 LLM-Optimizer中的儀表板可協助行銷人員追蹤各個AI搜尋平台的品牌可見度和情緒、找出最佳化機會，以及實作規範性變更以改善引文和效能。
+歡迎使用儀表板概觀。 LLM-Optimizer中的儀表板可協助行銷人員跨AI 搜尋平台追蹤品牌可見度和情緒、識別最佳化機會，以及實作規範性變更以改善引文和效能。
 
-重要檢視包括品牌存在、代理和反向連結流量、URL檢測器、機會識別、Collaboration和客戶設定。
+主要檢視包括品牌存在感、代理和引薦流量、URL檢測器、機會識別、Collaboration和客戶設定。
 
 <!-- CARDS
 
@@ -68,8 +68,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./brand-presence.md" title="品牌目前狀態儀表板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="品牌目前狀態儀表板"
+                    <a href="./brand-presence.md" title="品牌存在感儀表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="品牌存在感儀表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,7 +77,7 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="品牌目前狀態儀表板">品牌目前狀態儀表板</a>
+                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="品牌存在感儀表板">品牌存在感儀表板</a>
                     </p>
                     <p class="is-size-6">追蹤您的品牌在LLM搜尋平台上的顯示方式，包括情緒分析和為其他品牌設定基準。</p>
                 </div>
@@ -114,8 +114,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./referral-traffic.md" title="反向連結流量儀表板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="反向連結流量儀表板"
+                    <a href="./referral-traffic.md" title="引薦流量儀表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="引薦流量儀表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,7 +123,7 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="反向連結流量儀表板">轉介流量儀表板</a>
+                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="引薦流量儀表板">引薦流量儀表板</a>
                     </p>
                     <p class="is-size-6">測量源自AI產生引用以讓您發現實際AI使用者參與的人類造訪</p>
                 </div>
@@ -171,7 +171,7 @@ ht-degree: 5%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./opportunities.md" target="_blank" rel="referrer" title="機會儀表板">機會儀表板</a>
                     </p>
-                    <p class="is-size-6">浮現並優先處理可操作的深入分析，以提升AI支援搜尋平台的品牌可見度和引用效能</p>
+                    <p class="is-size-6">浮現並優先處理可操作的深入分析，以提升AI支援搜尋平台的品牌可見度和引文效能</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>

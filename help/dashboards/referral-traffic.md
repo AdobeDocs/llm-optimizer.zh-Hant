@@ -1,18 +1,18 @@
 ---
-title: 反向連結流量
-description: 瞭解如何使用反向連結流量儀表板，以檢視訪客如何從外部平台、AI引文和反向連結進入您的網站。
+title: 轉介流量
+description: 瞭解如何使用引薦流量儀表板來檢視訪客如何從外部平台、AI引文和反向連結進入您的網站。
 feature: Referral Traffic
 source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 反向連結流量
+# 轉介流量
 
-反向連結流量會顯示訪客如何從外部平台、AI引文和反向連結進入您的網站。 它會追蹤及分析來自外部網站與平台的流量來源、反向連結模式與轉換量度。 這可協助您瞭解哪些來源、地區和頁面是吸引最多人流量的原因。 <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.-->也有可自訂的篩選器，可協助您調整顯示的資料。
+引薦流量會顯示訪客如何從外部平台、AI引文和反向連結進入您的網站。 它會追蹤及分析來自外部網站與平台的流量來源、反向連結模式與轉換量度。 這可協助您瞭解哪些來源、地區和頁面是吸引最多人流量的原因。 <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.-->也有可自訂的篩選器，可協助您調整顯示的資料。
 
 ![轉介頁面](/help/dashboards/assets/referral-traffic.png)
 
@@ -21,12 +21,12 @@ ht-degree: 0%
 * [設定](#setup)
 * [篩選器](#filters)
 * [整體轉介效能](#overall-performance)
-* [熱門轉介URL](#top-referrals)
+* [常用轉介 URL](#top-referrals)
 * [轉介流量詳細資料](#traffic-details)
 
 ## 設定 {#setup}
 
-首次登入時，反向連結流量控制面板可能會顯示空白。 若要檢視您的資料，您必須選取[移至設定](/help/dashboards/customer-configuration.md#cdn-configuration)，以設定&#x200B;**CDN記錄轉送**。
+第一次登入時，引薦流量控制面板可能會顯示空白。 若要檢視您的資料，您必須選取[移至設定](/help/dashboards/customer-configuration.md#cdn-configuration)，以設定&#x200B;**CDN記錄轉送**。
 
 ![轉介設定](/help/dashboards/assets/referral-setup1.png)
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-在啟動後，控制面板中將會填入轉介流量量度。
+在啟動後，控制面板中將會填入引薦流量量度。
 
 ## 篩選器 {#filters}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * **日期範圍** — 選取所顯示資料的時間範圍。 例如最近4週。 您也可選擇選取&#x200B;**自訂周數**&#x200B;選項，以自訂時段。
 * **平台** — 選擇特定流量來源，例如Google、OpenAI或社群媒體。
-* **頁面意圖** — 依使用者意圖篩選轉介流量。
+* **頁面意圖** — 依使用者意圖篩選引薦流量。
 * **頻道Source** — 依頻道來源篩選。 選項包括：「LLM」、「盈餘」、「付費」或「混合」轉介管道。
 * **裝置型別** — 依訪客的裝置型別（桌上型電腦、行動裝置或所有裝置）分析流量。
   **地區** — 檢視不同地理區域的轉介模式。
@@ -53,8 +53,8 @@ ht-degree: 0%
 
 控制面板會顯示關鍵量度，以強調整體轉介效能，包括：
 
-* **總轉介流量** — 來自所有來源的總轉介流量。
-* **來自LLM的轉介流量** — 來自LLM的轉介流量總計。
+* **總引薦流量** — 來自所有來源的引薦流量總數。
+* 來自LLM的&#x200B;**引薦流量** — 來自LLM的總引薦流量。
 * **同意率** — 接受同意提示的訪客百分比。
 * **跳出率** — 來自沒有參與事件的轉介來源的工作階段百分比。
 
@@ -72,7 +72,7 @@ The Top Referral URLs list surfaces your site's most visited pages from referral
 
 「反向連結來源詳細資訊」和「URL效能分析」表格可協助您評估流量和品質。 按一下下面的每個標籤以取得詳細資訊：
 
-![轉介流量詳細資料](/help/dashboards/assets/traffic-details.png)
+![引薦流量詳細資料](/help/dashboards/assets/traffic-details.png)
 
 >[!BEGINTABS]
 
@@ -80,14 +80,14 @@ The Top Referral URLs list surfaces your site's most visited pages from referral
 
 「反向連結來源詳細資料」檢視會劃分來自不同平台(例如OpenAI、Microsoft、Google和Perplexity)的流量。 它會顯示關鍵量度，例如造訪次數、跳出率和管道型別，協助您瞭解哪些AI和搜尋來源為您的網站帶來最多參與流量。
 
-* **Source** — 轉介流量的來源。
+* **Source** -引薦流量的來源。
 * **造訪** — 每個來源的造訪總數。
 * **跳出率** — 來自沒有參與事件的轉介來源的工作階段百分比。
 * **管道** — 來源的管道，可以是earned、paid或兩者。
 
 >[!TAB URL效能分析]
 
-「URL效能分析」檢視會根據LLM和其他來源的反向連結流量，將表現最佳的頁面排名。 它會醒目提示流量、跳出率、同意率和頁面意圖等量度，協助您識別哪些頁面吸引並保留AI驅動反向連結中最常參與的訪客。 表格中有一個搜尋欄位，可讓您快速存取主題。
+「URL效能分析」檢視會根據LLM和其他來源的引薦流量數量，將表現最佳的頁面排名。 它會醒目提示流量、跳出率、同意率和頁面意圖等量度，協助您識別哪些頁面吸引並保留AI驅動反向連結中最常參與的訪客。 表格中有一個搜尋欄位，可讓您快速存取主題。
 
 >[!ENDTABS]
 

@@ -2,58 +2,59 @@
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 100%
+ht-degree: 0%
 
 ---
 # 投稿
 
-謝謝您的投稿！
+感謝您選擇投稿！
 
-以下是投稿至本專案時應遵守的一組準則。
+為本專案貢獻內容時應遵循的准則如下。
 
 ## 行為準則
 
-此專案遵守 Adobe [行為準則](code-of-conduct.md)。凡是參與本專案，就必須遵守此準則。如發現不良行為，
-請向 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com) 回報。
+此專案遵守Adobe [行為準則](code-of-conduct.md)。 透過參與，
+您應遵守此准則。 如發現不良行為，請向
+[Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com)。
 
-## 投稿人指南文件
+## 貢獻者指南檔案
 
-請參閱 [投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+請參閱[貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 有疑問嗎？
 
-開始提出問題。本專案現有提交者正努力對
-專案方向和問題串內的問題解決方法達成共識
-(若可以)。
+請先提出問題。 此專案的現有提交者需要達到
+在專案方向和問題討論串中的問題解決方案上達成共識
+（適當時）。
 
-## 投稿人授權合約
+## 貢獻者授權合約
 
-貢獻本專案的所有協力廠商必須提供簽約投稿人的
-授權合約。這可授予 Adobe 在專案中重新使用
-您稿件的權限。[簽署我們的 CLA](http://opensource.adobe.com/cla.html)。您
-只需要提交 Adobe CLA 一次，因此如果您之前已送出 CLA，
-即可立即開始投稿！
+本專案的所有協力廠商投稿人必須隨附已簽署的投稿人
+授權合約。 這可授予Adobe重新使用您稿件的許可權
+做為專案的一部分。 [簽署我們的CLA](http://opensource.adobe.com/cla.html)。 您
+您只需要提交Adobe CLA一次，因此如果您之前已送出CLA，
+一切準備就緒！
 
 ## 程式碼檢閱
 
-所有提交作業均應以提取請求的形式提出，且須通過
-專案提交者審核。閱讀 [GitHub 的提取請求文件](https://help.github.com/articles/about-pull-requests/)
-以了解傳送提取請求的詳細資訊。
+所有提交內容皆應以提取請求的形式提出，且須經過稽核
+依專案提交者。 閱讀[GitHub的提取請求檔案](https://help.github.com/articles/about-pull-requests/)
+以取得傳送提取請求的詳細資訊。
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
 submitting a pull request!
 -->
 
-## 從投稿人至提交人
+## 從貢獻者晉升提交者
 
-我們很歡迎社區所有人出力貢獻！如果您不只是要成為投稿人，
-還想更進一步成為提交人，以便擁有完全的撰寫存取權和專案發話權，則您必須
-受到專案的邀請。現有提交人在獲得邀請前，
-要採用內部提名序，且必須達成消極共識 
-(沉默表示核准)。如果您認為自己有資格，並且希望更深入地參與其中，
-歡迎隨時與現有的提交者進行相關對話。
+我們樂於見到社群成員共襄盛舉！ 如果您不滿足於參與者的工作
+並成為具有完整寫入存取權且在專案中擁有發言權的提交者，您必須
+受邀加入專案。 現有的提交者會採用內部提名
+邀請前必須達成懶惰共識（沈默表示同意）的程式
+發行日期。 如果您覺得自己符合資格且想更深入參與，
+歡迎連絡現有的提交者，與對方討論相關事宜。
 
 ## 安全性問題
 
-安全性問題不應在此問題追蹤器上通報，而是要 [向我們的安全性專家提出問題](https://helpx.adobe.com/tw/security/alertus.html)
+不應在此問題追蹤器上回報安全性問題。 請改為[向我們的安全性專家提出問題](https://helpx.adobe.com/tw/security/alertus.html)

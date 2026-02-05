@@ -2,16 +2,16 @@
 source-git-commit: 9a086ec3124af1bf234e42287c8b4ef08eae6bcd
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 36%
+ht-degree: 0%
 
 ---
-# 貢獻文章
+# Contribute文章
 
-我們歡迎社區以及文件團隊外部的 Adobe 員工出力貢獻。
+我們歡迎社群以及檔案團隊外部的Adobe員工出力貢獻。
 
-## Adobe 開放原始碼行為準則
+## Adobe Open Source行為準則
 
-本專案已採用 [Adobe 開放原始碼行為準則](code-of-conduct.md)或 [.NET Foundation 行為準則](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻](contributing.md)一文。
+此專案已採用[Adobe Open Source行為準則](code-of-conduct.md)或[.NET Foundation行為準則](https://dotnetfoundation.org/code-of-conduct)。 如需詳細資訊，請參閱[貢獻](contributing.md)文章。
 
 ## 如何為Adobe內容貢獻內容
 
@@ -21,7 +21,7 @@ ht-degree: 36%
 
 ## 外部貢獻者
 
-### 小幅變更
+### 微幅變更
 
 如果您要貢獻微幅更新：
 
@@ -29,9 +29,9 @@ ht-degree: 36%
 1. 在「此內容是否有幫助？」中。 瀏覽器視窗底部出現的橫幅按一下&#x200B;**詳細的意見選項**。
 1. 在GitHub UI中，按一下&#x200B;**建議編輯**&#x200B;並提交包含變更的提取請求(PR)。
 
-   請參閱一般 [Adobe 文件投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)的更多資訊。
+   如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
-您在本存放庫為文件和代碼範例提交的小幅更正或釐清均包含在 Adobe 使用條款。
+您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清均包含在Adobe使用條款中。
 
 ### 社群中的重大變更或新主題
 
@@ -41,9 +41,9 @@ ht-degree: 36%
 
 ### 工具
 
-社區投稿人可以使用 GitHub UI 進行基本編輯，也可以使用存放庫來做出重要貢獻。
+社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
-請參閱 [Adobe 文件投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)的詳細資訊。
+如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 內部參與者
 
@@ -53,12 +53,12 @@ ht-degree: 36%
 
 此存放庫中的所有文章皆使用GitHub風格的Markdown。 如果您不熟悉Markdown，請參閱：
 
-* [Markdown 基本認識](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Markdown 可列印快覽單](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdown基本介紹](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [可列印的Markdown速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 標籤
 
-公共存放庫內已為提取要求指定自動標籤，可幫助我們管理提取要求的工作流程，並幫助您了解自己的提取要求情形：
+在公開存放庫中，系統會為提取請求指派自動化標籤，協助我們管理提取請求工作流程，同時協助您瞭解提取請求的最新狀況：
 
-* **變更已傳送給作者**：已向作者通知待處理的提取要求。
-* **準備合併**：準備好供我們的提取要求審核小組進行審核。
+* **變更已傳送給作者**：作者已收到處理提取要求的通知。
+* **準備合併**：準備由我們的拉取要求稽核團隊檢閱。
