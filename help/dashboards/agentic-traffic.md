@@ -38,7 +38,7 @@ ht-degree: 1%
 在此標籤上，選取&#x200B;**內建CDN**。 並顯示CDN提供者視窗。
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-在**內建CDN提供者**&#x200B;視窗上：
+在&#x200B;**內建CDN提供者**&#x200B;視窗上：
 
 1. 選取您的CDN提供者(例如Akamai、Adobe-managed Fastly、Fastly、AWS Cloudfront、Azure CDN、Cloudflare或其他)。
 2. 按一下&#x200B;**內建**&#x200B;以啟用記錄轉送。
