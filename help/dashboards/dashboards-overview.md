@@ -2,9 +2,9 @@
 title: 控制面板概觀
 description: 這是文章概述。
 feature: Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '262'
 ht-degree: 5%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 歡迎使用儀表板概觀。 LLM-Optimizer中的儀表板可協助行銷人員跨AI 搜尋平台追蹤品牌可見度和情緒、識別最佳化機會，以及實作規範性變更以改善引文和效能。
 
-主要檢視包括品牌存在感、代理和引薦流量、URL檢測器、機會識別、Collaboration和客戶設定。
+主要檢視包括「概觀」、「品牌存在感」、「代理與引薦流量」、「URL檢測器」、「機會」、「Collaboration」和「客戶設定」。
 
 <!-- CARDS
 

@@ -1,18 +1,18 @@
 ---
-title: 快速啟動
+title: 快速開始
 description: 開始使用Adobe LLM Optimizer — 加入您的品牌、解鎖AI可見度深入分析，並探索儀表板以提高搜尋效能。
 feature: Quickstart, Onboarding
-source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
+source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
 
 
-# 快速啟動
+# 快速開始
 
-若要開始使用LLM Optimizer，您必須完成上線流程，如下列步驟所詳述。 完成程式後，您將擁有[LLM Optimizer儀表板](/help/dashboards/dashboards-overview.md)和其他功能的完整存取權。
+若要開始使用LLM Optimizer，您必須完成入門流程，如下列步驟所述。 完成程式後，您將擁有[LLM Optimizer儀表板](/help/dashboards/dashboards-overview.md)和其他功能的完整存取權。
 
 ## 入門概觀
 
@@ -38,13 +38,13 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 有些產品功能並非免費版本提供：
 
 * 試用版僅限於一個網域。 完成設定後，您將無法變更您提供的網域。
-* 將不支援部署最佳化。
+* 部署最佳化的功能可在搶先使用中取得。 如需詳細資訊，請參閱[在Edge中最佳化常見問題](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions)。
 
 請參閱以下章節，以取得如何啟用免費試用版並將您的網域上線的詳細資訊。
 
 ### AEM Cloud客戶
 
-如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
+如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
 
 >[!NOTE]
 >處理完成前，新新增的提示不會出現在[品牌存在感儀表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客戶可使用免費試用版的LLM Optimizer。 使用200個以上的提示需要單獨的授權合約。 存取權係依「現況」及「可用性」提供，並可由Adobe隨時修改、限制或移除。 如需詳細資訊，請洽詢您的客戶代表。
@@ -68,7 +68,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 
 業務合約完成後，您將加入LLM Optimizer上要加入的網域。 此上線完成後，您將能夠透過[https://llmo.now](https://llmo.now)登入LLM Optimizer。
 
-### 步驟2：自訂類別、主題和提示
+## 步驟2：自訂類別、主題和提示
 
 您的網站上線後，您可以根據上線階段自動產生的一小組提示來檢視品牌存在感分析。 往後，您可以自訂品牌的類別、主題和提示。 此設定是在[客戶設定儀表板](/help/dashboards/customer-configuration.md)上建立。
 
@@ -89,13 +89,13 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 >
 > 如需有關如何設定類別、主題、提示的詳細資訊，請參閱[設定類別、主題、提示的最佳實務](/help/overview/best-practices-topics-prompts.md)頁面。
 
-### 步驟3：品牌存在感深入分析
+## 步驟3：品牌存在感深入分析
 
 您的網域上線後，您將根據上線期間自動產生的提示，在品牌存在感檢視中看到初始見解。 一旦您自訂自己的類別、主題和提示，LLM Optimizer就會根據您提供的提示自動觸發品牌存在感分析，結果將在24小時內可用。
 
-### 步驟4：提供CDN記錄轉送的資訊 {#step-4}
+## 步驟4：提供CDN記錄轉送的資訊 {#step-4}
 
-若要解除鎖定代理流量和引薦流量深入分析，您需要為CDN記錄轉送提供資訊。 您可以導覽至「[CDN設定](/help/dashboards/customer-configuration.md#cdn-configuration)」標籤，然後按一下「**內建CDN**」，從「**客戶設定」儀表板**&#x200B;新增此專案。
+若要解除鎖定代理流量和引薦流量深入分析，您需要為CDN記錄轉送提供資訊。 您可以導覽至「**CDN設定**」標籤，然後按一下「**內建CDN**」，從「[客戶設定」儀表板](/help/dashboards/customer-configuration.md#cdn-configuration)新增此專案。
 
 ![客戶組態CDN](/help/overview/assets/cc-cdn.png)
 
@@ -104,7 +104,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 * [代理式流量](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [轉介流量](/help/dashboards/referral-traffic.md#setup#setup)
 
-### 步驟5：探索儀表板並採取行動
+## 步驟5：探索儀表板並採取行動
 
 提供CDN記錄轉送的資訊後，您可以：
 
