@@ -843,7 +843,7 @@ const FAILOVER_ON_5XX = false;
 
 您可以針對每個機會，在邊緣預覽、編輯、部署、檢視即時和復原最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
 
 ### 預覽
 
