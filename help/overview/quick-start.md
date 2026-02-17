@@ -38,13 +38,13 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 有些產品功能並非免費版本提供：
 
 * 試用版僅限於一個網域。 完成設定後，您將無法變更您提供的網域。
-* 部署最佳化的功能可在搶先使用中取得。 如需詳細資訊，請參閱[在Edge中最佳化常見問題](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions)。
+* 部署最佳化的功能可在搶先使用中取得。 如需詳細資訊，請參閱[在Edge中最佳化常見問題](https://experienceleague.adobe.com/zh-hant/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions)。
 
 請參閱以下章節，以取得如何啟用免費試用版並將您的網域上線的詳細資訊。
 
 ### AEM Cloud客戶
 
-如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
+如果您是AEM Cloud客戶，您可以選擇在[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)中使用產品公告卡來試用LLM Optimizer。
 
 >[!NOTE]
 >處理完成前，新新增的提示不會出現在[品牌存在感儀表板](/help/dashboards/brand-presence.md)中。 AEM Cloud客戶可使用免費試用版的LLM Optimizer。 使用200個以上的提示需要單獨的授權合約。 存取權係依「現況」及「可用性」提供，並可由Adobe隨時修改、限制或移除。 如需詳細資訊，請洽詢您的客戶代表。
