@@ -126,7 +126,7 @@ Adobe LLM Optimizer 是生成式 AI 優先的應用程式並適用於生成式�
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/products/llm-optimizer.html
+* https://business.adobe.com/tw/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -185,7 +185,7 @@ Adobe LLM Optimizer 是生成式 AI 優先的應用程式並適用於生成式�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://business.adobe.com/products/llm-optimizer.html" title="探索 Adobe LLM Optimizer 的各項功能" target="_blank" rel="referrer">
+                    <a href="https://business.adobe.com/tw/products/llm-optimizer.html" title="探索 Adobe LLM Optimizer 的各項功能" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="/help/assets/overview/business-adobe.png" alt="探索 Adobe LLM Optimizer 的各項功能"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -194,11 +194,11 @@ Adobe LLM Optimizer 是生成式 AI 優先的應用程式並適用於生成式�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" title="探索 Adobe LLM Optimizer 的各項功能">探索 Adobe LLM Optimizer 的各項功能</a>
+                        <a href="https://business.adobe.com/tw/products/llm-optimizer.html" target="_blank" rel="referrer" title="探索 Adobe LLM Optimizer 的各項功能">探索 Adobe LLM Optimizer 的各項功能</a>
                     </p>
                     <p class="is-size-6">使用 Adobe LLM Optimizer 在 AI 搜尋結果中塑造品牌存在感。獲取 GEO 洞察、提高在多個 LLM 之間的能見度，並帶動可衡量的流量成長。</p>
                 </div>
-                <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://business.adobe.com/tw/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
                 </a>
             </div>
