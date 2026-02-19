@@ -1,99 +1,11 @@
 ---
-source-git-commit: beae935e7a34f5bccbe21578fa9a928912958710
+source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 2%
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 # 程式碼片段
-
-## 驗證設定 — Adobe Managed CDN {#verify-setup-adobe-aem-cs-cdn}
-
-**驗證安裝程式**
-
-完成設定後，請確認正在將機器人流量路由至Edge Optimize，且人力流量不受影響。
-
-**1. 測試機器人流量（應該最佳化）**
-
-使用代理使用者代理程式模擬AI機器人請求：
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-成功的回應包含`x-edgeoptimize-request-id`標頭，確認要求已透過Edge最佳化路由：
-
-```
-< HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
-```
-
-**2. 測試人力流量（不應受影響）**
-
-模擬一般的人類瀏覽器請求：
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-```
-
-回應應&#x200B;**不**&#x200B;包含`x-edgeoptimize-request-id`標頭。 在Edge中啟用「最佳化」之前，頁面內容和回應時間應保持相同。
-
-**3. 如何區分這兩個案例**
-
-| 頁首 | 機器人流量（最佳化） | 人類流量（未受影響） |
-|---|---|---|
-| `x-edgeoptimize-request-id` | 存在 — 包含唯一的請求識別碼 | 不存在 |
-| `x-edgeoptimize-fo` | 只有在發生容錯移轉時才會出現（值： `1`） | 不存在 |
-
-流量路由的狀態也可以在LLM Optimizer UI中檢視。 瀏覽至&#x200B;**客戶組態**&#x200B;並選取&#x200B;**CDN組態**&#x200B;標籤。
-
-已啟用路由的![AI流量路由狀態](/help/assets/optimize-at-edge/adobe-CDN-traffic-routed-tick.png)
-
-## 驗證設定 — BYOCDN {#verify-setup-byocdn}
-
-**驗證安裝程式**
-
-完成設定後，請確認正在將機器人流量路由至Edge Optimize，且人力流量不受影響。
-
-**1. 測試機器人流量（應該最佳化）**
-
-使用代理使用者代理程式模擬AI機器人請求：
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-成功的回應包含`x-edgeoptimize-request-id`標頭，確認要求已透過Edge最佳化路由：
-
-```
-< HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
-```
-
-**2. 測試人力流量（不應受影響）**
-
-模擬一般的人類瀏覽器請求：
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-```
-
-回應應&#x200B;**不**&#x200B;包含`x-edgeoptimize-request-id`標頭。 在Edge中啟用「最佳化」之前，頁面內容和回應時間應保持相同。
-
-**3. 如何區分這兩個案例**
-
-| 頁首 | 機器人流量（最佳化） | 人類流量（未受影響） |
-|---|---|---|
-| `x-edgeoptimize-request-id` | 存在 — 包含唯一的請求識別碼 | 不存在 |
-| `x-edgeoptimize-fo` | 只有在發生容錯移轉時才會出現（值： `1`） | 不存在 |
-
-流量路由的狀態也可以在LLM Optimizer UI中檢視。 瀏覽至&#x200B;**客戶組態**&#x200B;並選取&#x200B;**CDN組態**&#x200B;標籤。
-
-已啟用路由的![AI流量路由狀態](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 ## API金鑰擷取步驟 {#retrieve-byocdn-api-key}
 
@@ -118,4 +30,4 @@ curl -svo /dev/null https://www.example.com/page.html \
 
 ## 返回總覽 {#return-to-overview}
 
-若要進一步瞭解Edge最佳化，包括可用的機會、自動最佳化工作流程和常見問答，請返回[Edge最佳化概覽](/help/dashboards/optimize-at-edge.md)。
+若要進一步瞭解Edge最佳化，包括可用的機會、自動最佳化工作流程和常見問答，請返回[Edge最佳化概覽](/help/dashboards/optimize-at-edge/overview.md)。
