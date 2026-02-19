@@ -2,9 +2,9 @@
 title: 最佳化機會
 description: 了解如何使用機會儀表板，以自動偵測您的網站可以如何針對提升品牌能見度進行改善。
 feature: Opportunities
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: 33196139fef1cebd47b15aa964df2bac366ea12a
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '512'
 ht-degree: 100%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 100%
 |---------|----------|----------|----------|
 | 將長段落整理成摘要 | 內容 (站內) | 偵測超出建議長度臨界值的段落。 顯示受影響的 URL 和長度超標的文字片段。 | 建立摘要或將長段文字分割成較短、可掃描的區段。 |
 | 建議結構化內容 (FAQ) | 內容 (站內) | 偵測缺乏相符的常見問答項目的高熱門度提示。 顯示相關的提示、類別和受影響的 URL。 | 新增常見問題結構描述區塊，內含符合常見查詢的簡潔回答。 |
-| 偵測缺少 Hreflang 的情況 | 內容 (站內) | 標示缺少 hreflang 屬性的頁面。 依語言/地區提供受影響的 URL 和預期的影響範圍。 | 實施 hreflang 標記以指出正確的本地化版本。 |
-| 偵測缺少標準網址的情況 | 內容 (站內) | 掃描缺少標準網址標記或是其標記有衝突的頁面。 列出受影響的 URL 和重複頁面。 | 新增標準網址標記並指向每個頁面的偏好版本。 確保頁面變化版本之間保持一致的使用方式。 |
 | 偵測代理式流量被封鎖的情況 | 技術性 GEO | 分析內容傳遞網路的記錄，搜尋來自已知 AI 代理 (例如 GPTBot、PerplexityBot) 但被封鎖的要求。 報告受影響的 URL 和代理。 | 更新 robots.txt 或伺服器設定檔，以便在適當的時候允許支援的 AI 爬蟲存取。 |
 | 偵測 404/403/5xx 的問題 | 技術性 GEO | 監視內容傳遞網路記錄是否出現錯誤回應。 報告錯誤頻率、受影響的 URL 以及預估遺失的點擊數。 | 修正故障的連結、更新權限並解決伺服器端的問題，以便主要內容傳回 200 回應。 |
 | 復原內容能見度 (預先體驗版) | 技術性 GEO | 標示對 AI 代理隱藏重要內容的頁面。 顯示受影響的 URL 和可復原的預期內容。 | 預先轉譯頁面，讓 AI 代理無需執行 JavaScript 即可取得更多內容。 |
@@ -49,3 +47,6 @@ As stated above, the content visibility opportunity, flags pages where key conte
 ### 其他工具
 
 [LLM 能見度檢查程式](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc)是 Chrome 擴充功能，讓您精準了解 LLM 可以存取您的網站多少內容，以及哪些內容仍是隱藏狀態。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。 只要點按一次，使用者就可以評估任何網站的電腦可讀性，用並排比較的方式查看 AI 代理與人類使用者看到的內容。 此外，也會預估使用 LLM Optimizer 可以復原多少內容。
+
+<!--| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
+| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |-->
