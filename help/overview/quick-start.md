@@ -38,7 +38,7 @@ AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選
 免費版本並未提供部分產品功能：
 
 * 試用版僅限一個網域使用。 完成設定後，您就無法變更所提供的網域。
-* 部署最佳化的功能可在搶先使用中取得。 如需詳細資訊，請參閱[在Edge中最佳化常見問題](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
+* 部署最佳化的功能可在搶先使用中取得。 如需詳細資訊，請參閱[在Edge中最佳化常見問題](https://experienceleague.adobe.com/zh-hant/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
 
 關於如何啟用免費試用版並將您的網域上線的詳細資訊，請參閱以下區段。
 
