@@ -2,10 +2,10 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
 workflow-type: tm+mt
-source-wordcount: '2172'
-ht-degree: 85%
+source-wordcount: '2181'
+ht-degree: 84%
 
 ---
 
@@ -62,6 +62,7 @@ ht-degree: 85%
 | Fastly (BYOCDN) | 自備CDN | [檢視安裝指南](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
 | Akamai (BYOCDN) | 自備CDN | [檢視安裝指南](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | 自備CDN | [檢視安裝指南](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
+| CloudFront (BYOCDN) | 自備CDN | [檢視安裝指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
 >如果您的CDN提供者未列入上述清單，或您在LLM Optimizer UI中找不到您的網域或電子郵件，請聯絡`llmo-at-edge@adobe.com`以取得入門協助。 完成設定後，您可以在 LLM Optimizer 中部署邊緣最佳化機會之建議。
@@ -83,7 +84,7 @@ ht-degree: 85%
 
 [Adobe LLM Optimizer：您的網頁可被引用嗎？](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome 擴充功能會顯示 LLM 可存取您的網頁多少內容以及哪些內容被隱藏。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -113,7 +114,7 @@ ht-degree: 85%
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
@@ -165,7 +166,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 問：當來源更新內容時會發生什麼事？
 
-只要基礎來源頁面未變更，我們就會從快取中提供您頁面的最佳化版本。 不過，當來源確實變更&#x200B;**復原內容可見度**&#x200B;時，我們的系統會自動重新整理，因此AI代理程式一律會收到最新的內容。 這是因為我們使用低快取存留時間(TTL)設定（依分鐘數順序），因此您網站上的任何內容更新都會觸發該視窗中的新最佳化。 針對&#x200B;**新增LLM友善摘要**&#x200B;等內容機會，LLM Optimizer會監控來源頁面是否有變更。 如果偵測到變更，我們會暫停最佳化並將其標幟為人類檢閱，以防止代理程式可見頁面和人類可見頁面之間的內容漂移。
+只要基礎來源頁面未變更，我們就會從快取中提供您頁面的最佳化版本。 不過，當來源確實變更&#x200B;**復原內容可見度**&#x200B;時，我們的系統會自動重新整理，因此AI代理程式一律會收到最新的內容。 這是因為我們使用低快取存留時間(TTL)設定（依分鐘數順序），因此您網站上的任何內容更新都會觸發該視窗中的新最佳化。 針對&#x200B;**新增LLM友善摘要**等內容機會，LLM Optimizer會監控來源頁面是否有變更。 如果偵測到變更，我們會暫停最佳化並將其標幟為人類檢閱，以防止代理程式可見頁面和人類可見頁面之間的內容漂移。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 問：邊緣最佳化是否僅適用於使用 Adobe Edge Delivery Service (EDS) 的網站？
