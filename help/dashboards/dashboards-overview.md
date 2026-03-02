@@ -1,20 +1,20 @@
 ---
-title: 控制面板概觀
-description: 這是文章概述。
+title: 儀表板概觀
+description: 這是文章概觀。
 feature: Onboarding
 source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
-# 控制面板概觀
+# 儀表板概觀
 
-歡迎使用儀表板概觀。 LLM-Optimizer中的儀表板可協助行銷人員跨AI 搜尋平台追蹤品牌可見度和情緒、識別最佳化機會，以及實作規範性變更以改善引文和效能。
+歡迎瀏覽儀表板概觀。 行銷人員可利用 LLM-Optimizer 中的儀表板，追蹤不同 AI 搜尋平台中的品牌能見度和情緒、找出最佳化機會，以及實施指示性變更以改善引用來源和效能。
 
-主要檢視包括「概觀」、「品牌存在感」、「代理與引薦流量」、「URL檢測器」、「機會」、「Collaboration」和「客戶設定」。
+主要視圖包括概觀、品牌存在感、代理式和轉介流量、URL 檢查器、機會、協作和客戶設定。
 
 <!-- CARDS
 
@@ -79,7 +79,7 @@ ht-degree: 5%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./brand-presence.md" target="_blank" rel="referrer" title="品牌存在感儀表板">品牌存在感儀表板</a>
                     </p>
-                    <p class="is-size-6">追蹤您的品牌在LLM搜尋平台上的顯示方式，包括情緒分析和為其他品牌設定基準。</p>
+                    <p class="is-size-6">追蹤您的品牌在各個 LLM 搜尋平台上的顯示情況，包括情緒分析以及與其他品牌進行基準對照。</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
@@ -91,8 +91,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./agentic-traffic.md" title="代理流量儀表板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="代理流量儀表板"
+                    <a href="./agentic-traffic.md" title="代理式流量儀表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/agentic-traffic-card.png" alt="代理式流量儀表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -100,9 +100,9 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./agentic-traffic.md" target="_blank" rel="referrer" title="代理流量儀表板">代理流量儀表板</a>
+                        <a href="./agentic-traffic.md" target="_blank" rel="referrer" title="代理式流量儀表板">代理式流量儀表板</a>
                     </p>
-                    <p class="is-size-6">呈現傳統分析遺漏的LLM流量，協助您將AI協助的探索連結至參與和收入。</p>
+                    <p class="is-size-6">顯露傳統分析所遺漏的 LLM 流量，協助您將 AI 輔助的探索行為轉化為參與度和收入。</p>
                 </div>
                 <a href="./agentic-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
@@ -114,8 +114,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./referral-traffic.md" title="引薦流量儀表板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="引薦流量儀表板"
+                    <a href="./referral-traffic.md" title="轉介流量儀表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="轉介流量儀表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,9 +123,9 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="引薦流量儀表板">引薦流量儀表板</a>
+                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="轉介流量儀表板">轉介流量儀表板</a>
                     </p>
-                    <p class="is-size-6">測量源自AI產生引用以讓您發現實際AI使用者參與的人類造訪</p>
+                    <p class="is-size-6">衡量源自 AI 生成引用的真人造訪次數，讓您了解實際的 AI 使用者參與度</p>
                 </div>
                 <a href="./referral-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
@@ -137,8 +137,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./collaboration.md" title="Collaboration控制面板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/collaboration-card.png" alt="Collaboration控制面板"
+                    <a href="./collaboration.md" title="協作儀表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/collaboration-card.png" alt="協作儀表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -146,9 +146,9 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./collaboration.md" target="_blank" rel="referrer" title="Collaboration控制面板">Collaboration儀表板</a>
+                        <a href="./collaboration.md" target="_blank" rel="referrer" title="協作儀表板">協作儀表板</a>
                     </p>
-                    <p class="is-size-6">可讓您邀請同事加入共用工作區，藉此啟用跨職能團隊合作。</p>
+                    <p class="is-size-6">讓您可以邀請同事加入共用的工作環境，藉此實現跨部門的團隊合作</p>
                 </div>
                 <a href="./collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
@@ -171,7 +171,7 @@ ht-degree: 5%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./opportunities.md" target="_blank" rel="referrer" title="機會儀表板">機會儀表板</a>
                     </p>
-                    <p class="is-size-6">浮現並優先處理可操作的深入分析，以提升AI支援搜尋平台的品牌可見度和引文效能</p>
+                    <p class="is-size-6">顯露並優先處理能夠改善各 AI 支援的搜尋平台上品牌能見度和引用效能的可操作洞察</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
@@ -183,8 +183,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./url-inspector.md" title="URL檢視窗儀表板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/url-inspector-card.png" alt="URL檢視窗儀表板"
+                    <a href="./url-inspector.md" title="URL 檢查器儀表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/url-inspector-card.png" alt="URL 檢查器儀表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -192,9 +192,9 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./url-inspector.md" target="_blank" rel="referrer" title="URL檢視窗儀表板">URL檢視窗儀表板</a>
+                        <a href="./url-inspector.md" target="_blank" rel="referrer" title="URL 檢查器儀表板">URL 檢查器儀表板</a>
                     </p>
-                    <p class="is-size-6">可讓您檢視您擁有的URL在AI驅動搜尋環境中的表現。</p>
+                    <p class="is-size-6">讓您了解自有 URL 在 AI 驅動的搜尋環境中表現如何。</p>
                 </div>
                 <a href="./url-inspector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
@@ -217,7 +217,7 @@ ht-degree: 5%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./customer-configuration.md" target="_blank" rel="referrer" title="客戶設定儀表板">客戶設定儀表板</a>
                     </p>
-                    <p class="is-size-6">可讓組織控制Adobe LLM Optimizer根據其特定需求運作的方式。</p>
+                    <p class="is-size-6">讓組織控制 Adobe LLM Optimizer 如何根據其特定需求運作。</p>
                 </div>
                 <a href="./customer-configuration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>

@@ -1,33 +1,33 @@
 ---
-title: 在Edge最佳化 — Fastly (BYOCDN)
-description: 瞭解如何在LLM Optimizer中為Edge最佳化設定Fastly BYOCDN。
+title: 邊緣最佳化：Fastly (BYOCDN)
+description: 了解在 LLM Optimizer 中如何設定 Fastly BYOCDN 進行邊緣最佳化。
 feature: Opportunities
 source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
 # Fastly (BYOCDN)
 
-此設定會將代理流量（來自AI機器人和LLM使用者代理的請求）路由到Edge最佳化後端服務(`live.edgeoptimize.net`)。 系統仍照常從您的來源提供人類訪客和SEO機器人。 若要測試設定，安裝完成之後，請在回應中尋找標頭`x-edgeoptimize-request-id`。
+此設定會將代理式流量 (來自 AI 機器人和 LLM 使用者代理的要求) 路由至 Edge Optimize 後端服務 (`live.edgeoptimize.net`)。真人訪客和 SEO 機器人仍照常由您的來源伺服器提供服務。若要測試設定，在完成設定之後，請於回應中尋找 `x-edgeoptimize-request-id` 標頭。
 
 **先決條件**
 
-在設定Fastly VCL規則之前，請確定您具有：
+設定 Fastly VCL 規則之前，請確定您具備以下條件：
 
-* 為您的網域存取Fastly。
-* 已完成LLM Optimizer上線程式。
-* 已完成CDN記錄檔轉送至LLM Optimizer。
-* 從Edge UI擷取的LLM Optimizer最佳化API金鑰。
+* 您網域的 Fastly 存取權。
+* 已完成 LLM Optimizer 上線流程。
+* 已經將內容傳遞網路記錄轉送至 LLM Optimizer。
+* 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。
 
 {{retrieve-byocdn-api-key}}
 
-**組態**
+**設定**
 
-將下列三個VCL片段新增至您的Fastly服務。 這些程式碼片段會處理路由代理對Edge Optimize、快取金鑰分離和容錯移轉至預設來源的請求。
+將下列三個 VCL 程式碼片段新增至您的 Fastly 服務。這些程式碼片段會處理對 Edge Optimize、快取金鑰分離和容錯移轉至預設來源的路由代理式要求。
 
 ![Fastly VCL](/help/assets/optimize-at-edge/fastly-vcl.png)
 
@@ -75,54 +75,54 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 
 **容錯移轉**
 
-`vcl_deliver`程式碼片段會自動處理容錯移轉。 如果Edge Optimize傳回`4XX`或`5XX`錯誤，要求會重新啟動並路由回您的預設來源，讓一般使用者仍會收到回應。 容錯移轉回應包含`x-edgeoptimize-fo: 1`標頭。
+`vcl_deliver` 程式碼片段會自動處理容錯移轉。如果 Edge Optimize 傳回 `4XX` 或 `5XX` 錯誤，該要求會重新啟動並路由回到您的預設來源，讓一般使用者仍能收到回應。容錯移轉回應包含 `x-edgeoptimize-fo: 1` 標頭。
 
 | 情境 | 行為 |
 | --- | --- |
-| Edge最佳化傳回`2XX` | 最佳化的回應會提供給使用者端。 |
-| Edge最佳化傳回`4XX`或`5XX` | 系統會重新啟動要求，並從預設來源提供服務。 |
-| 容錯移轉回應 | 包含標頭`x-edgeoptimize-fo: 1`。 |
+| Edge Optimize 傳回 `2XX` | 最佳化的回應會傳送至用戶端。 |
+| Edge Optimize 傳回 `4XX` 或 `5XX` | 系統會重新啟動要求，並從預設來源提供。 |
+| 容錯移轉回應 | 包含標頭 `x-edgeoptimize-fo: 1`。 |
 
-**驗證安裝程式**
+**驗證設定**
 
-完成設定後，請確認正在將機器人流量路由至Edge Optimize，且人力流量不受影響。
+完成設定後，請確認機器人流量會路由至 Edge Optimize，而真人流量不受影響。
 
-**1. 測試機器人流量（應該最佳化）**
+**1. 測試機器人流量 (應經過最佳化)**
 
-使用代理使用者代理程式模擬AI機器人請求：
+運用代理式使用者代理模擬 AI 機器人要求：
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-成功的回應包含`x-edgeoptimize-request-id`標頭，確認要求已透過Edge最佳化路由：
+成功的回應會包含 `x-edgeoptimize-request-id` 標頭，確認要求已經透過 Edge Optimize 進行路由：
 
 ```
 < HTTP/2 200
 < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-**2. 測試人力流量（不應受影響）**
+**2. 測試真人流量 (不應受到影響)**
 
-模擬一般的人類瀏覽器請求：
+模擬一般真人瀏覽器要求：
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-回應應&#x200B;**不**&#x200B;包含`x-edgeoptimize-request-id`標頭。 在Edge中啟用「最佳化」之前，頁面內容和回應時間應保持相同。
+回應&#x200B;**不應**&#x200B;包含 `x-edgeoptimize-request-id` 標頭。頁面內容和回應時間應與啟用邊緣最佳化之前維持相同。
 
-**3. 如何區分這兩個案例**
+**3. 如何區分這兩種情境**
 
-| 頁首 | 機器人流量（最佳化） | 人類流量（未受影響） |
+| 頁首 | 機器人流量 (最佳化) | 真人流量 (不受影響) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | 存在 — 包含唯一的請求識別碼 | 不存在 |
-| `x-edgeoptimize-fo` | 只有在發生容錯移轉時才會出現（值： `1`） | 不存在 |
+| `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
+| `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-流量路由的狀態也可以在LLM Optimizer UI中檢視。 瀏覽至&#x200B;**客戶組態**&#x200B;並選取&#x200B;**CDN組態**&#x200B;標籤。
+您也可以在 LLM Optimizer 使用者介面中確認流量路由的狀態。導覽至「**客戶設定**」，然後選取「**內容傳遞網路設定**」標籤。
 
-已啟用路由的![AI流量路由狀態](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+![已啟用路由的 AI 流量路由狀態](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 {{return-to-overview}}

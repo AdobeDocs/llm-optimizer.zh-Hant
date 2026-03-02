@@ -3,16 +3,16 @@ title: 快速入門
 description: 開始使用 Adobe LLM Optimizer，讓您的品牌上線、獲取 AI 能見度洞察，並探索儀表板以提高搜尋效能。
 feature: Quickstart, Onboarding
 source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # 快速入門
 
-若要開始使用LLM Optimizer，您必須完成入門流程，如下列步驟所述。 完成上線流程後，您將擁有 [LLM Optimizer 儀表板](/help/dashboards/dashboards-overview.md)和其他功能的完整存取權。
+若要開始使用 LLM Optimizer，您必須按照以下步驟所述完成上線流程。完成上線流程後，您將擁有 [LLM Optimizer 儀表板](/help/dashboards/dashboards-overview.md)和其他功能的完整存取權。
 
 ## 上線概觀
 
@@ -33,12 +33,12 @@ ht-degree: 93%
 
 ### 先試用再購買
 
-AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service)客戶可選擇使用&#x200B;**購買前先試用**&#x200B;優惠。 這是 LLM Optimizer 免費試用版，提供最多 200 個免費提示。 使用 200 個以上的提示需有單獨的授權合約。 依「現狀」及「現可提供」之基礎提供存取權，並可由 Adobe 隨時修改、限制或移除。
+AEM Cloud (Cloud Service、Managed Services、Edge Delivery Service) 的客戶可以選擇使用&#x200B;**先試用再購買**&#x200B;優惠。這是 LLM Optimizer 免費試用版，提供最多 200 個免費提示。 使用 200 個以上的提示需有單獨的授權合約。 依「現狀」及「現可提供」之基礎提供存取權，並可由 Adobe 隨時修改、限制或移除。
 
 免費版本並未提供部分產品功能：
 
 * 試用版僅限一個網域使用。 完成設定後，您就無法變更所提供的網域。
-* 部署最佳化的功能可在搶先使用中取得。 如需詳細資訊，請參閱[在Edge中最佳化常見問題](https://experienceleague.adobe.com/zh-hant/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
+* 搶先體驗版提供部署最佳化項目的功能。如需了解更多相關資訊，請參閱[邊緣最佳化常見問題](https://experienceleague.adobe.com/zh-hant/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
 
 關於如何啟用免費試用版並將您的網域上線的詳細資訊，請參閱以下區段。
 

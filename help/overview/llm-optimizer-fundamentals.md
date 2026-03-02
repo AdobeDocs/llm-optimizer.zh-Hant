@@ -1,67 +1,67 @@
 ---
-title: LLM Optimizer基本需知
-description: 瞭解Adobe LLM Optimizer如何促進AI導向式搜尋的品牌可見度。 追蹤提及次數、引文和深入分析。 立即開始最佳化，以提升參與度和影響力。
+title: LLM Optimizer 基本知識
+description: 了解 Adobe LLM Optimizer 如何在 AI 驅動的搜尋中提高品牌能見度。 追蹤提及次數、引用次數和洞察。 立即開始最佳化，以利增進參與度和影響力。
 source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# LLM Optimizer基本需知
+# LLM Optimizer 基本知識
 
-此頁面詳細說明下列專案：
+此頁面詳細說明下列內容：
 
-* [什麼是Adobe LLM Optimizer](#what-is-adobe-llm-optimizer)
-* [什麼是LLM Optimizer功能](#what-are-llm-optimizer-capabilities)
-* [為何LLM最佳化對您的品牌很重要](#why-llm-optimization-matters-for-your-brand)
-* [哪些人應該使用Adobe LLM Optimizer](#who-should-use-adobe-llm-optimizer)
-* [Adobe LLM Optimizer可以做什麼](#what-can-i-do-with-adobe-llm-optimizer)
+* [什麼是 Adobe LLM Optimizer](#what-is-adobe-llm-optimizer)
+* [LLM Optimizer 有哪些功能](#what-are-llm-optimizer-capabilities)
+* [為什麼 LLM 最佳化對您的品牌很重要](#why-llm-optimization-matters-for-your-brand)
+* [哪些人應該使用 Adobe LLM Optimizer](#who-should-use-adobe-llm-optimizer)
+* [我可以使用 Adobe LLM Optimizer 做哪些事](#what-can-i-do-with-adobe-llm-optimizer)
 
-## 什麼是Adobe LLM Optimizer？
+## 什麼是 Adobe LLM Optimizer？
 
-Adobe LLM Optimizer是創作AI優先的應用程式，適用於Generative Engine Optimization （也稱為Answer Engine Optimization），旨在協助品牌在AI驅動的搜尋環境中提升其可見度、準確性和影響力。 它提供AI產生之答案中品牌存在感的深入分析、提供規範性內容建議，並自動化最佳化修正。
+Adobe LLM Optimizer 是生成式 AI 優先的應用程式並適用於生成式引擎最佳化 (亦稱為回答引擎最佳化)，專門協助各品牌在 AI 驅動的搜尋環境中提升能見度、準確性和影響力。 此應用程式可以針對品牌在 AI 生成回答中的存在感進行洞察分析、提供指示性內容建議，並自動執行最佳化修正。
 
-## 什麼是LLM Optimizer功能？
+## LLM Optimizer 有哪些功能？
 
-Adobe LLM Optimizer提供一套工具，專門針對產生式引擎最佳化而設計：
+Adobe LLM Optimizer 提供一套專為生成式引擎最佳化設計的工具：
 
-* 測量品牌可見度：透過設定基準的清晰可見度分數，追蹤您的品牌出現在AI支援的搜尋結果中的時間、地點和頻率。
-* 設定其他人的基準：將您的品牌聲音份額和實力與競爭對手和其他創作引擎的人比較。
-* 發現可操作的機會：找出內容和技術改進(例如常見問題集、摘要、結構描述、可抓取性)，以增加提及次數和引用次數。
-* 追蹤流量影響：監視代理（AI助理）和引薦流量到您擁有的屬性，將可見度連結到參與。
-* 啟用Team Collaboration：在行銷、SEO和通訊團隊之間共用儀表板、指派擁有者並調整目標。
+* 衡量品牌能見度：追蹤您的品牌出現在 AI 驅動的搜尋結果中的時間點、位置和頻率，並提供明確的能見度分數以利進行基準分析。
+* 其他品牌基準對照：將您的品牌之聲量佔比和存在感，與競爭者和生成式引擎中的其他品牌進行比較。
+* 探索可操作的機會：找出內容與技術方面需改進的地方 (例如常見問答集、摘要、結構描述、可抓取性)，以增加提及次數和引用次數。
+* 追蹤流量影響：監視指向您的自有資產的代理式 (AI 助理) 和轉介流量，將能見度與參與度關聯。
+* 實現團隊協作：共用儀表板、指派負責人，並讓行銷、SEO 和傳播團隊的目標保持一致。
 
-## 為何LLM最佳化對您的品牌很重要
+## 為什麼 LLM 最佳化對您的品牌很重要
 
-* AI產生的答案正在重塑消費者探索。
-* LLM Optimizer可確保您的品牌在這些環境中可見、準確且具有影響力。
-* 它將AI可見度與參與度和收入等實際業務成果聯絡起來。
-* 在零點按歷程的世界中，此工具對於保持競爭力至關重要。
+* AI 生成回答正在重塑消費者的探索行為。
+* LLM Optimizer 可確保您的品牌在這些環境中具備能見度、準確性和影響力。
+* 此工具將 AI 能見度轉化為實質的業務成果，例如參與度和收入。
+* 在零點按歷程的環境中，此工具是保持競爭力的關鍵所在。
 
-## 哪些人應該使用Adobe LLM Optimizer？
+## 哪些人應該使用 Adobe LLM Optimizer？
 
-產生式引擎最佳化本質上是跨功能的。 LLM Optimizer是使用此鏡頭為下列不同角色設計的：
+生成式引擎最佳化在本質上就必須跨部門運作。 LLM Optimizer 的設計從這個角度出發，針對以下不同的人物誌量身打造：
 
-* **行銷經理**&#x200B;測量AI 搜尋中的品牌可見度和促銷活動有效性。
-* **SEO分析人員**&#x200B;追蹤品牌提及、引用次數和其他深入分析，以利提供內容策略資訊。
-* **PR與通訊管理員**&#x200B;由協力廠商平台追蹤LLM中的品牌認知度，並處理錯誤資訊、管理情緒及保護品牌信任。
+* **行銷經理**&#x200B;要衡量 AI 搜尋中的品牌能見度和行銷活動成效。
+* **SEO 分析人員**&#x200B;要追蹤品牌提及次數、引用次數和其他洞察，作為制定內容策略的參考。
+* **公關傳播經理**&#x200B;透過第三方平台追蹤 LLM 的品牌知覺，並處理錯誤資訊、管理情緒及維護品牌信任度。
 
-## Adobe LLM Optimizer有什麼用處？
+## 我可以使用 Adobe LLM Optimizer 做哪些事？
 
-透過Adobe LLM Optimizer，您可以：
+您可以使用 Adobe LLM Optimizer：
 
-**測量品牌可見度** — 追蹤在AI支援的搜尋結果中提及您品牌的時間、地點和頻率。 透過清晰的可見度分數超越猜測，您可以隨時間設定基準。
-**設定其他人的基準** — 瞭解您的品牌如何與產生式引擎中的其他品牌相抗衡。 找出聲音份額差距，發掘競爭優勢。
-**探索可操作的機會** — 找出直接增加提及次數和引述次數的技術機會（例如常見問題集、摘要、結構描述）和技術機會(可抓取性、索引問題)。
-**追蹤來自AI**&#x200B;的流量影響 — 監視代理流量（來自AI助理）並引薦流量（來自引文的使用者點按）到您擁有的屬性。 將GEO可見性與實際參與度繫結。
-**啟用團隊Collaboration** — 共用儀表板、指派提示或類別的擁有者，並確保在行銷、SEO和通訊功能間追蹤可見性目標。
+**衡量品牌能見度**：追蹤在 AI 驅動的搜尋結果中提及您品牌的時間點、位置和頻率。 獲取明確的能見度分數，可以針對一段時間進行基準分析，不必再憑猜測行動。
+**其他品牌基準對照**：了解在生成式引擎中您的品牌與其他品牌的競爭實力對比。 找出聲量佔比的缺口並揭示競爭優勢。
+**探索可操作的機會**：找出可以直接增加被提及和引用次數的內容改進機會 (例如常見問題集、摘要、結構描述) 和技術改進機會 (可抓取性、索引問題)。
+**追蹤來自 AI 的流量影響**：監視指向您的自有資產的代理式流量 (來自 AI 助理) 和轉介流量 (來自引用來源的使用者點按)。 將 GEO 能見度與實質的參與度相關聯。
+**實現團隊協作**：共用儀表板、指派提示或類別的負責人，以及確實追蹤橫跨行銷、SEO 和傳播部門的能見度目標。
 
 
 ## 參照
 
-在此新增更多連結和詳細資料。
+在這裡新增更多連結和詳細資料。
 
 
 
