@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
 workflow-type: tm+mt
 source-wordcount: '2181'
-ht-degree: 84%
+ht-degree: 99%
 
 ---
 
@@ -47,27 +47,27 @@ ht-degree: 84%
 * 完成內容傳遞網路記錄的記錄轉送流程。
 
 您的 IT/內容傳遞網路團隊需滿足的要求：
-* 將`*AdobeEdgeOptimize/1.0*`使用者代理程式新增至您網站的robots.txt檔案或bot-traffic管理規則中的允許清單。
+* 在網站中的 robots.txt 檔案或機器人流量管理規則的允許清單中，加入 `*AdobeEdgeOptimize/1.0*` 使用者代理。
 * 請確認在網域或內容傳遞網路層級並未封鎖頁面。
 * 在內容傳遞網路中新增邊緣最佳化路由規則。
 * 在 LLM Optimizer 介面中確認邊緣最佳化路由。
 
-若要引導設定流程，請在下方選取您的CDN提供者，並遵循對應的設定指南。 請記住，您應該根據實際的上線設定調整這些範例。 我們建議先在較低階的環境套用變更。
+若要引導設定流程，請在下方選取您的內容傳遞網路提供者，並按照相應的設定指南操作。 請記住，您應該根據實際的上線設定調整這些範例。 我們建議先在較低階的環境套用變更。
 
-### CDN設定指南
+### 內容傳遞網路設定指南
 
 | 內容傳遞網路提供者 | 類型 | 指南 |
 |---|---|---|
-| AEM Cloud Service Managed CDN (Fastly) | Adobe 管理 | [檢視安裝指南](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md) |
-| Fastly (BYOCDN) | 自備CDN | [檢視安裝指南](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
-| Akamai (BYOCDN) | 自備CDN | [檢視安裝指南](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
-| Cloudflare (BYOCDN) | 自備CDN | [檢視安裝指南](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
-| CloudFront (BYOCDN) | 自備CDN | [檢視安裝指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
+| AEM Cloud Service 管理的內容傳遞網路 (Fastly) | Adobe 管理 | [檢視設定指南](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md) |
+| Fastly (BYOCDN) | 自備內容傳遞網路 | [檢視設定指南](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
+| Akamai (BYOCDN) | 自備內容傳遞網路 | [檢視設定指南](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
+| Cloudflare (BYOCDN) | 自備內容傳遞網路 | [檢視設定指南](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
+| CloudFront (BYOCDN) | 自備內容傳遞網路 | [檢視設定指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
->如果您的CDN提供者未列入上述清單，或您在LLM Optimizer UI中找不到您的網域或電子郵件，請聯絡`llmo-at-edge@adobe.com`以取得入門協助。 完成設定後，您可以在 LLM Optimizer 中部署邊緣最佳化機會之建議。
+>如果上述清單內並未列出您的內容傳遞網路提供者，或您在 LLM Optimizer 使用者介面中找不到您的網域或電子郵件，請聯絡 `llmo-at-edge@adobe.com` 取得上線協助。 完成設定後，您可以在 LLM Optimizer 中部署邊緣最佳化機會之建議。
 
-上述每個CDN設定指南在結尾都包含詳細的驗證步驟，以確認代理流量正確路由以及人力流量保持不受影響。
+上述每項內容傳遞網路設定指南在結尾皆有提供詳細的驗證步驟，可以確認代理式流量依正確方式路由，而且真人流量並未受到影響。
 
 ## 機會
 
@@ -84,7 +84,7 @@ ht-degree: 84%
 
 [Adobe LLM Optimizer：您的網頁可被引用嗎？](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome 擴充功能會顯示 LLM 可存取您的網頁多少內容以及哪些內容被隱藏。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -114,7 +114,7 @@ ht-degree: 84%
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
@@ -166,7 +166,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 問：當來源更新內容時會發生什麼事？
 
-只要基礎來源頁面未變更，我們就會從快取中提供您頁面的最佳化版本。 不過，當來源確實變更&#x200B;**復原內容可見度**&#x200B;時，我們的系統會自動重新整理，因此AI代理程式一律會收到最新的內容。 這是因為我們使用低快取存留時間(TTL)設定（依分鐘數順序），因此您網站上的任何內容更新都會觸發該視窗中的新最佳化。 針對&#x200B;**新增LLM友善摘要**&#x200B;等內容機會，LLM Optimizer會監控來源頁面是否有變更。 如果偵測到變更，我們會暫停最佳化並將其標幟為人類檢閱，以防止代理程式可見頁面和人類可見頁面之間的內容漂移。
+只要基礎的來源頁面未變更，我們會從快取提供頁面的最佳化版本。 但是，當來源的&#x200B;**復原內容能見度**&#x200B;確實有所變更時，我們的系統會自動重新整理，讓 AI 代理總是收到最新的內容。 這是因為我們使用低快取存留時間 (TTL) 設定 (通常只有數分鐘)，以便您的網站上任何內容更新都會在該視窗中觸發新的最佳化。 針對&#x200B;**新增 LLM 友善摘要**等內容機會，LLM Optimizer 會監控來源頁面是否有所變更。 如果偵測到變更，我們會暫停最佳化並標記為人工審閱，防止代理可見頁面和真人可見頁面之間的內容偏差。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 問：邊緣最佳化是否僅適用於使用 Adobe Edge Delivery Service (EDS) 的網站？
@@ -177,6 +177,6 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 兩者各解決不同的問題，但可以搭配運作。 傳統 SSR 會轉譯伺服器端的內容，但不包含後來在瀏覽器中載入的內容。 邊緣最佳化預先轉譯在 JavaScript 和用戶端資料載入後擷取頁面，在內容傳遞網路邊緣產生完全組裝的版本。 SSR 著重於改善真人使用體驗，而邊緣最佳化則是改善 LLM 的網頁體驗。
 
-問：如果我為網域中的部分URL （而非全部）部署最佳化，會發生什麼事？
+問：如果我只針對網域中的部分 URL (而非全部) 部署最佳化，會發生什麼事？
 
-只會修改您明確最佳化的URL。 對於具有已部署機會的URL，AI代理程式會收到最佳化版本。 對於沒有已部署機會的URL，我們的服務只會依原樣代理原始頁面，而不會套用變更或將其儲存在最佳化快取階層。 這可確保您可選擇性地部署最佳化，而不會影響網站的其餘部分。
+唯有您明確最佳化的 URL 會被修改。 對於已部署機會的 URL，AI 代理會收到最佳化版本。 對於並未部署任何機會的 URL，我們的服務只會依原樣代理原始頁面，而不會套用變更或將其儲存在最佳化快取層中。 這樣的做法讓您可以選擇性部署最佳化，而不會影響網站的其餘部分。
