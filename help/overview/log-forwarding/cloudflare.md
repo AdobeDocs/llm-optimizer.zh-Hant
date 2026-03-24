@@ -1,102 +1,102 @@
 ---
-title: 記錄轉送 — Cloudflare
-description: 瞭解如何將CDN記錄檔從Cloudflare轉送至Adobe的S3貯體，以便在LLM Optimizer中收集代理流量資料。
+title: 記錄轉送 - Cloudflare
+description: 了解如何將內容傳遞網路記錄從 Cloudflare 轉送至 Adobe 的 S3 貯體，以便在 LLM Optimizer 中收集代理式流量資料。
 feature: Agentic Traffic
 source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 記錄轉送： Cloudflare {#log-forwarding-cloudflare}
+# 記錄轉送：Cloudflare {#log-forwarding-cloudflare}
 
-本頁面詳細說明如何將CDN記錄檔從Cloudflare轉送至Adobe的S3儲存貯體，以進行代理流量資料收集。 您將使用LLM Optimizer CDN設定頁面加入LLM Optimizer。 上線流程完成後，請依照本頁提供的步驟，在Cloudflare儀表板主控台中設定記錄轉送。
+本頁面詳細說明如何將內容傳遞網路記錄從 Cloudflare 轉送至 Adobe 的 S3 貯體，以收集代理式流量資料。您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。完成上線流程後，請依照本頁面提供的步驟，在 Cloudflare 儀表板控制台中設定記錄轉送。
 
-## 步驟1：在LLM Optimizer中加入 {#step-1}
+## 步驟 1：在 LLM Optimizer 上線 {#step-1}
 
-在LLM Optimizer頁面[https://llmo.now/](https://llmo.now/)上：
+在 LLM Optimizer 頁面 [https://llmo.now/](https://llmo.now/)：
 
-1. 前往&#x200B;**客戶設定儀表板**。
+1. 前往「**客戶設定儀表板**」。
 
-   ![設定按鈕](/help/overview/assets/log-forwarding/common/config-button.png)
+   ![「設定」按鈕](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. 按一下「**CDN組態**」標籤。
+1. 按一下「**內容傳遞網路設定**」分頁。
 
-   ![CDN設定索引標籤](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![「內容傳遞網路設定」分頁](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. 按一下&#x200B;**開始使用**。
+1. 按一下「**開始使用**」。
 
    <!-- ![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png) -->
 
-1. 在&#x200B;**啟用AI流量深入分析**&#x200B;旁邊，按一下&#x200B;**設定**。
+1. 在「**啟用 AI 流量洞察**」旁邊，按一下「**設定**」。
 
    ![設定](/help/overview/assets/log-forwarding/common/configure.png)
 
-1. 選取&#x200B;**Cloudflare (BYOCDN)**。
+1. 選取「**Cloudflare (BYOCDN)**」。
 
-   ![選取Cloudflare](/help/overview/assets/log-forwarding/cloudflare/cloudflare-select.png)
+   ![選取「Cloudflare」](/help/overview/assets/log-forwarding/cloudflare/cloudflare-select.png)
 
-1. 按一下&#x200B;**內建**。
+1. 按一下「**上線**」。
 
    <!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
-## 步驟2：在Cloudflare中建立Logpush工作 {#step-2}
+## 步驟 2：在 Cloudflare 中建立 Logpush 工作 {#step-2}
 
-在[Cloudflare儀表板](https://dash.cloudflare.com/login)上，請遵循下列步驟：
+在 [Cloudflare 儀表板](https://dash.cloudflare.com/login)上，按照下列步驟操作：
 
-1. 移至&#x200B;**網域（區域）**&#x200B;層級的&#x200B;**Logpush**&#x200B;頁面。
-1. 選取&#x200B;**建立Logpush工作**。
-1. 在&#x200B;**選取目的地**&#x200B;中，選擇&#x200B;**Amazon S3**。
-1. 輸入下列目的地資訊：
+1. 前往「**網域 (區域)**」層級的 **Logpush** 頁面。
+1. 選取「**建立 Logpush 工作**」。
+1. 在「**選取目標**」中，選擇「**Amazon S3**」。
+1. 輸入下列目標資訊：
 
-   - **Bucket** — S3 Bucket名稱。 從LLM Optimizer CDN設定頁面複製值。
+   - **貯體**：S3 貯體名稱。從 LLM Optimizer 內容傳遞網路設定頁面複製該值。
 
-     ![儲存貯體名稱](/help/overview/assets/log-forwarding/common/bucket-name.png)
+     ![貯體名稱](/help/overview/assets/log-forwarding/common/bucket-name.png)
 
-   - **路徑** — 儲存容器中的貯體位置。 從LLM Optimizer CDN設定頁面複製值。
+   - **路徑**：儲存體容器中的貯體位置。從 LLM Optimizer 內容傳遞網路設定頁面複製該值。
 
-     ![Cloudflare路徑](/help/overview/assets/log-forwarding/cloudflare/cloudflare-path.png)
+     ![Cloudflare 路徑](/help/overview/assets/log-forwarding/cloudflare/cloudflare-path.png)
 
-   - **將記錄檔整理到每日子資料夾** （建議使用）。
+   - **整理記錄並存放至按日建立的子資料夾** (建議使用)。
 
-     ![每日子資料夾](/help/overview/assets/log-forwarding/cloudflare/cloudflare-daily-subfolders.png)
+     ![按日建立的子資料夾](/help/overview/assets/log-forwarding/cloudflare/cloudflare-daily-subfolders.png)
 
-   - **貯體區域** — 從LLM Optimizer CDN設定頁面複製值。
+   - **貯體區域**：從 LLM Optimizer 內容傳遞網路設定頁面複製該值。
 
      <!-- ![Region](/help/overview/assets/log-forwarding/cloudflare/cloudflare-region.png)-->
 
-   - 如果不需要伺服器端加密，請保持未勾選狀態。
+   - 如果不需要伺服器端加密，請不要勾選。
 
-   完成上述步驟後，請選取&#x200B;**繼續**。
+   完成上述步驟後，請選取「**繼續**」。
 
-1. 為了證明所有權，Cloudflare會將檔案傳送至您指定的目的地。 若要尋找Token，請按一下所有權挑戰檔案&#x200B;**總覽**&#x200B;索引標籤中的&#x200B;**開啟**&#x200B;按鈕。 從LLM Optimizer CDN設定頁面複製擁有權權權杖，然後貼到Cloudflare儀表板中，驗證您對貯體的存取權。 輸入所有權權杖並選取&#x200B;**繼續**。
+1. 為了證明所有權，Cloudflare 會將一個檔案傳送至您指定的目標。若要尋找權杖，請在所有權挑戰檔案的「**概觀**」分頁中按一下「**開啟**」按鈕。從 LLM Optimizer 內容傳遞網路設定頁面複製所有權權杖，然後貼到 Cloudflare 儀表板中，驗證您對貯體的存取權。輸入所有權權杖並選取「**繼續**」。
 
    <!--![Ownership token](/help/overview/assets/log-forwarding/cloudflare/cloudflare-ownership-token.png)-->
 
-1. 選取&#x200B;**HTTP要求**&#x200B;資料集，以推送至儲存服務。
+1. 選取「**HTTP 要求**」資料集，以推播至儲存服務。
 
-1. 設定您的Logpush工作：
+1. 設定您的 Logpush 工作：
 
    - 輸入&#x200B;**工作名稱**。
 
-   - 在&#x200B;**傳送下列欄位**&#x200B;中，檢視LLM Optimizer設定頁面中的值。
+   - 在「**傳送下列欄位**」中，檢視 LLM Optimizer 設定頁面中的值。
 
-     ![Logpush欄位](/help/overview/assets/log-forwarding/cloudflare/cloudflare-logpush-fields.png)
+     ![Logpush 欄位](/help/overview/assets/log-forwarding/cloudflare/cloudflare-logpush-fields.png)
 
-   - **記錄格式**： JSON。
+   - **記錄格式**：JSON。
 
      <!--![JSON format](/help/overview/assets/log-forwarding/cloudflare/cloudflare-json-format.png)-->
 
-1. 在&#x200B;**進階選項**&#x200B;中：
+1. 在「**進階選項**」中：
 
-   - 選擇記錄檔中時間戳記欄位的格式： `RFC3339`。
+   - 選擇記錄中的時間戳記欄位格式：`RFC3339`。
 
      ![時間戳記格式](/help/overview/assets/log-forwarding/cloudflare/cloudflare-timestamp-format.png)
 
-   - 針對取樣速率，選取&#x200B;**所有記錄**。
+   - 針對抽樣率，選取「**所有記錄**」。
 
-     ![取樣速率](/help/overview/assets/log-forwarding/cloudflare/cloudflare-sampling-rate.png)
+     ![抽樣率](/help/overview/assets/log-forwarding/cloudflare/cloudflare-sampling-rate.png)
 
-1. 完成設定Logpush工作之後，請選取&#x200B;**提交**。
+1. Logpush 工作設定完成後，請選取「**提交**」。

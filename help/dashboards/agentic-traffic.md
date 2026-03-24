@@ -3,9 +3,9 @@ title: 代理式流量
 description: 了解如何使用代理式流量儀表板，以便查看 AI 代理如何與您的網站互動。
 feature: Agentic Traffic
 source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1333'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 98%
 如果您選取「**其他**」，則必須聯絡 llmo-now@adobe.com 以取得協助。
 
 >[!NOTE]
->如需使用客戶管理的CDN (BYOCDN)時記錄轉送的詳細資訊，請參閱[BYOCDN記錄轉送概觀](/help/overview/log-forwarding/log-forwarding-overview.md)
+>關於使用客戶管理的內容傳遞網路 (BYOCDN) 時進行記錄轉送的詳細資訊，請參閱 [BYOCDN 記錄轉送概觀](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 在啟用後，系統會攝取記錄檔，且儀表板會填入各項量度，例如代理互動總數、成功率、依市場區分的點擊數、使用者代理分析和 URL 層級效能。
 

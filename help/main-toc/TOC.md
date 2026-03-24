@@ -3,9 +3,9 @@ user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 利用 Adobe LLM Optimizer 提升您的品牌。 追蹤提及次數、揭露洞察，並主導 AI 驅動的搜尋。 掌控您的能見度，馬上開始最佳化！
 source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '98'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 91%
    + [機會](/help/dashboards/opportunities.md)
    + [客戶設定](/help/dashboards/customer-configuration.md)
    + [協作](/help/dashboards/collaboration.md)
-+ BYOCDN記錄轉送{#log-forwarding}
++ BYOCDN 記錄轉送{#log-forwarding}
    + [概觀](/help/overview/log-forwarding/log-forwarding-overview.md)
    + [Akamai](/help/overview/log-forwarding/akamai.md)
    + [Cloudflare](/help/overview/log-forwarding/cloudflare.md)
    + [CloudFront](/help/overview/log-forwarding/cloudfront.md)
    + [Fastly](/help/overview/log-forwarding/fastly.md)
-   + [imperva](/help/overview/log-forwarding/imperva.md)
-   + [其他（手動上傳）](/help/overview/log-forwarding/other.md)
+   + [Imperva](/help/overview/log-forwarding/imperva.md)
+   + [其他 (手動上傳)](/help/overview/log-forwarding/other.md)
 + 其他資源{#resources}
    + 邊緣最佳化{#optimize-at-edge}
       + [概觀](/help/dashboards/optimize-at-edge/overview.md)
