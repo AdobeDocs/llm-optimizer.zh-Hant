@@ -3,7 +3,7 @@ title: LLM Optimizer 最佳做法
 description: 探索 LLM 最佳化的最佳做法，以便在 AI 搜尋中提升品牌能見度。 用於基準對照和內容最佳化的洞察分析。
 feature: Best Practices, Agentic Traffic, Brand Presence
 source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1718'
 ht-degree: 100%
 

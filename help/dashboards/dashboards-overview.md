@@ -3,7 +3,7 @@ title: 儀表板概觀
 description: 這是文章概觀。
 feature: Onboarding
 source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
 ht-degree: 100%
 
