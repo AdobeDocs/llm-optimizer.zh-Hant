@@ -2,8 +2,8 @@
 title: 最佳化機會
 description: 了解如何使用機會儀表板，以自動偵測您的網站可以如何針對提升品牌能見度進行改善。
 feature: Opportunities
-source-git-commit: 3204d46106b4ae1645df19138cabd55bf153eb42
-workflow-type: ht
+source-git-commit: f62148a9073e79d63e6ae19f0585aa87c16bcd3e
+workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 100%
 
@@ -41,13 +41,17 @@ ht-degree: 100%
 
 透過自動最佳化，可以一鍵部署所建議的最佳化，減少手動作業並縮短實現價值的時間。 可以在內容來源或是內容傳遞網路邊緣套用最佳化。 預先體驗版目前針對特定機會提供邊緣型自動最佳化。 如需詳細資訊，請參閱 [邊緣最佳化](/help/dashboards/optimize-at-edge/overview.md) 頁面。
 
-<!--### Recover Content Visibility Opportunity {#recover-contet}
+<!--
+### Recover Content Visibility Opportunity {#recover-contet}
 
-As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.-->
+As stated above, the content visibility opportunity, flags pages where key content is lost for AI agents due to client-side rendering. For each identified page, it shows you exactly which content is missing from the AI agent view, helping you pinpoint visibility gaps. It's also supported by an edge-based pre-rendering capability that can serve more HTML content to agentic traffic without requiring Content Management System (CMS) changes. This functionality is currently in Early Access and requires setup from the LLM Optimizer team. Please contact `llmo-at-edge@adobe.com` to activate the content visibility opportunity.
+-->
 
 ### 其他工具
 
 [LLM 能見度檢查程式](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc)是 Chrome 擴充功能，讓您精準了解 LLM 可以存取您的網站多少內容，以及哪些內容仍是隱藏狀態。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。 只要點按一次，使用者就可以評估任何網站的電腦可讀性，用並排比較的方式查看 AI 代理與人類使用者看到的內容。 此外，也會預估使用 LLM Optimizer 可以復原多少內容。
 
-<!--| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
-| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |-->
+<!--
+| Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
+| Detect Missing Canonicals | Content (Onsite) | Scans for pages without canonical tags or with conflicting tags. Lists affected URLs and duplicates. | Add canonical tags pointing to the preferred version of each page. Ensure consistent usage across variants. |
+-->

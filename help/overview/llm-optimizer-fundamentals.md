@@ -1,8 +1,8 @@
 ---
 title: LLM Optimizer 基本知識
 description: 了解 Adobe LLM Optimizer 如何在 AI 驅動的搜尋中提高品牌能見度。 追蹤提及次數、引用次數和洞察。 立即開始最佳化，以利增進參與度和影響力。
-source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -70,7 +70,8 @@ Adobe LLM Optimizer 提供一套專為生成式引擎最佳化設計的工具：
 
 
 
-<!--## Understanding Brand Visibility and AI Search
+<!--
+## Understanding Brand Visibility and AI Search
 
 Use these as guidelines for creating tutorials - some may be covered already in docs
 
@@ -127,18 +128,5 @@ Use these as guidelines for creating tutorials - some may be covered already in 
 
 * Categories and Topics
 * Brand and Competitor Aliases
-* Domain Switching and Customization -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Domain Switching and Customization
+-->

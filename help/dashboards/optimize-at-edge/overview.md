@@ -2,8 +2,8 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '2181'
 ht-degree: 100%
 
@@ -15,6 +15,7 @@ ht-degree: 100%
 本頁面將詳細介紹如何在不變更原始內容的情況下，在內容傳遞網路邊緣完成最佳化。 本頁面會說明上線流程、可用的最佳化機會，以及如何在邊緣進行自動最佳化。
 
 >[!NOTE]
+>
 >目前在搶先體驗版中提供這項功能。 關於搶先體驗方案的詳細資訊請參閱[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)。
 
 ## 什麼是邊緣最佳化？
@@ -47,6 +48,7 @@ ht-degree: 100%
 * 完成內容傳遞網路記錄的記錄轉送流程。
 
 您的 IT/內容傳遞網路團隊需滿足的要求：
+
 * 在網站中的 robots.txt 檔案或機器人流量管理規則的允許清單中，加入 `*AdobeEdgeOptimize/1.0*` 使用者代理。
 * 請確認在網域或內容傳遞網路層級並未封鎖頁面。
 * 在內容傳遞網路中新增邊緣最佳化路由規則。
@@ -65,6 +67,7 @@ ht-degree: 100%
 | CloudFront (BYOCDN) | 自備內容傳遞網路 | [檢視設定指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
+>
 >如果上述清單內並未列出您的內容傳遞網路提供者，或您在 LLM Optimizer 使用者介面中找不到您的網域或電子郵件，請聯絡 `llmo-at-edge@adobe.com` 取得上線協助。 完成設定後，您可以在 LLM Optimizer 中部署邊緣最佳化機會之建議。
 
 上述每項內容傳遞網路設定指南在結尾皆有提供詳細的驗證步驟，可以確認代理式流量依正確方式路由，而且真人流量並未受到影響。
@@ -84,7 +87,7 @@ ht-degree: 100%
 
 [Adobe LLM Optimizer：您的網頁可被引用嗎？](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome 擴充功能會顯示 LLM 可存取您的網頁多少內容以及哪些內容被隱藏。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -114,7 +117,7 @@ ht-degree: 100%
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
@@ -152,13 +155,15 @@ ht-degree: 100%
 
 要鎖定的使用者代理清單是由您在上線流程中定義的。
 
-<!--Q. What does "Edge" in Optimize at Edge mean?
+<!--
+Q. What does "Edge" in Optimize at Edge mean?
 
 In our context, "Edge" means that the optimization is applied at the CDN layer and not inside your CMS.
 
 Q. Why does this optimization require a CDN?
 
-The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.-->
+The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.
+-->
 
 問：如果我尚未開始使用邊緣最佳化，會發生什麼事？
 

@@ -2,8 +2,8 @@
 title: 儀表板概觀
 description: 這是文章概觀。
 feature: Onboarding
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
-workflow-type: ht
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
+workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 100%
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 
 主要視圖包括概觀、品牌存在感、代理式和轉介流量、URL 檢查器、機會、協作和客戶設定。
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./brand-presence.md
   {title= Brand presence dashboard}
