@@ -2,17 +2,17 @@
 title: 邊緣最佳化：Akamai (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Akamai BYOCDN 進行邊緣最佳化。
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
-workflow-type: ht
-source-wordcount: '587'
-ht-degree: 100%
+source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 78%
 
 ---
 
 
 # Akamai (BYOCDN)
 
-此設定會將代理式流量 (來自 AI 機器人和 LLM 使用者代理的要求) 路由至 Edge Optimize 後端服務 (`live.edgeoptimize.net`)。真人訪客和 SEO 機器人仍照常由您的來源伺服器提供服務。若要測試設定，在完成設定之後，請於回應中尋找 `x-edgeoptimize-request-id` 標頭。
+此設定會將代理式流量 (來自 AI 機器人和 LLM 使用者代理的要求) 路由至 Edge Optimize 後端服務 (`live.edgeoptimize.net`)。 真人訪客和 SEO 機器人仍照常由您的來源伺服器提供服務。 若要測試設定，在完成設定之後，請於回應中尋找 `x-edgeoptimize-request-id` 標頭。
 
 **先決條件**
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 **設定**
 
-下列 Akamai Property Manager 規則會將 LLM 使用者代理路由至 Edge Optimize。設定包含以下步驟：
+下列 Akamai Property Manager 規則會將 LLM 使用者代理路由至 Edge Optimize。 設定包含以下步驟：
 
 **1. 設定路由準則 (使用者代理比對)**
 
@@ -47,6 +47,10 @@ ht-degree: 100%
 **2. 設定來源和 SSL 行為**
 
 將來源設為 `live.edgeoptimize.net`，而「對照 SAN 至」設為 `*.edgeoptimize.net`
+
+>[!NOTE]
+>
+>如果您在新增「在Edge最佳化」規則後屬性啟用失敗，請檢查該規則是否使用與預設規則不同的原始伺服器SSL驗證模式。 如果有，請更新「在Edge最佳化」規則以符合預設規則。 例如，如果預設規則使用&#x200B;**平台設定**，請在此也使用&#x200B;**平台設定**。 如果您無法使用必要設定，請聯絡Akamai支援。
 
 ![Set 來源和 SSL 行為](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -91,6 +95,10 @@ ht-degree: 100%
 
 在主要路由規則內，設定網站容錯移轉行為和進階 XML 程式碼片段，如下所示：
 
+>[!IMPORTANT]
+>
+>此步驟中的XML程式碼片段需要&#x200B;**進階**&#x200B;行為。 在某些Akamai環境中，此行為不適用於自助式編輯。 如果您沒有看到&#x200B;**進階**&#x200B;選項，請聯絡您的Akamai帳戶團隊或Akamai支援以啟用必要的設定。
+
 ![網站容錯移轉](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
 透過進階 XML 新增值為 `fo` 的要求標頭 `x-edgeoptimize-request`：
@@ -111,7 +119,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->建立 **EdgeOptimize 容錯移轉，測試標頭**&#x200B;規則作為路由規則的&#x200B;**同級** (位於相同層級) 規則，而&#x200B;**不是**&#x200B;以巢狀方式置於路由規則內。在 Akamai Property Manager 規則樹狀結構中，階層應該如下所示：
+>建立 **EdgeOptimize 容錯移轉，測試標頭**&#x200B;規則作為路由規則的&#x200B;**同級** (位於相同層級) 規則，而&#x200B;**不是**&#x200B;以巢狀方式置於路由規則內。 在 Akamai Property Manager 規則樹狀結構中，階層應該如下所示：
 >
 >```
 >▼ Parent Rule
@@ -120,6 +128,8 @@ ht-degree: 100%
 >```
 >
 >這樣能確保容錯移轉測試標頭規則針對&#x200B;**所有**&#x200B;路由規則，而非單一規則進行評估。
+>
+>同時請確定&#x200B;**在Edge路由最佳化**&#x200B;規則不會被任何之後會變更相同要求之來源、快取行為或快取ID的相符規則覆寫。 如果另一個相符的規則重設這些行為，「在Edge路由或快取中最佳化」可能無法如預期運作。
 
 如果要求標頭 `x-edgeoptimize-request` 值為 `fo`，請將傳出回應標頭 `x-edgeoptimize-fo` 設定為 `true`。
 
@@ -161,7 +171,7 @@ curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-回應&#x200B;**不應**&#x200B;包含 `x-edgeoptimize-request-id` 標頭。頁面內容和回應時間應與啟用邊緣最佳化之前維持相同。
+回應&#x200B;**不應**&#x200B;包含 `x-edgeoptimize-request-id` 標頭。 頁面內容和回應時間應與啟用邊緣最佳化之前維持相同。
 
 **3. 如何區分這兩種情境**
 
@@ -170,7 +180,7 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-您也可以在 LLM Optimizer 使用者介面中確認流量路由的狀態。導覽至「**客戶設定**」，然後選取「**內容傳遞網路設定**」標籤。
+您也可以在 LLM Optimizer 使用者介面中確認流量路由的狀態。 導覽至「**客戶設定**」，然後選取「**內容傳遞網路設定**」標籤。
 
 ![已啟用路由的 AI 流量路由狀態](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
