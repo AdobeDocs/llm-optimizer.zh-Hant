@@ -2,10 +2,10 @@
 title: 轉介流量
 description: 了解如何使用轉介流量儀表板來查看訪客如何從外部平台、AI 引用和轉介連結抵達您的網站。
 feature: Referral Traffic
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
-workflow-type: ht
-source-wordcount: '605'
-ht-degree: 100%
+source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 90%
 
 ---
 
@@ -13,6 +13,9 @@ ht-degree: 100%
 # 轉介流量
 
 轉介流量會顯示訪客如何從外部平台、AI 引用和轉介連結抵達您的網站。 轉介流量會追蹤和分析來自外部網站及平台的流量來源、轉介模式和轉換量度。 您可以藉此了解哪些來源、區域和頁面帶來參與度最高的流量。<!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> 您也可以利用自訂篩選器來精確調整所顯示的資料。
+
+>[!NOTE]
+>依預設，此儀表板會從&#x200B;**CDN記錄檔**&#x200B;建立流量深入分析。 如果您的組織使用付費優惠方案，您可以連線&#x200B;**Adobe Analytics**&#x200B;以新增測量AI驅動探索和網站參與的資料。 此資料可在&#x200B;**業務影響**&#x200B;索引標籤中使用。 若未與Adobe Analytics整合，系統不會填入標籤。 如需詳細資訊，請參閱[Adobe Analytics整合](/help/dashboards/adobe-analytics-integration.md)。
 
 ![轉介頁面](/help/dashboards/assets/referral-traffic.png)
 
@@ -47,7 +50,7 @@ ht-degree: 100%
 * **頁面意圖**：依使用者意圖篩選轉介流量。
 * **管道來源**：依管道的來源進行篩選。 其中選項包括 LLM、外部賺取、付費或混合轉介管道。
 * **裝置類型**：依訪客的裝置類型 (桌上型電腦、行動裝置或所有裝置) 分析流量。
-  **區域**：檢視不同地理區域的轉介模式。
+* **區域**：檢視不同地理區域的轉介模式。
 
 選取想要的篩選器後，按一下「**套用篩選器**」，將選取項目套用至儀表板。
 
