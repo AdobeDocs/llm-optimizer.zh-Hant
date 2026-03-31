@@ -2,10 +2,10 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
-workflow-type: ht
-source-wordcount: '2181'
-ht-degree: 100%
+source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
+workflow-type: tm+mt
+source-wordcount: '2240'
+ht-degree: 92%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 100%
 # 邊緣最佳化
 
 本頁面將詳細介紹如何在不變更原始內容的情況下，在內容傳遞網路邊緣完成最佳化。 本頁面會說明上線流程、可用的最佳化機會，以及如何在邊緣進行自動最佳化。
-
->[!NOTE]
->
->目前在搶先體驗版中提供這項功能。 關於搶先體驗方案的詳細資訊請參閱[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)。
 
 ## 什麼是邊緣最佳化？
 
@@ -40,7 +36,17 @@ ht-degree: 100%
 
 ## 上線
 
-您應該聯絡您的 Adobe 客戶團隊或 FDE 團隊來啟動上線流程。 您的 IT 或內容傳遞網路團隊也必須完成先決條件和設定流程。 此外，您也可以聯絡 `llmo-at-edge@adobe.com` 以進一步取得上線方面的協助。
+<!--You should reach out to either your Adobe account team or the FDE team to start the onboarding process. Your IT or CDN team is also required to complete the pre-requisites and setup process. Additionally, you can also contact `llmo-at-edge@adobe.com` for further onboarding assistance.-->
+
+在您的LLM Optimizer帳戶中開始入門流程：
+
+1. 在&#x200B;**客戶組態** n儀表板上，選取&#x200B;**CDN組態**&#x200B;標籤。
+1. 按一下&#x200B;**內建CDN**。
+   ![「內容傳遞網路設定」分頁](/help/overview/assets/cc-cdn.png)
+1. 對於AEM Fastly客戶，Adobe可以協助完成入門流程。 對於使用其他CDN提供者的客戶，您的IT/CDN團隊需要完成必要的設定和先決條件。 您也可以參閱下方提供的範例CDN指南，以取得其他指引。
+
+>[!NOTE]
+>請參閱以下逐步指南，其中涵蓋完整的上線流程。 對於指南未解決的問題，您可以聯絡`llmo-at-edge@adobe.com`。
 
 開始使用邊緣最佳化的先決條件：
 
@@ -85,9 +91,9 @@ ht-degree: 100%
 
 ### 其他工具
 
-[Adobe LLM Optimizer：您的網頁可被引用嗎？](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome 擴充功能會顯示 LLM 可存取您的網頁多少內容以及哪些內容被隱藏。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
+[AI內容可見度檢查程式](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)瀏覽器擴充功能會顯示LLM可以存取的網頁內容量，以及隱藏的內容。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -117,7 +123,7 @@ ht-degree: 100%
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
@@ -150,6 +156,10 @@ ht-degree: 100%
 ![復原](/help/assets/optimize-at-edge/rollback.png)
 
 ## 常見問題
+
+問：試用客戶可以試用Edge的最佳化嗎？
+
+是的，試用版客戶可以存取一個最佳化機會，並將其部署至最多10頁。 依預設，機會是復原內容可見度，其可讓AI代理程式存取您頁面內容的完整版本。
 
 問：您使用邊緣最佳化鎖定哪類 LLM？
 
