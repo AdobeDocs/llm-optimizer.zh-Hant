@@ -93,7 +93,7 @@ ht-degree: 92%
 
 [AI內容可見度檢查程式](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)瀏覽器擴充功能會顯示LLM可以存取的網頁內容量，以及隱藏的內容。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
