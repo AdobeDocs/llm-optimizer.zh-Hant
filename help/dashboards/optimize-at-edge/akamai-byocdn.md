@@ -3,9 +3,9 @@ title: 邊緣最佳化：Akamai (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Akamai BYOCDN 進行邊緣最佳化。
 feature: Opportunities
 source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '745'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->如果您在新增「在Edge最佳化」規則後屬性啟用失敗，請檢查該規則是否使用與預設規則不同的原始伺服器SSL驗證模式。 如果有，請更新「在Edge最佳化」規則以符合預設規則。 例如，如果預設規則使用&#x200B;**平台設定**，請在此也使用&#x200B;**平台設定**。 如果您無法使用必要設定，請聯絡Akamai支援。
+>如果新增邊緣最佳化規則後屬性啟用失敗，請檢查該規則是否使用與預設規則不同的原始伺服器 SSL 驗證模式。若確實不同，請更新邊緣最佳化規則使其符合預設規則。例如，若預設規則使用&#x200B;**平台設定**，此處也應使用&#x200B;**平台設定**。如果您無法使用必要的設定，請聯絡 Akamai 支援。
 
 ![Set 來源和 SSL 行為](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -97,7 +97,7 @@ ht-degree: 78%
 
 >[!IMPORTANT]
 >
->此步驟中的XML程式碼片段需要&#x200B;**進階**&#x200B;行為。 在某些Akamai環境中，此行為不適用於自助式編輯。 如果您沒有看到&#x200B;**進階**&#x200B;選項，請聯絡您的Akamai帳戶團隊或Akamai支援以啟用必要的設定。
+>此步驟中的 XML 程式碼片段需要&#x200B;**進階**&#x200B;行為。在某些 Akamai 環境中，此行為不適用自助式編輯。如果沒有看到&#x200B;**進階**&#x200B;選項，請聯絡您的 Akamai 帳戶團隊或 Akamai 支援，啟用必要的設定。
 
 ![網站容錯移轉](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
@@ -129,7 +129,7 @@ ht-degree: 78%
 >
 >這樣能確保容錯移轉測試標頭規則針對&#x200B;**所有**&#x200B;路由規則，而非單一規則進行評估。
 >
->同時請確定&#x200B;**在Edge路由最佳化**&#x200B;規則不會被任何之後會變更相同要求之來源、快取行為或快取ID的相符規則覆寫。 如果另一個相符的規則重設這些行為，「在Edge路由或快取中最佳化」可能無法如預期運作。
+>同時請確保&#x200B;**邊緣最佳化路由**&#x200B;規則不會被任何後續的相符規則覆寫，以免後續規則變更相同請求的來源、快取行為或快取 ID。如果另一個相符的規則重設這些行為，邊緣最佳化路由或快取可能無法如預期運作。
 
 如果要求標頭 `x-edgeoptimize-request` 值為 `fo`，請將傳出回應標頭 `x-edgeoptimize-fo` 設定為 `true`。
 
