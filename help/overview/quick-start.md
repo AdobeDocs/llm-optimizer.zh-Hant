@@ -1,22 +1,22 @@
 ---
 title: 快速入門
-description: 瞭解如何入門品牌名稱和網域、從Experience Hub或Experience Cloud啟用試用版，以及完成Adobe LLM Optimizer設定。
+description: 了解如何將您的品牌名稱和網域上線、從 Experience Hub 或 Adobe Experience Cloud 啟用試用版，以及完成 Adobe LLM Optimizer 設定。
 feature: Quickstart, Onboarding
 source-git-commit: dcbeb1c61dd9dcefd83908f65f8303d36c0fb78e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1208'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 
 # 快速入門
 
-若要開始使用LLM Optimizer，您必須完成入門流程。 上線後，您將能夠自訂類別、主題、提示和設定記錄轉送，以獲得更準確的見解，並完整存取[LLM Optimizer儀表板](/help/dashboards/dashboards-overview.md)和其他功能。
+若要開始使用 LLM Optimizer，您必須完成上線程序。上線後，您便能自訂類別、主題、提示和設定記錄轉寄，獲得更準確的洞察，並擁有存取 [LLM Optimizer 儀表板](/help/dashboards/dashboards-overview.md)和其他功能的完整權限。
 
 ## 上線概觀
 
-入門流程從入門您的網域和品牌名稱開始。 以下詳細說明了入門歷程的每個部分，以及有關如何儘快開始使用LLM Optimizer的實用提示。
+上線程序從您將網域和品牌名稱上線開始。上線歷程的各部分將於下文詳細說明，並提供實用提示，協助您儘快開始使用 LLM Optimizer。
 
 ### 允許 Adobe LLM Optimizer 存取公開頁面
 
@@ -24,60 +24,60 @@ ht-degree: 50%
 
 設定要求：
 
-* 將Spacecat/1.0使用者代理程式新增至您網站的robots.txt檔案或機器人流量管理規則中的允許清單。
-* 請確定在網域或CDN層級未封鎖頁面。 被封鎖的頁面無法編入索引，意味著無法為這些頁面生成最佳化任務和洞察。
+* 在網站的 robots.txt 檔案或機器人流量管理規則的允許清單中，加入 Spacecat/1.0 使用者 AI 代理。
+* 請確認在網域或內容傳遞網路層級皆未封鎖相關頁面。被封鎖的頁面無法編入索引，意味著無法為這些頁面生成最佳化任務和洞察。
 
 如果儀表板中顯示的內容能見度很低，請確認爬蟲可以存取您的網域。 存取權受限制是索引不完整的常見原因。
 
-## 步驟1：加入您的品牌名稱和網域 {#step-1-onboard-your-domain}
+## 步驟 1：將您的品牌名稱和網域上線 {#step-1-onboard-your-domain}
 
-若要開始使用LLM Optimizer，請先啟用您的試用版（如果適用），並加入您的品牌名稱和網域。
+若要開始使用 LLM Optimizer，請先啟用您的試用版 (如適用)，並將您的品牌名稱和網域上線。
 
-### 啟用您的試用版
+### 啟用試用版
 
-啟用流程會依您的Adobe產品而有所不同。
+依您的 Adobe 產品而定，啟用流程會有所不同。
 
-#### AEM Cloud客戶
+#### AEM Cloud 客戶
 
-若要啟用試用版，身為AEM Cloud客戶，您可以：
+若要啟用試用版，您身為 AEM Cloud 客戶，可以執行下列動作：
 
-* 導覽至[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)，並使用產品公告卡啟用LLM Optimizer。 選取&#x200B;**試用LLM Optimizer**&#x200B;後，您會重新導向至[https://llmo.now](https://llmo.now)。 透過IMS登入，然後輸入網域和品牌名稱以開始入門流程。
-* 或直接移至[https://llmo.now](https://llmo.now)並登入。
+* 導覽至 [Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/experience-hub/experience-hub)，並使用產品公告卡片啟用 LLM Optimizer。選取「**試用 LLM Optimizer**」後，會重新導向至 [https://llmo.now](https://llmo.now)。透過 IMS 登入，然後輸入網域和品牌名稱，開始上線程序。
+* 或者直接前往 [https://llmo.now](https://llmo.now) 並登入。
 
 ![LLM Optimizer 試用版](/help/overview/assets/llm-trial.png)
 
-#### Adobe Analytics客戶
+#### Adobe Analytics 客戶
 
-如果您是Adobe Analytics客戶，將會在Experience Cloud首頁上看到橫幅。
+如果您是 Adobe Analytics 客戶，會在 Adobe Experience Cloud 首頁上看到橫幅。
 
-![Experience Cloud首頁包含開始您的Adobe LLM Optimizer試用橫幅](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
+![Adobe Experience Cloud 首頁上有「開始使用您的 Adobe LLM Optimizer 試用版」橫幅](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
-您可以透過下列其中一種方式來啟用試用版：
+您可以透過下列其中一種方式啟用試用版：
 
-* 在橫幅中選取&#x200B;**開始您的Adobe LLM Optimizer試用版**。
-* 直接移至[https://llmo.now](https://llmo.now)並登入。
+* 在橫幅中選取「**開始使用您的 Adobe LLM Optimizer 試用版**」。
+* 直接前往 [https://llmo.now](https://llmo.now) 並登入。
 
-試用版生效後，請繼續上線您的品牌名稱和網域。
+試用版啟用後，開始將您的品牌名稱和網域上線。
 
 >[!NOTE]
 >
-> * **免費試用版：** AEM Cloud和Adobe Analytics客戶可以使用LLM Optimizer的免費試用版。
-> * **在2026年4月1日或之後啟用試用版的客戶**&#x200B;最多可使用100個提示、一個網域，以及針對單一機會型別最多在10個URL中部署最佳化。
-> * **在2026年4月1日之前啟用試用版的客戶**&#x200B;可繼續根據其現有條款存取最多200個提示。
+> * **免費試用版：** AEM Cloud 和 Adobe Analytics 客戶可以使用 LLM Optimizer 的免費試用版。
+> * **在 2026 年 4 月 1 日當天或之後啟用試用版的客戶，**&#x200B;可使用最多 100 個提示、一個網域，以及針對單一機會類型在最多 10 個 URL 中部署最佳化。
+> * **在 2026 年 4 月 1 日之前啟用試用版的客戶，**&#x200B;根據其現有條款，可以繼續存取最多 200 個提示。
 >
->使用超出包含限制需要單獨的授權協定。 存取權係依「現況」及「可用狀態」提供，並可隨時修改、限制或移除。 如需詳細資訊，請聯絡您的客戶代表。
+>超出上限的使用量需有另外的授權合約。依「現狀」及「現可提供」之基礎提供存取權，並可隨時修改、限制或移除。如需詳細資訊，請聯絡您的帳戶代表。
 
-#### 加入您的品牌名稱和網域
+#### 將您的品牌名稱和網域上線
 
-開始使用LLM Optimizer的品牌名稱和網域。
+將您的品牌名稱和網域上線，以便開始使用 LLM Optimizer。
 
-1. 輸入您的品牌名稱和相關聯的網域。
+1. 輸入您的品牌名稱和關聯的網域。
 
-   * 這應該是您要分析和最佳化內容的主要網域。
+   * 這個網域應是您想要分析和最佳化內容的主要網域。
 
-1. 完成入門。
+1. 完成上線。
 
-   * 提交後，LLM Optimizer就會開始分析您的網域並產生深入分析。
+   * 提交後，LLM Optimizer 便會開始分析您的網域並產生洞察。
 
 ![LLM Optimizer 網域](/help/overview/assets/domain.png)
 
@@ -89,13 +89,13 @@ ht-degree: 50%
 
 在上線階段將生成一組少量的類別、主題和提示。 您的網站上線後不久，即可獲取針對這些提示所做的品牌存在感分析。
 
-您也可以在Edge部署最佳化。 深入瞭解[在Edge最佳化 — 常見問題](https://experienceleague.adobe.com/zh-hant/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
+也可以在邊緣架構部署最佳化。若要了解更多相關資訊，請參閱[邊緣架構最佳化 — 常見問題](https://experienceleague.adobe.com/zh-hant/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions)。
 
-此外，設定[CDN記錄轉送](#step-4)以進行流量分析。 LLM Optimizer需要來自代理和引薦流量的品牌存在感資料和深入分析，以識別機會並提供可提升AI可見度的規範性建議。
+此外，若要進行流量分析，請設定[內容傳遞網路記錄轉寄](#step-4)。LLM Optimizer 需要利用代理式和轉介流量的品牌存在感資料與洞察，才能確認機會並提供能提高 AI 能見度的規範性建議。
 
-### 非AEM Cloud客戶
+### 非 AEM Cloud 客戶
 
-貴組織完成商業合約後，您會使用您組織選取的網域加入LLM Optimizer。 上線完成時，請登入[https://llmo.now](https://llmo.now)。
+您組織的業務合約定案後，您便會以組織選取的網域上線至 LLM Optimizer。上線完成後，請登入 [https://llmo.now](https://llmo.now)。
 
 ## 第 2 步：自訂類別、主題和提示
 
@@ -124,7 +124,7 @@ ht-degree: 50%
 
 ## 第 4 步：提供內容傳遞網路記錄轉送的相關資訊 {#step-4}
 
-若要解除鎖定代理流量和引薦流量深入分析，請從[客戶設定儀表板](/help/dashboards/customer-configuration.md#cdn-configuration)新增CDN記錄轉送資訊。 開啟&#x200B;**CDN設定**&#x200B;標籤，並選取&#x200B;**內建CDN**。
+若要獲取代理式流量和轉介流量洞察，請加入取自[客戶設定儀表板](/help/dashboards/customer-configuration.md#cdn-configuration)的內容傳遞網路記錄轉寄資訊。開啟「**內容傳遞網路設定**」標籤，並選取「**上線內容傳遞網路**」。
 
 ![客戶設定內容傳遞網路](/help/overview/assets/cc-cdn.png)
 
@@ -141,7 +141,7 @@ ht-degree: 50%
 在提供內容傳遞網路記錄轉送的相關資訊後，您可以：
 
 * 檢視[品牌存在感](/help/dashboards/brand-presence.md)儀表板，並查看您的能見度分數及追蹤您與其他品牌相比的效能。
-* 如果已經設定CDN記錄轉送，請探索[代理](/help/dashboards/agentic-traffic.md)和[引薦流量](/help/dashboards/referral-traffic.md)儀表板。
+* 若已經設定內容傳遞網路記錄轉寄，請探索[代理式](/help/dashboards/agentic-traffic.md)和[轉介流量](/help/dashboards/referral-traffic.md)儀表板。
 * 使用[機會](/help/dashboards/opportunities.md)來找出需要改善的內容與技術項目。
 * 匯出資料並與您的團隊協作，或邀請您的同事使用產品。
 
