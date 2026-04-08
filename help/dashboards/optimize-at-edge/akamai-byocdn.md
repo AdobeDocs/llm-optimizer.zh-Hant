@@ -2,10 +2,10 @@
 title: 邊緣最佳化：Akamai (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Akamai BYOCDN 進行邊緣最佳化。
 feature: Opportunities
-source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
-workflow-type: ht
-source-wordcount: '745'
-ht-degree: 100%
+source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
+workflow-type: tm+mt
+source-wordcount: '849'
+ht-degree: 79%
 
 ---
 
@@ -22,25 +22,32 @@ ht-degree: 100%
 * 已完成 LLM Optimizer 上線流程。
 * 已經將內容傳遞網路記錄轉送至 LLM Optimizer。
 * 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。
+* （選用）如果先在中繼主機名稱上測試路由，則在中繼Edge最佳化API金鑰。
 
 {{retrieve-byocdn-api-key}}
 
+{{retrieve-staging-edge-optimize-api-key}}
+
 **設定**
 
-下列 Akamai Property Manager 規則會將 LLM 使用者代理路由至 Edge Optimize。 設定包含以下步驟：
+以下Akamai屬性管理員規則會將代理式HTML頁面流量路由至Edge Optimize。 設定包含以下步驟：
 
-**1. 設定路由準則 (使用者代理比對)**
+**1. 設定路由條件（使用者代理和HTML流量比對）**
 
-設定下列使用者代理的路由:image.png
+設定下列使用者代理程式的路由：
 
 ```
- *AdobeEdgeOptimize-AI*,
- *ChatGPT-User*,
- *GPTBot*,
- *OAI-SearchBot*,
- *PerplexityBot*,
+ *AdobeEdgeOptimize-AI*
+ *ChatGPT-User*
+ *GPTBot*
+ *OAI-SearchBot*
+ *PerplexityBot*
  *Perplexity-User*
 ```
+
+>[!NOTE]
+>
+>將「Edge最佳化」路由規則僅套用至無代理的HTML頁面流量。 常見的設定是使用要求端條件（例如&#x200B;**副檔名**）來比對無副檔名頁面URL的`html`和`EMPTY_STRING`。 如果您的網站透過其他URL模式提供HTML，或包含無擴充功能的非頁面路由（例如API端點），請以其他路徑型條件來調整規則。
 
 ![設定路由準則](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -50,7 +57,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->如果新增邊緣最佳化規則後屬性啟用失敗，請檢查該規則是否使用與預設規則不同的原始伺服器 SSL 驗證模式。若確實不同，請更新邊緣最佳化規則使其符合預設規則。例如，若預設規則使用&#x200B;**平台設定**，此處也應使用&#x200B;**平台設定**。如果您無法使用必要的設定，請聯絡 Akamai 支援。
+>如果新增邊緣最佳化規則後屬性啟用失敗，請檢查該規則是否使用與預設規則不同的原始伺服器 SSL 驗證模式。 若確實不同，請更新邊緣最佳化規則使其符合預設規則。 例如，若預設規則使用&#x200B;**平台設定**，此處也應使用&#x200B;**平台設定**。 如果您無法使用必要的設定，請聯絡 Akamai 支援。
 
 ![Set 來源和 SSL 行為](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -66,10 +73,10 @@ ht-degree: 100%
 
 **5. 修改傳入要求標頭**
 
-設定以下傳入要求標頭：
-將 `x-edgeoptimize-api-key` 設定為從 LLMO 擷取的 API 金鑰
-將 `x-edgeoptimize-config` 設定為 `LLMCLIENT=TRUE;`
-將 `x-edgeoptimize-url` 設定為 `{{builtin.AK_URL}}`
+設定以下傳入要求標題：
+`x-edgeoptimize-api-key`至從LLMO擷取的API金鑰
+`x-edgeoptimize-config`至 `LLMCLIENT=TRUE;`
+`x-edgeoptimize-url`至`{{builtin.AK_URL}}`
 
 ![修改傳入要求標頭](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
@@ -97,7 +104,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->此步驟中的 XML 程式碼片段需要&#x200B;**進階**&#x200B;行為。在某些 Akamai 環境中，此行為不適用自助式編輯。如果沒有看到&#x200B;**進階**&#x200B;選項，請聯絡您的 Akamai 帳戶團隊或 Akamai 支援，啟用必要的設定。
+>此步驟中的 XML 程式碼片段需要&#x200B;**進階**&#x200B;行為。 在某些 Akamai 環境中，此行為不適用自助式編輯。 如果沒有看到&#x200B;**進階**&#x200B;選項，請聯絡您的 Akamai 帳戶團隊或 Akamai 支援，啟用必要的設定。
 
 ![網站容錯移轉](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
@@ -129,7 +136,7 @@ ht-degree: 100%
 >
 >這樣能確保容錯移轉測試標頭規則針對&#x200B;**所有**&#x200B;路由規則，而非單一規則進行評估。
 >
->同時請確保&#x200B;**邊緣最佳化路由**&#x200B;規則不會被任何後續的相符規則覆寫，以免後續規則變更相同請求的來源、快取行為或快取 ID。如果另一個相符的規則重設這些行為，邊緣最佳化路由或快取可能無法如預期運作。
+>同時請確保&#x200B;**邊緣最佳化路由**&#x200B;規則不會被任何後續的相符規則覆寫，以免後續規則變更相同請求的來源、快取行為或快取 ID。 如果另一個相符的規則重設這些行為，邊緣最佳化路由或快取可能無法如預期運作。
 
 如果要求標頭 `x-edgeoptimize-request` 值為 `fo`，請將傳出回應標頭 `x-edgeoptimize-fo` 設定為 `true`。
 
@@ -180,8 +187,17 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-您也可以在 LLM Optimizer 使用者介面中確認流量路由的狀態。 導覽至「**客戶設定**」，然後選取「**內容傳遞網路設定**」標籤。
+**4. 暫存網域（選擇性）**
 
-![已啟用路由的 AI 流量路由狀態](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+如果您使用來自LLM Optimizer的暫存主機名稱與暫存API金鑰，請使用規則中的&#x200B;**staging**&#x200B;金鑰在您的&#x200B;**暫存** Akamai屬性上部署相同的路由模式。 接著，驗證中繼主機上的機器人流量：
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+將`https://staging.example.com/page.html`取代為您的實際暫存URL和路徑。 成功的回應包含`x-edgeoptimize-request-id`標頭。
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

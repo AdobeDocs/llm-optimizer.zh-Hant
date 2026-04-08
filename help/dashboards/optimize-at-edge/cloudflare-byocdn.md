@@ -2,17 +2,17 @@
 title: 邊緣最佳化：Cloudflare (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Cloudflare BYOCDN 進行邊緣最佳化。
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
-workflow-type: ht
-source-wordcount: '1402'
-ht-degree: 100%
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+workflow-type: tm+mt
+source-wordcount: '1439'
+ht-degree: 95%
 
 ---
 
 
 # Cloudflare (BYOCDN)
 
-此設定會將代理式流量 (來自 AI 機器人和 LLM 使用者代理的要求) 路由至 Edge Optimize 後端服務 (`live.edgeoptimize.net`)。真人訪客和 SEO 機器人仍照常由您的來源伺服器提供服務。若要測試設定，在完成設定之後，請於回應中尋找 `x-edgeoptimize-request-id` 標頭。
+此設定會將代理式流量 (來自 AI 機器人和 LLM 使用者代理的要求) 路由至 Edge Optimize 後端服務 (`live.edgeoptimize.net`)。 真人訪客和 SEO 機器人仍照常由您的來源伺服器提供服務。 若要測試設定，在完成設定之後，請於回應中尋找 `x-edgeoptimize-request-id` 標頭。
 
 **先決條件**
 
@@ -23,12 +23,15 @@ ht-degree: 100%
 * 已完成 LLM Optimizer 上線流程。
 * 已經將內容傳遞網路記錄轉送至 LLM Optimizer。
 * 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。
+* （選用）如果先在中繼主機名稱上測試路由，則在中繼Edge最佳化API金鑰。
 
 {{retrieve-byocdn-api-key}}
 
+{{retrieve-staging-edge-optimize-api-key}}
+
 **路由如何運作**
 
-若設定正確，Cloudflare Worker 會攔截代理式使用者代理對您網域 (例如 `www.example.com/page.html`) 發出的要求，並將要求路由至 Edge Optimize 後端。後端要求包含必要的標頭。
+若設定正確，Cloudflare Worker 會攔截代理式使用者代理對您網域 (例如 `www.example.com/page.html`) 發出的要求，並將要求路由至 Edge Optimize 後端。 後端要求包含必要的標頭。
 
 **測試後端要求**
 
@@ -48,7 +51,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 | 頁首 | 說明 | 範例 |
 |--------|-------------|---------|
-| `x-forwarded-host` | 要求的原始主機。識別網站網域時需要使用。 | `www.example.com` |
+| `x-forwarded-host` | 要求的原始主機。 識別網站網域時需要使用。 | `www.example.com` |
 | `x-edgeoptimize-url` | 要求的原始 URL 路徑和查詢字串。 | `/page.html` 或 `/products?id=123` |
 | `x-edgeoptimize-api-key` | Adobe 為您網域提供的 API 金鑰。 | `your-api-key-here` |
 | `x-edgeoptimize-config` | 快取鍵差異化的設定字串。 | `LLMCLIENT=TRUE;` |
@@ -247,7 +250,7 @@ async function failoverToOrigin(request, env, url) {
    | 變數名稱 | 說明 | 必要 |
    |---------------|-------------|----------|
    | `EDGE_OPTIMIZE_API_KEY` | Adobe 提供的 Edge Optimize API 金鑰。 | 是 |
-   | `EDGE_OPTIMIZE_TARGET_HOST` | Edge Optimize 要求的目標主機 (以 `x-forwarded-host` 標頭傳送) 以及容錯移轉的原始網域。必須是沒有通訊協定的網域 (例如 `www.example.com`，而非 `https://www.example.com`)。 | 是 |
+   | `EDGE_OPTIMIZE_TARGET_HOST` | Edge Optimize 要求的目標主機 (以 `x-forwarded-host` 標頭傳送) 以及容錯移轉的原始網域。 必須是沒有通訊協定的網域 (例如 `www.example.com`，而非 `https://www.example.com`)。 | 是 |
 
 4. 對於 API 金鑰，按一下「**加密**」，安全地將其儲存。
 5. 按一下「**儲存並部署**」。
@@ -274,7 +277,7 @@ async function failoverToOrigin(request, env, url) {
 
 **驗證容錯移轉行為**
 
-如果 Edge Optimize 無法使用或傳回錯誤，Worker 會自動容錯移轉至您的來源。容錯移轉回應包含 `x-edgeoptimize-fo` 標頭：
+如果 Edge Optimize 無法使用或傳回錯誤，Worker 會自動容錯移轉至您的來源。 容錯移轉回應包含 `x-edgeoptimize-fo` 標頭：
 
 ```
 < HTTP/2 200
@@ -289,9 +292,9 @@ Cloudflare Worker 會實施下列邏輯：
 
 1. **使用者代理偵測：**&#x200B;檢查傳入要求的使用者代理是否與任何已定義的代理式機器人相符 (不區分大小寫)。
 
-2. **路徑目標選擇：**&#x200B;根據目標路徑選擇性篩選要求。預設情況下，會路由所有 HTML 頁面 (以 `/`、無副檔名或 `.html` 結尾的 URL)。您可以使用 `TARGETED_PATHS` 陣列指定特定路徑。
+2. **路徑目標選擇：**&#x200B;根據目標路徑選擇性篩選要求。 預設情況下，會路由所有 HTML 頁面 (以 `/`、無副檔名或 `.html` 結尾的 URL)。 您可以使用 `TARGETED_PATHS` 陣列指定特定路徑。
 
-3. **迴圈保護：**`x-edgeoptimize-request` 標頭能防止無限迴圈。當 Edge Optimize 將要求傳回您的來源時，此標頭設為 `"1"`，而 Worker 傳遞要求時不會將其路由回到 Edge Optimize。
+3. **迴圈保護：**`x-edgeoptimize-request` 標頭能防止無限迴圈。 當 Edge Optimize 將要求傳回您的來源時，此標頭設為 `"1"`，而 Worker 傳遞要求時不會將其路由回到 Edge Optimize。
 
 4. **標頭安全性：**&#x200B;在設定 Edge Optimize 標頭之前，Worker 會移除傳入要求中任何現有的 `x-edgeoptimize-*` 標頭，以避免標頭注入攻擊。
 
@@ -301,7 +304,7 @@ Cloudflare Worker 會實施下列邏輯：
    * `x-edgeoptimize-api-key`：使用 Edge Optimize 驗證要求。
    * `x-edgeoptimize-config`：提供快取鍵設定。
 
-6. **容錯移轉邏輯：**&#x200B;如果 Edge Optimize 傳回任何錯誤狀態代碼 (4XX 用戶端錯誤或 5XX 伺服器錯誤)，或要求因網路錯誤而失敗，Worker 會使用 `EDGE_OPTIMIZE_TARGET_HOST` 自動容錯移轉至您的來源。容錯移轉回應包含 `x-edgeoptimize-fo: 1` 標頭，用於表示已發生容錯移轉。
+6. **容錯移轉邏輯：**&#x200B;如果 Edge Optimize 傳回任何錯誤狀態代碼 (4XX 用戶端錯誤或 5XX 伺服器錯誤)，或要求因網路錯誤而失敗，Worker 會使用 `EDGE_OPTIMIZE_TARGET_HOST` 自動容錯移轉至您的來源。 容錯移轉回應包含 `x-edgeoptimize-fo: 1` 標頭，用於表示已發生容錯移轉。
 
 7. **重新導向處理：**`redirect: "manual"` 選項可以確保來自 Edge Optimize 的重新導向回應會傳遞至用戶端，而 Worker 不會追隨重新導向。
 
@@ -329,7 +332,7 @@ const AGENTIC_BOTS = [
 
 **目標路徑**
 
-預設情況下，所有 HTML 頁面都會路由至 Edge Optimize。若要將路由限制在特定路徑，請修改 `TARGETED_PATHS` 陣列：
+預設情況下，所有 HTML 頁面都會路由至 Edge Optimize。 若要將路由限制在特定路徑，請修改 `TARGETED_PATHS` 陣列：
 
 ```javascript
 // Route all HTML pages (default)
@@ -341,7 +344,7 @@ const TARGETED_PATHS = ['/', '/page.html', '/products', '/about-us'];
 
 **容錯移轉設定**
 
-預設情況下，Worker 會在 Edge Optimize 發生任何 4XX 或 5XX 錯誤時進行容錯移轉。自訂此行為：
+預設情況下，Worker 會在 Edge Optimize 發生任何 4XX 或 5XX 錯誤時進行容錯移轉。 自訂此行為：
 
 ```javascript
 // Default: failover on any 4XX or 5XX error
@@ -359,30 +362,30 @@ const FAILOVER_ON_5XX = false;
 
 **重要考量**
 
-* **容錯移轉行為：**&#x200B;如果 Edge Optimize 傳回任何錯誤 (4XX 或 5XX 狀態代碼)，或要求因網路錯誤而失敗，Worker 會自動容錯移轉至您的來源。容錯移轉使用 `EDGE_OPTIMIZE_TARGET_HOST` 做為原始網域 (類似 Fastly 的 `F_Default_Origin` 或 CloudFront 的 `Default_Origin`)。容錯移轉回應包含 `x-edgeoptimize-fo: 1` 標頭，可用於監視和偵錯。
+* **容錯移轉行為：**&#x200B;如果 Edge Optimize 傳回任何錯誤 (4XX 或 5XX 狀態代碼)，或要求因網路錯誤而失敗，Worker 會自動容錯移轉至您的來源。 容錯移轉使用 `EDGE_OPTIMIZE_TARGET_HOST` 做為原始網域 (類似 Fastly 的 `F_Default_Origin` 或 CloudFront 的 `Default_Origin`)。 容錯移轉回應包含 `x-edgeoptimize-fo: 1` 標頭，可用於監視和偵錯。
 
-* **快取：** Cloudflare 預設會根據 URL 快取回應。由於代理式流量接收的內容與真人流量不同，請確保您的快取設定將此情況納入考量。請考慮使用快取 API 或快取標頭區分快取的內容。您的快取鍵中應包含 `x-edgeoptimize-config` 標頭。
+* **快取：** Cloudflare 預設會根據 URL 快取回應。 由於代理式流量接收的內容與真人流量不同，請確保您的快取設定將此情況納入考量。 請考慮使用快取 API 或快取標頭區分快取的內容。 您的快取鍵中應包含 `x-edgeoptimize-config` 標頭。
 
 * **速率限制：**&#x200B;監視您的 Edge Optimize 使用情形，並視需要考慮對代理式流量實施速率限制。
 
-* **測試：**&#x200B;部署至生產環境之前，請一律先在中繼環境中測試設定。確認代理式和真人流量的運作皆符合預期。透過模擬 Edge Optimize 錯誤來測試容錯移轉行為。
+* **測試：**&#x200B;部署至生產環境之前，請一律先在中繼環境中測試設定。 確認代理式和真人流量的運作皆符合預期。 透過模擬 Edge Optimize 錯誤來測試容錯移轉行為。
 
-* **記錄：**&#x200B;啟用 Cloudflare Worker 記錄，以便監視要求及進行疑難排解。導覽至「**Workers**」>「**您的 Worker**」>「**記錄**」來檢視即時記錄。Worker 記錄容錯移轉事件以供偵錯使用。
+* **記錄：**&#x200B;啟用 Cloudflare Worker 記錄，以便監視要求及進行疑難排解。 導覽至「**Workers**」>「**您的 Worker**」>「**記錄**」來檢視即時記錄。 Worker 記錄容錯移轉事件以供偵錯使用。
 
 **疑難排解**
 
 | 問題 | 可能的原因 | 解決方案 |
 |-------|----------------|----------|
-| 回應中沒有 `x-edgeoptimize-request-id` 標頭 | Worker 路由不相符，或使用者代理不在代理式機器人清單中。 | 確認您的路由模式符合要求 URL。檢查使用者代理是否在 `AGENTIC_BOTS` 陣列中。 |
-| Edge Optimize 中的 401 或 403 錯誤 | API 金鑰無效或遺失。 | 驗證在環境變數中 `EDGE_OPTIMIZE_API_KEY` 的設定正確。聯絡 Adobe 確認您的 API 金鑰有效。 |
+| 回應中沒有 `x-edgeoptimize-request-id` 標頭 | Worker 路由不相符，或使用者代理不在代理式機器人清單中。 | 確認您的路由模式符合要求 URL。 檢查使用者代理是否在 `AGENTIC_BOTS` 陣列中。 |
+| Edge Optimize 中的 401 或 403 錯誤 | API 金鑰無效或遺失。 | 驗證在環境變數中 `EDGE_OPTIMIZE_API_KEY` 的設定正確。 聯絡 Adobe 確認您的 API 金鑰有效。 |
 | 無限重新導向或迴圈 | 未正確設定或檢查迴圈保護標頭。 | 確保 `x-edgeoptimize-request` 標頭檢查已就緒。 |
-| 真人流量受到影響 | Worker 路由邏輯過於廣泛。 | 確認使用者代理的對應邏輯正確且不區分大小寫。檢查 `TARGETED_PATHS` 的設定正確。 |
+| 真人流量受到影響 | Worker 路由邏輯過於廣泛。 | 確認使用者代理的對應邏輯正確且不區分大小寫。 檢查 `TARGETED_PATHS` 的設定正確。 |
 | 回應速度緩慢 | Edge Optimize 後端的網路延遲。 | 已預期第一個要求會發生這樣的情況；後續要求會快取至 Edge Optimize。 |
-| 回應中的 `x-edgeoptimize-fo: 1` 標頭 | Edge Optimize 傳回錯誤，並容錯移轉至來源。 | 檢查 Cloudflare Worker 記錄中的特定錯誤代碼。向 Adobe 確認 Edge Optimize 的服務狀態。 |
-| 容錯移轉未正常運作 | 容錯移轉標記已停用，或容錯移轉邏輯發生錯誤。 | 確認 `FAILOVER_ON_4XX` 和 `FAILOVER_ON_5XX` 是否設定為 `true`。檢查 Worker 記錄中的錯誤訊息。 |
+| 回應中的 `x-edgeoptimize-fo: 1` 標頭 | Edge Optimize 傳回錯誤，並容錯移轉至來源。 | 檢查 Cloudflare Worker 記錄中的特定錯誤代碼。 向 Adobe 確認 Edge Optimize 的服務狀態。 |
+| 容錯移轉未正常運作 | 容錯移轉標記已停用，或容錯移轉邏輯發生錯誤。 | 確認 `FAILOVER_ON_4XX` 和 `FAILOVER_ON_5XX` 是否設定為 `true`。 檢查 Worker 記錄中的錯誤訊息。 |
 | 某些路徑未最佳化 | 路徑不符合目標路徑或 HTML 頁面模式。 | 確認路徑是否在 `TARGETED_PATHS` (若已指定) 中，並且符合 HTML 頁面規則運算式模式。 |
 | 要求因為主機無效而執行失敗 | `EDGE_OPTIMIZE_TARGET_HOST` 包含通訊協定 (例如 `https://`)。 | 僅能使用沒有通訊協定的網域名稱 (例如 `example.com`，而非 `https://example.com`)。 |
-| 容錯移轉期間發生 530 錯誤 | Cloudflare 無法連線至來源，或容錯移轉要求含有無效的標頭。 | 確保容錯移轉功能會移除 Edge Optimize 標頭。確認您的來源可供存取，且 DNS 的設定正確。 |
+| 容錯移轉期間發生 530 錯誤 | Cloudflare 無法連線至來源，或容錯移轉要求含有無效的標頭。 | 確保容錯移轉功能會移除 Edge Optimize 標頭。 確認您的來源可供存取，且 DNS 的設定正確。 |
 
 **驗證設定**
 
@@ -413,7 +416,7 @@ curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-回應&#x200B;**不應**&#x200B;包含 `x-edgeoptimize-request-id` 標頭。頁面內容和回應時間應與啟用邊緣最佳化之前維持相同。
+回應&#x200B;**不應**&#x200B;包含 `x-edgeoptimize-request-id` 標頭。 頁面內容和回應時間應與啟用邊緣最佳化之前維持相同。
 
 **3. 如何區分這兩種情境**
 
@@ -422,8 +425,17 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-您也可以在 LLM Optimizer 使用者介面中確認流量路由的狀態。導覽至「**客戶設定**」，然後選取「**內容傳遞網路設定**」標籤。
+**4. 暫存網域（選擇性）**
 
-![已啟用路由的 AI 流量路由狀態](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+如果您使用來自LLM Optimizer的暫存主機名稱與暫存API金鑰，請使用&#x200B;**暫存** API金鑰在您的&#x200B;**暫存**&#x200B;區域上部署相同的Worker邏輯。 接著，驗證中繼主機上的機器人流量：
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+將`https://staging.example.com/page.html`取代為您的實際暫存URL和路徑。 成功的回應包含`x-edgeoptimize-request-id`標頭。
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}
