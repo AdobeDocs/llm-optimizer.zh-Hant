@@ -2,10 +2,10 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
+source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 92%
+source-wordcount: '2348'
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 92%
 
 在您的LLM Optimizer帳戶中開始入門流程：
 
-1. 在&#x200B;**客戶組態** n儀表板上，選取&#x200B;**CDN組態**&#x200B;標籤。
+1. 在&#x200B;**客戶組態**&#x200B;儀表板上，選取&#x200B;**CDN組態**&#x200B;標籤。
 1. 按一下&#x200B;**內建CDN**。
    ![「內容傳遞網路設定」分頁](/help/overview/assets/cc-cdn.png)
 1. 對於AEM Fastly客戶，Adobe可以協助完成入門流程。 對於使用其他CDN提供者的客戶，您的IT/CDN團隊需要完成必要的設定和先決條件。 您也可以參閱下方提供的範例CDN指南，以取得其他指引。
@@ -60,7 +60,14 @@ ht-degree: 92%
 * 在內容傳遞網路中新增邊緣最佳化路由規則。
 * 在 LLM Optimizer 介面中確認邊緣最佳化路由。
 
+>[!IMPORTANT]
+>路由必須在外部CDN （最靠近使用者端的CDN）設定。 如果您有多個CDN，則只能在外部CDN進行路由。
+
 若要引導設定流程，請在下方選取您的內容傳遞網路提供者，並按照相應的設定指南操作。 請記住，您應該根據實際的上線設定調整這些範例。 我們建議先在較低階的環境套用變更。
+
+### 中繼網域API金鑰（選擇性）
+
+如果您在生產前測試測試測試主機名稱，請使用LLM Optimizer註冊&#x200B;**one**&#x200B;測試網域，並複製其&#x200B;**測試** Edge最佳化API金鑰從&#x200B;**客戶組態** → **CDN組態** → **部署最佳化至AI代理程式** → **新增測試網域** （或&#x200B;**測試網域**）。 測試主機名稱必須與您的生產網站共用相同的可註冊網域。 **自備CDN**&#x200B;指南包含擷取測試金鑰以及驗證測試URL路由的完整步驟。
 
 ### 內容傳遞網路設定指南
 
@@ -93,7 +100,7 @@ ht-degree: 92%
 
 [AI內容可見度檢查程式](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)瀏覽器擴充功能會顯示LLM可以存取的網頁內容量，以及隱藏的內容。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -123,7 +130,7 @@ ht-degree: 92%
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
@@ -181,7 +188,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 問：當來源更新內容時會發生什麼事？
 
-只要基礎的來源頁面未變更，我們會從快取提供頁面的最佳化版本。 但是，當來源的&#x200B;**復原內容能見度**&#x200B;確實有所變更時，我們的系統會自動重新整理，讓 AI 代理總是收到最新的內容。 這是因為我們使用低快取存留時間 (TTL) 設定 (通常只有數分鐘)，以便您的網站上任何內容更新都會在該視窗中觸發新的最佳化。 針對&#x200B;**新增 LLM 友善摘要**&#x200B;等內容機會，LLM Optimizer 會監控來源頁面是否有所變更。 如果偵測到變更，我們會暫停最佳化並標記為人工審閱，防止代理可見頁面和真人可見頁面之間的內容偏差。
+只要基礎的來源頁面未變更，我們會從快取提供頁面的最佳化版本。 但是，當來源的&#x200B;**復原內容能見度**&#x200B;確實有所變更時，我們的系統會自動重新整理，讓 AI 代理總是收到最新的內容。 這是因為我們使用低快取存留時間 (TTL) 設定 (通常只有數分鐘)，以便您的網站上任何內容更新都會在該視窗中觸發新的最佳化。 針對&#x200B;**新增 LLM 友善摘要**等內容機會，LLM Optimizer 會監控來源頁面是否有所變更。 如果偵測到變更，我們會暫停最佳化並將其標幟為人類檢閱，以防止代理程式可見頁面和人類可見頁面之間的內容漂移。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 問：邊緣最佳化是否僅適用於使用 Adobe Edge Delivery Service (EDS) 的網站？
