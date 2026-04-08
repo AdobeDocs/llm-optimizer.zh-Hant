@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
 workflow-type: tm+mt
 source-wordcount: '2348'
-ht-degree: 87%
+ht-degree: 94%
 
 ---
 
@@ -38,15 +38,15 @@ ht-degree: 87%
 
 <!--You should reach out to either your Adobe account team or the FDE team to start the onboarding process. Your IT or CDN team is also required to complete the pre-requisites and setup process. Additionally, you can also contact `llmo-at-edge@adobe.com` for further onboarding assistance.-->
 
-在您的LLM Optimizer帳戶中開始入門流程：
+在您的 LLM Optimizer 帳戶中開始上線程序：
 
 1. 在&#x200B;**客戶組態**&#x200B;儀表板上，選取&#x200B;**CDN組態**&#x200B;標籤。
-1. 按一下&#x200B;**內建CDN**。
+1. 按一下「**上線內容傳遞網路**」。
    ![「內容傳遞網路設定」分頁](/help/overview/assets/cc-cdn.png)
-1. 對於AEM Fastly客戶，Adobe可以協助完成入門流程。 對於使用其他CDN提供者的客戶，您的IT/CDN團隊需要完成必要的設定和先決條件。 您也可以參閱下方提供的範例CDN指南，以取得其他指引。
+1. Adobe 可以協助 AEM Fastly 客戶完成上線程序。 對於使用其他內容傳遞網路提供者的客戶，您的 IT/內容傳遞網路團隊必須完成必要的設定及滿足先決條件。 如需其他指引，您也可以參閱下方提供的內容傳遞網路指南範例。
 
 >[!NOTE]
->請參閱以下逐步指南，其中涵蓋完整的上線流程。 對於指南未解決的問題，您可以聯絡`llmo-at-edge@adobe.com`。
+>請參閱以下涵蓋完整上線流程的逐步操作指南。 如有指南中未能解決的問題，您可以聯絡 `llmo-at-edge@adobe.com`。
 
 開始使用邊緣最佳化的先決條件：
 
@@ -98,9 +98,9 @@ ht-degree: 87%
 
 ### 其他工具
 
-[AI內容可見度檢查程式](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)瀏覽器擴充功能會顯示LLM可以存取的網頁內容量，以及隱藏的內容。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
+[AI 內容能見度檢查程式](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)瀏覽器擴充功能，會顯示 LLM 可以存取多少網頁內容以及哪些內容仍然隱藏。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -130,7 +130,7 @@ ht-degree: 87%
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
@@ -164,9 +164,9 @@ ht-degree: 87%
 
 ## 常見問題
 
-問：試用客戶可以試用Edge的最佳化嗎？
+問：試用版客戶可以試用邊緣架構最佳化嗎？
 
-是的，試用版客戶可以存取一個最佳化機會，並將其部署至最多10頁。 依預設，機會是復原內容可見度，其可讓AI代理程式存取您頁面內容的完整版本。
+可以，試用版客戶可以存取一個最佳化機會，並將其部署至最多 10 個頁面。 預設情況下，該機會是「復原內容能見度」，可讓 AI 代理存取頁面內容的完整版本。
 
 問：您使用邊緣最佳化鎖定哪類 LLM？
 
@@ -188,7 +188,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 問：當來源更新內容時會發生什麼事？
 
-只要基礎的來源頁面未變更，我們會從快取提供頁面的最佳化版本。 但是，當來源的&#x200B;**復原內容能見度**&#x200B;確實有所變更時，我們的系統會自動重新整理，讓 AI 代理總是收到最新的內容。 這是因為我們使用低快取存留時間 (TTL) 設定 (通常只有數分鐘)，以便您的網站上任何內容更新都會在該視窗中觸發新的最佳化。 針對&#x200B;**新增 LLM 友善摘要**&#x200B;等內容機會，LLM Optimizer 會監控來源頁面是否有所變更。 如果偵測到變更，我們會暫停最佳化並將其標幟為人類檢閱，以防止代理程式可見頁面和人類可見頁面之間的內容漂移。
+只要基礎的來源頁面未變更，我們會從快取提供頁面的最佳化版本。 但是，當來源的&#x200B;**復原內容能見度**&#x200B;確實有所變更時，我們的系統會自動重新整理，讓 AI 代理總是收到最新的內容。 這是因為我們使用低快取存留時間 (TTL) 設定 (通常只有數分鐘)，以便您的網站上任何內容更新都會在該視窗中觸發新的最佳化。 針對&#x200B;**新增 LLM 友善摘要**等內容機會，LLM Optimizer 會監控來源頁面是否有所變更。 如果偵測到變更，我們會暫停最佳化並加上人工審閱的標記，防止 AI 代理可見頁面和真人可見頁面之間出現內容偏差。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 問：邊緣最佳化是否僅適用於使用 Adobe Edge Delivery Service (EDS) 的網站？
