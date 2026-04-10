@@ -2,10 +2,10 @@
 title: 記錄轉送 — CloudFront (AWS CLI)
 description: 使用AWS CLI將CloudFront CDN記錄轉送至Adobe的S3儲存貯體，以進行傳遞設定和操作。
 feature: Agentic Traffic
-source-git-commit: 0d51bbde954c399dc6595522fa70b576461f458a
+source-git-commit: 3277e7f7f2e0c5e4693e40473d595b12d9e5f2e8
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 20%
+source-wordcount: '379'
+ht-degree: 19%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 20%
 
 1. 輸入您的 **AWS 帳戶** ID。
 
-   ![AWS 帳戶 ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
+<!--  ![AWS Account ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)-->
 
 1. 選取「**CloudFront (BYOCDN)**」。
 
@@ -48,7 +48,7 @@ ht-degree: 20%
 
 1. 按一下「**上線**」。
 
-   ![「上線」按鈕](/help/overview/assets/log-forwarding/common/onboard-button.png)
+<!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
 ## 步驟2：使用AWS CLI設定CDN記錄轉送 {#step-2-cli}
 
