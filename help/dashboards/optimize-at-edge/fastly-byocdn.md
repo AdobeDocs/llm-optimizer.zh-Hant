@@ -3,9 +3,9 @@ title: 邊緣最佳化：Fastly (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Fastly BYOCDN 進行邊緣最佳化。
 feature: Opportunities
 source-git-commit: da789100d814004687de2f46e18a295671dec4b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 83%
 * 已完成 LLM Optimizer 上線流程。
 * 已經將內容傳遞網路記錄轉送至 LLM Optimizer。
 * 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。
-* （選用）如果先在中繼主機名稱上測試路由，則在中繼Edge最佳化API金鑰。
+* (選用) 如果您先在中繼主機名稱上測試路由，需有中繼 Edge Optimize API 金鑰。
 
 {{retrieve-byocdn-api-key}}
 
@@ -124,16 +124,16 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-**4. 暫存網域（選擇性）**
+**4. 中繼網域 (選用)**
 
-如果您使用來自LLM Optimizer的測試主機名稱與測試API金鑰，請使用&#x200B;**測試** API金鑰將相同的VCL程式碼片段新增至您的&#x200B;**測試** Fastly服務。 接著，驗證中繼主機上的機器人流量：
+如果您使用來自 LLM Optimizer 的中繼主機名稱與中繼 API 金鑰，請使用&#x200B;**中繼** API 金鑰將相同的 VCL 程式碼片段新增到您的&#x200B;**中繼** Fastly 服務。接著驗證中繼主機上的機器人流量：
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-將`https://staging.example.com/page.html`取代為您的實際暫存URL和路徑。 成功的回應包含`x-edgeoptimize-request-id`標頭。
+請使用您實際的中繼 URL 和路徑取代 `https://staging.example.com/page.html`。成功的回應將包含 `x-edgeoptimize-request-id` 標頭。
 
 {{verify-routing-status-in-ui}}
 

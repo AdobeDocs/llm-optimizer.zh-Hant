@@ -3,9 +3,9 @@ title: 邊緣最佳化：Akamai (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Akamai BYOCDN 進行邊緣最佳化。
 feature: Opportunities
 source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '849'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 79%
 * 已完成 LLM Optimizer 上線流程。
 * 已經將內容傳遞網路記錄轉送至 LLM Optimizer。
 * 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。
-* （選用）如果先在中繼主機名稱上測試路由，則在中繼Edge最佳化API金鑰。
+* (選用) 如果您先在中繼主機名稱上測試路由，需有中繼 Edge Optimize API 金鑰。
 
 {{retrieve-byocdn-api-key}}
 
@@ -30,11 +30,11 @@ ht-degree: 79%
 
 **設定**
 
-以下Akamai屬性管理員規則會將代理式HTML頁面流量路由至Edge Optimize。 設定包含以下步驟：
+下列 Akamai Property Manager 規則將代理式 HTML 頁面流量路由至 Edge Optimize。設定包含以下步驟：
 
-**1. 設定路由條件（使用者代理和HTML流量比對）**
+**1. 設定路由準則 (使用者 AI 代理與 HTML 流量比對)**
 
-設定下列使用者代理程式的路由：
+設定下列使用者 AI 代理的路由：
 
 ```
  *AdobeEdgeOptimize-AI*
@@ -47,7 +47,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->將「Edge最佳化」路由規則僅套用至無代理的HTML頁面流量。 常見的設定是使用要求端條件（例如&#x200B;**副檔名**）來比對無副檔名頁面URL的`html`和`EMPTY_STRING`。 如果您的網站透過其他URL模式提供HTML，或包含無擴充功能的非頁面路由（例如API端點），請以其他路徑型條件來調整規則。
+>僅對代理式 HTML 頁面流量套用邊緣架構最佳化路由規則。常見的設定是使用&#x200B;**副檔名**&#x200B;等要求端準則來比對 `html`，以及針對無副檔名頁面 URL 比對 `EMPTY_STRING`。如果您的網站透過其他 URL 模式提供 HTML，或包含如 API 端點等無副檔名的非頁面路由，請使用其他路徑準則來精確調整此規則。
 
 ![設定路由準則](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -73,10 +73,9 @@ ht-degree: 79%
 
 **5. 修改傳入要求標頭**
 
-設定以下傳入要求標題：
-`x-edgeoptimize-api-key`至從LLMO擷取的API金鑰
-`x-edgeoptimize-config`至 `LLMCLIENT=TRUE;`
-`x-edgeoptimize-url`至`{{builtin.AK_URL}}`
+設定以下傳入要求標頭：
+`x-edgeoptimize-api-key` 設定為從 LLMO 擷取的 API 金鑰`x-edgeoptimize-config` 設定為 `LLMCLIENT=TRUE;`
+`x-edgeoptimize-url` 設定為 `{{builtin.AK_URL}}`
 
 ![修改傳入要求標頭](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
@@ -187,16 +186,16 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-**4. 暫存網域（選擇性）**
+**4. 中繼網域 (選用)**
 
-如果您使用來自LLM Optimizer的暫存主機名稱與暫存API金鑰，請使用規則中的&#x200B;**staging**&#x200B;金鑰在您的&#x200B;**暫存** Akamai屬性上部署相同的路由模式。 接著，驗證中繼主機上的機器人流量：
+如果您使用來自 LLM Optimizer 的中繼主機名稱與中繼 API 金鑰，請使用您規則中的&#x200B;**中繼**&#x200B;金鑰，在&#x200B;**中繼** Akamai 屬性上部署相同的路由模式。接著驗證中繼主機上的機器人流量：
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-將`https://staging.example.com/page.html`取代為您的實際暫存URL和路徑。 成功的回應包含`x-edgeoptimize-request-id`標頭。
+請使用您實際的中繼 URL 和路徑取代 `https://staging.example.com/page.html`。成功的回應將包含 `x-edgeoptimize-request-id` 標頭。
 
 {{verify-routing-status-in-ui}}
 
