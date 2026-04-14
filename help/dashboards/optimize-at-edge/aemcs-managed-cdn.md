@@ -3,9 +3,9 @@ title: 邊緣最佳化：AEM Cloud Service 管理的內容傳遞網路 (Fastly)
 description: 了解在 LLM Optimizer 中如何設定 AEM Cloud Service 管理的內容傳遞網路 (Fastly) 進行邊緣最佳化。
 feature: Opportunities
 source-git-commit: 0c7ccadbb40c8c119cb2a57cf8118708c33c4236
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '481'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 76%
 
 若要開始將代理流量路由至 Edge Optimize：
 
-1. 在LLM Optimizer中，開啟&#x200B;**客戶組態**&#x200B;並選取&#x200B;**CDN組態**&#x200B;標籤。
+1. 在 LLM Optimizer 中，開啟「**客戶設定**」並選取「**內容傳遞網路設定**」標籤。
 
    ![導覽至客戶設定](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
 
-2. 找到&#x200B;**將最佳化部署到AI代理程式**&#x200B;區段。 勾選&#x200B;**啟用最佳化引擎**&#x200B;核取方塊。
+2. 找出「**將最佳化部署到 AI 代理**」區段。勾選「**啟用最佳化引擎**」核取方塊。
 
-   ![將最佳化部署到AI代理程式 — 擱置中](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
+   ![將最佳化部署到 AI 代理：待處理](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
 
-3. 在確認對話方塊中，選取&#x200B;**啟用**。 Adobe 團隊將代表您處理路由設定。
+3. 在確認對話框中，選取「**啟用**」。Adobe 團隊將代表您處理路由設定。
 
-   ![啟用最佳化引擎確認對話方塊](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
+   ![啟用最佳化引擎確認對話框](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
 
-   設定好路由並啟用後，狀態會更新為&#x200B;**已完成的**，並加上綠色核取記號以確認路由已啟用。 您無需再執行任何動作。
+   路由設定好並啟動後，狀態會更新為「**已完成**」，並顯示綠色勾號確認路由已啟用。您無需再執行任何動作。
 
-   ![將最佳化部署到AI代理程式 — 已完成](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+   ![將最佳化部署到 AI 代理：已完成](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 此外，如果您對於上述步驟需要任何協助，請聯絡您的 Adobe 帳戶團隊或 `llmo-at-edge@adobe.com`。
 
@@ -117,10 +117,10 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-**4. 檢查LLM Optimizer**&#x200B;中的路由狀態
+**4. 檢查 LLM Optimizer 中的路由狀態**
 
-您也可以在LLM Optimizer UI中確認路由。 開啟&#x200B;**客戶組態**&#x200B;並選取&#x200B;**CDN組態**&#x200B;標籤。 路由作用中時，**部署最佳化至AI代理程式**&#x200B;區段會顯示&#x200B;**已完成**。
+您也可以在 LLM Optimizer UI 中確認路由。開啟「**客戶設定**」並選取「**內容傳遞網路設定**」標籤。當路由已啟用時，「**將最佳化部署到 AI 代理**」區段會顯示「**已完成**」。
 
-![將最佳化部署到AI代理程式 — 已完成](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+![將最佳化部署到 AI 代理：已完成](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 {{return-to-overview}}

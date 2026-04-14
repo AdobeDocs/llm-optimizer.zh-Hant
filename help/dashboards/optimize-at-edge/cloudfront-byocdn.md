@@ -3,9 +3,9 @@ title: 邊緣最佳化：CloudFront (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 CloudFront BYOCDN 進行邊緣最佳化。
 feature: Opportunities
 source-git-commit: da789100d814004687de2f46e18a295671dec4b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2265'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 * 已完成 LLM Optimizer 上線流程。
 * 已經將內容傳遞網路記錄轉送至 LLM Optimizer。
 * 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。
-* （選用）如果先在中繼主機名稱上測試路由，則在中繼Edge最佳化API金鑰。
+* (選用) 如果您先在中繼主機名稱上測試路由，需有中繼 Edge Optimize API 金鑰。
 
 {{retrieve-byocdn-api-key}}
 
@@ -299,16 +299,16 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-**4. 暫存網域（選擇性）**
+**4. 中繼網域 (選用)**
 
-如果您使用來自LLM Optimizer的暫存主機名稱與暫存API金鑰，請使用&#x200B;**暫存** API金鑰在您的&#x200B;**暫存**&#x200B;散發上部署相同的CloudFront設定。 接著，驗證中繼主機上的機器人流量：
+如果您使用來自 LLM Optimizer 的中繼主機名稱與中繼 API 金鑰，請使用&#x200B;**中繼** API 金鑰，在您的&#x200B;**中繼**&#x200B;分發上部署相同的 CloudFront 設定。接著驗證中繼主機上的機器人流量：
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
 
-將`https://staging.example.com/page.html`取代為您的實際暫存URL和路徑。 成功的回應包含`x-edgeoptimize-request-id`標頭。
+請使用您實際的中繼 URL 和路徑取代 `https://staging.example.com/page.html`。成功的回應將包含 `x-edgeoptimize-request-id` 標頭。
 
 {{verify-routing-status-in-ui}}
 
