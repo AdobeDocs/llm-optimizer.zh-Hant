@@ -2,10 +2,10 @@
 title: 邊緣最佳化：Cloudflare (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Cloudflare BYOCDN 進行邊緣最佳化。
 feature: Opportunities
-source-git-commit: 66b058734597c378040e77a23a4023bed9273427
+source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
 workflow-type: tm+mt
-source-wordcount: '1880'
-ht-degree: 71%
+source-wordcount: '1922'
+ht-degree: 69%
 
 ---
 
@@ -59,7 +59,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 有兩種方法可設定Cloudflare Worker for Edge最佳化：
 
 * [**選項1：部署至Cloudflare （建議）**](#option-1-deploy-to-cloudflare) — 自動建立新的背景工作，並提示您輸入必要的環境變數和密碼。 如果您沒有此網域的現有Cloudflare Worker，請使用此選項。
-* [**選項2：手動設定**](#option-2-manual-setup) — 自行建立和設定背景工作程式的逐步指示。 如果您已有要擴充的現有Cloudflare Worker，或您想要完全控制部署，請使用此選項。
+* [**選項2：手動設定**](#option-2-manual-setup) — 自行建立和設定背景工作程式的逐步指示。 如果您已在網域上設定了現有的Cloudflare背景工作 — 您需要將Edge最佳化程式碼合併到現有的背景工作（請參閱[步驟2：新增背景工作程式碼](#option-2-manual-setup)），或者您偏好完全控制部署，請使用此選項。
 
 無論您選擇哪個選項，都必須手動將背景工作者連結至您的網域 — 請參閱[步驟：新增路由至您的網域](#add-a-route-to-your-domain)。
 
@@ -113,7 +113,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 **步驟 2：新增 Worker 程式碼**
 
-建立 Worker 之後，按一下「**編輯程式碼**」，然後用下列內容取代預設程式碼：
+建立背景工作程式之後，按一下&#x200B;**編輯程式碼**，然後以下列專案取代預設程式碼。 如果您已有現有的Cloudflare Worker，請將下列程式碼與現有程式碼合併，而非完全取代。
 
 ```javascript
 /**
