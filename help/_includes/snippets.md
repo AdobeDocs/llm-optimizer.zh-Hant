@@ -1,8 +1,8 @@
 ---
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: e9309dc8f8d1d81b953483f17dcb424e46d5cd3b
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 10%
+source-wordcount: '457'
+ht-degree: 20%
 
 ---
 # 程式碼片段
@@ -11,17 +11,17 @@ ht-degree: 10%
 
 **擷取生產Edge最佳化API金鑰的步驟：**
 
-1. 在LLM Optimizer中，開啟&#x200B;**客戶組態**&#x200B;並選取&#x200B;**CDN組態**&#x200B;標籤。
+1. 在 LLM Optimizer 中，開啟「**客戶設定**」並選取「**內容傳遞網路設定**」標籤。
 
    ![導覽至客戶設定](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
 
-2. 找到&#x200B;**將最佳化部署到AI代理程式**&#x200B;區段。 勾選&#x200B;**啟用最佳化引擎**&#x200B;核取方塊。
+2. 找出「**將最佳化部署到 AI 代理**」區段。 勾選「**啟用最佳化引擎**」核取方塊。
 
-   ![將最佳化部署到AI代理程式 — 擱置中](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
+   ![將最佳化部署到 AI 代理：待處理](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
 
-3. 在確認對話方塊中，選取&#x200B;**啟用**。
+3. 在確認對話框中，選取「**啟用**」。
 
-   ![啟用最佳化引擎確認對話方塊](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
+   ![啟用最佳化引擎確認對話框](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
 
 4. 選取&#x200B;**檢視詳細資料**。 在&#x200B;**部署最佳化詳細資料**&#x200B;對話方塊中，複製&#x200B;**生產API金鑰** （使用欄位旁的&#x200B;**複製**）。
 
@@ -32,28 +32,31 @@ ht-degree: 10%
 
 此外，如果您對於上述步驟需要任何協助，請聯絡您的 Adobe 帳戶團隊或 `llmo-at-edge@adobe.com`。
 
-## 中繼網域API金鑰（選擇性） {#retrieve-staging-edge-optimize-api-key}
+## 可選：測試測試主機名稱上的路由 {#retrieve-staging-edge-optimize-api-key}
 
-如果要在生產流量使用路由規則之前，於較低層級環境中測試Edge的「最佳化」，請使用預備主機名稱。
+**選用：測試暫存主機名稱上的路由**
 
-**先決條件**
+若您想在啟用生產製程之前，先在較低的環境中驗證製程，則可設定暫存主機名稱。
 
-* 暫存主機名稱必須屬於與您的生產網站相同的&#x200B;**可登入網域** （例如，當生產網站為`https://www.example.com`時，`https://staging.example.com`）。
-* 只能為網站設定&#x200B;**一個**&#x200B;暫存網域。 儲存後，必須協助才能變更。
+**需求**
 
-**步驟**
+* 暫存主機名稱必須位於與生產環境相同的&#x200B;**可登入網域**&#x200B;上（例如，當生產環境為`https://www.example.com`時，`https://staging.example.com`）。
+* 每個網站只有&#x200B;**一個**&#x200B;暫存網域。 儲存後，必須聯絡Adobe才能變更。
 
-1. 在LLM Optimizer中，開啟&#x200B;**客戶組態**&#x200B;並選取&#x200B;**CDN組態**&#x200B;標籤。
+**取得您的暫存API金鑰**
 
-2. 在&#x200B;**將最佳化部署到AI代理程式**&#x200B;區段中，選取&#x200B;**新增中繼網域** (或者&#x200B;**中繼網域** （如果已設定中繼網域）。
+1. 開啟&#x200B;**客戶組態**&#x200B;並選取&#x200B;**CDN組態**。
+2. 在&#x200B;**將最佳化部署到AI代理程式**&#x200B;下，選取&#x200B;**新增中繼網域** （或如果已設定中繼網域，則選取&#x200B;**中繼網域**）。
+3. 輸入包含`https://`的完整暫存URL並選取&#x200B;**設定網域**。
+4. 從確認對話方塊複製&#x200B;**staging** API金鑰。
 
-3. 在&#x200B;**中繼網域**&#x200B;對話方塊中，輸入包含`https://`的完整暫存URL，並選取&#x200B;**設定網域**。
+![中繼網域API金鑰](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
 
-   ![中繼網域輸入對話方塊](/help/assets/optimize-at-edge/byocdn-staging-domain-input.png)
+使用中繼API金鑰在中繼環境中部署相同的路由規則。
 
-4. 在下一個提示中確認網域。 工作流程完成時，**階段網域**&#x200B;對話方塊會顯示已設定的網域及其&#x200B;**API金鑰**。 選取&#x200B;**複製**&#x200B;以複製暫存API金鑰。
+**測試暫存機器人流量**
 
-   ![中繼網域API金鑰](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
+請使用您實際的中繼 URL 和路徑取代 `https://staging.example.com/page.html`。 **成功：**&#x200B;回應包含`x-edgeoptimize-request-id`標頭。
 
 如果您需要協助，請連絡`llmo-at-edge@adobe.com`。
 
@@ -61,7 +64,17 @@ ht-degree: 10%
 
 您也可以在 LLM Optimizer 使用者介面中確認流量路由的狀態。 瀏覽至&#x200B;**客戶組態**&#x200B;並選取&#x200B;**CDN組態**&#x200B;標籤。
 
-![將最佳化部署到AI代理程式 — 已完成](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+![將最佳化部署到 AI 代理：已完成](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+
+## 允許透過防火牆規則在Edge最佳化（選用） {#waf-allowlist-setup}
+
+如果您的CDN使用WAF或機器人管理員：
+
+* 允許列出WAF或機器人管理員中的`*AdobeEdgeOptimize/1.0*`使用者代理程式，讓Edge最佳化服務可以擷取您的來源內容。
+* 如果您的防火牆需要使用者代理程式以外的其他驗證，請產生密碼（例如，`openssl rand -hex 32`）並：
+   * 將帶有密碼的`x-edgeoptimize-fetcher-key`新增到路由規則中與其他`x-edgeoptimize-*`標頭一起。
+   * 新增WAF或機器人管理員規則以允許`x-edgeoptimize-fetcher-key`符合相同密碼的請求。
+* 在Edge最佳化會依原樣轉送此標題 — 您擁有完整的金鑰生命週期。
 
 ## 返回總覽 {#return-to-overview}
 

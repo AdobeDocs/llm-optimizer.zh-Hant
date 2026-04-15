@@ -2,10 +2,10 @@
 title: 邊緣最佳化：Cloudflare (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Cloudflare BYOCDN 進行邊緣最佳化。
 feature: Opportunities
-source-git-commit: 14dbee36f39b0d993d448edccb63fb8a519704a1
+source-git-commit: 66b058734597c378040e77a23a4023bed9273427
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 73%
+source-wordcount: '1880'
+ht-degree: 71%
 
 ---
 
@@ -23,11 +23,9 @@ ht-degree: 73%
 * 已完成 LLM Optimizer 上線流程。
 * 已經將內容傳遞網路記錄轉送至 LLM Optimizer。
 * 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。
-* (選用) 如果您先在中繼主機名稱上測試路由，需有中繼 Edge Optimize API 金鑰。
+* （選擇性）若要測試暫存路由，請參閱此頁面結尾的&#x200B;**選擇性：測試暫存主機名稱上的路由**。
 
 {{retrieve-byocdn-api-key}}
-
-{{retrieve-staging-edge-optimize-api-key}}
 
 **路由如何運作**
 
@@ -193,6 +191,7 @@ async function handleRequest(request, env, ctx) {
     edgeOptimizeHeaders.delete("x-edgeoptimize-api-key");
     edgeOptimizeHeaders.delete("x-edgeoptimize-url");
     edgeOptimizeHeaders.delete("x-edgeoptimize-config");
+    edgeOptimizeHeaders.delete("x-edgeoptimize-fetcher-key"); // Optional (required only in case of WAF)
 
     // x-forwarded-host: The original site domain
     // Use environment variable if set, otherwise use the request host
@@ -206,6 +205,8 @@ async function handleRequest(request, env, ctx) {
 
     // x-edgeoptimize-config: Configuration for cache key differentiation
     edgeOptimizeHeaders.set("x-edgeoptimize-config", "LLMCLIENT=TRUE;");
+
+    // edgeOptimizeHeaders.set("x-edgeoptimize-fetcher-key", "<YOUR FETCHER KEY>"); // Optional (required only in case of WAF)
 
     try {
       // Send request to Edge Optimize backend
@@ -434,6 +435,10 @@ const FAILOVER_ON_5XX = false;
 | 要求因為主機無效而執行失敗 | `EDGE_OPTIMIZE_TARGET_HOST` 包含通訊協定 (例如 `https://`)。 | 僅能使用沒有通訊協定的網域名稱 (例如 `example.com`，而非 `https://example.com`)。 |
 | 容錯移轉期間發生 530 錯誤 | Cloudflare 無法連線至來源，或容錯移轉要求含有無效的標頭。 | 確保容錯移轉功能會移除 Edge Optimize 標頭。 確認您的來源可供存取，且 DNS 的設定正確。 |
 
+**允許透過防火牆規則在Edge最佳化（選用）**
+
+{{waf-allowlist-setup}}
+
 **驗證設定**
 
 完成設定後，請確認機器人流量會路由至 Edge Optimize，而真人流量不受影響。
@@ -472,17 +477,13 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-**4. 中繼網域 (選用)**
+{{verify-routing-status-in-ui}}
 
-如果您使用來自 LLM Optimizer 的中繼主機名稱與中繼 API 金鑰，請使用&#x200B;**中繼** API 金鑰，在您的&#x200B;**中繼**&#x200B;區域上部署相同的 Worker 邏輯。 接著驗證中繼主機上的機器人流量：
+{{retrieve-staging-edge-optimize-api-key}}
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
-
-請使用您實際的中繼 URL 和路徑取代 `https://staging.example.com/page.html`。 成功的回應將包含 `x-edgeoptimize-request-id` 標頭。
-
-{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

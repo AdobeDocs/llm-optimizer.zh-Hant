@@ -2,10 +2,10 @@
 title: 邊緣最佳化：Fastly (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Fastly BYOCDN 進行邊緣最佳化。
 feature: Opportunities
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: 412500d2a95d66a5c9bf6fa88efc62c6244834c8
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 92%
 
 ---
 
@@ -22,11 +22,9 @@ ht-degree: 100%
 * 已完成 LLM Optimizer 上線流程。
 * 已經將內容傳遞網路記錄轉送至 LLM Optimizer。
 * 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。
-* (選用) 如果您先在中繼主機名稱上測試路由，需有中繼 Edge Optimize API 金鑰。
+* （選擇性）若要測試暫存路由，請參閱此頁面結尾的&#x200B;**選擇性：測試暫存主機名稱上的路由**。
 
 {{retrieve-byocdn-api-key}}
-
-{{retrieve-staging-edge-optimize-api-key}}
 
 **設定**
 
@@ -42,6 +40,7 @@ ht-degree: 100%
 unset req.http.x-edgeoptimize-url;
 unset req.http.x-edgeoptimize-config;
 unset req.http.x-edgeoptimize-api-key;
+unset req.http.x-edgeoptimize-fetcher-key; # Optional (required only in case of WAF)
 
 if (!req.http.x-edgeoptimize-request
     && req.http.user-agent ~ "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)") {
@@ -49,6 +48,7 @@ if (!req.http.x-edgeoptimize-request
   set req.http.x-edgeoptimize-url = req.url; # required for identifying the original url
   set req.http.x-edgeoptimize-config = "LLMCLIENT=TRUE;"; # required for cache key
   set req.http.x-edgeoptimize-api-key = "<YOUR API KEY>"; # required for identifying the client
+  set req.http.x-edgeoptimize-fetcher-key = "<YOUR FETCHER KEY>"; # Optional (required only in case of WAF)
   set req.backend = F_EDGE_OPTIMIZE;
 }
 ```
@@ -85,6 +85,10 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 | Edge Optimize 傳回 `2XX` | 最佳化的回應會傳送至用戶端。 |
 | Edge Optimize 傳回 `4XX` 或 `5XX` | 系統會重新啟動要求，並從預設來源提供。 |
 | 容錯移轉回應 | 包含標頭 `x-edgeoptimize-fo: 1`。 |
+
+**允許透過防火牆規則在Edge最佳化（選用）**
+
+{{waf-allowlist-setup}}
 
 **驗證設定**
 
@@ -124,17 +128,13 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
-**4. 中繼網域 (選用)**
+{{verify-routing-status-in-ui}}
 
-如果您使用來自 LLM Optimizer 的中繼主機名稱與中繼 API 金鑰，請使用&#x200B;**中繼** API 金鑰將相同的 VCL 程式碼片段新增到您的&#x200B;**中繼** Fastly 服務。接著驗證中繼主機上的機器人流量：
+{{retrieve-staging-edge-optimize-api-key}}
 
 ```
 curl -svo /dev/null https://staging.example.com/page.html \
   --header "user-agent: chatgpt-user"
 ```
-
-請使用您實際的中繼 URL 和路徑取代 `https://staging.example.com/page.html`。成功的回應將包含 `x-edgeoptimize-request-id` 標頭。
-
-{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}
