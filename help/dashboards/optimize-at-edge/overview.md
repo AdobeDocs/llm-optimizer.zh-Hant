@@ -2,10 +2,10 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
-workflow-type: ht
-source-wordcount: '2348'
-ht-degree: 100%
+source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
+workflow-type: tm+mt
+source-wordcount: '2312'
+ht-degree: 98%
 
 ---
 
@@ -58,16 +58,13 @@ ht-degree: 100%
 * 在網站中的 robots.txt 檔案或機器人流量管理規則的允許清單中，加入 `*AdobeEdgeOptimize/1.0*` 使用者代理。
 * 請確認在網域或內容傳遞網路層級並未封鎖頁面。
 * 在內容傳遞網路中新增邊緣最佳化路由規則。
+* 如果您的CDN有WAF或機器人管理員規則，請將`*AdobeEdgeOptimize/1.0*`使用者代理程式加入允許清單。 如果需要其他驗證，請設定`x-edgeoptimize-fetcher-key`標頭。 以下每個BYOCDN指南都包含步驟。
 * 在 LLM Optimizer 介面中確認邊緣最佳化路由。
 
 >[!IMPORTANT]
->路由必須在外部內容傳遞網路 (最靠近用戶端的內容傳遞網路) 完成設定。如果您有多個內容傳遞網路，則只能在外部內容傳遞網路進行路由。
+>路由必須在外部內容傳遞網路 (最靠近用戶端的內容傳遞網路) 完成設定。 如果您有多個內容傳遞網路，則只能在外部內容傳遞網路進行路由。
 
-若要引導設定流程，請在下方選取您的內容傳遞網路提供者，並按照相應的設定指南操作。 請記住，您應該根據實際的上線設定調整這些範例。 我們建議先在較低階的環境套用變更。
-
-### 中繼網域 API 金鑰 (選用)
-
-如果您生產前在中繼主機名稱上進行測試，請使用 LLM Optimizer 註冊&#x200B;**一個**&#x200B;中繼網域，並從以下路徑複製其&#x200B;**中繼** Edge Optimize API 金鑰：「**客戶設定**」→「**內容傳遞網路設定**」→「**將最佳化部署到 AI 代理**」→「**新增中繼網域**」(或「**中繼網域**」)。中繼主機名稱必須與您的生產網站共用相同的可註冊網域。**自備內容傳遞網路**&#x200B;指南包含擷取中繼金鑰以及驗證中繼 URL 路由的完整步驟。
+若要引導設定流程，請在下方選取您的內容傳遞網路提供者，並按照相應的設定指南操作。 請記住，您應該根據實際的上線設定調整這些範例。 我們建議先在較低階的環境套用變更。 **自備CDN**&#x200B;指南在每個頁面末尾包含選用的測試主機名稱測試。
 
 ### 內容傳遞網路設定指南
 
@@ -100,7 +97,7 @@ ht-degree: 100%
 
 [AI 內容能見度檢查程式](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)瀏覽器擴充功能，會顯示 LLM 可以存取多少網頁內容以及哪些內容仍然隱藏。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -130,7 +127,7 @@ ht-degree: 100%
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
