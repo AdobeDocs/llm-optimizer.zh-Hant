@@ -2,10 +2,10 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-source-git-commit: 338baae83b63d2e09450bf508c65c6f97240a7dc
+source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 98%
+source-wordcount: '2323'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 98%
 1. 在「**客戶設定**」儀表板上，選取「**內容傳遞網路設定**」標籤。
 1. 按一下「**上線內容傳遞網路**」。
    ![「內容傳遞網路設定」分頁](/help/overview/assets/cc-cdn.png)
-1. Adobe 可以協助 AEM Fastly 客戶完成上線程序。 對於使用其他內容傳遞網路提供者的客戶，您的 IT/內容傳遞網路團隊必須完成必要的設定及滿足先決條件。 如需其他指引，您也可以參閱下方提供的內容傳遞網路指南範例。
+1. 對於由AEM Cloud Service管理的Fastly客戶，路由設定是自助式的，可以直接在LLM Optimizer UI中完成。 對於使用其他內容傳遞網路提供者的客戶，您的 IT/內容傳遞網路團隊必須完成必要的設定及滿足先決條件。 如需其他指引，您也可以參閱下方提供的內容傳遞網路指南範例。
 
 >[!NOTE]
 >請參閱以下涵蓋完整上線流程的逐步操作指南。 如有指南中未能解決的問題，您可以聯絡 `llmo-at-edge@adobe.com`。
