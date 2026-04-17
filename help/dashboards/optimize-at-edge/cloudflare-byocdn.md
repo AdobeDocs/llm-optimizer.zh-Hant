@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
 workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 69%
+ht-degree: 94%
 
 ---
 
@@ -56,50 +56,50 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 ## 設定選項
 
-有兩種方法可設定Cloudflare Worker for Edge最佳化：
+有兩種方法可以針對 Edge Optimize 設定 Cloudflare Worker：
 
-* [**選項1：部署至Cloudflare （建議）**](#option-1-deploy-to-cloudflare) — 自動建立新的背景工作，並提示您輸入必要的環境變數和密碼。 如果您沒有此網域的現有Cloudflare Worker，請使用此選項。
-* [**選項2：手動設定**](#option-2-manual-setup) — 自行建立和設定背景工作程式的逐步指示。 如果您已在網域上設定了現有的Cloudflare背景工作 — 您需要將Edge最佳化程式碼合併到現有的背景工作（請參閱[步驟2：新增背景工作程式碼](#option-2-manual-setup)），或者您偏好完全控制部署，請使用此選項。
+* [**選項 1：部署至 Cloudflare (建議)**](#option-1-deploy-to-cloudflare) — 自動建立新的工作程式，並提示您輸入必要的環境變數和密碼。 如果您不具備此網域的既有 Cloudflare Worker，請採取此選項。
+* [**選項 2：手動設定**](#option-2-manual-setup) — 自行建立和設定工作程式的逐步指示。 如果您已在網域上設定了現有的Cloudflare背景工作 — 您需要將Edge最佳化程式碼合併到現有的背景工作（請參閱[步驟2：新增背景工作程式碼](#option-2-manual-setup)），或者您偏好完全控制部署，請使用此選項。
 
-無論您選擇哪個選項，都必須手動將背景工作者連結至您的網域 — 請參閱[步驟：新增路由至您的網域](#add-a-route-to-your-domain)。
+無論您選擇哪個選項，都必須手動將工作程式連結至您的網域，請參閱[步驟：將路由新增至您的網域](#add-a-route-to-your-domain)。
 
-## 選項1：部署至Cloudflare
+## 選項 1：部署至 Cloudflare
 
-此選項使用&#x200B;**部署到Cloudflare**&#x200B;按鈕來自動建立背景工作，並在您的Cloudflare帳戶中設定必要的環境變數和密碼。 如果您正在設定新的背景工作，這是最快速入門的方法。
+此選項使用「**部署至 Cloudflare**」按鈕，自動建立工作程式，並在您的 Cloudflare 帳戶中設定必要的環境變數和密碼。 如果您正在設定新的工作程式，這是能最快開始使用的方法。
 
 >[!IMPORTANT]
 >
->只有在您&#x200B;**沒有**&#x200B;您的網域中已有Cloudflare Worker時，才使用此選項。 如果您已有背景工作，請使用[選項2：手動設定](#option-2-manual-setup)，將Edge最佳化路由邏輯新增至現有的背景工作。
+>唯有在您的網域&#x200B;**不**&#x200B;具備既有 Cloudflare Worker 時，才採用此選項。 如果您已具備工作程式，請使用[選項 2：手動設定](#option-2-manual-setup)，將 Edge Optimize 路由邏輯新增至既有的工作程式。
 
-**步驟1：部署背景工作**
+**步驟 1：部署工作程式**
 
-按一下下方的按鈕，將Edge最佳化背景工作部署至您的Cloudflare帳戶：
+按一下下方的按鈕，將 Edge Optimize 工作程式部署至您的 Cloudflare 帳戶：
 
-[![部署至Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
+[![部署至 Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
 
-**步驟2：填寫部署表單**
+**步驟 2：填寫部署表單**
 
-按一下按鈕可開啟Worker設定頁面。 請依照以下說明填寫表單：
+按一下按鈕，會開啟 Worker 設定頁面。 請依照以下說明填寫表單：
 
-![Cloudflare Worker設定頁面](/help/assets/optimize-at-edge/cloudflare-deploy-form.png)
+![Cloudflare Workers 設定頁面](/help/assets/optimize-at-edge/cloudflare-deploy-form.png)
 
-1. **Git帳戶** — 從下拉式清單中選取您的GitHub或GitLab帳戶。 Cloudflare會將背景工作程式碼分叉至您帳戶的存放庫。 如果未列出任何帳戶，您可以直接從下拉式清單中選取&#x200B;**+新GitHub連線**&#x200B;或&#x200B;**+新GitLab連線**，以新增連線。 如需詳細資訊，請參閱[Cloudflare Git整合指南](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/)。
+1. **Git 帳戶** — 從下拉式選單中選取您的 GitHub 或 GitLab 帳戶。 Cloudflare 會將工作程式的程式碼分叉至您帳戶的存放庫中。 如果未列出任何帳戶，您可以直接從下拉式選單中選取「**+ 新 GitHub 連線**」或「**+ 新 GitLab 連線**」，藉以新增連線。 如需詳細資訊，請參閱 [Cloudflare Git 整合指南](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/)。
 
-   ![Git帳戶下拉式清單，顯示新的GitHub連線和新的GitLab連線選項](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
-2. **建立私人Git存放庫** — 保留此為勾選狀態（預設）。
-3. **專案名稱** — 請保留`edge-optimize-router`或輸入您選擇的名稱。
-4. **EDGE_OPTIMIZE_API_KEY** — 貼上Adobe提供的Edge最佳化API金鑰。 此值會儲存為加密的密碼。
-5. **EDGE_OPTIMIZE_TARGET_HOST** — 輸入您網站不含通訊協定的網域（例如，`www.example.com`）。
-6. **組建命令** — 留空。
-7. **部署命令** — 保留為`npm run deploy` （預填）。
-8. **非生產分支的組建** — 保持未勾選。 這是開發人員工作流程功能，不是此部署所需的功能。
-9. 按一下&#x200B;**建立並部署**。
+   ![Git 帳戶下拉式選單，顯示「新 GitHub 連線」和「新 GitLab 連線」選項](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
+2. **建立私人 Git 存放庫**：此項目保留為勾選狀態 (預設)。
+3. **專案名稱**：維持為 `edge-optimize-router` 或輸入您想要的名稱。
+4. **EDGE_OPTIMIZE_API_KEY**：貼上 Adobe 提供的 Edge Optimize API 金鑰。 此值會儲存為加密的密鑰。
+5. **EDGE_OPTIMIZE_TARGET_HOST**：輸入不含通訊協定的網站網域 (例如： `www.example.com`)。
+6. **建置命令**：留空。
+7. **部署命令**：維持為 `npm run deploy` (預填)。
+8. **非生產分支的建置**：保持未勾選。 此為開發人員工作流程功能，並非此部署所需的功能。
+9. 按一下「**建立並部署**」。
 
-在部署背景工作之後，請繼續到[新增您網域的路由](#add-a-route-to-your-domain)以將背景工作與您的網域連結。 路由未自動設定，必須手動完成。
+部署工作程式之後，繼續前往「[新增您網域的路由](#add-a-route-to-your-domain)」，將工作程式與您的網域連結。 路由不會自動設定，必須手動完成。
 
-## 選項2：手動設定
+## 選項 2：手動設定
 
-請依照下列步驟手動建立和設定背景工作。
+依照下列步驟手動建立和設定工作程式。
 
 **步驟 1：建立 Cloudflare Worker**
 
@@ -287,7 +287,7 @@ async function failoverToOrigin(request, env, url) {
 
 ![Cloudflare Worker 程式碼編輯器](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
 
-**步驟3：設定環境變數和秘密**
+**步驟 3：設定環境變數和密鑰**
 
 環境變數會安全地儲存敏感設定，例如您的 API 金鑰。
 
@@ -305,9 +305,9 @@ async function failoverToOrigin(request, env, url) {
 
 ![Cloudflare 環境變數](/help/assets/optimize-at-edge/cloudflare-env-variables.png)
 
-## 新增路由至您的網域 {#add-a-route-to-your-domain}
+## 將路由新增至您的網域 {#add-a-route-to-your-domain}
 
-無論您使用哪個設定選項，都必須手動將背景工作程式連結至您的網域。 此步驟會針對您的流量啟動背景工作。
+無論您使用哪個設定選項，都必須手動將工作程式連結至您的網域。 此步驟會針對您的流量啟動工作程式。
 
 1. 前往 Worker 的「**設定**」>「**觸發程序**」。
 2. 在「**路由**」之下，按一下「**新增路由**」。
@@ -425,7 +425,7 @@ const FAILOVER_ON_5XX = false;
 | 問題 | 可能的原因 | 解決方案 |
 |-------|----------------|----------|
 | 回應中沒有 `x-edgeoptimize-request-id` 標頭 | Worker 路由不相符，或使用者代理不在代理式機器人清單中。 | 確認您的路由模式符合要求 URL。 檢查使用者代理是否在 `AGENTIC_BOTS` 陣列中。 |
-| Edge Optimize 中的 401 或 403 錯誤 | API 金鑰無效或遺失。 | 驗證已在環境變數和密碼中正確設定`EDGE_OPTIMIZE_API_KEY`。 聯絡 Adobe 確認您的 API 金鑰有效。 |
+| Edge Optimize 中的 401 或 403 錯誤 | API 金鑰無效或遺失。 | 確認環境變數與密鑰中的 `EDGE_OPTIMIZE_API_KEY` 設定正確。 聯絡 Adobe 確認您的 API 金鑰有效。 |
 | 無限重新導向或迴圈 | 未正確設定或檢查迴圈保護標頭。 | 確保 `x-edgeoptimize-request` 標頭檢查已就緒。 |
 | 真人流量受到影響 | Worker 路由邏輯過於廣泛。 | 確認使用者代理的對應邏輯正確且不區分大小寫。 檢查 `TARGETED_PATHS` 的設定正確。 |
 | 回應速度緩慢 | Edge Optimize 後端的網路延遲。 | 已預期第一個要求會發生這樣的情況；後續要求會快取至 Edge Optimize。 |
