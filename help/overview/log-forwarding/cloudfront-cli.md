@@ -1,22 +1,22 @@
 ---
-title: 記錄轉送 — CloudFront (AWS CLI)
-description: 使用AWS CLI將CloudFront CDN記錄轉送至Adobe的S3儲存貯體，以進行傳遞設定和操作。
+title: 記錄轉寄 - CloudFront (AWS CLI)
+description: 使用 AWS CLI 將 CloudFront 內容傳遞網路記錄轉寄至 Adobe 的 S3 儲存貯體，進行傳遞設定和操作。
 feature: Agentic Traffic
 source-git-commit: 3277e7f7f2e0c5e4693e40473d595b12d9e5f2e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
-# 記錄轉送： CloudFront (AWS CLI) {#log-forwarding-cloudfront-cli}
+# 記錄轉寄：CloudFront (AWS CLI) {#log-forwarding-cloudfront-cli}
 
-本頁詳細說明如何將CDN記錄從CloudFront轉送至Adobe的S3儲存貯體，以進行代理流量資料收集。 您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。 上線流程完成後，請依照本頁面提供的步驟，在[步驟2](#step-2-cli)中使用[AWS命令列介面](https://aws.amazon.com/cli/)設定記錄轉送。
+本頁面詳細說明如何將內容傳遞網路記錄從 CloudFront 轉寄至 Adobe 的 S3 貯體，藉以彙集代理式流量資料。您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。 上線流程完成後，請按照此頁面提供的步驟，使用[步驟 2](#step-2-cli) 的 [AWS 命令列介面](https://aws.amazon.com/cli/)設定記錄轉寄。
 
 >[!NOTE]
 >
-> 本指南說明如何使用[AWS命令列介面](https://aws.amazon.com/cli/)來設定記錄轉送。 如果您想要使用&#x200B;**CloudFront UI**&#x200B;設定記錄轉送，請參閱[記錄轉送： CloudFront](/help/overview/log-forwarding/cloudfront.md)。
+> 本指南將說明如何使用 [AWS 命令列介面](https://aws.amazon.com/cli/)設定記錄轉寄。如果您想要使用 **CloudFront 使用者介面**&#x200B;設定記錄轉寄，請參閱[記錄轉寄：CloudFront](/help/overview/log-forwarding/cloudfront.md)。
 
 ## 步驟 1：在 LLM Optimizer 上線 {#step-1}
 
@@ -50,13 +50,13 @@ ht-degree: 19%
 
 <!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
-## 步驟2：使用AWS CLI設定CDN記錄轉送 {#step-2-cli}
+## 步驟 2：使用 AWS CLI 設定內容傳遞網路記錄轉寄 {#step-2-cli}
 
-使用AWS CLI設定CDN記錄轉送，如下所示：
+使用 AWS CLI 設定內容傳遞網路記錄轉寄，如下所示：
 
-### 設定AWS CLI認證
+### 設定 AWS CLI 認證
 
-設定AWS CLI認證MAC。 開啟~/.aws/credentials並輸入以下變數的值：
+設定 AWS CLI 認證 MAC。開啟 ~/.aws/credentials 並輸入以下變數的值：
 
 ```text
 [LLMO]
@@ -67,7 +67,7 @@ aws_session_token=<ONLY_IF_USING_SECURITY_TOKEN_SERVICE> ## Optional
 
 ### 測試連線
 
-執行以下命令以測試連線：
+執行以下命令測試連線：
 
 ```bash
 aws sts get-caller-identity --profile LLMO
@@ -86,13 +86,13 @@ aws sts get-caller-identity --profile LLMO
 
 ### 初始化變數
 
-將`REPLACEME123@AdobeOrg`取代為您的組織Adobe IMS組織ID，然後執行以下命令。 這個命令的輸出ID將參照為`TRANSFORM_IMS_ID`。
+將 `REPLACEME123@AdobeOrg` 取代為您的組織 Adobe IMS 組織 ID，然後執行以下命令。此命令的輸出 ID 將名為 `TRANSFORM_IMS_ID`。
 
 ```bash
 echo "REPLACEME123@AdobeOrg" | sed 's/@AdobeOrg$//' | tr '[:upper:]' '[:lower:]'
 ```
 
-依照下列指引輸入`CUSTOMER`、`CDN_ID`、`ACCT1`和`TRANSFORM_IMS_ID`的值，然後從您的終端機執行命令。
+依照下列指引輸入 `CUSTOMER`、`CDN_ID`、`ACCT1` 和 `TRANSFORM_IMS_ID` 的值，然後從您的終端機執行命令。
 
 ```bash
 export PROFILE1=LLMO
@@ -107,7 +107,7 @@ export DELIVERY_DEST_ARN=arn:aws:logs:us-east-1:640168421876:delivery-destinatio
 
 ### 建立傳遞來源
 
-從執行步驟3的同一終端機，執行以下命令：
+於和執行步驟 3 時相同的終端機，執行以下命令：
 
 ```bash
 aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
@@ -118,9 +118,9 @@ aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
 
 >[!IMPORTANT]
 >
->如果您收到下列錯誤，請搜尋現有的傳遞來源： *呼叫PutDeliverySource作業時發生錯誤(ConflictException)：此ResourceId已用於此帳戶的其他傳遞Source。*
+>如果呈現以下錯誤，請搜尋既有的傳遞來源：*呼叫 PutDeliverySource 操作時發生錯誤 (ConflictException)：此 ResourceId 已用於此帳戶的其他傳遞來源。*
 >
->若要搜尋現有的傳遞來源，請執行此命令：
+>若要搜尋既有的傳遞來源，請執行此命令：
 >
 >```bash
 >aws logs describe-delivery-sources --region us-east-1 \
@@ -140,4 +140,4 @@ aws logs create-delivery \
   --record-fields 'date' 'time' 'x-edge-location' 'cs-method' 'cs(Host)' 'cs-uri-stem' 'sc-status' 'cs(Referer)' 'cs(User-Agent)' 'time-to-first-byte' 'sc-content-type' 'x-host-header'
 ```
 
-&lt;！ — 如果檔案或產品值變更，將`--record-fields`和`--s3-delivery-configuration`與LLM Optimizer CDN設定頁面上顯示的欄位清單和路徑尾碼對齊。—>
+&lt;!--若文件或產品值有所變更，請將 `--record-fields` 和 `--s3-delivery-configuration` 對應至您 LLM Optimizer 內容傳遞網路設定頁面中顯示的欄位清單與路徑後綴。-->
