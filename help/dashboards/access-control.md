@@ -106,7 +106,7 @@ Adobe LLM Optimizer根據使用者角色支援基本存取控制。 此功能僅
 1. 使用為您的組織具有管理許可權的帳戶登入[Adobe Admin Console](https://adminconsole.adobe.com/)。
 1. 將Adobe LLM Optimizer產品設定檔（或您組織的對等產品權利）指派給應接收產品指派權能的使用者或群組。
 
-如需詳細步驟，請參閱[在Admin Console中管理產品](https://helpx.adobe.com/enterprise/using/manage-products.html)和[管理使用者群組](https://helpx.adobe.com/tw/enterprise/using/user-groups.html)。
+如需詳細步驟，請參閱[在Admin Console中管理產品](https://helpx.adobe.com/tw/enterprise/using/manage-products.html)和[管理使用者群組](https://helpx.adobe.com/tw/enterprise/using/user-groups.html)。
 
 >[!NOTE]
 >
