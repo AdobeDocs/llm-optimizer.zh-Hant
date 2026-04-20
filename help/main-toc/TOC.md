@@ -2,9 +2,9 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 利用 Adobe LLM Optimizer 提升您的品牌。 追蹤提及次數、揭露洞察，並主導 AI 驅動的搜尋。 掌控您的能見度，馬上開始最佳化！
-source-git-commit: b6e74e8706c4074a47cc355cb5f3a69a817f8a49
-workflow-type: ht
-source-wordcount: '104'
+source-git-commit: a71e06bb378e4c211a003d5e2cb3446ecd4fc6be
+workflow-type: tm+mt
+source-wordcount: '106'
 ht-degree: 100%
 
 ---
@@ -44,4 +44,5 @@ ht-degree: 100%
       + [Akamai (BYOCDN)](/help/dashboards/optimize-at-edge/akamai-byocdn.md)
       + [Cloudflare (BYOCDN)](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md)
       + [CloudFront (BYOCDN)](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md)
+   + [存取控制](/help/dashboards/access-control.md)
    + [Adobe Analytics 整合](/help/dashboards/adobe-analytics-integration.md)
