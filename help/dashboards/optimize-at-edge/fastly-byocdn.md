@@ -2,10 +2,10 @@
 title: 邊緣最佳化：Fastly (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 Fastly BYOCDN 進行邊緣最佳化。
 feature: Opportunities
-source-git-commit: 412500d2a95d66a5c9bf6fa88efc62c6244834c8
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 92%
+source-wordcount: '348'
+ht-degree: 93%
 
 ---
 
@@ -19,12 +19,8 @@ ht-degree: 92%
 設定 Fastly VCL 規則之前，請確定您具備以下條件：
 
 * 您網域的 Fastly 存取權。
-* 已完成 LLM Optimizer 上線流程。
-* 已經將內容傳遞網路記錄轉送至 LLM Optimizer。
-* 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。
-* （選擇性）若要測試暫存路由，請參閱此頁面結尾的&#x200B;**選擇性：測試暫存主機名稱上的路由**。
-
-{{retrieve-byocdn-api-key}}
+* 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。 如需步驟，請參閱[擷取您的API金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
+* （選擇性）若要測試暫存路由，請參閱[暫存API金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
 **設定**
 
@@ -129,12 +125,5 @@ curl -svo /dev/null https://www.example.com/page.html \
 | `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
 
 {{verify-routing-status-in-ui}}
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}
