@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -82,7 +82,7 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 | Edge Optimize 傳回 `4XX` 或 `5XX` | 系統會重新啟動要求，並從預設來源提供。 |
 | 容錯移轉回應 | 包含標頭 `x-edgeoptimize-fo: 1`。 |
 
-**允許透過防火牆規則在Edge最佳化（選用）**
+**透過防火牆規則允許邊緣最佳化 (選用)**
 
 {{waf-allowlist-setup}}
 

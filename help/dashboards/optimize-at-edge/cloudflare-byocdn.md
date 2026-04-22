@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 有兩種方法可以針對 Edge Optimize 設定 Cloudflare Worker：
 
 * [**選項 1：部署至 Cloudflare (建議)**](#option-1-deploy-to-cloudflare) — 自動建立新的工作程式，並提示您輸入必要的環境變數和密碼。 如果您不具備此網域的既有 Cloudflare Worker，請採取此選項。
-* [**選項 2：手動設定**](#option-2-manual-setup) — 自行建立和設定工作程式的逐步指示。 如果您已在網域上設定了現有的Cloudflare背景工作 — 您需要將Edge最佳化程式碼合併到現有的背景工作（請參閱[步驟2：新增背景工作程式碼](#option-2-manual-setup)），或者您偏好完全控制部署，請使用此選項。
+* [**選項 2：手動設定**](#option-2-manual-setup) — 自行建立和設定工作程式的逐步指示。 有兩種情況可以使用這個選項，一是您已在網域上設定現有的 Cloudflare Worker，因此必須把 Edge Optimize 程式碼合併到既有的 Worker 中 (請參閱[步驟 2：新增 Worker 程式碼](#option-2-manual-setup))，另一則是您希望完全控制部署時。
 
 無論您選擇哪個選項，都必須手動將工作程式連結至您的網域，請參閱[步驟：將路由新增至您的網域](#add-a-route-to-your-domain)。
 
@@ -109,7 +109,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 **步驟 2：新增 Worker 程式碼**
 
-建立背景工作程式之後，按一下&#x200B;**編輯程式碼**，然後以下列專案取代預設程式碼。 如果您已有現有的Cloudflare Worker，請將下列程式碼與現有程式碼合併，而非完全取代。
+建立 Worker 之後，按一下&#x200B;**「編輯程式碼」**，然後用下列內容取代預設程式碼： 如果您已有現有的 Cloudflare Worker，請將下列程式碼與既有的 Worker 程式碼合併，而非完全取代。
 
 ```javascript
 /**
@@ -431,7 +431,7 @@ const FAILOVER_ON_5XX = false;
 | 要求因為主機無效而執行失敗 | `EDGE_OPTIMIZE_TARGET_HOST` 包含通訊協定 (例如 `https://`)。 | 僅能使用沒有通訊協定的網域名稱 (例如 `example.com`，而非 `https://example.com`)。 |
 | 容錯移轉期間發生 530 錯誤 | Cloudflare 無法連線至來源，或容錯移轉要求含有無效的標頭。 | 確保容錯移轉功能會移除 Edge Optimize 標頭。 確認您的來源可供存取，且 DNS 的設定正確。 |
 
-**允許透過防火牆規則在Edge最佳化（選用）**
+**透過防火牆規則允許邊緣最佳化 (選用)**
 
 {{waf-allowlist-setup}}
 
