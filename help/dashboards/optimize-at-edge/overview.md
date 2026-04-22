@@ -2,9 +2,9 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
+source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2301'
 ht-degree: 97%
 
 ---
@@ -55,6 +55,10 @@ ht-degree: 97%
 * 在內容傳遞網路中新增邊緣最佳化路由規則。
 * 如果您的CDN有WAF或機器人管理員規則，請將`*AdobeEdgeOptimize/1.0*`使用者代理程式加入允許清單。 如果需要其他驗證，請設定`x-edgeoptimize-fetcher-key`標頭。 以下每個BYOCDN指南都包含步驟。
 * 在 LLM Optimizer 介面中確認邊緣最佳化路由。
+
+下圖說明請求如何在Edge透過「最佳化」進行BYOCDN設定：
+
+![BYOCDN要求流程](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
 >[!IMPORTANT]
 >路由必須在外部內容傳遞網路 (最靠近用戶端的內容傳遞網路) 完成設定。 如果您有多個內容傳遞網路，則只能在外部內容傳遞網路進行路由。
