@@ -2,7 +2,7 @@
 title: 代理式流量
 description: 了解如何使用代理式流量儀表板，以便查看 AI 代理如何與您的網站互動。
 feature: Agentic Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 91%
@@ -33,7 +33,7 @@ ht-degree: 91%
 
 如果沒有&#x200B;**內容傳遞網路記錄轉送**，則代理式流量儀表板是空白的。 若要檢視代理式互動，您必須設定&#x200B;**內容傳遞網路記錄檔轉送**。
 
-### 客戶設定（傳統導覽）：
+### 客戶設定（傳統導覽）
 
 第一次登入時，您會看到一則訊息，如下圖所示。
 
