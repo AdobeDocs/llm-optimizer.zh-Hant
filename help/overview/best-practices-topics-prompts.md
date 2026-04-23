@@ -2,7 +2,7 @@
 title: 類別、主題、提示和其他品牌的最佳做法
 description: 透過設定類別、主題、提示，以及要追蹤的包括競爭者在內的其他品牌，最佳化 LLM 洞察分析，以獲得量身打造的品牌監視與策略性內容分析。
 feature: Best Practices, Customer Configuration
-source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 93%

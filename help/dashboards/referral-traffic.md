@@ -2,9 +2,9 @@
 title: 轉介流量
 description: 了解如何使用轉介流量儀表板來查看訪客如何從外部平台、AI 引用和轉介連結抵達您的網站。
 feature: Referral Traffic
-source-git-commit: ea4cf80dc5f789f7938c800354bc8d8d3246704c
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '740'
 ht-degree: 87%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 87%
 * [熱門轉介 URL](#top-referrals)
 * [轉介流量詳細資料](#traffic-details)
 
-如果您使用以品牌為中心的體驗，請導覽至&#x200B;**引薦流量**，並選取您要檢視LLM引薦流量深入分析的網站。
+如果您在[以品牌為中心的體驗](/help/overview/quick-start.md#brand-centric-experience)，請瀏覽至&#x200B;**引薦流量**，並選取您要檢視LLM引薦流量深入分析的網站。
 
 ![引薦流量 — 網站選擇器（以品牌為中心的體驗）](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
@@ -35,7 +35,7 @@ ht-degree: 87%
 
 第一次登入時，轉介流量儀表板可能會顯示空白。 若要檢視您的資料，您必須設定CDN記錄轉送。
 
-對於使用品牌導向體驗的客戶，以下說明如何新增CDN記錄轉送資訊。 導覽至&#x200B;**品牌管理**，然後按一下&#x200B;**CDN**&#x200B;標籤。 另請參閱[代理流量 — CDN設定](/help/dashboards/agentic-traffic.md#cdn-setup)。
+對於使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)的客戶，您可以導覽至&#x200B;**品牌管理**&#x200B;並按一下&#x200B;**CDN**&#x200B;標籤，新增CDN記錄轉送資訊。 另請參閱[代理流量 — CDN設定](/help/dashboards/agentic-traffic.md#cdn-setup)。
 
 **客戶組態（傳統體驗）：**&#x200B;選取&#x200B;**移至組態**，以設定[CDN記錄轉送](/help/dashboards/customer-configuration.md#cdn-configuration)。
 

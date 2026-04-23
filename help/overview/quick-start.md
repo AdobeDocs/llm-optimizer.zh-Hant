@@ -2,21 +2,23 @@
 title: 快速入門
 description: 了解如何將您的品牌名稱和網域上線、從 Experience Hub 或 Adobe Experience Cloud 啟用試用版，以及完成 Adobe LLM Optimizer 設定。
 feature: Quickstart, Onboarding
-source-git-commit: d38cf066ca1e3785032b7beca1c257e3a42f532b
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 77%
+source-wordcount: '1459'
+ht-degree: 76%
 
 ---
 
 
 # 快速入門
 
-若要開始使用LLM Optimizer，請完成上線。 然後自訂類別、主題和提示、設定CDN記錄轉送，以及開啟[儀表板](/help/dashboards/dashboards-overview.md)以獲得更完整的深入分析。
-
-**以品牌為中心的體驗：**&#x200B;依預設，新客戶會從具有入門導向設定且重點突出、品牌優先的介面開始。 在這個新介面中，每個組織都從可用的品牌和其他建議品牌開始，以供選擇。 LLM Optimizer現有客戶將逐漸改用這種以品牌為中心的體驗。
+若要開始使用LLM Optimizer，請完成入門流程。 然後，自訂類別、主題和提示，設定CDN記錄轉送並開啟[儀表板](/help/dashboards/dashboards-overview.md)以獲得更完整的深入分析。
 
 <!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
+
+## 以品牌為中心的體驗 {#brand-centric-experience}
+
+依預設，新客戶一開始會使用具有入門導向設定且重點突出、品牌優先的介面。 在這個新介面中，每個組織都從可用的品牌和其他建議品牌開始，以供選擇。 LLM Optimizer現有客戶將逐漸改用這種以品牌為中心的體驗。
 
 ## 上線概觀
 
@@ -128,7 +130,7 @@ ht-degree: 77%
 
 ### 以品牌為中心的體驗
 
-對於使用品牌導向體驗的客戶，您可以新增類別、主題和提示，如下所示：
+對於使用以品牌為中心的體驗的客戶，您可以新增類別、主題和提示，如下所示：
 
 * **類別** — 瀏覽至&#x200B;**品牌管理**&#x200B;並按一下&#x200B;**類別**。 類別是在全球層級定義，並套用至「品牌管理」下的所有品牌。
 
@@ -164,7 +166,7 @@ ht-degree: 77%
 >[!NOTE]
 >關於使用客戶管理的內容傳遞網路 (BYOCDN) 時進行記錄轉送的詳細資訊，請參閱 [BYOCDN 記錄轉送概觀](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### 以品牌為中心的體驗
+### 品牌導向體驗CDN記錄轉送
 
 對於使用品牌導向體驗的客戶，您可以從&#x200B;**品牌管理**&#x200B;新增CDN記錄轉送資訊，如下所示：開啟&#x200B;**品牌管理**，然後按一下&#x200B;**CDN**&#x200B;標籤。
 
