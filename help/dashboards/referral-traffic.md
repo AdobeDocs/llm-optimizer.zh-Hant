@@ -2,10 +2,10 @@
 title: 轉介流量
 description: 了解如何使用轉介流量儀表板來查看訪客如何從外部平台、AI 引用和轉介連結抵達您的網站。
 feature: Referral Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 87%
+source-wordcount: '734'
+ht-degree: 88%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 87%
 
 第一次登入時，轉介流量儀表板可能會顯示空白。 若要檢視您的資料，您必須設定CDN記錄轉送。
 
-對於使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)的客戶，您可以導覽至&#x200B;**品牌管理**&#x200B;並按一下&#x200B;**CDN**&#x200B;標籤，新增CDN記錄轉送資訊。 另請參閱[代理流量 — CDN設定](/help/dashboards/agentic-traffic.md#cdn-setup)。
+對於使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)的客戶，您可以導覽至&#x200B;**品牌管理**&#x200B;並按一下&#x200B;**CDN**&#x200B;標籤，新增CDN記錄轉送資訊。
 
 **客戶組態（傳統體驗）：**&#x200B;選取&#x200B;**移至組態**，以設定[CDN記錄轉送](/help/dashboards/customer-configuration.md#cdn-configuration)。
 
