@@ -5,7 +5,7 @@ feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '2207'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -255,7 +255,7 @@ ht-degree: 98%
 
 4. 按一下「**儲存變更**」。
 
-**允許透過防火牆規則在Edge最佳化（選用）**
+**透過防火牆規則允許邊緣最佳化 (選用)**
 
 {{waf-allowlist-setup}}
 
