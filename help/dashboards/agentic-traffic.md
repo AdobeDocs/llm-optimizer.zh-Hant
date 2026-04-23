@@ -2,10 +2,10 @@
 title: 代理式流量
 description: 了解如何使用代理式流量儀表板，以便查看 AI 代理如何與您的網站互動。
 feature: Agentic Traffic
-source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
+source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 96%
+source-wordcount: '1404'
+ht-degree: 90%
 
 ---
 
@@ -25,9 +25,19 @@ ht-degree: 96%
 * [上升最快者與下滑最快者](#top-bottom-movers)
 * [使用者代理與 URL 效能分析](#user-url-performance)
 
+如果您使用以品牌為中心的體驗，請瀏覽至&#x200B;**代理流量**，並選取您要檢視代理流量深入分析的網站。
+
+![代理流量 — 網站選擇器（以品牌為中心的體驗）](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
 ## 內容傳遞網路記錄轉送 {#cdn-setup}
 
-如果沒有&#x200B;**內容傳遞網路記錄轉送**，則代理式流量儀表板是空白的。 若要檢視代理式互動，您必須設定&#x200B;**內容傳遞網路記錄檔轉送**。  第一次登入時，您會看到一則訊息，如下圖所示。
+如果沒有&#x200B;**內容傳遞網路記錄轉送**，則代理式流量儀表板是空白的。 若要檢視代理式互動，您必須設定&#x200B;**內容傳遞網路記錄檔轉送**。
+
+如果您使用以品牌為中心的體驗，您可以導覽至&#x200B;**品牌管理**&#x200B;並按一下&#x200B;**CDN**&#x200B;標籤，新增CDN記錄轉送資訊。
+
+![品牌管理 — CDN記錄轉送](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+**客戶組態（傳統導覽）：**&#x200B;第一次登入時，您會看到如下圖所示的訊息。
 
 ![內容傳遞網路設定](/help/dashboards/assets/ag-log-forward1.png)
 

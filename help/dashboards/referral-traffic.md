@@ -2,10 +2,10 @@
 title: 轉介流量
 description: 了解如何使用轉介流量儀表板來查看訪客如何從外部平台、AI 引用和轉介連結抵達您的網站。
 feature: Referral Traffic
-source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
-workflow-type: ht
-source-wordcount: '665'
-ht-degree: 100%
+source-git-commit: ea4cf80dc5f789f7938c800354bc8d8d3246704c
+workflow-type: tm+mt
+source-wordcount: '741'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 轉介流量會顯示訪客如何從外部平台、AI 引用和轉介連結抵達您的網站。 轉介流量會追蹤和分析來自外部網站及平台的流量來源、轉介模式和轉換量度。 您可以藉此了解哪些來源、區域和頁面帶來參與度最高的流量。<!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> 您也可以利用自訂篩選器來精確調整所顯示的資料。
 
 >[!NOTE]
->預設狀態下，此儀表板會利用&#x200B;**內容傳遞網路記錄**&#x200B;建置流量洞察。若您的組織是採用付費產品方案，您可以連結 **Adobe Analytics**，新增測量 AI 驅動探索和網站參與度的資料。可於「**業務影響**」標籤取得這些資料。若未與 Adobe Analytics 整合，則該標籤不會填入資料。如需詳細資訊，請參閱 [Adobe Analytics 整合](/help/dashboards/adobe-analytics-integration.md)。
+>預設狀態下，此儀表板會利用&#x200B;**內容傳遞網路記錄**&#x200B;建置流量洞察。 若您的組織是採用付費產品方案，您可以連結 **Adobe Analytics**，新增測量 AI 驅動探索和網站參與度的資料。 可於「**業務影響**」標籤取得這些資料。 若未與 Adobe Analytics 整合，則該標籤不會填入資料。 如需詳細資訊，請參閱 [Adobe Analytics 整合](/help/dashboards/adobe-analytics-integration.md)。
 
 ![轉介頁面](/help/dashboards/assets/referral-traffic.png)
 
@@ -27,9 +27,17 @@ ht-degree: 100%
 * [熱門轉介 URL](#top-referrals)
 * [轉介流量詳細資料](#traffic-details)
 
+如果您使用以品牌為中心的體驗，請導覽至&#x200B;**引薦流量**，並選取您要檢視LLM引薦流量深入分析的網站。
+
+![引薦流量 — 網站選擇器（以品牌為中心的體驗）](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+
 ## 設定 {#setup}
 
-第一次登入時，轉介流量儀表板可能會顯示空白。 您必須設定「[內容傳遞網路記錄轉送](/help/dashboards/customer-configuration.md#cdn-configuration)」才能檢視您的資料，請選取「**移至設定**」進行設定。
+第一次登入時，轉介流量儀表板可能會顯示空白。 若要檢視您的資料，您必須設定CDN記錄轉送。
+
+對於使用品牌導向體驗的客戶，以下說明如何新增CDN記錄轉送資訊。 導覽至&#x200B;**品牌管理**，然後按一下&#x200B;**CDN**&#x200B;標籤。 另請參閱[代理流量 — CDN設定](/help/dashboards/agentic-traffic.md#cdn-setup)。
+
+**客戶組態（傳統體驗）：**&#x200B;選取&#x200B;**移至組態**，以設定[CDN記錄轉送](/help/dashboards/customer-configuration.md#cdn-configuration)。
 
 ![轉介設定](/help/dashboards/assets/referral-setup1.png)
 
