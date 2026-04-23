@@ -2,10 +2,10 @@
 title: 類別、主題、提示和其他品牌的最佳做法
 description: 透過設定類別、主題、提示，以及要追蹤的包括競爭者在內的其他品牌，最佳化 LLM 洞察分析，以獲得量身打造的品牌監視與策略性內容分析。
 feature: Best Practices, Customer Configuration
-source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
-workflow-type: ht
-source-wordcount: '1435'
-ht-degree: 100%
+source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 93%
 
 ---
 
@@ -21,6 +21,20 @@ ht-degree: 100%
 ![客戶設定視窗](/help/assets/best-practices/customer-configuration-best-practices.png)
 
 在[!UICONTROL 客戶設定]儀表板中，您可以自訂類別 (例如業務單位或產品線)、追蹤其他品牌，以及新增品牌提及別名，以便擷取在不同提示中您的品牌之所有變化版本。 此設定可確保平台根據您的業務情境提供量身打造的洞察，讓您能夠準確地分析能見度、流量和機會。
+
+## 以品牌為中心的體驗
+
+依預設，新客戶一開始會使用具有入門導向設定且重點突出、品牌優先的介面。 在這個新介面中，每個組織都從可用的品牌和其他建議品牌開始，以供選擇。 LLM Optimizer現有客戶將逐漸改用這種以品牌為中心的體驗。
+
+如果您使用以品牌為中心的體驗，**品牌管理**&#x200B;是您定義如何監視和分析品牌的位置。
+
+![品牌管理 — 應用程式導覽（以品牌為中心的體驗）](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+![品牌管理 — 設定概述](/help/assets/brand-centric-experience/brands-management-configuration.png)
+
+若要設定特定品牌的主題和提示，請使用&#x200B;**提示管理**。
+
+![提示管理](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## 產業提示資料庫
 
@@ -90,7 +104,7 @@ LLM 工具中客戶在 AI 搜尋和提示行為方面的趨勢：
 >[!IMPORTANT]
 >
 > * 選擇一個方法並貫徹執行。
-> * 每個帳戶或品牌只能有&#x200B;**一個**&#x200B;類別模型。 請勿同時混用 **SBU** 和 **URL_DIR**。
+> * 每個帳戶或品牌只能有&#x200B;**一個**&#x200B;類別模型。 請勿同時混用&#x200B;**SBU**&#x200B;和&#x200B;**URL_DIR**。
 <!--Can you mix Product/Service with these?-->
 
 範例：
