@@ -3,9 +3,9 @@ title: 邊緣最佳化：CloudFront (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 CloudFront BYOCDN 進行邊緣最佳化。
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2207'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 99%
 
 * 為您的網站提供服務的現有 CloudFront 分發
 * AWS IAM 的權限，可建立 Lambda 函式、IAM 角色、CloudFront 分發及快取原則。
-* 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。 如需步驟，請參閱[擷取您的API金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
-* （選擇性）若要測試暫存路由，請參閱[暫存API金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
+* 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。 相關步驟請參閱[檢索 API 金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
+* (選用) 若要測試中繼路由，請參閱[中繼 API 金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
 **步驟 1：建立 Edge Optimize 來源**
 
