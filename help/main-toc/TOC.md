@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 利用 Adobe LLM Optimizer 提升您的品牌。 追蹤提及次數、揭露洞察，並主導 AI 驅動的搜尋。 掌控您的能見度，馬上開始最佳化！
-source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
+source-git-commit: 5504c3b7fe6880a4ea2d8334137d949f87f4e1cf
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 85%
+source-wordcount: '136'
+ht-degree: 83%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 85%
    + [轉介流量](/help/dashboards/referral-traffic.md)
    + [URL 檢查器](/help/dashboards/url-inspector.md)
    + 機會{#opportunities}
-      + [機會](/help/dashboards/opportunities-overview.md)
+      + [機會概觀](/help/dashboards/opportunities-overview.md)
       + [代理程式流量錯誤](/help/dashboards/opportunities/agentic-traffic-errors.md)
       + [robots.txt封鎖的流量](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
       + [復原內容能見度](/help/dashboards/opportunities/recover-content-visibility.md)
