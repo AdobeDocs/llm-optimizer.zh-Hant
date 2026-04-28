@@ -2,10 +2,10 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
-workflow-type: ht
-source-wordcount: '2301'
-ht-degree: 100%
+source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
+workflow-type: tm+mt
+source-wordcount: '2315'
+ht-degree: 99%
 
 ---
 
@@ -56,9 +56,9 @@ ht-degree: 100%
 * 如果您的內容傳遞網路有 WAF 或機器人管理員規則，請將 `*AdobeEdgeOptimize/1.0*` 使用者代理加入允許清單。 如果需要其他驗證，請設定 `x-edgeoptimize-fetcher-key` 標頭。 以下每個 BYOCDN 指南都包含相關步驟。
 * 在 LLM Optimizer 介面中確認邊緣最佳化路由。
 
-下圖說明如何在邊緣架構以最佳化透過 BYOCDN 設定請求流程：
+下圖顯示使用邊緣最佳化進行 BYOCDN 設定時的請求處理流程：
 
-![BYOCDN 請求流程](/help/assets/optimize-at-edge/byocdn-request-flow.png)
+![BYOCDN 請求處理流程](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
 >[!IMPORTANT]
 >路由必須在外部內容傳遞網路 (最靠近用戶端的內容傳遞網路) 完成設定。 如果您有多個內容傳遞網路，則只能在外部內容傳遞網路進行路由。
@@ -87,7 +87,7 @@ ht-degree: 100%
 
 | 機會 | 類型 | 自動識別 | 自動建議 | 自動最佳化 |
 |---------|----------|----------|----------|----------|
-| 復原內容能見度 | 技術性 GEO | 偵測對 AI 代理隱藏重要內容的頁面。 顯示受影響的 URL 和可復原的預期內容。 | 標示出指出可供 AI 代理使用的內容，並建議讓這些頁面進行預先轉譯。 | 將完整轉譯、適合 AI 使用的 HTML 快照提供給代理式流量，復原先前隱藏的內容。 |
+| [復原內容可見度](/help/dashboards/opportunities/recover-content-visibility.md) | 技術性 GEO | 偵測對 AI 代理隱藏重要內容的頁面。 顯示受影響的 URL 和可復原的預期內容。 | 標示出指出可供 AI 代理使用的內容，並建議讓這些頁面進行預先轉譯。 | 將完整轉譯、適合 AI 使用的 HTML 快照提供給代理式流量，復原先前隱藏的內容。 |
 | 新增適合 LLM 的摘要 | 內容最佳化 | 找出在頁面或區段層級缺乏簡明摘要，因此讓 AI 無法快速掃描和理解的長頁面或複雜頁面。 | 在頁面和區段層級建議由 AI 生成並擷取主要內容的簡短摘要。 | 將摘要插入相關的 HTML 區段，改善模型解讀和說明頁面內容的方式。 |
 | 新增相關常見問答集 | 內容最佳化 | 偵測現有頁面內容中可能受益於常見問答集的意圖缺口。 | 根據使用者意圖和現有主題建議 AI 生成的常見問題集內容。 | 將常見問題集內容注入 HTML，讓 AI 驅動的回答更容易搜尋到相關頁面，也提高頁面內容的相關性。 |
 | 簡化複雜的內容 | 內容最佳化 | 標示含有複雜文字並可能妨礙 AI 理解的頁面。 | 提供複雜文字的 AI 生成簡化版本，同時保留原意。 | 重寫頁面中的複雜區段，以改善 AI 可讀性。 |
@@ -96,7 +96,7 @@ ht-degree: 100%
 
 [AI 內容能見度檢查程式](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)瀏覽器擴充功能，會顯示 LLM 可以存取多少網頁內容以及哪些內容仍然隱藏。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -109,6 +109,8 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >若使用邊緣最佳化部署，則此預先轉譯功能會自動套用至下列所有機會，以確保 AI 代理可以完整讀取頁面內容。
+
+請參閱[復原內容可見度](/help/dashboards/opportunities/recover-content-visibility.md)，以取得儀表板逐步說明、部署步驟和常見問答集。
 
 ### 新增適合 LLM 的摘要
 
@@ -126,7 +128,7 @@ ht-degree: 100%
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
