@@ -1,11 +1,11 @@
 ---
 title: LLM Optimizer 概觀
-description: 了解 Adobe LLM Optimizer 如何在 AI 驅動的搜尋中提高品牌能見度。追蹤提及次數、引用次數和洞察。立即開始最佳化，以利增進參與度和影響力。
+description: 了解 Adobe LLM Optimizer 如何在 AI 驅動的搜尋中提高品牌能見度。 追蹤提及次數、引用次數和洞察。 立即開始最佳化，以利增進參與度和影響力。
 feature: Onboarding
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
-workflow-type: ht
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 什麼是 Adobe LLM Optimizer？
 
-Adobe LLM Optimizer 是生成式 AI 優先的應用程式並適用於生成式引擎最佳化 (亦稱為回答引擎最佳化)，專門協助各品牌在 AI 驅動的搜尋環境中提升能見度、準確性和影響力。此應用程式可以針對品牌在 AI 生成回答中的存在感進行洞察分析、提供指示性內容建議，並自動執行最佳化修正。
+Adobe LLM Optimizer 是生成式 AI 優先的應用程式並適用於生成式引擎最佳化 (亦稱為回答引擎最佳化)，專門協助各品牌在 AI 驅動的搜尋環境中提升能見度、準確性和影響力。 此應用程式可以針對品牌在 AI 生成回答中的存在感進行洞察分析、提供指示性內容建議，並自動執行最佳化修正。
 
 ## LLM Optimizer 有哪些功能？
 
@@ -47,7 +47,7 @@ LLM 最佳化的重要性越來越高：
 
 ## 哪些人應該使用 Adobe LLM Optimizer？
 
-生成式引擎最佳化在本質上就必須跨部門運作。LLM Optimizer 的設計從這個角度出發，針對以下不同的人物誌量身打造：
+生成式引擎最佳化在本質上就必須跨部門運作。 LLM Optimizer 的設計從這個角度出發，針對以下不同的人物誌量身打造：
 
 * **行銷經理**&#x200B;要衡量 AI 搜尋中的品牌能見度和行銷活動成效。
 * **SEO 分析人員**&#x200B;要追蹤品牌提及次數、引用次數和其他洞察，作為制定內容策略的參考。
@@ -57,11 +57,11 @@ LLM 最佳化的重要性越來越高：
 
 您可以使用 Adobe LLM Optimizer：
 
-**衡量品牌能見度**：追蹤在 AI 驅動的搜尋結果中提及您品牌的時間點、位置和頻率。獲取明確的能見度分數，可以針對一段時間進行基準分析，不必再憑猜測行動。請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
-**其他品牌基準對照**：了解您的品牌與其他品牌 (包括生成式引擎中的競爭者) 的競爭實力對比。找出聲量佔比的缺口並揭示競爭優勢。請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
-**探索可操作的機會**：找出可以直接增加被提及和引用次數的內容改進機會 (例如常見問題集、摘要、結構描述) 和技術改進機會 (可抓取性、索引問題)。請參閱[機會儀表板](/help/dashboards/opportunities.md)。
-**追蹤來自 AI 的流量影響**：監視指向您的自有資產的代理式流量 (來自 AI 助理) 和轉介流量 (來自引用來源的使用者點按)。將 GEO 能見度與實質的參與度相關聯。請參閱[代理式流量儀表板](/help/dashboards/agentic-traffic.md)和[轉介流量儀表板](/help/dashboards/referral-traffic.md)。
-**實現團隊協作**：共用儀表板、指派提示或類別的負責人，以及確實追蹤橫跨行銷、搜尋引擎最佳化 (SEO) 和傳播部門的能見度目標。請參閱[協作儀表板](/help/dashboards/collaboration.md)。
+**衡量品牌能見度**：追蹤在 AI 驅動的搜尋結果中提及您品牌的時間點、位置和頻率。 獲取明確的能見度分數，可以針對一段時間進行基準分析，不必再憑猜測行動。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
+**Benchmark Others** - See how your brand stacks up against others including competitors in generative engines. 找出聲量佔比的缺口並揭示競爭優勢。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
+**Discover Actionable Opportunities** - Pinpoint content opportunities (e.g., FAQs, abstracts, schema) and technical opportunities (crawlability, indexing issues) that directly increase mentions and citations. See [Opportunities dashboard](/help/dashboards/opportunities-overview.md).
+**Track Traffic Impact from AI** - Monitor agentic traffic (from AI assistants) and referral traffic (user clicks from citations) to your owned properties. 將 GEO 能見度與實質的參與度相關聯。 See [Agentic Traffic dashboard](/help/dashboards/agentic-traffic.md) and [Referral Traffic dashboard](/help/dashboards/referral-traffic.md).
+**Enable Team Collaboration** - Share dashboards, assign owners for prompts or categories, and ensure visibility goals are tracked across marketing, search engine optimization (SEO), and communications functions. 請參閱[協作儀表板](/help/dashboards/collaboration.md)。
 
 ## 了解更多
 

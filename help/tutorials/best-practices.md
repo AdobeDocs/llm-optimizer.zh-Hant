@@ -2,8 +2,8 @@
 title: LLM Optimizer 最佳做法
 description: 探索 LLM 最佳化的最佳做法，以便在 AI 搜尋中提升品牌能見度。 用於基準對照和內容最佳化的洞察分析。
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
-workflow-type: ht
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ LLM 能見度的關鍵在於您的品牌在 AI 生成回答中出現的頻率及
 
 >[!TIP]
 >
->LLM Optimizer 會在[機會](/help/dashboards/opportunities.md)儀表板中為您建議站內和站外的最佳化機會。 這些是您的網站特有的機會。 這些建議當中有許多皆可使用 LLM Optimizer 直接部署到您的網站上。
+>LLM Optimizer 會在[機會](/help/dashboards/opportunities-overview.md)儀表板中為您建議站內和站外的最佳化機會。 這些是您的網站特有的機會。 這些建議當中有許多皆可使用 LLM Optimizer 直接部署到您的網站上。
 
 以下是一些最佳化的最佳做法：
 
@@ -108,7 +108,7 @@ LLM 能見度的關鍵在於您的品牌在 AI 生成回答中出現的頻率及
 
 4. 監視和迭代
 
-   * 使用[機會儀表板](/help/dashboards/opportunities.md)來確認機會並根據建議採取行動。
+   * 使用[機會儀表板](/help/dashboards/opportunities-overview.md)來確認機會並根據建議採取行動。
    * 追蹤能見度分數、情緒和引用頻率。
    * 根據其他品牌的活動 (包括競爭者) 和提示趨勢進行調整。
 
@@ -118,7 +118,7 @@ LLM 能見度的關鍵在於您的品牌在 AI 生成回答中出現的頻率及
 
 >[!TIP]
 >
->LLM Optimizer 會在[機會](/help/dashboards/opportunities.md)儀表板中為您建議站內和站外的最佳化機會。 這些是您的網站特有的機會。 這些建議當中有許多皆可使用 LLM Optimizer 直接部署到您的網站上。
+>LLM Optimizer 會在[機會](/help/dashboards/opportunities-overview.md)儀表板中為您建議站內和站外的最佳化機會。 這些是您的網站特有的機會。 這些建議當中有許多皆可使用 LLM Optimizer 直接部署到您的網站上。
 
 
 主要的站外管道：
@@ -170,7 +170,7 @@ LLM 能見度的關鍵在於您的品牌在 AI 生成回答中出現的頻率及
    * 使用歸因功能，讓能見度的改善情況與流量、參與度和轉換率建立關聯。 Adobe LLM Optimizer 中的歸因功能可協助您將能見度量度 (提及次數、引用次數、情緒) 的改善情況，與網站流量、使用者參與度和轉換率等實際的業務成果建立關聯。 這樣可以證明您所做的最佳化努力能夠轉變成 ROI。
    * 追蹤代理式和轉介流量的變更，以驗證最佳化的 ROI。
 1. 改善您的內容
-   * 使用 LLM Optimizer 的[機會儀表板](/help/dashboards/opportunities.md)來發現合適的機會，然後根據具體的建議立即對您的網站進行變更。 請參閱[機會](/help/dashboards/opportunities.md) (然後衡量其結果)。 定期審閱機會區段，並按照所提供的建議採取行動。
+   * 使用 LLM Optimizer 的[機會儀表板](/help/dashboards/opportunities-overview.md)來發現合適的機會，然後根據具體的建議立即對您的網站進行變更。 請參閱[機會](/help/dashboards/opportunities-overview.md) (然後衡量其結果)。 定期審閱機會區段，並按照所提供的建議採取行動。
    * 優先處理能力度下降中的頁面。
    * 更新您的網站和其他內容，以便與您所要針對的提示更加相關。
    * 在您的頁面上新增常見問題集，以便回答人們可能詢問的常見問題。
