@@ -2,10 +2,15 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e9001ce2-5245-4a8e-8601-dd958009072f
+autotag-review: '2026-04-30T18:15:36.189Z'
+source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 99%
+source-wordcount: 3108
+ht-degree: 66%
 
 ---
 
@@ -88,15 +93,18 @@ ht-degree: 99%
 | 機會 | 類型 | 自動識別 | 自動建議 | 自動最佳化 |
 |---------|----------|----------|----------|----------|
 | [復原內容可見度](/help/dashboards/opportunities/recover-content-visibility.md) | 技術性 GEO | 偵測對 AI 代理隱藏重要內容的頁面。 顯示受影響的 URL 和可復原的預期內容。 | 標示出指出可供 AI 代理使用的內容，並建議讓這些頁面進行預先轉譯。 | 將完整轉譯、適合 AI 使用的 HTML 快照提供給代理式流量，復原先前隱藏的內容。 |
-| 新增適合 LLM 的摘要 | 內容最佳化 | 找出在頁面或區段層級缺乏簡明摘要，因此讓 AI 無法快速掃描和理解的長頁面或複雜頁面。 | 在頁面和區段層級建議由 AI 生成並擷取主要內容的簡短摘要。 | 將摘要插入相關的 HTML 區段，改善模型解讀和說明頁面內容的方式。 |
-| 新增相關常見問答集 | 內容最佳化 | 偵測現有頁面內容中可能受益於常見問答集的意圖缺口。 | 根據使用者意圖和現有主題建議 AI 生成的常見問題集內容。 | 將常見問題集內容注入 HTML，讓 AI 驅動的回答更容易搜尋到相關頁面，也提高頁面內容的相關性。 |
-| 簡化複雜的內容 | 內容最佳化 | 標示含有複雜文字並可能妨礙 AI 理解的頁面。 | 提供複雜文字的 AI 生成簡化版本，同時保留原意。 | 重寫頁面中的複雜區段，以改善 AI 可讀性。 |
+| [豐富產品詳細資料頁面](/help/dashboards/opportunities/enrich-product-detail-pages.md) | 技術性 GEO | 對於Adobe Commerce店面，比較完整目錄資料與AI代理程式在每個產品詳細資料頁面上可以存取的內容；會顯示PDP，其中代理程式可見的HTML中缺少變體、規格、屬性和相關目錄欄位，而依代理程式流量來排定優先順序。 | 強調代理程式檢視中遺失的可復原目錄資訊，以及它對LLM驅動的產品探索重要的原因。 | 提供完整預先呈現、適合AI使用的HTML快照，給CDN邊緣的代理程式流量，讓代理程式接收來自您目錄的豐富產品內容，而無需CMS或目錄變更。 |
+| [新增LLM易記摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | 內容最佳化 | 會識別在頁面或區段層級缺乏簡潔摘要和結構化關鍵點的高流量頁面，讓AI代理程式掃描和解讀這些頁面變得更困難。 | 建議以現有內容為基礎，由AI產生的簡短摘要和要點。 | 將摘要和要點插入相關的HTML區段，改善模型解譯和說明頁面內容的方式。 |
+| [新增相關常見問題](/help/dashboards/opportunities/add-relevant-faqs.md) | 內容最佳化 | 會識別缺少與您的提示集對齊的結構化問答內容的高流量頁面，使AI代理程式更難以將使用者問題比對到您的頁面。 | 根據使用者意圖和現有頁面主題建議AI產生的常見問題集內容。 | 將常見問題集內容注入 HTML，讓 AI 驅動的回答更容易搜尋到相關頁面，也提高頁面內容的相關性。 |
+| [簡化複雜內容](/help/dashboards/opportunities/simplify-complex-content.md) | 內容最佳化 | 標示含有複雜文字並可能妨礙 AI 理解的頁面。 | 提供複雜文字的 AI 生成簡化版本，同時保留原意。 | 重寫頁面中的複雜區段，以改善 AI 可讀性。 |
+| [新增目錄](/help/dashboards/opportunities/add-table-of-contents.md) | 技術性 GEO | 偵測缺少清晰結構組織或導覽標題的頁面，導致AI代理程式難以剖析內容並將內容對應到使用者查詢。 | 建議使用具錨點連結標題的結構化目錄，以反映頁面的主要區段。 | 將目錄插入HTML中，改善頁面結構，讓AI模型可以更輕鬆地擷取、對應和引用相關區段。 |
+| [新增多媒體成績單摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) | 內容最佳化 | 識別關鍵資訊嵌入到沒有機器可讀成績單或摘要的視訊或其他媒體中的頁面，使得AI代理程式難以使用該內容。 顯示受影響的URL和建議的文字。 | 建議以媒體和頁面為基礎的AI產生成績單摘要。 | 將成績單摘要插入HTML，讓代理流量接收機器可讀的文字（例如，在相關視訊附近）。 |
 
 ### 其他工具
 
 [AI 內容能見度檢查程式](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)瀏覽器擴充功能，會顯示 LLM 可以存取多少網頁內容以及哪些內容仍然隱藏。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -112,23 +120,47 @@ ht-degree: 99%
 
 請參閱[復原內容可見度](/help/dashboards/opportunities/recover-content-visibility.md)，以取得儀表板逐步說明、部署步驟和常見問答集。
 
+### 豐富產品詳細資料頁面
+
+這個機會會鎖定Adobe Commerce產品詳細資料頁面，購物者透過互動式店面體驗檢視完整產品內容，但AI代理程式只會收到淺層HTML快照。 目錄代理程式會將您的權威Commerce目錄與代理程式可見的PDP做比較，列出每個有意義的間隙（例如永不出現在靜態HTML中的變體或規格），並讓您部署僅機器人邊緣回應，在不變更目錄記錄或人工UI的情況下，還原LLM爬蟲的同位檢查。
+
+請參閱[豐富產品詳細資料頁面](/help/dashboards/opportunities/enrich-product-detail-pages.md)，以取得儀表板逐步說明、部署步驟和常見問答。
+
 ### 新增適合 LLM 的摘要
 
-這個機會可找出哪些頁面可以受益於簡明的摘要，以利 LLM 快速理解頁面的內容。 機會將偵測每個頁面在哪些地方最需要提供摘要，並在頁面層級或區段層級建立 AI 生成的摘要。 使用邊緣最佳化部署時，這些摘要會插入至 AI 代理所檢索的 HTML 中，讓您的內容更有機會獲得精確的描述。
+此機會可識別高流量頁面，這些頁面可受益於簡潔的摘要和結構化的要點，以便LLM能夠快速瞭解頁面上的宣告。 對於每個頁面，它會偵測最需要摘要的位置，並根據現有內容在頁面或區段層級提出AI產生的摘要（以及相關的關鍵點）。 當您在Edge使用「最佳化」進行部署時，該內容會插入AI代理程式擷取的HTML中，以改善AI答案中品牌代表的精確度。
+
+請參閱[新增LLM友善摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md)，以取得此機會的詳細資訊。
 
 ### 新增相關常見問答集
 
-此機會將標記那些若有更多問答內容，將能夠在 AI 驅動的搜尋中更加貼合使用者意圖和提示的頁面。 此機會針對每個頁面，根據頁面上的使用者意圖和內容，提議 AI 生成的常見問題區塊。 透過邊緣最佳化，這些常見問題集會注入到 HTML 中，讓您的頁面更加適合 AI 讀取，使得 AI 回答有更高機率直接採納您的內容指引。
+此機會會標籤高流量頁面，在這些頁面中，其他問答內容可以更好地匹配使用者意圖和AI驅動探索中的提示。 對於每個頁面，它會建議與頁面上的提示集和內容相連結的AI產生的常見問題集區塊。 透過Edge最佳化，這些常見問題集會插入到HTML中，讓您的頁面更適合AI，並提高AI回答直接反映您指引的可能性。
+
+請參閱[新增相關常見問答](/help/dashboards/opportunities/add-relevant-faqs.md)，以取得儀表板逐步說明、部署步驟和常見問答。
 
 ### 簡化複雜的內容
 
 此機會將尋找具有複雜的長段落的頁面，因為這些段落可能降低 AI 理解能力。 對於超出可讀性臨界值的每個頁面，此機會將建立 AI 生成的內容，不但保留原意，而且變得更簡單，也更容易掃描。 當部署於邊緣時，傳遞至代理式流量的簡化內容將協助 LLM 更加忠實地解讀並總結您的內容。
 
+請參閱[簡化複雜內容](/help/dashboards/opportunities/simplify-complex-content.md)，以取得儀表板逐步說明、部署步驟和常見問答集。
+
+### 新增目錄
+
+這個機會會偵測AI代理程式因為標題和區段結構不明確或遺失而難以導覽的頁面。 對於每個受影響的頁面，它會建議結構化的目錄，並將錨點連結的專案對齊主要區段。 當您在Edge使用最佳化進行部署時，該目錄會插入到HTML中，以便模型可以更可靠地將顯示者查詢對應到頁面的右側部分並加以引用。
+
+請參閱[新增目錄](/help/dashboards/opportunities/add-table-of-contents.md)，以取得儀表板逐步說明、部署步驟和搶先存取指引。
+
+### 新增多媒體成績單摘要
+
+這個機會鎖定重要資訊只存在於視訊播放中的頁面，不含AI代理程式可讀取的文字記錄或文字摘要。 對於每個頁面，它建議使用AI產生的成績單和來自媒體的關鍵點的簡短摘要。 透過Edge最佳化，這些摘要會以機器可讀文字的形式新增至HTML，讓代理商可以使用人類訪客從觀看影片中取得的相同內容。
+
+請參閱[新增多媒體成績單摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)，以取得儀表板逐步說明、部署步驟和常見問答集。
+
 ## 在邊緣自動最佳化
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
@@ -160,6 +192,10 @@ ht-degree: 99%
 
 ![復原](/help/assets/optimize-at-edge/rollback.png)
 
+## 其他資源
+
+如需有關「在Edge最佳化」功能的詳細資訊，請參閱下列播放清單[LLM Optimizer — 在Edge最佳化](https://www.youtube.com/playlist?list=PLzbVcr6JHocVSMWBCaCw4xxjQ_VFVvFh0)。
+
 ## 常見問題
 
 問：試用版客戶可以試用邊緣架構最佳化嗎？
@@ -186,7 +222,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 問：當來源更新內容時會發生什麼事？
 
-只要基礎的來源頁面未變更，我們會從快取提供頁面的最佳化版本。 但是，當來源的&#x200B;**復原內容能見度**&#x200B;確實有所變更時，我們的系統會自動重新整理，讓 AI 代理總是收到最新的內容。 這是因為我們使用低快取存留時間 (TTL) 設定 (通常只有數分鐘)，以便您的網站上任何內容更新都會在該視窗中觸發新的最佳化。 針對&#x200B;**新增 LLM 友善摘要**&#x200B;等內容機會，LLM Optimizer 會監控來源頁面是否有所變更。 如果偵測到變更，我們會暫停最佳化並加上人工審閱的標記，防止 AI 代理可見頁面和真人可見頁面之間出現內容偏差。
+只要基礎的來源頁面未變更，我們會從快取提供頁面的最佳化版本。 但是，當來源的&#x200B;**復原內容能見度**&#x200B;確實有所變更時，我們的系統會自動重新整理，讓 AI 代理總是收到最新的內容。 這是因為我們使用低快取存留時間 (TTL) 設定 (通常只有數分鐘)，以便您的網站上任何內容更新都會在該視窗中觸發新的最佳化。 針對&#x200B;**新增 LLM 友善摘要**等內容機會，LLM Optimizer 會監控來源頁面是否有所變更。 如果偵測到變更，我們會暫停最佳化並加上人工審閱的標記，防止 AI 代理可見頁面和真人可見頁面之間出現內容偏差。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 問：邊緣最佳化是否僅適用於使用 Adobe Edge Delivery Service (EDS) 的網站？
@@ -196,6 +232,14 @@ The CDN is where the optimized version of the page is assembled and delivered to
 問：邊緣最佳化的預先轉譯，與傳統的伺服器端轉譯 (SSR) 有何不同？
 
 兩者各解決不同的問題，但可以搭配運作。 傳統 SSR 會轉譯伺服器端的內容，但不包含後來在瀏覽器中載入的內容。 邊緣最佳化預先轉譯在 JavaScript 和用戶端資料載入後擷取頁面，在內容傳遞網路邊緣產生完全組裝的版本。 SSR 著重於改善真人使用體驗，而邊緣最佳化則是改善 LLM 的網頁體驗。
+
+問：復原內容可見度（即預先呈現）會遮蓋嗎？ 聽起來像是向AI代理程式提供不同版本的頁面。
+
+不是。 預先呈現可確保AI代理能夠檢視人類訪客和SEO機器人已經看到的相同內容。 許多網站會透過JavaScript載入有意義的內容，而典型AI代理程式不會執行，因此代理程式可能會遺漏頁面的大部分內容。 預先呈現會產生擷取完整文字的靜態快照，讓代理程式接收與人類和搜尋引擎相同的資訊。 它&#x200B;**還原LLM的**&#x200B;內容同位檢查；它不會新增或變更實際內容。
+
+問：其他內容機會呢？例如，新增LLM易記摘要（會在提供給代理程式的頁面上顯示新復本）？ 那是遮羞布嗎？
+
+不是。 在Edge最佳化不會引入人類使用者和SEO爬蟲無法存取的資訊。 此服務會重新組織或摘要頁面上已存在的內容，讓AI代理程式可以更輕鬆地加以解譯。 當某人從AI答案追蹤連結至您的網站時，他們仍可在即時頁面上找到相同的基礎資訊。
 
 問：如果我只針對網域中的部分 URL (而非全部) 部署最佳化，會發生什麼事？
 
