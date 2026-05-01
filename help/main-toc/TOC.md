@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: 利用 Adobe LLM Optimizer 提升您的品牌。 追蹤提及次數、揭露洞察，並主導 AI 驅動的搜尋。 掌控您的能見度，馬上開始最佳化！
-source-git-commit: 5504c3b7fe6880a4ea2d8334137d949f87f4e1cf
+source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 83%
+source-wordcount: '161'
+ht-degree: 77%
 
 ---
 
@@ -29,10 +29,17 @@ ht-degree: 83%
       + [代理程式流量錯誤](/help/dashboards/opportunities/agentic-traffic-errors.md)
       + [robots.txt封鎖的流量](/help/dashboards/opportunities/traffic-blocked-by-robots.md)
       + [復原內容能見度](/help/dashboards/opportunities/recover-content-visibility.md)
+      + [新增LLM易記摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md)
+      + [新增相關常見問答集](/help/dashboards/opportunities/add-relevant-faqs.md)
+      + [新增多媒體成績單摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md)
+      + [新增目錄](/help/dashboards/opportunities/add-table-of-contents.md)
+      + [簡化複雜的內容](/help/dashboards/opportunities/simplify-complex-content.md)
       + [維基百科分析](/help/dashboards/opportunities/wikipedia-analysis.md)
       + [情緒分析](/help/dashboards/opportunities/youtube-sentiment-analysis.md)
       + [Reddit情緒分析](/help/dashboards/opportunities/reddit-sentiment-analysis.md)
       + [引證情緒分析](/help/dashboards/opportunities/cited-sentiment-analysis.md)
+      + [豐富產品目錄](/help/dashboards/opportunities/enrich-product-catalog.md)
+      + [豐富產品詳細資料頁面](/help/dashboards/opportunities/enrich-product-detail-pages.md)
    + [客戶設定](/help/dashboards/customer-configuration.md)
    + [協作](/help/dashboards/collaboration.md)
 + BYOCDN 記錄轉送{#log-forwarding}
@@ -46,7 +53,7 @@ ht-degree: 83%
    + [其他 (手動上傳)](/help/overview/log-forwarding/other.md)
 + 其他資源{#resources}
    + 邊緣最佳化{#optimize-at-edge}
-      + [在Edge最佳化概覽](/help/dashboards/optimize-at-edge/overview.md)
+      + [邊緣最佳化概觀](/help/dashboards/optimize-at-edge/overview.md)
       + [檢索 API 金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md)
       + [AEM Cloud Service 管理的內容傳遞網路 (Fastly)](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md)
       + [Fastly (BYOCDN)](/help/dashboards/optimize-at-edge/fastly-byocdn.md)

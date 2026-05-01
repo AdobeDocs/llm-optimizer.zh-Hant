@@ -2,33 +2,28 @@
 title: 快速入門
 description: 了解如何將您的品牌名稱和網域上線、從 Experience Hub 或 Adobe Experience Cloud 啟用試用版，以及完成 Adobe LLM Optimizer 設定。
 feature: Quickstart, Onboarding
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 autotag-review: '2026-04-30T18:12:24.085Z'
 source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
 workflow-type: tm+mt
 source-wordcount: 1463
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # 快速入門
 
-若要開始使用LLM Optimizer，請完成入門流程。 然後，自訂類別、主題和提示，設定CDN記錄轉送並開啟[儀表板](/help/dashboards/dashboards-overview.md)以獲得更完整的深入分析。
+若要開始使用 LLM Optimizer，請完成上線流程。 然後，請自訂類別、主題和提示，設定內容傳遞網路記錄轉送並開啟[儀表板](/help/dashboards/dashboards-overview.md)，即可獲得更完整的深入分析。
 
 <!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
 
-## 以品牌為中心的體驗 {#brand-centric-experience}
+## 品牌導向體驗 {#brand-centric-experience}
 
-依預設，新客戶一開始會使用具有入門導向設定且重點突出、品牌優先的介面。 在這個新介面中，每個組織都從可用的品牌和其他建議品牌開始，以供選擇。 LLM Optimizer現有客戶將逐漸改用這種以品牌為中心的體驗。
+根據預設，新客戶一開始會透過上線導向的設定來使用重點突出、品牌優先的介面。 在這個新介面中，每個組織一開始都會選擇一個使用中的品牌和其他建議品牌。 現有的 LLM Optimizer 客戶將逐漸改用這種品牌導向體驗。
 
 ## 上線概觀
 
@@ -115,15 +110,15 @@ ht-degree: 76%
 
 ## 第 2 步：自訂類別、主題和提示 {#step-2-customize-categories-topics-and-prompts}
 
-您的網站上線後，您便可以檢視根據上線階段自動生成的一小組提示進行的品牌存在感分析。 往後，您可以自訂品牌的類別、主題和提示。
+您的網站上線後，您便可以檢視根據上線階段自動生成的一小組提示進行的品牌存在感分析。 之後，您可以自訂品牌的類別、主題和提示。
 
-### 客戶設定（傳統導覽）
+### 客戶設定 (經典導覽)
 
-如果您使用傳統導覽（不是以品牌為中心的體驗），您可以從[客戶設定儀表板](/help/dashboards/customer-configuration.md)自訂品牌的類別、主題和提示。
+如果您使用經典導覽 (非品牌導向體驗)，可以從[客戶設定儀表板](/help/dashboards/customer-configuration.md)自訂品牌的類別、主題和提示。
 
 ![客戶設定儀表板](/help/overview/assets/prompt-creation.png)
 
-從「客戶組態」控制面板，您可以：
+從「客戶設定」儀表板，您可以：
 
 * 新增符合您的業務優先順序的&#x200B;**新類別**。 類別可以是與您的網域相關的廣泛的內容領域。
 * 輸入您要追蹤的&#x200B;**自訂主題**&#x200B;或子主題。 主題可以是與您的網域相關聯的高搜尋量非品牌關鍵字緊密結合的特定主題。
@@ -138,15 +133,15 @@ ht-degree: 76%
 >
 > 如需如何設定類別、主題、提示的詳細資訊，請參閱[設定類別、主題、提示的最佳做法](/help/overview/best-practices-topics-prompts.md)頁面。
 
-### 以品牌為中心的體驗類別、主題和提示
+### 品牌導向體驗類別、主題和提示
 
-對於使用以品牌為中心的體驗的客戶，您可以新增類別、主題和提示，如下所示：
+對於使用品牌導向體驗的客戶，您可以新增類別、主題和提示，如下所示：
 
-* **類別** — 瀏覽至&#x200B;**品牌管理**&#x200B;並按一下&#x200B;**類別**。 類別是在全球層級定義，並套用至「品牌管理」下的所有品牌。
+* **類別**：導覽至「**品牌管理**」，然後按一下「**類別**」。 類別是在全域層級定義，並套用至「品牌管理」下的所有品牌。
 
-  在導覽中使用類別的![品牌管理](/help/assets/brand-centric-experience/llmo-app-shell.png)
+  ![在導覽中使用類別的品牌管理](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-* **主題和提示** — 瀏覽至&#x200B;**提示管理**&#x200B;以建立主題和提示，包括特定品牌的提示。
+* **主題和提示**：導覽至「**提示管理**」以建立主題和提示，包括特定品牌的提示。
 
   ![提示管理](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -156,15 +151,15 @@ ht-degree: 76%
 
 >[!NOTE]
 >
-> 對於使用品牌導向體驗的客戶，請導覽至&#x200B;**品牌存在感**，然後選取您要檢視使用品牌下拉式清單品牌存在感的品牌。 您也可以使用此體驗在&#x200B;**所有品牌**&#x200B;層級檢視品牌可見度。
+> 對於使用品牌導向體驗的客戶，請導覽至「**品牌存在感**」，然後使用品牌下拉式選單來選取您要檢視品牌存在感的品牌。 您也可以使用此體驗，在「**所有品牌**」層級檢視品牌能見度。
 
 ## 第 4 步：提供內容傳遞網路記錄轉送的相關資訊 {#step-4}
 
-若要解除鎖定代理流量和引薦流量深入分析，請註冊CDN記錄轉送，讓LLM Optimizer可讀取您的存取記錄。
+若要解除鎖定「代理式流量」和「轉介流量」深入分析，請註冊內容傳遞網路記錄轉送，以便 LLM Optimizer 讀取您的存取記錄。
 
-### 客戶設定（傳統導覽）
+### 客戶設定 (經典導覽)
 
-如果您使用傳統導覽，可以從[客戶設定儀表板](/help/dashboards/customer-configuration.md#cdn-configuration)新增CDN記錄轉送資訊。 開啟「**內容傳遞網路設定**」標籤，並選取「**上線內容傳遞網路**」。
+如果您使用經典導覽，可以從[客戶設定儀表板](/help/dashboards/customer-configuration.md#cdn-configuration)新增內容傳遞網路記錄轉送資訊。 開啟「**內容傳遞網路設定**」標籤，並選取「**上線內容傳遞網路**」。
 
 ![客戶設定內容傳遞網路](/help/overview/assets/cc-cdn.png)
 
@@ -176,11 +171,11 @@ ht-degree: 76%
 >[!NOTE]
 >關於使用客戶管理的內容傳遞網路 (BYOCDN) 時進行記錄轉送的詳細資訊，請參閱 [BYOCDN 記錄轉送概觀](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### 品牌導向體驗CDN記錄轉送
+### 品牌導向體驗內容傳遞網路記錄轉送
 
-對於使用品牌導向體驗的客戶，您可以從&#x200B;**品牌管理**&#x200B;新增CDN記錄轉送資訊，如下所示：開啟&#x200B;**品牌管理**，然後按一下&#x200B;**CDN**&#x200B;標籤。
+對於使用品牌導向體驗的客戶，您可以從「**品牌管理**」新增內容傳遞網路記錄轉送資訊，如下所示：開啟「**品牌管理**」，然後按一下「**內容傳遞網路**」標籤。
 
-![品牌管理 — CDN記錄轉送](/help/assets/brand-centric-experience/brands-management-cdn.png)
+![品牌管理 — 內容傳遞網路記錄轉送](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 ## 第 5 步：探索儀表板並採取行動
 
@@ -192,6 +187,6 @@ ht-degree: 76%
 * 匯出資料並與您的團隊協作，或邀請您的同事使用產品。
 
 >[!NOTE]
-> 在品牌導向體驗中，從導覽區段到左側存取所需的檢視。
+> 在品牌導向體驗中，請從左側的導覽區段存取所需的視圖。
 
 最後，若要完全了解 LLM Optimizer 的功能，您應該探索所有可用的[儀表板](/help/dashboards/dashboards-overview.md)。
