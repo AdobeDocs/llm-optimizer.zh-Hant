@@ -3,9 +3,9 @@ title: 代理式流量
 description: 了解如何使用代理式流量儀表板，以便查看 AI 代理如何與您的網站互動。
 feature: Agentic Traffic
 source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1407'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,15 +25,15 @@ ht-degree: 94%
 * [上升最快者與下滑最快者](#top-bottom-movers)
 * [使用者代理與 URL 效能分析](#user-url-performance)
 
-如果您在[以品牌為中心的體驗](/help/overview/quick-start.md#brand-centric-experience)，請瀏覽至&#x200B;**代理流量**，並選取您要檢視代理流量深入分析的網站。
+如果您使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)，請導覽至「**代理式流量**」，並選取您要檢視代理式流量深入分析的網站。
 
-![代理流量 — 網站選擇器（以品牌為中心的體驗）](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+![代理式流量：網站選擇器 (品牌導向體驗)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
 ## 內容傳遞網路記錄轉送 {#cdn-setup}
 
 如果沒有&#x200B;**內容傳遞網路記錄轉送**，則代理式流量儀表板是空白的。 若要檢視代理式互動，您必須設定&#x200B;**內容傳遞網路記錄檔轉送**。
 
-### 客戶設定（傳統導覽）
+### 客戶設定 (經典導覽)
 
 第一次登入時，您會看到一則訊息，如下圖所示。
 
@@ -58,11 +58,11 @@ ht-degree: 94%
 
 在啟用後，系統會攝取記錄檔，且儀表板會填入各項量度，例如代理互動總數、成功率、依市場區分的點擊數、使用者代理分析和 URL 層級效能。
 
-### 以品牌為中心的體驗
+### 品牌導向體驗
 
-如果您使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)，您可以導覽至&#x200B;**品牌管理**&#x200B;並按一下&#x200B;**CDN**&#x200B;標籤，新增CDN記錄轉送資訊。
+如果您使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)，可以導覽至「**品牌管理**」並按一下「**內容傳遞網路**」標籤，以新增內容傳遞網路記錄轉送資訊。
 
-![品牌管理 — CDN記錄轉送](/help/assets/brand-centric-experience/brands-management-cdn.png)
+![品牌管理 — 內容傳遞網路記錄轉送](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 LLM Optimizer 處理內容傳遞網路記錄中的一部分欄位。 雖然原始記錄欄位名稱會因內容傳遞網路提供者而異，這些名稱經過標準化後，呈現如下：
 
