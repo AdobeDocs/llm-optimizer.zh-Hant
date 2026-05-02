@@ -2,10 +2,10 @@
 title: 邊緣最佳化：CloudFront (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 CloudFront BYOCDN 進行邊緣最佳化。
 feature: Opportunities
-source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
-workflow-type: ht
-source-wordcount: '2207'
-ht-degree: 100%
+source-git-commit: 6cf66563c0ea043ab7f67e44be29b1e8d29d83d9
+workflow-type: tm+mt
+source-wordcount: '2217'
+ht-degree: 99%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 100%
    |--------|-------|
    | `x-edgeoptimize-api-key` | 您的 API 金鑰 |
    | `x-forwarded-host` | `www.example.com` |
+   | `x-edgeoptimize-fetcher-key` | 您的擷取器金鑰（只有在WAF允許清單時才需要） |
 
    將 `www.example.com` 替換成真實的網站網域，並將 `Your API key` 替換成 Adobe 代表提供給您的 Edge Optimize API 金鑰。
 
