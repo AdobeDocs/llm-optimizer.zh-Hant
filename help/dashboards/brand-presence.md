@@ -3,9 +3,9 @@ title: 品牌存在感
 description: 了解如何使用品牌存在感儀表板，掌握您的品牌在 AI 生成回答中的形象。
 feature: Brand Presence
 source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1346'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 96%
 * [情緒趨勢](#sentiment-trend)
 * [資料洞察](#data-insights)
 
-如果您使用[以品牌為中心的體驗](/help/overview/quick-start.md#brand-centric-experience)，請瀏覽至&#x200B;**品牌存在感**。 在品牌下拉式清單中，選取您要分析的品牌，或選擇&#x200B;**所有品牌**&#x200B;以檢視完整品牌集的可見度。
+如果您使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)，請導覽至「**品牌存在感**」。在品牌下拉式清單中，選取您要分析的品牌，或選擇「**所有品牌**」以審閱完整品牌集的可見度。
 
-![使用品牌選擇器進行品牌存在感（以品牌為中心的體驗）](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+![使用品牌選擇器的「品牌存在感」(品牌導向體驗)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## 篩選器 {#filters}
 

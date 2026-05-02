@@ -2,13 +2,30 @@
 title: 類別、主題、提示和其他品牌的最佳做法
 description: 透過設定類別、主題、提示，以及要追蹤的包括競爭者在內的其他品牌，最佳化 LLM 洞察分析，以獲得量身打造的品牌監視與策略性內容分析。
 feature: Best Practices, Customer Configuration
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+TQID: https://experienceleague.adobe.com/-nss61v0gCCKDKx4TaT5L-ImXVGQx-lyc9ha7u556d8
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: c898dfb2-0885-42fb-b2af-b2d756752646
+  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: addf009e-030a-4310-8534-776a3e62ed48
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+autotag-review: '2026-04-30T17:25:43.100Z'
+source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 93%
+source-wordcount: 1530
+ht-degree: 100%
 
 ---
-
 
 # 設定要追蹤的類別、主題、提示和其他品牌的最佳做法
 
@@ -22,17 +39,17 @@ ht-degree: 93%
 
 在[!UICONTROL 客戶設定]儀表板中，您可以自訂類別 (例如業務單位或產品線)、追蹤其他品牌，以及新增品牌提及別名，以便擷取在不同提示中您的品牌之所有變化版本。 此設定可確保平台根據您的業務情境提供量身打造的洞察，讓您能夠準確地分析能見度、流量和機會。
 
-## 以品牌為中心的體驗
+## 品牌導向體驗
 
-依預設，新客戶一開始會使用具有入門導向設定且重點突出、品牌優先的介面。 在這個新介面中，每個組織都從可用的品牌和其他建議品牌開始，以供選擇。 LLM Optimizer現有客戶將逐漸改用這種以品牌為中心的體驗。
+根據預設，新客戶一開始會透過上線導向的設定來使用重點突出、品牌優先的介面。 在這個新介面中，每個組織一開始都會選擇一個使用中的品牌和其他建議品牌。 現有的 LLM Optimizer 客戶將逐漸改用這種品牌導向體驗。
 
-如果您使用以品牌為中心的體驗，**品牌管理**&#x200B;是您定義如何監視和分析品牌的位置。
+如果您使用品牌導向體驗，請在「**品牌管理**」定義如何監控和分析品牌。
 
-![品牌管理 — 應用程式導覽（以品牌為中心的體驗）](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![品牌管理 — 應用程式導覽 (品牌導向體驗)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![品牌管理 — 設定概述](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![品牌管理 — 設定概觀](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-若要設定特定品牌的主題和提示，請使用&#x200B;**提示管理**。
+若要設定特定品牌的主題和提示，請使用「**提示管理**」。
 
 ![提示管理](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -104,7 +121,7 @@ LLM 工具中客戶在 AI 搜尋和提示行為方面的趨勢：
 >[!IMPORTANT]
 >
 > * 選擇一個方法並貫徹執行。
-> * 每個帳戶或品牌只能有&#x200B;**一個**&#x200B;類別模型。 請勿同時混用&#x200B;**SBU**&#x200B;和&#x200B;**URL_DIR**。
+> * 每個帳戶或品牌只能有&#x200B;**一個**&#x200B;類別模型。 請勿同時混用 **SBU** 和 **URL_DIR**。
 <!--Can you mix Product/Service with these?-->
 
 範例：

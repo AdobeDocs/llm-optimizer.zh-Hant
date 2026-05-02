@@ -3,9 +3,9 @@ title: URL 檢查器
 description: 了解如何使用 URL 檢查器來分析網域上的特定頁面在 AI 搜尋中的表現。
 feature: URL Inspector
 source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '718'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ URL 檢查器可協助您分析網域上的特定頁面在 AI 搜尋中的表現
 
 ![URL 檢查器](/help/dashboards/assets/url-insp.png)
 
-If you are on the [Brand Centric experience](/help/overview/quick-start.md#brand-centric-experience), navigate to **URL Inspector** and select the site for which you want to view the insights.
+如果您使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)，請導覽至「**URL 檢查器**」，並選取您要檢視其深入分析的網站。
 
-![URL檢視窗 — 網站選擇器（品牌導向體驗）](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
+![URL 檢查器：網站選擇器 (品牌導向體驗)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 
 ## 篩選器
 

@@ -2,9 +2,19 @@
 title: LLM Optimizer 概觀
 description: 了解 Adobe LLM Optimizer 如何在 AI 驅動的搜尋中提高品牌能見度。 追蹤提及次數、引用次數和洞察。 立即開始最佳化，以利增進參與度和影響力。
 feature: Onboarding
-source-git-commit: c449e2eb728648285413390ce7dce973380597cc
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+autotag-review: '2026-04-30T18:13:19.543Z'
+source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: 618
 ht-degree: 84%
 
 ---
@@ -58,10 +68,10 @@ LLM 最佳化的重要性越來越高：
 您可以使用 Adobe LLM Optimizer：
 
 **衡量品牌能見度**：追蹤在 AI 驅動的搜尋結果中提及您品牌的時間點、位置和頻率。 獲取明確的能見度分數，可以針對一段時間進行基準分析，不必再憑猜測行動。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
-**Benchmark Others** - See how your brand stacks up against others including competitors in generative engines. 找出聲量佔比的缺口並揭示競爭優勢。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
-**Discover Actionable Opportunities** - Pinpoint content opportunities (e.g., FAQs, abstracts, schema) and technical opportunities (crawlability, indexing issues) that directly increase mentions and citations. See [Opportunities dashboard](/help/dashboards/opportunities-overview.md).
-**Track Traffic Impact from AI** - Monitor agentic traffic (from AI assistants) and referral traffic (user clicks from citations) to your owned properties. 將 GEO 能見度與實質的參與度相關聯。 See [Agentic Traffic dashboard](/help/dashboards/agentic-traffic.md) and [Referral Traffic dashboard](/help/dashboards/referral-traffic.md).
-**Enable Team Collaboration** - Share dashboards, assign owners for prompts or categories, and ensure visibility goals are tracked across marketing, search engine optimization (SEO), and communications functions. 請參閱[協作儀表板](/help/dashboards/collaboration.md)。
+**為其他公司設定基準** — 瞭解您的品牌如何與包括創作引擎競爭者在內的其他公司進行棧疊比較。 找出聲量佔比的缺口並揭示競爭優勢。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
+**探索可操作的商機** — 找出直接增加提及次數和引述次數的技術商機（例如常見問題集、摘要、結構描述）和技術商機（可抓取性、索引問題）。 檢視[機會儀表板](/help/dashboards/opportunities-overview.md)。
+**追蹤來自AI的流量影響** — 監視代理流量（來自AI助理）並引薦流量（來自引文的使用者點按）到您擁有的屬性。 將 GEO 能見度與實質的參與度相關聯。 檢視[代理流量儀表板](/help/dashboards/agentic-traffic.md)和[引薦流量儀表板](/help/dashboards/referral-traffic.md)。
+**啟用Team Collaboration** — 共用儀表板、指派提示或類別的擁有者，並確保在行銷、搜尋引擎最佳化(SEO)和通訊功能間追蹤可見度目標。 請參閱[協作儀表板](/help/dashboards/collaboration.md)。
 
 ## 了解更多
 
