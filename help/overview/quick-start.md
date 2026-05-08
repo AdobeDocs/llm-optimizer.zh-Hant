@@ -2,20 +2,15 @@
 title: 快速入門
 description: 了解如何將您的品牌名稱和網域上線、從 Experience Hub 或 Adobe Experience Cloud 啟用試用版，以及完成 Adobe LLM Optimizer 設定。
 feature: Quickstart, Onboarding
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 autotag-review: '2026-04-30T18:12:24.085Z'
-source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
+source-git-commit: 9c8e5750410f0746d1777d2637d84561d15a7a64
 workflow-type: tm+mt
-source-wordcount: 1463
-ht-degree: 100%
+source-wordcount: 1472
+ht-degree: 96%
 
 ---
 
@@ -62,9 +57,9 @@ ht-degree: 100%
 
 ![LLM Optimizer 試用版](/help/overview/assets/llm-trial.png)
 
-#### Adobe Analytics 客戶
+#### Adobe Analytics和Adobe Customer Journey Analytics
 
-如果您是 Adobe Analytics 客戶，會在 Adobe Experience Cloud 首頁上看到橫幅。
+若為Adobe Analytics和Adobe Customer Journey Analytics客戶，您會在Experience Cloud首頁上看到橫幅。
 
 ![Adobe Experience Cloud 首頁上有「開始使用您的 Adobe LLM Optimizer 試用版」橫幅](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
@@ -77,7 +72,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> * **免費試用版：** AEM Cloud 和 Adobe Analytics 客戶可以使用 LLM Optimizer 的免費試用版。
+> * **免費試用版：** AEM Cloud和Adobe Analytics/Customer Journey Analytics客戶可以使用LLM Optimizer的免費試用版。
 > * **在 2026 年 4 月 1 日當天或之後啟用試用版的客戶，**&#x200B;可使用最多 100 個提示、一個網域，以及針對單一機會類型在最多 10 個 URL 中部署最佳化。
 > * **在 2026 年 4 月 1 日之前啟用試用版的客戶，**&#x200B;根據其現有條款，可以繼續存取最多 200 個提示。
 >
