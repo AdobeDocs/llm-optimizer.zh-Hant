@@ -2,10 +2,10 @@
 title: 轉介流量
 description: 了解如何使用轉介流量儀表板來查看訪客如何從外部平台、AI 引用和轉介連結抵達您的網站。
 feature: Referral Traffic
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
-workflow-type: ht
-source-wordcount: '734'
-ht-degree: 100%
+source-git-commit: ef3ef2c8f353047925c4fc99c73d9cf0399f24ca
+workflow-type: tm+mt
+source-wordcount: '750'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 轉介流量會顯示訪客如何從外部平台、AI 引用和轉介連結抵達您的網站。 轉介流量會追蹤和分析來自外部網站及平台的流量來源、轉介模式和轉換量度。 您可以藉此了解哪些來源、區域和頁面帶來參與度最高的流量。<!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> 您也可以利用自訂篩選器來精確調整所顯示的資料。
 
 >[!NOTE]
->預設狀態下，此儀表板會利用&#x200B;**內容傳遞網路記錄**&#x200B;建置流量洞察。 若您的組織是採用付費產品方案，您可以連結 **Adobe Analytics**，新增測量 AI 驅動探索和網站參與度的資料。 可於「**業務影響**」標籤取得這些資料。 若未與 Adobe Analytics 整合，則該標籤不會填入資料。 如需詳細資訊，請參閱 [Adobe Analytics 整合](/help/dashboards/adobe-analytics-integration.md)。
+>預設狀態下，此儀表板會利用&#x200B;**內容傳遞網路記錄**&#x200B;建置流量洞察。 如果您的組織使用付費選件，您可以連線&#x200B;**Adobe Analytics**&#x200B;或&#x200B;**Google Analytics 4**(GA4)以新增測量AI驅動探索和網站參與度的資料。 可於「**業務影響**」標籤取得這些資料。 請注意，若未與Adobe Analytics或GA4整合，則不會填入標籤。 因此，如需詳細資訊，請參閱[Adobe Analytics整合](/help/dashboards/adobe-analytics-integration.md)或[Google Analytics整合](/help/dashboards/google-analytics-integration.md)。
 
 ![轉介頁面](/help/dashboards/assets/referral-traffic.png)
 
