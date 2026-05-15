@@ -2,9 +2,15 @@
 title: 存取控制
 description: 了解在 Adobe LLM Optimizer 中產品指派和組織使用者的差異、唯讀使用者在 UI 中看到的內容，以及管理員如何在 Adobe Admin Console 中指派存取權。
 feature: Customer Configuration
-source-git-commit: 3b792a8ca7efd4b6d6764d2e83f9b0c103a56558
-workflow-type: ht
-source-wordcount: '618'
+autotag-review: '2026-05-15T17:26:43.837Z'
+TQID: 'https://experienceleague.adobe.com/hJpQQpuHBRMdKT5oKA9z0Y8H3d3p6To-n2hWKrXgZsQ'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: b704f6a0-b2fb-4df0-9177-9753751004f5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+workflow-type: tm+mt
+source-wordcount: 618
 ht-degree: 100%
 
 ---
@@ -12,7 +18,7 @@ ht-degree: 100%
 
 # 存取控制
 
-Adobe LLM Optimizer 根據使用者人物誌支援基本存取控制。此功能僅供&#x200B;**付費客戶**&#x200B;使用，並按要求啟用。試用版客戶無法使用此功能。
+Adobe LLM Optimizer 根據使用者人物誌支援基本存取控制。 此功能僅供&#x200B;**付費客戶**&#x200B;使用，並按要求啟用。 試用版客戶無法使用此功能。
 
 >[!IMPORTANT]
 >
@@ -30,7 +36,7 @@ Adobe LLM Optimizer 根據使用者人物誌支援基本存取控制。此功能
 
 ## 組織使用者 {#organizational-users}
 
-組織使用者是&#x200B;**未**&#x200B;指派給產品的標準使用者。如果您是組織使用者，則您擁有 [LLM Optimizer 儀表板](/help/dashboards/dashboards-overview.md)和相關視圖的&#x200B;**唯讀**&#x200B;存取權。以下限制適用。
+組織使用者是&#x200B;**未**&#x200B;指派給產品的標準使用者。 如果您是組織使用者，則您擁有 [LLM Optimizer 儀表板](/help/dashboards/dashboards-overview.md)和相關視圖的&#x200B;**唯讀**&#x200B;存取權。 以下限制適用。
 
 ### 客戶設定 {#customer-configuration-restrictions}
 
@@ -79,7 +85,7 @@ Adobe LLM Optimizer 根據使用者人物誌支援基本存取控制。此功能
 針對這些頁面：
 
 * 當使用者沒有部署存取權時，**部署最佳化**&#x200B;會隱藏。
-* 內嵌資訊性警示說明需要部署存取權。其訊息與以下內容類似：*需要部署存取權：您沒有部署最佳化或管理建議的權限。請聯絡您的管理員請求提供存取權。*
+* 內嵌資訊性警示說明需要部署存取權。 其訊息與以下內容類似：*需要部署存取權：您沒有部署最佳化或管理建議的權限。 請聯絡您的管理員請求提供存取權。*
 * 具有部署動作的固定式底部列已隱藏。
 
   ![需要部署存取權時顯示的內嵌警報](/help/dashboards/assets/access-control-deploy-alert.png)
@@ -110,4 +116,4 @@ Adobe LLM Optimizer 根據使用者人物誌支援基本存取控制。此功能
 
 >[!NOTE]
 >
->Adobe Admin Console 不同發行版本之間的畫面流程可能會變更。如果上述選項與您的主控台不符，請使用 Adobe Admin Console 中的產品內說明連結，或聯絡您的 Adobe 帳戶團隊。
+>Adobe Admin Console 不同發行版本之間的畫面流程可能會變更。 如果上述選項與您的主控台不符，請使用 Adobe Admin Console 中的產品內說明連結，或聯絡您的 Adobe 帳戶團隊。

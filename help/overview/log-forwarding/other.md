@@ -2,9 +2,15 @@
 title: 記錄轉送 - 其他 (手動上傳)
 description: 了解在使用不受支援的內容傳遞網路提供者時，如何手動將內容傳遞網路記錄上傳至 Adobe 的 S3 貯體，以便在 LLM Optimizer 中收集代理式流量資料。
 feature: Agentic Traffic
-source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
-workflow-type: ht
-source-wordcount: '670'
+autotag-review: '2026-05-15T17:54:15.685Z'
+TQID: 'https://experienceleague.adobe.com/YBfhS4oM0qYRkFvS3zPzzcFAeLNBucRH5QmMBUH8h4E'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 564171851fdccee43afd233da143d66182464889
+workflow-type: tm+mt
+source-wordcount: 670
 ht-degree: 100%
 
 ---
@@ -52,7 +58,7 @@ ht-degree: 100%
 
 ### 必要的記錄格式 (JSON Lines) {#log-format}
 
-記錄必須上傳為新行分隔的 JSON (**每行一個 JSON 物件**)。每個記錄行都必須包含下列欄位，**拼法需與下列完全一致**。
+記錄必須上傳為新行分隔的 JSON (**每行一個 JSON 物件**)。 每個記錄行都必須包含下列欄位，**拼法需與下列完全一致**。
 
 #### 逐個欄位結構描述 {#schema}
 
@@ -66,7 +72,7 @@ ht-degree: 100%
 | **request_referer** | 字串 | HTTP Referer 要求標頭 (可為空白)。 | `"https://chatgpt.com"` |
 | **response_status** | 整數 | HTTP 回應狀態代碼。 | `200` |
 | **response_content_type** | 字串 | HTTP Content-Type 回應標頭。 | `"text/html; charset=utf-8"` |
-| **time_to_first_byte** | 整數 | 從建立伺服器連線到下載網頁內容之間的時間，以&#x200B;**毫秒**&#x200B;為單位。如果未知或無法使用，則設為零。 | `42` |
+| **time_to_first_byte** | 整數 | 從建立伺服器連線到下載網頁內容之間的時間，以&#x200B;**毫秒**&#x200B;為單位。 如果未知或無法使用，則設為零。 | `42` |
 
 #### 記錄行範例 {#example}
 
@@ -84,7 +90,7 @@ ht-degree: 100%
 
 - 欄位名稱必須&#x200B;**完全**&#x200B;相符 (大小寫和拼法)。
 - 資料類型必須正確，如下所示：
-   - **timestamp** 必須是符合 **ISO 8601** 格式的字串。類似 UNIX 的時間戳記可能無法運作。
+   - **timestamp** 必須是符合 **ISO 8601** 格式的字串。 類似 UNIX 的時間戳記可能無法運作。
    - **response_status** 必須是整數。
    - **time_to_first_byte** 必須為整數且使用毫秒為單位。
    - 字串必須是有效的 JSON 字串。

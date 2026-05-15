@@ -2,9 +2,15 @@
 title: 記錄轉送 - Cloudflare
 description: 了解如何將內容傳遞網路記錄從 Cloudflare 轉送至 Adobe 的 S3 貯體，以便在 LLM Optimizer 中收集代理式流量資料。
 feature: Agentic Traffic
-source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
-workflow-type: ht
-source-wordcount: '381'
+autotag-review: '2026-05-15T17:41:23.688Z'
+TQID: 'https://experienceleague.adobe.com/AfhcMa7tZ3L-4qCbNKiblInALmHaKxWLtL-O-Hkvc-U'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+workflow-type: tm+mt
+source-wordcount: 381
 ht-degree: 100%
 
 ---
@@ -12,7 +18,7 @@ ht-degree: 100%
 
 # 記錄轉送：Cloudflare {#log-forwarding-cloudflare}
 
-本頁面詳細說明如何將內容傳遞網路記錄從 Cloudflare 轉送至 Adobe 的 S3 貯體，以收集代理式流量資料。您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。完成上線流程後，請依照本頁面提供的步驟，在 Cloudflare 儀表板控制台中設定記錄轉送。
+本頁面詳細說明如何將內容傳遞網路記錄從 Cloudflare 轉送至 Adobe 的 S3 貯體，以收集代理式流量資料。 您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。 完成上線流程後，請依照本頁面提供的步驟，在 Cloudflare 儀表板控制台中設定記錄轉送。
 
 ## 步驟 1：在 LLM Optimizer 上線 {#step-1}
 
@@ -51,11 +57,11 @@ ht-degree: 100%
 1. 在「**選取目標**」中，選擇「**Amazon S3**」。
 1. 輸入下列目標資訊：
 
-   - **貯體**：S3 貯體名稱。從 LLM Optimizer 內容傳遞網路設定頁面複製該值。
+   - **貯體**：S3 貯體名稱。 從 LLM Optimizer 內容傳遞網路設定頁面複製該值。
 
      ![貯體名稱](/help/overview/assets/log-forwarding/common/bucket-name.png)
 
-   - **路徑**：儲存體容器中的貯體位置。從 LLM Optimizer 內容傳遞網路設定頁面複製該值。
+   - **路徑**：儲存體容器中的貯體位置。 從 LLM Optimizer 內容傳遞網路設定頁面複製該值。
 
      ![Cloudflare 路徑](/help/overview/assets/log-forwarding/cloudflare/cloudflare-path.png)
 
@@ -71,7 +77,7 @@ ht-degree: 100%
 
    完成上述步驟後，請選取「**繼續**」。
 
-1. 為了證明所有權，Cloudflare 會將一個檔案傳送至您指定的目標。若要尋找權杖，請在所有權挑戰檔案的「**概觀**」分頁中按一下「**開啟**」按鈕。從 LLM Optimizer 內容傳遞網路設定頁面複製所有權權杖，然後貼到 Cloudflare 儀表板中，驗證您對貯體的存取權。輸入所有權權杖並選取「**繼續**」。
+1. 為了證明所有權，Cloudflare 會將一個檔案傳送至您指定的目標。 若要尋找權杖，請在所有權挑戰檔案的「**概觀**」分頁中按一下「**開啟**」按鈕。 從 LLM Optimizer 內容傳遞網路設定頁面複製所有權權杖，然後貼到 Cloudflare 儀表板中，驗證您對貯體的存取權。 輸入所有權權杖並選取「**繼續**」。
 
    <!--![Ownership token](/help/overview/assets/log-forwarding/cloudflare/cloudflare-ownership-token.png)-->
 

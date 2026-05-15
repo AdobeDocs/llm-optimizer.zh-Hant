@@ -2,17 +2,23 @@
 title: 記錄轉送 - Fastly
 description: 了解如何將內容傳遞網路記錄從 Fastly 轉送至 Adobe 的 S3 貯體，以便在 LLM Optimizer 中收集代理式流量資料。
 feature: Agentic Traffic
-source-git-commit: d1f98770b39f550c36d93ece9b89933c0e90f189
-workflow-type: ht
-source-wordcount: '381'
-ht-degree: 100%
+autotag-review: '2026-05-15T17:51:51.808Z'
+TQID: 'https://experienceleague.adobe.com/9SH1I6ajHKLFeEWXy-NpvPm-Ylk2xBKhQro3qobVEX8'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
+workflow-type: tm+mt
+source-wordcount: 381
+ht-degree: 88%
 
 ---
 
 
 # 記錄轉送：Fastly {#log-forwarding-fastly}
 
-本頁面說明如何將內容傳遞網路記錄從 Fastly 轉送至 Adobe 的 S3 貯體，以收集代理式流量資料。您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。完成上線流程後，請依照本頁面提供的步驟，在 Fastly 網頁控制台中設定記錄轉送。
+本頁面說明如何將內容傳遞網路記錄從 Fastly 轉送至 Adobe 的 S3 貯體，以收集代理式流量資料。 您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。 完成上線流程後，請依照本頁面提供的步驟，在 Fastly 網頁控制台中設定記錄轉送。
 
 ## 步驟 1：在 LLM Optimizer 上線 {#step-1}
 
@@ -49,10 +55,10 @@ ht-degree: 100%
 | **放置環境** | 預設 |
 | **記錄格式** | 使用以下&#x200B;**記錄格式字串**&#x200B;區段中顯示的記錄格式字串。 |
 | **時間戳記格式** | `%Y-%m-%dT%H:%M:%S.000` |
-| **貯體名稱** | 複製 LLM Optimizer 設定頁面中的「**貯體名稱**」。![貯體名稱](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
-| **網域** | 複製 LLM Optimizer 設定頁面中的「**網域名稱**」。![網域名稱](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
+| **貯體名稱** | 從LLM Optimizer設定頁面複製&#x200B;**儲存貯體名稱**。 ![貯體名稱](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
+| **網域** | 從LLM Optimizer設定頁面複製&#x200B;**網域名稱**。 ![網域名稱](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **存取方法** | **使用者認證** |
-| **使用者認證** | 複製 LLM Optimizer 設定頁面中的「**存取金鑰**」和「**秘密金鑰**」。![存取金鑰](/help/overview/assets/log-forwarding/common/access-keys.png) |
+| **使用者認證** | 從LLM Optimizer設定頁面複製&#x200B;**存取金鑰**&#x200B;和&#x200B;**秘密金鑰**。 ![存取金鑰](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **時段** | `300` |
 
 **記錄格式字串：**
@@ -63,13 +69,13 @@ ht-degree: 100%
 
 >[!WARNING]
 >
->密碼管理員可能會使用您的 Fastly 密碼自動填入「**秘密金鑰**」欄位。如果 AWS 整合失敗，請手動輸入秘密金鑰。
+>密碼管理員可能會使用您的 Fastly 密碼自動填入「**秘密金鑰**」欄位。 如果 AWS 整合失敗，請手動輸入秘密金鑰。
 
 完成上述步驟後，按一下「**進階選項**」並設定：
 
 | 欄位 | 說明 |
 | --- | --- |
-| **路徑** | 複製 LLM Optimizer 設定頁面中的「**路徑**」。![路徑](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
+| **路徑** | 從LLM Optimizer設定頁面複製&#x200B;**路徑**。 ![路徑](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
 | **選取記錄行格式** | 空白 |
 | **壓縮** | Gzip |
 | **備援層級** | 標準 |

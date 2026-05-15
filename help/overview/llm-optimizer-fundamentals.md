@@ -1,10 +1,15 @@
 ---
 title: LLM Optimizer 基本知識
 description: 了解 Adobe LLM Optimizer 如何在 AI 驅動的搜尋中提高品牌能見度。 追蹤提及次數、引用次數和洞察。 立即開始最佳化，以利增進參與度和影響力。
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
-workflow-type: ht
-source-wordcount: '508'
-ht-degree: 100%
+autotag-review: '2026-05-15T17:53:03.904Z'
+TQID: 'https://experienceleague.adobe.com/AI6oPtSezIqw3TBl-mUYH1clgJ-TQ-4z4KSjbN2Qr50'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 564171851fdccee43afd233da143d66182464889
+workflow-type: tm+mt
+source-wordcount: 508
+ht-degree: 84%
 
 ---
 
@@ -53,10 +58,10 @@ Adobe LLM Optimizer 提供一套專為生成式引擎最佳化設計的工具：
 您可以使用 Adobe LLM Optimizer：
 
 **衡量品牌能見度**：追蹤在 AI 驅動的搜尋結果中提及您品牌的時間點、位置和頻率。 獲取明確的能見度分數，可以針對一段時間進行基準分析，不必再憑猜測行動。
-**其他品牌基準對照**：了解在生成式引擎中您的品牌與其他品牌的競爭實力對比。 找出聲量佔比的缺口並揭示競爭優勢。
-**探索可操作的機會**：找出可以直接增加被提及和引用次數的內容改進機會 (例如常見問題集、摘要、結構描述) 和技術改進機會 (可抓取性、索引問題)。
-**追蹤來自 AI 的流量影響**：監視指向您的自有資產的代理式流量 (來自 AI 助理) 和轉介流量 (來自引用來源的使用者點按)。 將 GEO 能見度與實質的參與度相關聯。
-**實現團隊協作**：共用儀表板、指派提示或類別的負責人，以及確實追蹤橫跨行銷、SEO 和傳播部門的能見度目標。
+**設定其他人的基準** — 瞭解您的品牌如何與產生式引擎中的其他人進行棧疊。 找出聲量佔比的缺口並揭示競爭優勢。
+**探索可操作的商機** — 找出直接增加提及次數和引述次數的技術商機（例如常見問題集、摘要、結構描述）和技術商機（可抓取性、索引問題）。
+**追蹤來自AI的流量影響** — 監視代理流量（來自AI助理）並引薦流量（來自引文的使用者點按）到您擁有的屬性。 將 GEO 能見度與實質的參與度相關聯。
+**啟用Team Collaboration** — 共用儀表板、指派提示或類別的擁有者，並確保在行銷、SEO和通訊功能間追蹤可見度目標。
 
 
 ## 參照
