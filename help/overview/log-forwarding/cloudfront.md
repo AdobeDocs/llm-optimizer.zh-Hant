@@ -2,9 +2,21 @@
 title: 記錄轉送 - CloudFront
 description: 了解如何將內容傳遞網路記錄從 CloudFront 轉送至 Adobe 的 S3 貯體，以便在 LLM Optimizer 中收集代理式流量資料。
 feature: Agentic Traffic
-source-git-commit: d1f98770b39f550c36d93ece9b89933c0e90f189
-workflow-type: ht
-source-wordcount: '466'
+autotag-review: '2026-05-15T17:43:07.178Z'
+TQID: 'https://experienceleague.adobe.com/TXnY-eK1SUuKrlVoGWd2hZO5bjUqEspvyFmcyOuei3Q'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+workflow-type: tm+mt
+source-wordcount: 466
 ht-degree: 100%
 
 ---
@@ -12,7 +24,7 @@ ht-degree: 100%
 
 # 記錄轉送：CloudFront {#log-forwarding-cloudfront}
 
-本頁面說明如何將內容傳遞網路記錄從 CloudFront 轉送至 Adobe 的 S3 貯體，以收集代理式流量資料。您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。完成上線流程後，請依照本頁面提供的步驟，在 CloudFront 儀表板控制台中設定記錄轉送。
+本頁面說明如何將內容傳遞網路記錄從 CloudFront 轉送至 Adobe 的 S3 貯體，以收集代理式流量資料。 您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。 完成上線流程後，請依照本頁面提供的步驟，在 CloudFront 儀表板控制台中設定記錄轉送。
 
 ## 步驟 1：在 LLM Optimizer 上線 {#step-1}
 
@@ -56,13 +68,13 @@ ht-degree: 100%
 
 1. 選擇「**新增**」，然後選取要接收記錄的服務，在此案例中為 **Amazon S3**。
 
-1. 針對「**目標**」，請選取或建立資源。輸入&#x200B;**貯體名稱**，您可以從 LLM Optimizer 內容傳遞網路設定頁面複製其值。
+1. 針對「**目標**」，請選取或建立資源。 輸入&#x200B;**貯體名稱**，您可以從 LLM Optimizer 內容傳遞網路設定頁面複製其值。
 
    ![CloudFront 貯體名稱](/help/overview/assets/log-forwarding/cloudfront/cloudfront-bucket-name.png)
 
 1. 設定&#x200B;**其他設定**：
 
-   - **選取欄位**：選擇記錄檔案欄位。請參閱 LLM Optimizer 內容傳遞網路設定頁面上的必要欄位。
+   - **選取欄位**：選擇記錄檔案欄位。 請參閱 LLM Optimizer 內容傳遞網路設定頁面上的必要欄位。
 
      ![CloudFront 欄位選取](/help/overview/assets/log-forwarding/cloudfront/cloudfront-field-selection.png)
 
@@ -80,9 +92,9 @@ ht-degree: 100%
 
 ## 啟用跨帳戶傳遞的標準記錄 {#cross-account}
 
-**來源帳戶** (具有 CloudFront 分發) 傳送存取記錄至&#x200B;**目標帳戶** (LLM Optimizer 內容傳遞網路設定頁面中顯示的 S3 貯體)。兩個帳戶都必須有正確的權限。
+**來源帳戶** (具有 CloudFront 分發) 傳送存取記錄至&#x200B;**目標帳戶** (LLM Optimizer 內容傳遞網路設定頁面中顯示的 S3 貯體)。 兩個帳戶都必須有正確的權限。
 
-例如：來源帳戶 `111111111111` 將記錄傳送到目標帳戶 `222222222222` 中的 S3 貯體。您可以使用 [AWS 命令列介面](https://aws.amazon.com/cli/)。
+例如：來源帳戶 `111111111111` 將記錄傳送到目標帳戶 `222222222222` 中的 S3 貯體。 您可以使用 [AWS 命令列介面](https://aws.amazon.com/cli/)。
 
 >[!NOTE]
 >
@@ -111,5 +123,5 @@ ht-degree: 100%
 
 1. **驗證：**
 
-   - 在&#x200B;**來源**&#x200B;帳戶中：CloudFront 控制台 > 您的分發 > 「**記錄**」分頁。在「**類型**」下，您應該會看到 S3 跨帳戶記錄傳遞。
-   - 在&#x200B;**目標**&#x200B;帳戶中：S3 控制台 > 貯體。您應該會看到前置詞 (例如 `MyLogPrefix`) 以及該資料夾中的記錄。
+   - 在&#x200B;**來源**&#x200B;帳戶中：CloudFront 控制台 > 您的分發 > 「**記錄**」分頁。 在「**類型**」下，您應該會看到 S3 跨帳戶記錄傳遞。
+   - 在&#x200B;**目標**&#x200B;帳戶中：S3 控制台 > 貯體。 您應該會看到前置詞 (例如 `MyLogPrefix`) 以及該資料夾中的記錄。

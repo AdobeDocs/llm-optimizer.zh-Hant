@@ -2,9 +2,21 @@
 title: 記錄轉寄 - CloudFront (AWS CLI)
 description: 使用 AWS CLI 將 CloudFront 內容傳遞網路記錄轉寄至 Adobe 的 S3 儲存貯體，進行傳遞設定和操作。
 feature: Agentic Traffic
-source-git-commit: 3277e7f7f2e0c5e4693e40473d595b12d9e5f2e8
-workflow-type: ht
-source-wordcount: '379'
+autotag-review: '2026-05-15T17:42:44.992Z'
+TQID: 'https://experienceleague.adobe.com/NoVv3qv1RbtqAWGMPYC1Rz4wO-5Au1yL2e8tRKd9Hao'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+workflow-type: tm+mt
+source-wordcount: 379
 ht-degree: 100%
 
 ---
@@ -12,11 +24,11 @@ ht-degree: 100%
 
 # 記錄轉寄：CloudFront (AWS CLI) {#log-forwarding-cloudfront-cli}
 
-本頁面詳細說明如何將內容傳遞網路記錄從 CloudFront 轉寄至 Adobe 的 S3 貯體，藉以彙集代理式流量資料。您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。 上線流程完成後，請按照此頁面提供的步驟，使用[步驟 2](#step-2-cli) 的 [AWS 命令列介面](https://aws.amazon.com/cli/)設定記錄轉寄。
+本頁面詳細說明如何將內容傳遞網路記錄從 CloudFront 轉寄至 Adobe 的 S3 貯體，藉以彙集代理式流量資料。 您將使用 LLM Optimizer 內容傳遞網路設定頁面，在 LLM Optimizer 上線。 上線流程完成後，請按照此頁面提供的步驟，使用[步驟 2](#step-2-cli) 的 [AWS 命令列介面](https://aws.amazon.com/cli/)設定記錄轉寄。
 
 >[!NOTE]
 >
-> 本指南將說明如何使用 [AWS 命令列介面](https://aws.amazon.com/cli/)設定記錄轉寄。如果您想要使用 **CloudFront 使用者介面**&#x200B;設定記錄轉寄，請參閱[記錄轉寄：CloudFront](/help/overview/log-forwarding/cloudfront.md)。
+> 本指南將說明如何使用 [AWS 命令列介面](https://aws.amazon.com/cli/)設定記錄轉寄。 如果您想要使用 **CloudFront 使用者介面**&#x200B;設定記錄轉寄，請參閱[記錄轉寄：CloudFront](/help/overview/log-forwarding/cloudfront.md)。
 
 ## 步驟 1：在 LLM Optimizer 上線 {#step-1}
 
@@ -56,7 +68,7 @@ ht-degree: 100%
 
 ### 設定 AWS CLI 認證
 
-設定 AWS CLI 認證 MAC。開啟 ~/.aws/credentials 並輸入以下變數的值：
+設定 AWS CLI 認證 MAC。 開啟 ~/.aws/credentials 並輸入以下變數的值：
 
 ```text
 [LLMO]
@@ -86,7 +98,7 @@ aws sts get-caller-identity --profile LLMO
 
 ### 初始化變數
 
-將 `REPLACEME123@AdobeOrg` 取代為您的組織 Adobe IMS 組織 ID，然後執行以下命令。此命令的輸出 ID 將名為 `TRANSFORM_IMS_ID`。
+將 `REPLACEME123@AdobeOrg` 取代為您的組織 Adobe IMS 組織 ID，然後執行以下命令。 此命令的輸出 ID 將名為 `TRANSFORM_IMS_ID`。
 
 ```bash
 echo "REPLACEME123@AdobeOrg" | sed 's/@AdobeOrg$//' | tr '[:upper:]' '[:lower:]'
@@ -100,7 +112,7 @@ export REGION1=us-east-1
 export CUSTOMER=<CUSTOMER_NAME> ## No Space, user letters,numbers and dash
 export CDN_ID=<YOUR_CLOUDFRONT_DISTRIBUTION_ID>
 export ACCT1=<YOUR_AWS_ACCOUNT_NUMBER>
-export DELIVERY_DEST_ARN=arn:aws:logs:us-east-1:640168421876:delivery-destination:cdn-logs-<TRANSFORM_IMS_ID>-ams  ## Replace TRANSFORM_IMS_ID with the output of the command above 
+export DELIVERY_DEST_ARN=arn:aws:logs:us-east-1:640168421876:delivery-destination:cdn-logs-<TRANSFORM_IMS_ID>-ams  ## Replace TRANSFORM_IMS_ID with the output of the command above
 ```
 
 <!--Use the **Delivery destination ARN** and org values from the LLM Optimizer CDN configuration page if they differ from the pattern above.-->
