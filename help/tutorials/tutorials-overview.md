@@ -3,9 +3,13 @@ title: LLM Optimizer 概觀
 description: 了解 Adobe LLM Optimizer 如何在 AI 驅動的搜尋中提高品牌能見度。 追蹤提及次數、引用次數和洞察。 立即開始最佳化，以利增進參與度和影響力。
 autotag-review: '2026-05-15T18:10:16.637Z'
 TQID: 'https://experienceleague.adobe.com/Nyv7-xOn8QaQPa3AWYjt1ld2c36N5Cadv37TFKjYeG0'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
-topic_v2: id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2:
+  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 499
