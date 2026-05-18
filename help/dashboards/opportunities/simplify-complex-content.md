@@ -1,6 +1,6 @@
 ---
 title: 簡化複雜的內容
-description: 瞭解LLM Optimizer如何使用高流量頁面識別AI代理程式難以解讀的密集副本，以及如何使用Edge最佳化檢閱和部署簡化文字。
+description: 了解 LLM Optimizer 如何識別內容過於密集而導致 AI 代理難以解讀的高流量頁面，以及如何透過邊緣最佳化審閱並部署簡化文字。
 feature: Opportunities
 autotag-review: '2026-05-15T17:58:39.879Z'
 TQID: 'https://experienceleague.adobe.com/wO3ZY-fEgOi7cD4dq0kCltk-YJSD431bkA6-9PW42Lo'
@@ -15,91 +15,91 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 785
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # 簡化複雜的內容
 
-簡化複雜內容機會可識別高流量頁面，其中密集或複雜文字會讓AI代理程式難以解譯關鍵資訊。 它引入了更清晰、更易於掃描的現有副本版本，同時保留了原始含義。 這有助於代理程式更可靠地剖析、摘要及擷取重要資訊。
+「簡化複雜的內容」機會可識別內容過於密集或複雜，導致 AI 代理難以解讀關鍵資訊的高流量頁面。 此機會可在保留現有內容原始意義的同時，提供更清晰且更易於瀏覽的版本。 這能協助 AI 代理更可靠地剖析、摘要及擷取重要資訊。
 
-對於每個受影響的URL，您可以檢閱&#x200B;**已改善文字**&#x200B;建議、將其與&#x200B;**預覽**&#x200B;進行比較，然後透過[在Edge最佳化](/help/dashboards/optimize-at-edge/overview.md)來部署這些建議，如此一來，代理式流量接收更清楚的HTML，而不需要任何內容管理系統(CMS)變更。
+針對每個受影響的 URL，您可以審閱&#x200B;**「改良文本」**&#x200B;建議，並與&#x200B;**「預覽」**&#x200B;進行比較，然後透過[邊緣最佳化](/help/dashboards/optimize-at-edge/overview.md)部署這些建議，讓代理式流量取得更清晰的 HTML，且無需變更內容管理系統 (CMS)。
 
-## 如何修正問題
+## 其修正問題的方式
 
-使用[在Edge](/help/dashboards/optimize-at-edge/overview.md)最佳化(Optimize)套用修正，其中：
+將透過[邊緣最佳化](/help/dashboards/optimize-at-edge/overview.md)套用修正，且具備以下特點：
 
-- 向AI代理程式提供預先轉譯的HTML快照。
-- 更新代理程式可見頁面，以取代複雜段落，或以&#x200B;**改善文字**&#x200B;與即時頁面對齊。
-- 適用於CDN層（CMS不會變更）。
-- 僅限AI — 不會對人類訪客或SEO機器人造成影響。
-- 幾分鐘即可部署，而且可從LLM Optimizer介面&#x200B;**完全還原**。
+- 為 AI 代理提供預先轉譯的 HTML 快照。
+- 更新 AI 代理可見頁面，利用與即時頁面相符的&#x200B;**「改良文本」**&#x200B;取代或補充複雜的段落。
+- 在內容傳遞網路層運作 (無需變更 CMS)。
+- 僅針對 AI 運作，不會影響真人訪客或搜尋引擎最佳化機器人。
+- 只需幾分鐘即完成部署，且可透過 LLM Optimizer 介面&#x200B;**完全還原**。
 
 ## 運作方式
 
-LLM Optimizer會識別接收高代理流量且內容分數低於可讀性臨界值的頁面，然後建議重寫副本。 對於每個頁面，您有：
+LLM Optimizer 會識別接收到大量代理式流量以及內容分數低於可讀性門檻的頁面，然後提出內容改寫建議。 每個頁面皆有以下項目：
 
-**改善文字** — 簡化內容以頁面上已有的內容為基礎。
-**預覽** — 代理流量的比較前與比較後。
+**改良文本** - 以頁面現有內容為基礎的簡化內容。
+**預覽** - 代理式流量變更前後的比較。
 
-受影響的URL會出現在&#x200B;**目前的建議**&#x200B;標籤上含建議&#x200B;**的** URL中，您可以在此展開一列來檢查每個建議。
+受影響的 URL 會出現在&#x200B;**「目前建議」**&#x200B;標籤的&#x200B;**「有建議項目的 URL」**&#x200B;表格中，而您可以顯示資料列來檢視各個建議。
 
-![個URL，包含目前建議的建議、擴充的列，以及改善的文字和預覽](/help/dashboards/opportunities/assets/simplify-complex-content-expand.png)
+![目前建議上的有建議項目的 URL，顯示的資料列含改良文本與預覽](/help/dashboards/opportunities/assets/simplify-complex-content-expand.png)
 
-含有建議的&#x200B;**URL**&#x200B;表格列出簡化內容有助於全面理解的頁面。 建議會整理為&#x200B;**目前的建議**、**已修正的建議**&#x200B;和&#x200B;**已忽略的建議**。 對於每個URL，您可以：
+**「有建議項目的 URL」**&#x200B;表格會列出簡化內容有助於 AI 代理理解的頁面。 建議項目分為&#x200B;**「目前建議」**、**「已修正建議」**&#x200B;和&#x200B;**「已忽略建議」**。 針對每個 URL，您可以：
 
-- **展開列**&#x200B;以檢視該頁面的&#x200B;**改善文字**&#x200B;建議。
-- **預覽**&#x200B;代理流量的比較前與比較後。
-- 如果您在LLM Optimizer外部處理商機，請&#x200B;**標示為已修正**。
-- **忽略不相關的**&#x200B;建議。
+- **顯示資料列**&#x200B;以檢視該頁面的&#x200B;**「改良文本」**&#x200B;建議。
+- **預覽**&#x200B;代理式流量變更前後的比較。
+- **標記為已修正**，如果您是在 LLM Optimizer 之外處理機會。
+- **忽略**&#x200B;不相關的建議。
 
-**檢視**&#x200B;包含&#x200B;**目前的建議**、**已修正的建議** (狀態&#x200B;**已最佳化** （部署時）)以及&#x200B;**已忽略的建議**。 您可以在&#x200B;**已修正的建議**&#x200B;上使用&#x200B;**檢視即時**&#x200B;來驗證即時部署，並隨時回覆。
+各個&#x200B;**視圖**&#x200B;包含&#x200B;**「目前建議」**、**「已修正建議」** (部署後狀態為&#x200B;**「已最佳化」**) 以及&#x200B;**「已忽略建議」**。 您可以在&#x200B;**「已修正建議」**&#x200B;中使用&#x200B;**「檢視即時版本」**&#x200B;來驗證即時部署，並隨時復原。
 
-使用核取方塊選取您想要出貨的URL或含有&#x200B;**已改善文字**&#x200B;的行專案，然後使用&#x200B;**標籤為已修正**、**忽略建議**&#x200B;或&#x200B;**在**&#x200B;機會計畫&#x200B;**標題中部署最佳化**。 示範UI也會顯示選取專案計數以及清單中的相關動作。
+使用核取方塊選取您要發佈的 URL 或含有&#x200B;**「改良文本」**&#x200B;的條列項目，然後在&#x200B;**「機會計劃」**&#x200B;標頭中使用&#x200B;**「標記為已修正」**、**「忽略建議」**&#x200B;或&#x200B;**「部署最佳化項目」**。 示範 UI 也會顯示選取項目數量，以及與清單相關的動作。
 
-![計畫標題中的機會計畫、目前的建議、展開列和部署最佳化](/help/dashboards/opportunities/assets/simplify-complex-content-select.png)
+![計劃標頭中的機會計劃、目前建議、顯示的資料列和部署最佳化項目](/help/dashboards/opportunities/assets/simplify-complex-content-select.png)
 
-### 部署最佳化
+### 部署最佳化項目
 
-當您準備在邊緣發佈時，請按一下&#x200B;**部署最佳化**。 **部署至Edge**&#x200B;對話方塊會列出選取的URL和最佳化詳細資料。 檢閱清單，然後選擇&#x200B;**部署**&#x200B;或&#x200B;**取消**。
+當您準備好發佈至邊緣時，請按一下&#x200B;**「部署最佳化項目」**。 **「部署至邊緣」**&#x200B;對話框會列出選取的 URL 和最佳化詳細資訊。 審閱清單，然後選擇&#x200B;**「部署」**&#x200B;或&#x200B;**「取消」**。
 
-![部署至Edge對話方塊](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
+![部署至邊緣對話框](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
 
-成功部署後，**部署完成**&#x200B;會確認有多少最佳化已上線，並注意AI代理程式可能需要一些時間索引更新。 關閉對話方塊並開啟&#x200B;**修正建議**&#x200B;以驗證狀態。
+成功部署後，**「部署完成」**&#x200B;會確認有多少最佳化項目已上線，並提醒 AI 代理可能需要一些時間才能索引更新的內容。 關閉對話框並開啟&#x200B;**「已修正建議」**&#x200B;以驗證狀態。
 
 ![部署完成確認](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-confirm.png)
 
 >[!NOTE]
 >
->部署最佳化需要在Edge上線流程中完成最佳化。 如果您尚未上線，按一下&#x200B;**部署最佳化**&#x200B;會將您導向到上線流程。 如需Edge最佳化如何運作、支援的CDN提供者和上線流程的完整詳細資訊，請參閱[Edge最佳化](/help/dashboards/optimize-at-edge/overview.md)頁面。
+>部署最佳化項目之前，必須先完成邊緣最佳化的上線流程。 如果您尚未上線，按一下&#x200B;**「部署最佳化項目」**，系統便會將您導向上線流程。 如需了解邊緣最佳化的運作方式、支援的內容傳遞網路提供者和上線流程的完整詳細資訊，請參閱[邊緣最佳化](/help/dashboards/optimize-at-edge/overview.md)頁面。
 
-### 修正建議和即時檢視
+### 已修正建議和檢視即時版本
 
-在&#x200B;**已修正的建議**&#x200B;上，部署的URL在狀態列中顯示&#x200B;**已最佳化**。 展開一列以檢閱已部署的&#x200B;**已改善文字**&#x200B;和指示。
+在&#x200B;**「已修正建議」**&#x200B;中，已部署的 URL 會在狀態欄顯示&#x200B;**「已最佳化」**。 顯示資料列，審閱已部署的&#x200B;**「改良文本」**&#x200B;和指示。
 
-![已修正建議索引標籤，其狀態為「已最佳化」、已展開的簡化副本、已檢視即時和詳細資料](/help/dashboards/opportunities/assets/simplify-complex-content-fixed.png)
+![已修正建議分頁標籤顯示已最佳化狀態，顯示的簡化內容、檢視即時版本及詳細資訊](/help/dashboards/opportunities/assets/simplify-complex-content-fixed.png)
 
-按一下資料列上的&#x200B;**即時檢視**，開啟作為驗證的&#x200B;**目前頁面內容**&#x200B;的唯讀檢視（包括套用的簡化段落）。 使用&#x200B;**詳細資料**&#x200B;進行分析。
+按一下資料列上的&#x200B;**「檢視即時版本」**，以唯讀模式開啟為進行驗證而提供的&#x200B;**目前頁面內容** (包括套用的簡化段落)。 使用&#x200B;**「詳細資訊」**&#x200B;進行分析。
 
-![即時檢視 — 目前的頁面內容，包括代理程式的簡化文字](/help/dashboards/opportunities/assets/simplify-complex-content-view-live.png)
+![檢視即時版本：包含供 AI 代理使用的簡化文字的目前頁面內容](/help/dashboards/opportunities/assets/simplify-complex-content-view-live.png)
 
-當您需要大量回覆邊緣變更時，請使用核取方塊選取最佳化的列，然後在標題中使用&#x200B;**Rollback**。
+當您需要大量復原邊緣變更時，請使用核取方塊選取已最佳化的資料列，然後使用標頭中的&#x200B;**「復原」**。
 
-![已修正建議，在標題](/help/dashboards/opportunities/assets/simplify-complex-content-rollback.png)中展開已部署的列、最佳化狀態和回覆
+![已修正建議，顯示已部署的資料列、已最佳化狀態以及標頭中的復原](/help/dashboards/opportunities/assets/simplify-complex-content-rollback.png)
 
 ## 復原
 
-如果您改變心意，可以復原任何已部署的最佳化。 從&#x200B;**修正建議**&#x200B;檢視中，選取您要回覆的最佳化資料列，然後按一下標頭中的&#x200B;**回覆**。
+如果您改變主意，可以復原任何已部署的最佳化項目。 在&#x200B;**「已修正建議」**&#x200B;視圖中，選取您要還原的已最佳化資料列，然後按一下標頭中的&#x200B;**「復原」**。
 
-**回覆**&#x200B;對話方塊會列出要回覆的建議，並附上簡短的警告，說明部署的最佳化將會回覆。 確認清單，然後按一下&#x200B;**回覆**&#x200B;或&#x200B;**取消**。
+**「復原」**&#x200B;對話框會列出將要復原的建議，並附上簡短的警告，指出已部署的最佳化項目將會還原。 確認清單，然後按一下&#x200B;**「復原」**&#x200B;或&#x200B;**「取消」**。
 
-![復原對話方塊列出回復建議](/help/dashboards/opportunities/assets/simplify-complex-content-rollback-dialog.png)
+![復原對話框列出將還原的建議](/help/dashboards/opportunities/assets/simplify-complex-content-rollback-dialog.png)
 
-作業完成後，會顯示&#x200B;**已成功回覆**&#x200B;摘要；請關閉摘要以返回儀表板。
+操作完成後將會顯示&#x200B;**「已成功復原」**&#x200B;摘要；關閉摘要即可返回儀表板。
 
 ![復原完成 — 已成功復原](/help/dashboards/opportunities/assets/simplify-complex-content-rollback-confirm.png)
 
 ## 在示範中試用
 
-在[Frescopa示範](https://play.llmo.now/org/demo-org)中探索簡化複雜內容的工作流程。
+在 [Frescopa 示範](https://play.llmo.now/org/demo-org)中探索「簡化複雜內容」工作流程。

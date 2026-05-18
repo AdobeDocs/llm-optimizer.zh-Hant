@@ -13,7 +13,7 @@ subfeature_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 2217
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 99%
    |--------|-------|
    | `x-edgeoptimize-api-key` | 您的 API 金鑰 |
    | `x-forwarded-host` | `www.example.com` |
-   | `x-edgeoptimize-fetcher-key` | 您的擷取器金鑰（只有在WAF允許清單時才需要） |
+   | `x-edgeoptimize-fetcher-key` | 您的擷取器金鑰 (僅在 WAF 加入允許清單時需要) |
 
    將 `www.example.com` 替換成真實的網站網域，並將 `Your API key` 替換成 Adobe 代表提供給您的 Edge Optimize API 金鑰。
 

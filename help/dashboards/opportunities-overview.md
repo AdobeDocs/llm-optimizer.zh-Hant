@@ -17,7 +17,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 1227
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -42,20 +42,20 @@ ht-degree: 31%
 
 | 機會 | 類型 | 發現的問題 | 修正建議 |
 |---------|----------|----------|----------|
-| [新增LLM易記摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | 內容 (站內) | 會識別在頁面或區段層級缺乏簡潔摘要和結構化關鍵點的高流量頁面，讓AI代理程式更難以掃描和解讀品牌宣告。 顯示受影響的URL以及建議摘要的位置。 | 檢閱AI產生的摘要和以現有內容為根據的關鍵點，然後透過Edge中的最佳化在CDN邊緣部署，讓代理程式獲得更清晰、可快速瀏覽的內容。 |
-| [新增相關常見問題](/help/dashboards/opportunities/add-relevant-faqs.md) | 內容 (站內) | 會識別缺少與您的提示集對齊的結構化問答內容的高流量頁面，使AI代理程式更難以將使用者問題比對到您的頁面。 顯示受影響的URL以及建議常見問題的位置。 | 檢閱以現有頁面資料為基礎AI產生、與意圖一致的常見問題集內容，然後在CDN邊緣使用Edge中的最佳化進行部署，讓代理程式獲得更清楚的問答內容。 |
-| [新增多媒體成績單摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) | 內容 (站內) | 識別關鍵資訊嵌入到沒有機器可讀成績單或摘要的視訊或其他媒體中的頁面，使得AI代理程式難以使用該內容。 顯示受影響的URL和建議的文字。 | 檢閱以媒體和頁面為基礎的AI產生的成績單摘要，然後透過Edge中的最佳化在CDN邊緣部署，讓代理程式接收機器可讀的文字（例如，在相關視訊附近）。 |
-| [由robots.txt封鎖的流量](/help/dashboards/opportunities/traffic-blocked-by-robots.md) | 技術性 GEO | 分析您的robots.txt檔案，找出可選擇性封鎖AI代理程式的其他公開存取內容的規則。 報告受影響的URL和封鎖的代理。 | 更新您的robots.txt檔案，在適當時允許存取支援的AI爬蟲。 |
-| [代理流量錯誤](/help/dashboards/opportunities/agentic-traffic-errors.md) | 技術性 GEO | 監視傳回給AI代理程式的404、403和5xx錯誤回應的CDN記錄。 報表會影響URL和遺失的點選總數。 | 修正故障的連結、更新權限並解決伺服器端的問題，以便主要內容傳回 200 回應。 |
-| [簡化複雜內容](/help/dashboards/opportunities/simplify-complex-content.md) | 內容 (站內) | 會識別高流量頁面，其中密集的或複雜的復本低於可讀性臨界值，讓AI代理程式更難解讀關鍵資訊。 顯示受影響的URL以及建議使用簡化文字的位置。 | 檢閱AI產生的改良文字以現有頁面內容為基礎，然後使用Edge中的最佳化在CDN邊緣部署，讓代理程式接收更清晰、更易於掃描的段落。 |
-| [復原內容可見度](/help/dashboards/opportunities/recover-content-visibility.md) | 技術性 GEO | 標示對 AI 代理隱藏重要內容的頁面。 顯示受影響的 URL 和可復原的預期內容。 | 在CDN層使用在Edge最佳化來預先轉譯頁面，以便人工智慧代理程式無需執行JavaScript即可使用更多內容。 |
-| [新增目錄](/help/dashboards/opportunities/add-table-of-contents.md) | 技術性 GEO | 偵測缺少清晰結構組織或導覽標題的頁面，導致AI代理程式難以剖析內容並將內容對應到使用者查詢。 顯示受影響的URL以及建議使用結構化目錄的位置。 | 檢閱建議的結構化目錄，其錨點連結標題可反映頁面的主要區段，然後在CDN邊緣部署並使用Edge中的最佳化，將目錄插入HTML，改善頁面結構，讓模型可更輕鬆擷取、對應和引用相關區段。 |
-| [Wikipedia分析](/help/dashboards/opportunities/wikipedia-analysis.md) | 離站 | 跨參考、區段、內容長度、影像和資訊方塊完整性，針對業界競爭者分析貴公司的Wikipedia頁面。 找出您的頁面低於產業基準的特定差距。 | 檢閱AI產生的策略建議以改善您的維基百科存在，包括新增參考、豐富您的資訊箱、擴展區段及改善文章品質。 |
-| [情緒分析(Beta)](/help/dashboards/opportunities/youtube-sentiment-analysis.md) | 異地、社交和社群 | 分析針對您的品牌存在感提示集所引用的YouTube影片，其中包含品牌提及、情緒、聲音份額和循環主題。 只有在偵測到YouTube影片是提示集的引文時才會顯示。 | 檢閱優先建議，以改善跨YouTube內容的品牌認知，包括建議的動作和負責實作這些動作的團隊。 |
-| [Reddit情緒分析(Beta)](/help/dashboards/opportunities/reddit-sentiment-analysis.md) | 異地、社交和社群 | 分析針對品牌提及、情緒、聲音份額和循環主題的品牌存在感提示集引用的Reddit對話串。 只有在偵測到Reddit執行緒為提示集的引文時才會顯示。 | 審查優先順序的建議以改善Reddit內容的品牌認知度，包括建議的行動以及負責實施這些行動的團隊。 |
-| [引用的情緒分析(Beta)](/help/dashboards/opportunities/cited-sentiment-analysis.md) | 異地、社交和社群 | 針對品牌提及、情緒、聲音份額和循環主題的品牌存在感提示集，分析偵測到的熱門引用URL。 | 檢閱優先建議，以改善人工智慧系統在回應有關您品牌的提示時引述最多的頁面的品牌知覺。 |
-| [豐富產品目錄(Beta)](/help/dashboards/opportunities/enrich-product-catalog.md) | 內容（站上），Adobe Commerce | 識別其名稱或說明過於通用、技術密集或模糊以供LLM解讀的Commerce目錄產品。 顯示評估過的PDP、代理流量內容和AI產生的敘述強化。 | 檢閱並編輯建議的產品名稱和說明，然後部署最佳化以直接將更新發佈到您的Adobe Commerce目錄（從已修正的建議復原）。 |
-| [豐富產品詳細資料頁面](/help/dashboards/opportunities/enrich-product-detail-pages.md) | 技術地理位置，Adobe Commerce | 對於Adobe Commerce店面，比較完整目錄資料與AI代理程式在每個產品詳細資料頁面上可以存取的內容；會顯示PDP，其中代理程式可見的HTML中缺少變體、規格、屬性和相關目錄欄位，而依代理程式流量來排定優先順序。 | 強調代理程式檢視中遺失的可復原目錄資訊，以及這對於以LLM驅動的產品探索來說很重要的原因；在Edge中使用最佳化進行部署，以便向CDN邊緣的代理程式流量提供完全預先呈現、適合AI的HTML快照，讓代理程式接收來自您目錄的豐富產品內容，而無需CMS或目錄變更。 |
+| [新增適合 LLM 讀取的摘要](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | 內容 (站內) | 識別在頁面或區段層級缺乏簡潔摘要與結構化重點，導致 AI 代理難以掃描及解讀品牌聲明的高流量頁面。 顯示受影響的 URL，以及建議新增摘要的位置。 | 審閱以現有內容為基礎並由 AI 生成的摘要及重點，然後透過邊緣最佳化部署至內容傳遞網路邊緣，讓 AI 代理取得更清晰且易於掃描的內容。 |
+| [新增相關常見問題集](/help/dashboards/opportunities/add-relevant-faqs.md) | 內容 (站內) | 識別因缺少與提示集相符的結構化常見問題集內容，導致 AI 代理難以將使用者問題對應至相關頁面的高流量頁面。 顯示受影響的 URL，以及建議新增常見問題集的位置。 | 審閱以現有頁面內容為基礎、與意圖相符並由 AI 生成的常見問題集內容，然後透過邊緣最佳化部署至內容傳遞網路邊緣，讓 AI 代理取得更清晰的常見問題集背景資訊。 |
+| [新增多媒體逐字稿摘要](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) | 內容 (站內) | 識別將關鍵資訊嵌入影片或其他媒體內，但因缺少機器可讀逐字稿或摘要，導致 AI 代理難以使用該內容的頁面。 顯示受影響的 URL 和建議的文字。 | 審閱以媒體內容與頁面為基礎並由 AI 生成的逐字稿摘要，然後透過邊緣最佳化部署至內容傳遞網路邊緣，讓 AI 代理取得機器可讀的文字 (例如顯示於相關影片附近)。 |
+| [遭 robots.txt 封鎖的流量](/help/dashboards/opportunities/traffic-blocked-by-robots.md) | 技術性 GEO | 分析您的 robots.txt 檔案，找出有哪些規則選擇性封鎖 AI 代理，使其無法存取其他可公開存取之內容。 報告受影響的 URL 與遭封鎖的 AI 代理。 | 更新您的 robots.txt 檔案，以便在適當的時候允許支援的 AI 爬蟲存取。 |
+| [代理式流量錯誤](/help/dashboards/opportunities/agentic-traffic-errors.md) | 技術性 GEO | 監視傳回 AI 代理的 404、403 和 5xx 錯誤回應的內容傳遞網路記錄。 報告受影響的 URL 和流失的點擊總數。 | 修正故障的連結、更新權限並解決伺服器端的問題，以便主要內容傳回 200 回應。 |
+| [簡化複雜的內容](/help/dashboards/opportunities/simplify-complex-content.md) | 內容 (站內) | 識別因內容過於密集或複雜致使達不到可讀性門檻，導致 AI 代理難以解讀關鍵資訊的高流量頁面。 顯示受影響的 URL 以及建議使用簡化文字的位置。 | 審閱以現有頁面內容為基礎並由 AI 生成的改良文本，然後透過邊緣最佳化部署至內容傳遞網路邊緣，讓 AI 代理取得更清晰且更易於瀏覽的文字段落。 |
+| [復原內容能見度](/help/dashboards/opportunities/recover-content-visibility.md) | 技術性 GEO | 標示對 AI 代理隱藏重要內容的頁面。 顯示受影響的 URL 和可復原的預期內容。 | 使用邊緣最佳化在內容傳遞網路層預先轉譯頁面，以便 AI 代理無需執行 JavaScript 即可獲得更多內容。 |
+| [新增目錄](/help/dashboards/opportunities/add-table-of-contents.md) | 技術性 GEO | 偵測因為缺少清晰結構或導覽標題，導致 AI 代理難以剖析內容並將內容對應至使用者查詢的頁面。 顯示受影響的 URL 以及建議使用結構化目錄的位置。 | 審閱建議的結構化目錄，其包含可反映頁面主要區段的錨點連結標題，然後透過邊緣最佳化部署至內容傳遞網路邊緣，將目錄插入 HTML 中，以改善頁面結構，讓模型更容易擷取、對應及引用相關區段。 |
+| [維基百科分析](/help/dashboards/opportunities/wikipedia-analysis.md) | 站外 | 根據參考資料、區段、內容長度、影像及資訊框內容完整性等面向，分析貴公司與業界競爭者的維基百科頁面。 找出您的頁面低於產業基準的具體落差。 | 審閱為改善您的維基百科存在感由 AI 生成的策略性建議，包括新增參考資料、補強資訊框內容、擴充區段及提升條目品質。 |
+| [YouTube 情緒分析 (Beta)](/help/dashboards/opportunities/youtube-sentiment-analysis.md) | 站外、社交和社群 | 針對您的品牌存在感提示集所引用的 YouTube 影片，分析其中的品牌提及次數、情緒、聲量佔比及重複主題。 唯有系統偵測到 YouTube 影片被列為您的提示集之引用來源時才會顯示。 | 審閱可改善 YouTube 內容中品牌知覺的優先處理建議項目，包括建議採取的動作及負責實施的團隊。 |
+| [Reddit 情緒分析 (Beta)](/help/dashboards/opportunities/reddit-sentiment-analysis.md) | 站外、社交和社群 | 針對您的品牌存在感提示集所引用的 Reddit 對話串，分析其中的品牌提及次數、情緒、聲量佔比及重複主題。 唯有系統偵測到 Reddit 對話串被列為您的提示集之引用來源時才會顯示。 | 審閱可改善 Reddit 內容中品牌知覺的優先處理建議項目，包括建議採取的動作及負責實施的團隊。 |
+| [引用情緒分析 (Beta)](/help/dashboards/opportunities/cited-sentiment-analysis.md) | 站外、社交和社群 | 針對您的品牌存在感提示集中偵測到的熱門引用 URL，分析其中的品牌提及次數、情緒、聲量佔比及重複主題。 | 審閱優先處理的建議項目，針對 AI 系統在回答與您品牌相關的提示時最常引用的頁面，改善其中的品牌知覺。 |
+| [擴充產品目錄 (Beta)](/help/dashboards/opportunities/enrich-product-catalog.md) | 內容 (站內)，Adobe Commerce | 識別名稱或說明過於籠統、技術資訊量極大或意義模糊，導致 LLM 難以解讀的 Commerce 目錄產品。 顯示已評估的 PDP、代理式流量背景資訊，以及 AI 生成的敘事強化內容。 | 審閱並編輯建議的產品名稱與說明，然後部署最佳化項目，將更新直接發佈至您的 Adobe Commerce 目錄 (可從「已修正建議」中復原)。 |
+| [擴充產品詳細資訊頁面](/help/dashboards/opportunities/enrich-product-detail-pages.md) | 技術性生成式引擎最佳化，Adobe Commerce | 針對 Adobe Commerce 店面，比較完整目錄資料與 AI 代理在各產品詳細資訊頁面中可存取的內容；並顯示 AI 代理可見 HTML 中缺少變體、規格、屬性及相關目錄欄位的 PDP，並依代理式流量排定優先順序。 | 強調 AI 代理視圖中遺失的可復原目錄資訊，以及其對 LLM 驅動產品搜尋的重要性；並透過邊緣最佳化部署，在內容傳遞網路邊緣為代理式流量提供完整預先轉譯、適合 AI 使用的 HTML 快照，讓 AI 代理無需變更 CMS 或目錄，即可取得來自您目錄的豐富產品背景資訊。 |
 
 ## 自動最佳化 {#auto-optimization}
 
@@ -69,7 +69,7 @@ As stated above, the content visibility opportunity, flags pages where key conte
 
 ### 其他工具
 
-[LLM 能見度檢查程式](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc)是 Chrome 擴充功能，讓您精準了解 LLM 可以存取您的網站多少內容，以及哪些內容仍是隱藏狀態。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。 只要點按一次，使用者就可以評估任何網站的電腦可讀性，用並排比較的方式查看 AI 代理與人類使用者看到的內容。 此外，也會預估使用 LLM Optimizer 可以復原多少內容。
+[LLM 能見度檢查程式](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc)是 Chrome 擴充功能，讓您精準了解 LLM 可以存取您的網站多少內容，以及哪些內容仍是隱藏狀態。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。 只要點按一次，使用者就可以評估任何網站的電腦可讀性，用並排比較的方式查看 AI 代理與真人使用者看到的內容。 此外，也會預估使用 LLM Optimizer 可以復原多少內容。
 
 <!--
 | Detect Missing Hreflang | Content (Onsite)| Flags pages missing hreflang attributes. Provides affected URLs and expected coverage by language/region.| Implement hreflang tags to indicate correct localized versions. |
