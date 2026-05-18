@@ -4,16 +4,13 @@ description: 了解在 LLM Optimizer 中如何設定 CloudFront BYOCDN 進行邊
 feature: Opportunities
 autotag-review: '2026-05-15T17:41:48.977Z'
 TQID: 'https://experienceleague.adobe.com/fGlW2FIQooU-8nv8H1lH3WOxinOFUVK7RVNol7ACPq8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 2217
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +46,7 @@ ht-degree: 99%
    |--------|-------|
    | `x-edgeoptimize-api-key` | 您的 API 金鑰 |
    | `x-forwarded-host` | `www.example.com` |
-   | `x-edgeoptimize-fetcher-key` | 您的擷取器金鑰（只有在WAF允許清單時才需要） |
+   | `x-edgeoptimize-fetcher-key` | 您的擷取器金鑰 (僅在 WAF 加入允許清單時需要) |
 
    將 `www.example.com` 替換成真實的網站網域，並將 `Your API key` 替換成 Adobe 代表提供給您的 Edge Optimize API 金鑰。
 

@@ -4,19 +4,13 @@ description: 了解 Adobe LLM Optimizer 如何在 AI 驅動的搜尋中提高品
 feature: Onboarding
 autotag-review: '2026-05-15T17:54:37.542Z'
 TQID: 'https://experienceleague.adobe.com/5qyk6PCTaT93tz-UUnYRYznylOh4lXHuH1yN98g3wIE'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 618
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -69,10 +63,10 @@ LLM 最佳化的重要性越來越高：
 您可以使用 Adobe LLM Optimizer：
 
 **衡量品牌能見度**：追蹤在 AI 驅動的搜尋結果中提及您品牌的時間點、位置和頻率。 獲取明確的能見度分數，可以針對一段時間進行基準分析，不必再憑猜測行動。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
-**為其他公司設定基準** — 瞭解您的品牌如何與包括創作引擎競爭者在內的其他公司進行棧疊比較。 找出聲量佔比的缺口並揭示競爭優勢。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
-**探索可操作的商機** — 找出直接增加提及次數和引述次數的技術商機（例如常見問題集、摘要、結構描述）和技術商機（可抓取性、索引問題）。 檢視[機會儀表板](/help/dashboards/opportunities-overview.md)。
-**追蹤來自AI的流量影響** — 監視代理流量（來自AI助理）並引薦流量（來自引文的使用者點按）到您擁有的屬性。 將 GEO 能見度與實質的參與度相關聯。 檢視[代理流量儀表板](/help/dashboards/agentic-traffic.md)和[引薦流量儀表板](/help/dashboards/referral-traffic.md)。
-**啟用Team Collaboration** — 共用儀表板、指派提示或類別的擁有者，並確保在行銷、搜尋引擎最佳化(SEO)和通訊功能間追蹤可見度目標。 請參閱[協作儀表板](/help/dashboards/collaboration.md)。
+**其他品牌基準對照** - 了解您的品牌在生成式引擎中的表現，並與其他品牌 (包括競爭者) 進行比較。 找出聲量佔比的缺口並揭示競爭優勢。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
+**探索可操作的機會** - 找出可以直接增加被提及和引用次數的內容改進機會 (例如常見問題集、摘要、結構描述) 和技術改進機會 (可抓取性、索引問題)。 請參閱[機會儀表板](/help/dashboards/opportunities-overview.md)。
+**追蹤來自 AI 的流量影響** - 監視指向您的自有資產的代理式流量 (來自 AI 助理) 和轉介流量 (來自引用來源的使用者點按)。 將 GEO 能見度與實質的參與度相關聯。 請參閱[代理式流量儀表板](/help/dashboards/agentic-traffic.md)和[轉介流量儀表板](/help/dashboards/referral-traffic.md)。
+**實現團隊協作** - 共用儀表板、指派提示或類別的所有者，以及確實追蹤橫跨行銷、搜尋引擎最佳化 (SEO) 和傳播部門的能見度目標。 請參閱[協作儀表板](/help/dashboards/collaboration.md)。
 
 ## 了解更多
 
