@@ -10,10 +10,10 @@ feature_v2:
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
 subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: f1c0ad79ff4e71515da0b0d86632a558b0e99661
+source-git-commit: c5a8f033aac85913b56a40bb1560537da04847f2
 workflow-type: tm+mt
-source-wordcount: 1915
-ht-degree: 97%
+source-wordcount: 1916
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 
 **先決條件**
 
-設定 Cloudflare Worker 路由規則之前，請確定您具備下列條件：
+在設定Cloudflare Worker路由規則之前，請確定您具有：
 
 * 於網域上具備已啟用 Worker 功能的 Cloudflare 帳戶。
 * 具備在 Cloudflare 中存取您網域 DNS 設定的存取權。
