@@ -10,10 +10,10 @@ feature_v2:
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
 subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
 workflow-type: tm+mt
-source-wordcount: 2217
-ht-degree: 100%
+source-wordcount: 2204
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 100%
    * **名稱：**`edgeoptimize-routing`
    * **執行階段：**`cloudfront-js-2.0`
 
-3. 將預設程式碼替換成取自 [viewer-request.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/cloudfront-function/viewer-request.js) 的程式碼。
+3. 將預設程式碼替換成取自 [viewer-request.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/cloudfront-function/viewer-request.js) 的程式碼。
 
    發佈前，請自訂程式碼中的下列值：
 
@@ -120,7 +120,7 @@ ht-degree: 100%
 
 2. 按一下「**編輯**」。
 
-3. 建議將「**最小 TTL**」設定為「`0`」。 不過，如果您目前的「最小 TTL」已經很短，則可能不需要變更。
+3. 建議將&#x200B;**最小TTL**&#x200B;設定為`0`。不過，如果您目前的最低TTL已經非常短，您可能不需要加以變更。
    ![快取原則 TTL 設定](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. 在「**快取鍵設定**」>「**標頭**」下方，連同您現有的包含項目，新增「`x-edgeoptimize-config`」和「`x-edgeoptimize-url`」。
@@ -195,7 +195,7 @@ ht-degree: 100%
 
 4. 按一下「**建立函式**」。
 
-5. 在程式碼編輯器中，將預設程式碼替換成取自 [origin-request-response.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/origin-request-response.js) 的程式碼。
+5. 在程式碼編輯器中，將預設程式碼替換成取自 [origin-request-response.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/origin-request-response.js) 的程式碼。
 
 6. 按一下「**部署**」以儲存程式碼。
 
@@ -209,7 +209,7 @@ ht-degree: 100%
 
 1. 按一下「**編輯信任原則**」。
 
-2. 將該原則替換成取自 [trust-policy.json](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/trust-policy.json) 的內容。
+2. 將該原則替換成取自 [trust-policy.json](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/trust-policy.json) 的內容。
 
 3. 按一下「**更新原則**」。
 
@@ -224,7 +224,7 @@ ht-degree: 100%
 
 1. 按一下「**編輯**」。
 
-2. 將該原則替換成取自 [cloudwatch-policy.json](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudfront/lambda/cloudwatch-policy.json) 的內容。
+2. 將該原則替換成取自 [cloudwatch-policy.json](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudfront/lambda/cloudwatch-policy.json) 的內容。
 
    在 JSON 中，將 `ACCOUNT_ID` 替換成您實際的 AWS 帳戶 ID (可在 AWS 主控台的右上角找到)，並將 `FUNCTION_NAME` 替換成您的 Lambda 函式名稱 (例如 `edgeoptimize-origin`)。
 
