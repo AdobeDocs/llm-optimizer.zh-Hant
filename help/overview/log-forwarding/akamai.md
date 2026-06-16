@@ -12,10 +12,10 @@ subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
+source-git-commit: 76d1b915d41771580544d3d87732092cfecda6d5
 workflow-type: tm+mt
 source-wordcount: 612
-ht-degree: 81%
+ht-degree: 78%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 81%
 
 ## 步驟 3：選擇資料參數 {#step-3}
 
-建立串流後，在 Akamai 控制面板上，按一下「下一步」以繼續前往「**資料集**」分頁。 依照官方 Akamai 文件中的步驟，選擇[資料參數](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters)。 將會需要下列來自 LLM Optimizer 設定的欄位：
+建立資料流後，請在Akamai控制檯上按一下&#x200B;**下一步**&#x200B;以繼續&#x200B;**資料集**&#x200B;索引標籤。 依照官方 Akamai 文件中的步驟，選擇[資料參數](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters)。 將會需要下列來自 LLM Optimizer 設定的欄位：
 
 ![LLMO 設定欄位](/help/overview/assets/log-forwarding/akamai/akamai-llmo-config-fields.png)
 
