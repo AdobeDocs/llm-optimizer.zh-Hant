@@ -12,10 +12,10 @@ subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
 workflow-type: tm+mt
-source-wordcount: 595
-ht-degree: 83%
+source-wordcount: 612
+ht-degree: 81%
 
 ---
 
@@ -71,7 +71,7 @@ reqTimeSec ->要求時間
 * **郵件交換資料**
 reqHost ->要求主機
 reqPath ->請求路徑
-queryStr ->查詢字串
+queryStr ->查詢字串（選擇性）
 reqMethod -> Request方法
 ua -> User-Agent
 statusCode -> HTTP狀態代碼
@@ -81,13 +81,17 @@ referer -> Referer
 * **網路效能資料**
 timeToFirstByte ->到第一個位元組的時間
 
+>[!NOTE]
+>
+>`queryStr`引數是選用的。 如果查詢字串包含PII資訊，則可以省略它。
+
 Akamai 資料集欄位 (包括 ID) 如下所示：
 
 1100，# reqTimeSec ->要求時間
 2012，#國家 — >國家/地區
 1011， # reqHost ->要求主機
 1013， # reqPath ->請求路徑
-2009， # queryStr ->查詢字串
+2009，# queryStr ->查詢字串（選擇性）
 1012，# reqMethod -> Request方法
 1017， # ua -> User-Agent
 1008， # statusCode -> HTTP狀態碼
