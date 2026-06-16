@@ -4,16 +4,13 @@ description: 了解在 LLM Optimizer 中如何設定 CloudFront BYOCDN 進行邊
 feature: Opportunities
 autotag-review: '2026-05-15T17:41:48.977Z'
 TQID: 'https://experienceleague.adobe.com/fGlW2FIQooU-8nv8H1lH3WOxinOFUVK7RVNol7ACPq8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 7097550211d1570d6ff65ab980f9a160f8d2a9e0
 workflow-type: tm+mt
-source-wordcount: 2204
-ht-degree: 96%
+source-wordcount: 2343
+ht-degree: 91%
 
 ---
 
@@ -232,6 +229,27 @@ ht-degree: 96%
 
 >[!WARNING]
 >ARN 中的區域必須是 `*`，Lambda@Edge 會在離檢視器最近的邊緣位置執行，因此記錄會寫入邊緣位置所在區域的 CloudWatch (例如 `ap-south-1`、`eu-west-1`)，而不一定是在 `us-east-1`。 記錄群組會使用冠上區域前置詞的名稱：`/aws/lambda/us-east-1.FUNCTION_NAME`，其中 `us-east-1` 永遠是函式的主區域。
+
+**修正CloudWatch記錄檔連結**
+
+根據預設，Lambda主控台中的&#x200B;**檢視CloudWatch記錄**&#x200B;捷徑連結到`us-east-1`中的`/aws/lambda/FUNCTION_NAME` — Lambda@Edge的錯誤記錄群組。 設定自訂記錄群組，讓連結指向正確的路徑。
+
+**導覽：** AWS Console > Lambda > [您的函式] >設定>監視與作業工具
+
+1. 按一下「**編輯**」。
+
+2. 在&#x200B;**CloudWatch記錄群組**&#x200B;下，選取&#x200B;**自訂**。
+
+3. 將自訂記錄群組名稱設定為`/aws/lambda/us-east-1.edgeoptimize-origin`。
+
+4. 在&#x200B;**許可權**&#x200B;底下，保留&#x200B;**新增必要許可權**&#x200B;核取方塊&#x200B;**未勾選**。
+
+   ![Lambda自訂記錄群組組態](/help/assets/optimize-at-edge/cloudfront-lambda-custom-log-group.png)
+
+5. 按一下「**儲存**」。
+
+>[!NOTE]
+>即使在此修正之後，**檢視CloudWatch記錄**&#x200B;連結也會開啟正確的記錄群組名稱，但如果您在錯誤的地區，可能不會顯示任何資料。 Lambda@Edge記錄檔是寫入處理要求的邊緣區域（例如，`eu-west-1`、`ap-south-1`），而非`us-east-1`。 您仍需在CloudWatch中切換到正確的區域才能檢視記錄。
 
 **發佈版本**
 
