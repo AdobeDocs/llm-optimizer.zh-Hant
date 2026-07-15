@@ -2,23 +2,17 @@
 title: 邊緣最佳化
 description: 了解如何在不需要更動原始內容的情況下，在內容傳遞網路邊緣完成 LLM Optimizer 最佳化。
 feature: Opportunities
-autotag-review: '2026-05-15T17:55:41.072Z'
-TQID: 'https://experienceleague.adobe.com/kMxoKtrfyzxIpLJP9nt-rq6GP37ICCNe4XienUKqDZE'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: 559e77adedb1a93215090441c93c2aa6dc664e5f
+autotag-review: '2026-07-15T18:10:00.249Z'
+TQID: 'https://experienceleague.adobe.com/nRq5punuSnNb4XXIJzkO1NGF66tsyN1rdt-O9dd8tmU'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021id: a6256a78-8814-462c-9627-86699b39cee1id: e0ec491f-fe51-42b6-801c-1c0dfcc0e64fid: fe92ae96-fc87-4fea-96a0-adc06310d4f4
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: e9001ce2-5245-4a8e-8601-dd958009072fid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: 2931
-ht-degree: 98%
+source-wordcount: 3147
+ht-degree: 99%
 
 ---
 
@@ -113,7 +107,7 @@ ht-degree: 98%
 
 [AI 內容能見度檢查程式](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc)瀏覽器擴充功能，會顯示 LLM 可以存取多少網頁內容以及哪些內容仍然隱藏。 這是一項免費使用的獨立診斷工具，不需要產品授權或設定。
 
-只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/tw/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
+只需點按一次，您便可以評估任何網站的機器可讀性。 您可以透過並排比較查看 AI 代理與真人使用者看到的內容，並預估使用 LLM Optimizer 可以復原多少內容。 請參閱 [AI 可以讀取您的網站嗎？](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) 頁面取得更多資訊。
 
 ## 機會的詳細說明
 
@@ -121,8 +115,8 @@ ht-degree: 98%
 
 ### 復原內容能見度
 
-此機會會標籤因使用者端轉譯而為AI代理隱藏關鍵內容的頁面。對於每個已識別的頁面，它都會精確顯示AI代理程式檢視中缺少哪些內容、醒目提示可見度差距，並可讓您直接套用變更以復原隱藏的內容。當您透過Edge的「最佳化」部署此商機時，系統會為LLM使用者代理程式提供預先轉譯的AI最佳化頁面版本，讓他們無需執行Javascript即可存取完整內容。
-這可確保頁面首先對AI代理完全可見。在該預先轉譯的HTML上套用其他增強功能。
+這個機會將標示那些因為用戶端轉譯，導致主要內容被隱藏使得 AI 代理無法讀取的頁面。 對於所指出的每個頁面，此機會將準確地告訴您 AI 代理視圖中缺少哪些內容、特別標示能見度缺口，並讓您直接套用變更以復原隱藏的內容。 當您透過邊緣最佳化部署此機會時，系統會將預先轉譯的 AI 最佳化頁面版本提供給 LLM 使用者代理，讓他們無需執行 Javascript 亦可存取完整內容。
+這樣做可確保 AI 代理優先完整讀取頁面內容。 在該預先轉譯的 HTML 上，再套用其他增強功能。
 
 >[!IMPORTANT]
 >若使用邊緣最佳化部署，則此預先轉譯功能會自動套用至下列所有機會，以確保 AI 代理可以完整讀取頁面內容。
@@ -169,7 +163,7 @@ ht-degree: 98%
 
 對於每個機會，您可以預覽、編輯、部署、即時檢視和回復在邊緣的最佳化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3477995/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### 預覽
 
@@ -231,7 +225,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 問：當來源更新內容時會發生什麼事？
 
-只要基礎來源頁面未變更，我們就會從快取中提供您頁面的最佳化版本。不過，當來源確實變更&#x200B;**復原內容可見度**&#x200B;時，我們的系統會自動重新整理，因此AI代理程式一律會收到最新的內容。這是因為我們使用低快取存留時間(TTL)設定（依分鐘數順序），因此您網站上的任何內容更新都會觸發該視窗中的新最佳化。針對&#x200B;**新增LLM友善摘要**&#x200B;等內容機會，LLM Optimizer會監控來源頁面是否有變更。如果偵測到變更，我們會暫停最佳化並將其標幟為人類檢閱，以防止代理程式可見頁面和人類可見頁面之間的內容漂移。
+只要基礎的來源頁面未變更，我們會從快取提供頁面的最佳化版本。 但是，當來源的&#x200B;**復原內容能見度**&#x200B;確實有所變更時，我們的系統會自動重新整理，讓 AI 代理總是收到最新的內容。 這是因為我們使用低快取存留時間 (TTL) 設定 (通常只有數分鐘)，以便您的網站上任何內容更新都會在該視窗中觸發新的最佳化。 針對&#x200B;**新增 LLM 友善摘要**等內容機會，LLM Optimizer 會監控來源頁面是否有所變更。 如果偵測到變更，我們會暫停最佳化並加上人工審閱的標記，防止 AI 代理可見頁面和真人可見頁面之間出現內容偏差。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 問：邊緣最佳化是否僅適用於使用 Adobe Edge Delivery Service (EDS) 的網站？

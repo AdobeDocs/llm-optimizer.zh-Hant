@@ -2,17 +2,16 @@
 title: 邊緣最佳化：CloudFront (BYOCDN)
 description: 了解在 LLM Optimizer 中如何設定 CloudFront BYOCDN 進行邊緣最佳化。
 feature: Opportunities
-autotag-review: '2026-05-15T17:41:48.977Z'
-TQID: 'https://experienceleague.adobe.com/fGlW2FIQooU-8nv8H1lH3WOxinOFUVK7RVNol7ACPq8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 7097550211d1570d6ff65ab980f9a160f8d2a9e0
+autotag-review: '2026-07-15T17:46:25.674Z'
+TQID: 'https://experienceleague.adobe.com/yIEUTzlnvOX-WBf276KQcAN8sGYDpZNVibJt024VMWU'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: 2343
+source-wordcount: 2360
 ht-degree: 91%
 
 ---
@@ -120,7 +119,7 @@ ht-degree: 91%
 
 2. 按一下「**編輯**」。
 
-3. 建議將&#x200B;**最小TTL**&#x200B;設定為`0`。不過，如果您目前的最低TTL已經非常短，您可能不需要加以變更。
+3. 建議將「**最小 TTL**」設定為「`0`」。 不過，如果您目前的「最小 TTL」已經很短，則可能不需要變更。
    ![快取原則 TTL 設定](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. 在「**快取鍵設定**」>「**標頭**」下方，連同您現有的包含項目，新增「`x-edgeoptimize-config`」和「`x-edgeoptimize-url`」。
