@@ -14,9 +14,9 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1227
+source-wordcount: 1225
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 這些最佳化包括修正頁面上的內容 (新增結構化內容、標準網址或摘要)、進行技術調整 (取消封鎖 AI 爬蟲或解決錯誤) 以及影響第三方權威網站上的內容。 把握這些最佳化機會有助於精準呈現您的品牌，並提高在生成式回答中被引用的機會。
 
-![最佳化機會](/help/dashboards/assets/oport.png)
+<!--![Optimization opportunities](/help/dashboards/assets/oport.png)-->
 
 ## 機會儀表板
 

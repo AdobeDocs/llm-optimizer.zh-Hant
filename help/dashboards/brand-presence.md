@@ -14,10 +14,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1346
-ht-degree: 100%
+source-wordcount: 1335
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,11 @@ ht-degree: 100%
 
 品牌存在感儀表板會詳細說明您的品牌在 AI 生成回答中形象如何。 其中會顯示提及您品牌的位置、頻率以及相關情境。 您可以使用儀表板來衡量能見度、追蹤引用及探索情緒趨勢。 儀表板分為數個區段，每個區段提供不同的洞察。 您也可以利用自訂篩選器來精確調整所顯示的資料。
 
-![品牌存在感概觀](/help/dashboards/assets/brand-main.png)
+瀏覽至&#x200B;**品牌存在感**。 在品牌下拉式清單中，選取您要分析的品牌，或選擇「**所有品牌**」以審閱完整品牌集的可見度。
+
+![使用品牌選擇器的「品牌存在感」(品牌導向體驗)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+
+<!-- ![Brand Presence overview](/help/dashboards/assets/brand-main.png)-->
 
 此頁面詳細說明下列內容：
 
@@ -35,10 +39,6 @@ ht-degree: 100%
 * [其他比較](##others-comparison)
 * [情緒趨勢](#sentiment-trend)
 * [資料洞察](#data-insights)
-
-如果您使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)，請導覽至「**品牌存在感**」。 在品牌下拉式清單中，選取您要分析的品牌，或選擇「**所有品牌**」以審閱完整品牌集的可見度。
-
-![使用品牌選擇器的「品牌存在感」(品牌導向體驗)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## 篩選器 {#filters}
 

@@ -13,21 +13,19 @@ subfeature_v2:
   - id: aedaee53-dfb4-4ab4-9d23-fa6188148769
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 718
-ht-degree: 100%
+source-wordcount: 710
+ht-degree: 97%
 
 ---
 
 
 # URL 檢查器
 
-URL 檢查器可協助您分析網域上的特定頁面在 AI 搜尋中的表現。 此檢查器將 URL 層級的能見度、代理式流量和轉介資料結合，讓您深入細節，了解哪些 URL 被引用以及這些 URL 出現在回答中的頻率。
+URL 檢查器可協助您分析網域上的特定頁面在 AI 搜尋中的表現。 此檢查器將 URL 層級的能見度、代理式流量和轉介資料結合，讓您深入細節，了解哪些 URL 被引用以及這些 URL 出現在回答中的頻率。 導覽至&#x200B;**URL檢視窗**，並選取您要檢視其深入分析的網站。
 
 ![URL 檢查器](/help/dashboards/assets/url-insp.png)
-
-如果您使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)，請導覽至「**URL 檢查器**」，並選取您要檢視其深入分析的網站。
 
 ![URL 檢查器：網站選擇器 (品牌導向體驗)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 

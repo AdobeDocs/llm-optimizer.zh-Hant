@@ -14,10 +14,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 09e228275cf84316ee2e8990636bb3b8865ac263
+source-git-commit: b8f87eee62cfd0fa134b2370b04d5e14b0cfa547
 workflow-type: tm+mt
-source-wordcount: 750
-ht-degree: 92%
+source-wordcount: 716
+ht-degree: 86%
 
 ---
 
@@ -26,10 +26,14 @@ ht-degree: 92%
 
 轉介流量會顯示訪客如何從外部平台、AI 引用和轉介連結抵達您的網站。 轉介流量會追蹤和分析來自外部網站及平台的流量來源、轉介模式和轉換量度。 您可以藉此了解哪些來源、區域和頁面帶來參與度最高的流量。<!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> 您也可以利用自訂篩選器來精確調整所顯示的資料。
 
+導覽至&#x200B;**引薦流量**，並選取您要檢視LLM引薦流量深入分析的網站。
+
+![轉介流量 — 網站選擇器 (品牌導向體驗)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+
 >[!NOTE]
 >預設狀態下，此儀表板會利用&#x200B;**內容傳遞網路記錄**&#x200B;建置流量洞察。 如果您的組織使用付費選件，您可以連線&#x200B;**Adobe Analytics**&#x200B;或&#x200B;**Google Analytics 4**(GA4)以新增測量AI驅動探索和網站參與度的資料。 可於「**業務影響**」標籤取得這些資料。 請注意，若未與Adobe Analytics或GA4整合，則不會填入標籤。 因此，如需詳細資訊，請參閱[Adobe Analytics整合](/help/dashboards/adobe-analytics-integration.md)或[Google Analytics整合](/help/dashboards/google-analytics-integration.md)。
 
-![轉介頁面](/help/dashboards/assets/referral-traffic.png)
+<!-- ![Referral Page](/help/dashboards/assets/referral-traffic.png)-->
 
 此頁面詳細說明下列內容：
 
@@ -39,19 +43,15 @@ ht-degree: 92%
 * [熱門轉介 URL](#top-referrals)
 * [轉介流量詳細資料](#traffic-details)
 
-如果您使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)，請導覽至「**轉介流量**」，並選取您要檢視 LLM 轉介流量深入分析的網站。
-
-![轉介流量 — 網站選擇器 (品牌導向體驗)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
-
 ## 設定 {#setup}
 
 第一次登入時，轉介流量儀表板可能會顯示空白。 若要檢視您的資料，您必須設定內容傳遞網路記錄轉送。
 
-對於使用[品牌導向體驗](/help/overview/quick-start.md#brand-centric-experience)的客戶，您可以導覽至「**品牌管理**」並按一下「**內容傳遞網路**」標籤，以新增內容傳遞網路記錄轉送資訊。
+您可以瀏覽至&#x200B;**品牌管理**&#x200B;並按一下&#x200B;**CDN**&#x200B;標籤，新增CDN記錄轉送資訊。
 
-**客戶設定 (經典體驗)：**&#x200B;選取「**移至設定**」，以設定[內容傳遞網路記錄轉送](/help/dashboards/customer-configuration.md#cdn-configuration)。
+<!-- **Customer Configuration (classic experience):** Configure [CDN log forwarding](/help/dashboards/customer-configuration.md#cdn-configuration) by selecting **Go To Configuration**.-->
 
-![轉介設定](/help/dashboards/assets/referral-setup1.png)
+<!--![Referral Setup](/help/dashboards/assets/referral-setup1.png)-->
 
 <!--
 1. Select your Source (either CDN logs or AEM Operational Telemetry).
