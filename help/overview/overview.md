@@ -4,27 +4,20 @@ description: 了解 Adobe LLM Optimizer 如何在 AI 驅動的搜尋中提高品
 feature: Onboarding
 autotag-review: '2026-07-15T18:10:25.350Z'
 TQID: 'https://experienceleague.adobe.com/C-54mDBaDgmIWPOrLhkeUHlK1cXMbX0kRNrJZTC--4c'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 1a2549151ab0bfe16eee89dafe5710bf6edba6a0
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
 workflow-type: tm+mt
-source-wordcount: 623
-ht-degree: 97%
+source-wordcount: 485
+ht-degree: 88%
 
 ---
 
 
 # LLM Optimizer 概觀
 
->[!VIDEO](https://video.tv.adobe.com/v/3492480/?captions=chi_hant&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492471/?learn=on){transcript=true}
 
 本頁面概述開始使用工具前，您需要瞭解有關Adobe LLM Optimizer的所有內容：
 
@@ -69,11 +62,11 @@ LLM 最佳化的重要性越來越高：
 
 您可以使用 Adobe LLM Optimizer：
 
-**衡量品牌能見度**：追蹤在 AI 驅動的搜尋結果中提及您品牌的時間點、位置和頻率。 獲取明確的能見度分數，可以針對一段時間進行基準分析，不必再憑猜測行動。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
-**其他品牌基準對照** - 了解您的品牌在生成式引擎中的表現，並與其他品牌 (包括競爭者) 進行比較。 找出聲量佔比的缺口並揭示競爭優勢。 請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
-**探索可操作的機會** - 找出可以直接增加被提及和引用次數的內容改進機會 (例如常見問題集、摘要、結構描述) 和技術改進機會 (可抓取性、索引問題)。 請參閱[機會儀表板](/help/dashboards/opportunities-overview.md)。
-**追蹤來自 AI 的流量影響** - 監視指向您的自有資產的代理式流量 (來自 AI 助理) 和轉介流量 (來自引用來源的使用者點按)。 將 GEO 能見度與實質的參與度相關聯。 請參閱[代理式流量儀表板](/help/dashboards/agentic-traffic.md)和[轉介流量儀表板](/help/dashboards/referral-traffic.md)。
-**實現團隊協作** - 共用儀表板、指派提示或類別的所有者，以及確實追蹤橫跨行銷、搜尋引擎最佳化 (SEO) 和傳播部門的能見度目標。 請參閱[協作儀表板](/help/dashboards/collaboration.md)。
+**測量品牌可見度** — 追蹤在AI支援的搜尋結果中提及您品牌的時間、地點和頻率。透過清晰的可見度分數超越猜測，您可以隨時間設定基準。請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
+**設定其他人的基準** — 瞭解您的品牌如何與包括創成式引擎競爭者在內的其他品牌進行比對。找出聲音份額差距，發掘競爭優勢。請參閱[品牌存在感儀表板](/help/dashboards/brand-presence.md)。
+**探索可操作的商機** — 精確定位內容商機（例如常見問答集、摘要、結構描述）和技術商機（可抓取性、索引問題），這些商機會直接增加提及次數和引用次數。檢視[機會儀表板](/help/dashboards/opportunities-overview.md)。
+**追蹤來自AI的流量影響** — 監視代理流量（來自AI助理）並引薦流量（來自引文的使用者點按）到您擁有的屬性。將GEO可見性與實際參與度繫結。檢視[代理流量儀表板](/help/dashboards/agentic-traffic.md)和[引薦流量儀表板](/help/dashboards/referral-traffic.md)。
+**啟用Team Collaboration** — 共用儀表板、指派提示或類別的擁有者，並確保在行銷、搜尋引擎最佳化(SEO)和通訊功能間追蹤可見度目標。請參閱[Collaboration儀表板](/help/dashboards/collaboration.md)。
 
 ## 了解更多
 
@@ -81,7 +74,7 @@ LLM 最佳化的重要性越來越高：
 
 * [快速入門](/help/overview/quick-start.md)讓您快速上手使用。
 * [儀表板總覽](/help/dashboards/dashboards-overview.md)說明 LLM Optimizer 可使用的所有儀表板。
-* [設定類別、主題、提示和其他品牌的最佳做法](/help/overview/best-practices-topics-prompts.md)，包含設定 LLM Optimizer 的重要資訊。
+* [設定類別、主題、提示和其他品牌以追蹤的最佳實務](/help/overview/best-practices-topics-prompts.md)包含設定LLM Optimizer的重要資訊。
 * [最佳做法](/help/tutorials/best-practices.md)讓您了解 LLM 最佳化的最佳做法，以提升您的品牌在 AI 搜尋中的能見度。
 
 
