@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
 workflow-type: tm+mt
-source-wordcount: 810
-ht-degree: 98%
+source-wordcount: 795
+ht-degree: 76%
 
 ---
 
@@ -119,58 +119,44 @@ ht-degree: 98%
 
 **9. 網站容錯移轉**
 
-網站容錯移轉設定包含兩個部分：容錯移轉行為 (於主要的邊緣最佳化路由規則內設定)，和個別的容錯移轉測試標頭規則。
+「站台容錯移轉」設定包含兩個部分：主要「在Edge最佳化」路由規則內的容錯移轉行為，以及在發生遞補時新增回應標題的同層級規則。
 
-**9a. 網站容錯移轉行為 (在主要的邊緣最佳化路由規則內)**
+**9a. 設定站台容錯移轉行為**
 
-在主要路由規則內，設定網站容錯移轉行為和進階 XML 程式碼片段，如下所示：
+在主要的「在Edge最佳化」路由規則內，建立名為&#x200B;**站台容錯移轉行為**&#x200B;的子規則。 將其設為&#x200B;**符合任何**&#x200B;並新增這些條件：
 
->[!IMPORTANT]
->
->此步驟中的 XML 程式碼片段需要&#x200B;**進階**&#x200B;行為。 在某些 Akamai 環境中，此行為不適用自助式編輯。 如果沒有看到&#x200B;**進階**&#x200B;選項，請聯絡您的 Akamai 帳戶團隊或 Akamai 支援，啟用必要的設定。
+* **回應狀態碼**&#x200B;在`400`到`599`的範圍內。
+* **來源逾時**&#x200B;為`Yes`。
 
 ![網站容錯移轉](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-透過進階 XML 新增值為 `fo` 的要求標頭 `x-edgeoptimize-request`：
+![設定站台容錯移轉行為](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-```
-<forward:availability.fail-action2>
-<add-header>
-<status>on</status>
-<name>x-edgeoptimize-request</name>
-<value>fo</value>
-</add-header>
-</forward:availability.fail-action2>
-```
-
-![容錯移轉行為](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
-
-**9b. 容錯移轉測試標頭規則 (同級規則)**
+**9b. 設定容錯移轉回應標頭規則**
 
 >[!IMPORTANT]
 >
 >建立 **EdgeOptimize 容錯移轉，測試標頭**&#x200B;規則作為路由規則的&#x200B;**同級** (位於相同層級) 規則，而&#x200B;**不是**&#x200B;以巢狀方式置於路由規則內。 在 Akamai Property Manager 規則樹狀結構中，階層應該如下所示：
 >
 >```
->▼ Parent Rule
->   ▶ Optimize at Edge Routing     ← routing rule
->       EdgeOptimize Failover - Test Header       ← sibling, same level
+>▼ Optimize at Edge                         ← parent rule group
+>   ▼ Optimize at Edge Routing               ← routing child
+>       Site Failover Behavior                 ← nested child
+>   EdgeOptimize Failover - Test Header      ← sibling of routing child
 >```
 >
->這樣能確保容錯移轉測試標頭規則針對&#x200B;**所有**&#x200B;路由規則，而非單一規則進行評估。
+>當Akamai為原始主機名稱重新建立失敗的請求時，會評估同層級規則。 路由規則的API金鑰條件可防止將該請求再次傳送至Edge Optimize。
 >
 >同時請確保&#x200B;**邊緣最佳化路由**&#x200B;規則不會被任何後續的相符規則覆寫，以免後續規則變更相同請求的來源、快取行為或快取 ID。 如果另一個相符的規則重設這些行為，邊緣最佳化路由或快取可能無法如預期運作。
 
-如果要求標頭 `x-edgeoptimize-request` 值為 `fo`，請將傳出回應標頭 `x-edgeoptimize-fo` 設定為 `true`。
+![設定容錯移轉回應標頭規則](/help/assets/optimize-at-edge/akamai-step9-failover-header.png)
 
-![容錯移轉規則](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
-
-透過網站容錯移轉，您可以確保如果 Edge Optimize 傳回 `4XX` 或 `5XX` 錯誤，該要求會自動路由回到您的預設來源，讓一般使用者仍能收到回應。
+網站容錯移轉可確保Edge Optimize傳回錯誤或逾時，Akamai會針對原始主機名稱重新建立請求，以便訪客仍可收到網站的正常回應。
 
 | 情境 | 行為 |
 | --- | --- |
-| Edge Optimize 傳回 `2XX` | 最佳化的回應會傳送至用戶端。 |
-| Edge Optimize 傳回 `4XX` 或 `5XX` | 該要求路由回到預設來源。 |
+| Edge Optimize 傳回 `2XX` 或 `3XX` | 提供最佳化的回應。 `x-edgeoptimize-request-id`已存在。 |
+| Edge最佳化傳回`4XX`-`5XX`，或來源逾時 | 系統會為原始主機名稱重新建立請求。 回應包含`x-edgeoptimize-fo: true`。 |
 
 **驗證設定**
 
@@ -208,7 +194,7 @@ curl -svo /dev/null https://www.example.com/page.html \
 | 頁首 | 機器人流量 (最佳化) | 真人流量 (不受影響) |
 |---|---|---|
 | `x-edgeoptimize-request-id` | 存在：包含唯一的要求 ID | 不存在 |
-| `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`1`) | 不存在 |
+| `x-edgeoptimize-fo` | 唯有發生容錯移轉時存在 (值：`true`) | 不存在 |
 
 {{verify-routing-status-in-ui}}
 
