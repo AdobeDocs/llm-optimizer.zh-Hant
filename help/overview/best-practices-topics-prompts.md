@@ -26,36 +26,32 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 74484901cba1f054070673f2d706b26b6360aacb
 workflow-type: tm+mt
-source-wordcount: 1537
-ht-degree: 100%
+source-wordcount: 1482
+ht-degree: 77%
 
 ---
 
-# 設定要追蹤的類別、主題、提示和其他品牌的最佳做法
+# 設定類別、主題、提示和其他要追蹤之品牌的最佳實務
 
-本節說明決定如何設定要追蹤的類別、主題、提示和其他品牌的最佳做法。 另外也包含產業提示資料庫的資訊，這是 Adobe 與產業專家進行深入研究後開發而成的資料庫。
+本節說明決定如何設定要追蹤的類別、主題、提示和其他品牌的最佳實務。 另外也包含產業提示資料庫的資訊，這是 Adobe 與產業專家進行深入研究後開發而成的資料庫。
 
-這是極關鍵的第一步。 您現在的決定會確定如何針對您的業務情境量身打造相關資訊。 未來針對類別所做的任何變更，都會重設歷史資料。
+此設定是重要的第一步。 您現在的決定會確定如何針對您的業務情境量身打造相關資訊。 未來針對類別所做的任何變更，都會重設歷史資料。
 
-您可以在[[!UICONTROL 客戶設定]](/help/dashboards/customer-configuration.md)儀表板中定義在 LLM Optimizer 平台中如何監視和分析您的品牌。 關於如何使用儀表板的資訊，請參閱[[!UICONTROL 客戶設定]](/help/dashboards/customer-configuration.md)。
+[[!UICONTROL 品牌管理]](/help/dashboards/customer-configuration.md)儀表板是您定義如何在LLM最佳化工具平台中監視和分析品牌的位置。
 
-![客戶設定視窗](/help/assets/best-practices/customer-configuration-best-practices.png)
+您可以在此處自訂類別（例如業務單位或產品線）、追蹤其他品牌，以及新增品牌提及別名以擷取不同提示間品牌的所有變數。 此設定可確保平台根據您的業務情境提供量身打造的洞察，讓您能夠準確地分析能見度、流量和機會。
 
-在[!UICONTROL 客戶設定]儀表板中，您可以自訂類別 (例如業務單位或產品線)、追蹤其他品牌，以及新增品牌提及別名，以便擷取在不同提示中您的品牌之所有變化版本。 此設定可確保平台根據您的業務情境提供量身打造的洞察，讓您能夠準確地分析能見度、流量和機會。
+依預設，每個組織一開始會有一個有效品牌和其他建議品牌以供選擇。
 
-## 品牌導向體驗
+![品牌管理 — 應用程式導覽（以品牌為中心的體驗）](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-根據預設，新客戶一開始會透過上線導向的設定來使用重點突出、品牌優先的介面。 在這個新介面中，每個組織一開始都會選擇一個使用中的品牌和其他建議品牌。 現有的 LLM Optimizer 客戶將逐漸改用這種品牌導向體驗。
+![品牌管理 — 設定概述](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-如果您使用品牌導向體驗，請在「**品牌管理**」定義如何監控和分析品牌。
+若要設定特定品牌的主題和提示，請使用&#x200B;**提示資料庫**&#x200B;儀表板。
 
-![品牌管理 — 應用程式導覽 (品牌導向體驗)](/help/assets/brand-centric-experience/llmo-app-shell.png)
-
-![品牌管理 — 設定概觀](/help/assets/brand-centric-experience/brands-management-configuration.png)
-
-若要設定特定品牌的主題和提示，請使用「**提示管理**」。
+<!-- Add link to Prompt Library page when available-->
 
 ![提示管理](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -65,12 +61,13 @@ ht-degree: 100%
 
 若要使用產業提示資料庫：
 
-1. 導覽至&#x200B;**客戶設定**&#x200B;儀表板。
-1. 選取「**下載提示資料庫**」，從 LLM Optimizer 下載資料庫檔案。
-   ![產業提示資料庫下載](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. 瀏覽至&#x200B;**提示程式庫**&#x200B;儀表板。
+1. 選取&#x200B;**下載提示程式庫**&#x200B;從LLM Optimizer下載程式庫檔案。
 1. 審閱相關分頁標籤上針對您的品牌所屬產業而建議的&#x200B;**主題**&#x200B;和&#x200B;**提示**，並選擇相關性最高的選項。
 1. 審閱「**客戶歷程階段」欄**，以檢視整個客戶生命週期的提示選項 (例如從探索到轉換再到保留)。 早期階段或是漏斗頂端的提示均是高優先順序，但也要考慮後面階段要提高保留率、提供客戶支援等選項。
 1. 將主題和提示上傳至 Adobe LLM Optimizer 之前，視需要修改主題或提示，以有效支援目的和目標 (例如新增您的品牌/產品名稱、新增品牌專用術語)。 可用手動方式或利用所提供的 *.csv* 範本透過大量上傳功能，將提示新增至 LLM Optimizer。
+
+<!--![Industry prompt library download](/help/assets/best-practices/download-prompts.png) - add screenshot to steps-->
 
 >[!TIP]
 >
@@ -86,11 +83,11 @@ ht-degree: 100%
 
 各產業客戶搜尋的熱門主題：
 
-* **汽車：**&#x200B;汽車問題疑難排解，比較車款以及融資/租賃
+* **汽車：**&#x200B;排解汽車問題，比較車輛和融資/租賃
 * **金融服務：**&#x200B;研究金融產品
-* **醫療保健：**&#x200B;查詢各種症狀或健康問題、比較治療選項、理解化驗結果或醫學術語
-* **電信：**&#x200B;比較各類方案、合約條款與促銷活動、查詢本地區域的服務
-* **旅遊：**&#x200B;旅遊準備、研究和預訂旅遊行程
+* **醫療保健：**&#x200B;查詢症狀或健康問題、比較治療選項，以及瞭解實驗室結果或醫療條件
+* **電信：**&#x200B;比較計畫、合約條款與促銷活動，以及檢查當地服務
+* **AirlineTravel：**&#x200B;正在準備行程，以及調查和預訂行程
 
 LLM 工具中客戶在 AI 搜尋和提示行為方面的趨勢：
 
@@ -122,12 +119,15 @@ LLM 工具中客戶在 AI 搜尋和提示行為方面的趨勢：
 * 如果您是&#x200B;*網頁/內容所有者*，請選擇 **URL_DIR** 方法。
 * 如果您是&#x200B;*銷售/優惠方案經理*，請選擇&#x200B;**產品/服務類別**&#x200B;方法。
 
-![在 LLM Optimizer 中新增類別](/help/assets/best-practices/add-category.png)
+<!--How do you pick a region? Or is that handled differently?-->
+
+![在 LLM Optimizer 中新增類別](/help/assets/best-practices/create-category1.png)
 
 >[!IMPORTANT]
 >
 > * 選擇一個方法並貫徹執行。
 > * 每個帳戶或品牌只能有&#x200B;**一個**&#x200B;類別模型。 請勿同時混用 **SBU** 和 **URL_DIR**。
+
 <!--Can you mix Product/Service with these?-->
 
 範例：
@@ -158,13 +158,14 @@ LLM 工具中客戶在 AI 搜尋和提示行為方面的趨勢：
 * 支援聯絡名單
 * 企業/新聞 (如果您真的需要這個)
 
-![在 LLM Optimizer 中新增主題](/help/assets/best-practices/add-topic.png)
+![在 LLM Optimizer 中新增主題](/help/assets/best-practices/add-new-topic1.png)
 
 建立清單時，請考量下列事項：
 
-* 編輯者能否在 5 秒內透過提示文字理解主題？ 若是做不到，請重新命名或將之簡化。
+* 有人能在5秒內從提示文字理解這個主題嗎？ 若是做不到，請重新命名或將之簡化。
 * 不同主題的修正會由不同團隊負責嗎？ 若是肯定，您已挑選實用的主題。
-  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
+
+<!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 其他貼心小提醒：
 
@@ -174,7 +175,7 @@ LLM 工具中客戶在 AI 搜尋和提示行為方面的趨勢：
 >[!IMPORTANT]
 >
 > * 主題必須以意圖為基礎，而非依據組織結構。
-> * 請勿新增品牌/非品牌/地理位置的類別/篩選器，因為您可以在「**[!UICONTROL 品牌]**」分頁標籤中特別針對這些進行篩選。
+> * 請勿新增品牌/非品牌/地理的類別/篩選器，因為您可以在&#x200B;**[!UICONTROL 品牌存在感]**&#x200B;儀表板中為此特別進行篩選。
 > * 主題會擴散到多個類別中。 您&#x200B;**無法**&#x200B;針對每個類別定義唯一的主題。
 > * 一個提示&#x200B;**可以**&#x200B;同時存在於多個主題或類別中。
 
@@ -197,11 +198,11 @@ LLM 工具中客戶在 AI 搜尋和提示行為方面的趨勢：
 
 ## 追蹤其他品牌的最佳做法
 
-您可以利用「追蹤其他品牌」，針對企業重視的提示和主題，監視其在 LLM 回答中的能見度和提及次數。
+追蹤其他品牌可讓您監視在LLM回應中對於您的企業來說很重要的提示和主題的可見度和提及次數。
 
-透過「[!UICONTROL **其他品牌追蹤**]」分頁標籤，您可以新增包括競爭者在內的其他品牌，以追蹤其在特定提示和主題之下的能見度。
+[!UICONTROL **其他要追蹤的品牌**]&#x200B;可在&#x200B;**品牌管理** > **市場追蹤**&#x200B;中取得，並可讓您新增其他品牌（包括競爭者），以追蹤其特定提示和主題的可見度。
 
-透過其他品牌追蹤，您可以了解在不同地區和類別中其他品牌與您的品牌一起被提及的頻率，並比較您和他們的能見度。
+有了其他品牌可供追蹤，您可以瞭解其他品牌在不同地區和類別中與您的品牌一起被提及的頻率，並將其可見度與您自己的可見度進行比較。
 
 >[!TIP]
 >
@@ -209,6 +210,7 @@ LLM 工具中客戶在 AI 搜尋和提示行為方面的趨勢：
 
 ## 了解更多
 
-* 您可以在[客戶設定儀表板](/help/dashboards/customer-configuration.md)中設定類別、主題、提示和其他品牌追蹤。
+* [品牌管理](/help/dashboards/customer-configuration.md)是您設定要追蹤的類別和其他品牌的位置。
+* [提示程式庫](/help/dashboards/customer-configuration.md)是您設定主題和提示的位置。
 * [LLM Optimizer 最佳做法](/help/tutorials/best-practices.md)說明 LLM 最佳化相關的最佳做法
 
