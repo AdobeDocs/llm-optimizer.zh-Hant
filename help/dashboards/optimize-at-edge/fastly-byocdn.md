@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 350
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 96%
 * 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。 相關步驟請參閱[檢索 API 金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
 * (選用) 若要測試中繼路由，請參閱[中繼 API 金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
-**設定**
+## 設定
 
 將下列三個 VCL 程式碼片段新增至您的 Fastly 服務。 這些程式碼片段會處理對 Edge Optimize、快取金鑰分離和容錯移轉至預設來源的路由代理式要求。
 
@@ -46,7 +46,7 @@ ht-degree: 96%
 
 ![新增 VCL 程式碼片段](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
-**vcl_recv 程式碼片段**
+### vcl_recv程式碼片段
 
 ```
 unset req.http.x-edgeoptimize-url;
@@ -66,7 +66,7 @@ if (!req.http.x-edgeoptimize-request
 }
 ```
 
-**vcl_hash 程式碼片段**
+### vcl_hash程式碼片段
 
 ```
 if (req.http.x-edgeoptimize-config) {
@@ -75,7 +75,7 @@ if (req.http.x-edgeoptimize-config) {
 }
 ```
 
-**vcl_deliver 程式碼片段**
+### vcl_deliver程式碼片段
 
 ```
 if (req.http.x-edgeoptimize-config && resp.status >= 400) {
@@ -92,7 +92,7 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 }
 ```
 
-**容錯移轉**
+### 容錯移轉
 
 `vcl_deliver` 程式碼片段會自動處理容錯移轉。 如果 Edge Optimize 傳回 `4XX` 或 `5XX` 錯誤，該要求會重新啟動並路由回到您的預設來源，讓一般使用者仍能收到回應。 容錯移轉回應包含 `x-edgeoptimize-fo: 1` 標頭。
 
@@ -102,11 +102,11 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 | Edge Optimize 傳回 `4XX` 或 `5XX` | 系統會重新啟動要求，並從預設來源提供。 |
 | 容錯移轉回應 | 包含標頭 `x-edgeoptimize-fo: 1`。 |
 
-**透過防火牆規則允許邊緣最佳化 (選用)**
+## 允許透過防火牆規則在Edge最佳化（選用）
 
 {{waf-allowlist-setup}}
 
-**驗證設定**
+## 驗證設定
 
 完成設定後，請確認機器人流量會路由至 Edge Optimize，而真人流量不受影響。
 

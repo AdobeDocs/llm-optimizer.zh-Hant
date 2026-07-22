@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
+source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
 workflow-type: tm+mt
 source-wordcount: 795
-ht-degree: 76%
+ht-degree: 70%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 76%
 
 下列 Akamai Property Manager 規則將代理式 HTML 頁面流量路由至 Edge Optimize。 設定包含以下步驟：
 
-**1. 設定路由準則 (使用者 AI 代理與 HTML 流量比對)**
+## &#x200B;1. 設定路由條件（使用者代理和HTML流量比對）
 
 設定下列使用者 AI 代理的路由：
 
@@ -64,7 +64,7 @@ ht-degree: 76%
 
 ![設定路由準則](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
-**2. 設定來源和 SSL 行為**
+## &#x200B;2. 設定來源和SSL行為
 
 將來源設為 `live.edgeoptimize.net`，而「對照 SAN 至」設為 `*.edgeoptimize.net`
 
@@ -74,17 +74,17 @@ ht-degree: 76%
 
 ![Set 來源和 SSL 行為](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
-**3. 設定快取金鑰變數**
+## &#x200B;3. 設定快取金鑰變數
 
 將快取鍵變數 `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` 設為 `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![設定快取金鑰變數](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
-**4. 快取規則**
+## &#x200B;4. 快取規則
 
 ![快取規則](/help/assets/optimize-at-edge/akamai-step4-rules.png)
 
-**5. 修改傳入要求標頭**
+## &#x200B;5. 修改傳入的請求標題
 
 設定以下傳入要求標頭：
 `x-edgeoptimize-api-key` 設定為從 LLMO 擷取的 API 金鑰
@@ -93,7 +93,7 @@ ht-degree: 76%
 
 ![修改傳入要求標頭](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**透過防火牆規則允許邊緣最佳化 (選用)**
+## 允許透過防火牆規則在Edge最佳化（選用）
 
 {{waf-allowlist-setup}}
 
@@ -103,25 +103,25 @@ ht-degree: 76%
 >
 >同時將 Akamai Bot Manager 中的 `*AdobeEdgeOptimize/1.0*` 使用者代理和 `x-edgeoptimize-fetcher-key` 標頭加入允許清單。
 
-**6. 修改傳入回應標頭**
+## &#x200B;6. 修改傳入的回應標題
 
 ![修改傳入回應標頭](/help/assets/optimize-at-edge/akamai-step6-response.png)
 
-**7. 快取 ID 修改**
+## &#x200B;7. 快取ID修改
 
 ![快取 ID 修改](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. 修改傳出要求標頭**
+## &#x200B;8. 修改傳出請求標頭
 
 將 `x-forwarded-host` 標頭設為 `{{builtin.AK_HOST}}`
 
 ![修改傳出要求標頭](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
-**9. 網站容錯移轉**
+## &#x200B;9. 站台容錯移轉
 
 「站台容錯移轉」設定包含兩個部分：主要「在Edge最佳化」路由規則內的容錯移轉行為，以及在發生遞補時新增回應標題的同層級規則。
 
-**9a. 設定站台容錯移轉行為**
+### 9a。 設定站台容錯移轉行為
 
 在主要的「在Edge最佳化」路由規則內，建立名為&#x200B;**站台容錯移轉行為**&#x200B;的子規則。 將其設為&#x200B;**符合任何**&#x200B;並新增這些條件：
 
@@ -132,7 +132,7 @@ ht-degree: 76%
 
 ![設定站台容錯移轉行為](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-**9b. 設定容錯移轉回應標頭規則**
+### 9b. 設定容錯移轉回應標頭規則
 
 >[!IMPORTANT]
 >
@@ -158,7 +158,7 @@ ht-degree: 76%
 | Edge Optimize 傳回 `2XX` 或 `3XX` | 提供最佳化的回應。 `x-edgeoptimize-request-id`已存在。 |
 | Edge最佳化傳回`4XX`-`5XX`，或來源逾時 | 系統會為原始主機名稱重新建立請求。 回應包含`x-edgeoptimize-fo: true`。 |
 
-**驗證設定**
+## 驗證設定
 
 完成設定後，請確認機器人流量會路由至 Edge Optimize，而真人流量不受影響。
 
