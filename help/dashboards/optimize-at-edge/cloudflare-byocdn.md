@@ -4,26 +4,15 @@ description: 了解在 LLM Optimizer 中如何設定 Cloudflare BYOCDN 進行邊
 feature: Opportunities
 autotag-review: '2026-07-15T17:46:02.378Z'
 TQID: 'https://experienceleague.adobe.com/ZgOX0yC8qyb13Y7YNCg3Y1A6Q3TSk9-mUQ8gthzQvLM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadcid: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 1919
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -41,11 +30,11 @@ ht-degree: 96%
 * 從 LLM Optimizer 使用者介面擷取的 Edge Optimize API 金鑰。 相關步驟請參閱[檢索 API 金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key)。
 * (選用) 若要測試中繼路由，請參閱[中繼 API 金鑰](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional)。
 
-**路由如何運作**
+## 路由的運作方式
 
 若設定正確，Cloudflare Worker 會攔截代理式使用者代理對您網域 (例如 `www.example.com/page.html`) 發出的要求，並將要求路由至 Edge Optimize 後端。 後端要求包含必要的標頭。
 
-**測試後端要求**
+### 測試後端請求
 
 您可以直接向 Edge Optimize 後端提出要求，藉以驗證路由。
 
@@ -57,7 +46,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
   -H 'x-edgeoptimize-config: LLMCLIENT=TRUE;'
 ```
 
-**必要的標頭**
+### 必要的標頭
 
 對 Edge Optimize 後端的要求必須設定以下標頭：
 
@@ -85,13 +74,13 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 >
 >唯有在您的網域&#x200B;**不**&#x200B;具備既有 Cloudflare Worker 時，才採用此選項。 如果您已具備工作程式，請使用[選項 2：手動設定](#option-2-manual-setup)，將 Edge Optimize 路由邏輯新增至既有的工作程式。
 
-**步驟 1：部署工作程式**
+### 步驟1：部署背景工作
 
 按一下下方的按鈕，將 Edge Optimize 工作程式部署至您的 Cloudflare 帳戶：
 
 [![部署至 Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
 
-**步驟 2：填寫部署表單**
+### 步驟2：填寫部署表單
 
 按一下按鈕，會開啟 Worker 設定頁面。 請依照以下說明填寫表單：
 
@@ -115,7 +104,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 依照下列步驟手動建立和設定工作程式。
 
-**步驟 1：建立 Cloudflare Worker**
+### 步驟1：建立Cloudflare背景工作
 
 1. 登入您的 Cloudflare 儀表板。
 2. 在側邊欄中導覽至「**Worker 與頁面**」。
@@ -125,13 +114,13 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 ![Cloudflare Worker 儀表板](/help/assets/optimize-at-edge/cloudflare-workers-dashboard.png)
 
-**步驟 2：新增 Worker 程式碼**
+### 步驟2：新增背景工作程式碼
 
 建立背景工作之後，按一下&#x200B;**編輯程式碼**，並將預設程式碼取代為[worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js)的程式碼。 如果您已有現有的Cloudflare Worker，請將程式碼與現有程式碼合併，而非完全取代。
 
 按一下「**儲存並部署**」以發佈 Worker。
 
-**步驟 3：設定環境變數和密鑰**
+### 步驟3：設定環境變數和秘密
 
 環境變數會安全地儲存敏感設定，例如您的 API 金鑰。
 
@@ -167,7 +156,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 ![Cloudflare Worker 路由](/help/assets/optimize-at-edge/cloudflare-worker-routes.png)
 
-**驗證容錯移轉行為**
+### 驗證容錯移轉行為
 
 如果 Edge Optimize 無法使用或傳回錯誤，Worker 會自動容錯移轉至您的來源。 容錯移轉回應包含 `x-edgeoptimize-fo` 標頭：
 
@@ -178,7 +167,7 @@ curl -svo /dev/null https://live.edgeoptimize.net/page.html \
 
 您可以在 Cloudflare Worker 記錄中監視容錯移轉事件，以便進行疑難排解。
 
-**了解 Worker 邏輯**
+### 瞭解背景工作邏輯
 
 Cloudflare Worker 會實施下列邏輯：
 
@@ -200,11 +189,11 @@ Cloudflare Worker 會實施下列邏輯：
 
 7. **重新導向處理：**`redirect: "manual"` 選項可以確保來自 Edge Optimize 的重新導向回應會傳遞至用戶端，而 Worker 不會追隨重新導向。
 
-**自訂設定**
+## 自訂設定
 
 您可以修改程式碼頂端的設定常數，自訂 Worker 的行為：
 
-**代理式機器人清單**
+### 代理程式機器人清單
 
 修改 `AGENTIC_BOTS` 陣列以新增或移除使用者代理：
 
@@ -223,7 +212,7 @@ const AGENTIC_BOTS = [
 ];
 ```
 
-**目標路徑**
+### 目標路徑
 
 預設情況下，所有 HTML 頁面都會路由至 Edge Optimize。 若要將路由限制在特定路徑，請修改 `TARGETED_PATHS` 陣列：
 
@@ -235,7 +224,7 @@ const TARGETED_PATHS = null;
 const TARGETED_PATHS = ['/', '/page.html', '/products', '/about-us'];
 ```
 
-**容錯移轉設定**
+### 容錯移轉設定
 
 預設情況下，Worker 會在 Edge Optimize 發生任何 4XX 或 5XX 錯誤時進行容錯移轉。 自訂此行為：
 
@@ -253,7 +242,7 @@ const FAILOVER_ON_4XX = false;
 const FAILOVER_ON_5XX = false;
 ```
 
-**重要考量**
+### 重要考量
 
 * **容錯移轉行為：**&#x200B;如果 Edge Optimize 傳回任何錯誤 (4XX 或 5XX 狀態代碼)，或要求因網路錯誤而失敗，Worker 會自動容錯移轉至您的來源。 容錯移轉使用 `EDGE_OPTIMIZE_TARGET_HOST` 做為原始網域 (類似 Fastly 的 `F_Default_Origin` 或 CloudFront 的 `Default_Origin`)。 容錯移轉回應包含 `x-edgeoptimize-fo: 1` 標頭，可用於監視和偵錯。
 
@@ -265,7 +254,7 @@ const FAILOVER_ON_5XX = false;
 
 * **記錄：**&#x200B;啟用 Cloudflare Worker 記錄，以便監視要求及進行疑難排解。 導覽至「**Workers**」>「**您的 Worker**」>「**記錄**」來檢視即時記錄。 Worker 記錄容錯移轉事件以供偵錯使用。
 
-**疑難排解**
+## 疑難排解
 
 | 問題 | 可能的原因 | 解決方案 |
 |-------|----------------|----------|
@@ -280,11 +269,11 @@ const FAILOVER_ON_5XX = false;
 | 要求因為主機無效而執行失敗 | `EDGE_OPTIMIZE_TARGET_HOST` 包含通訊協定 (例如 `https://`)。 | 僅能使用沒有通訊協定的網域名稱 (例如 `example.com`，而非 `https://example.com`)。 |
 | 容錯移轉期間發生 530 錯誤 | Cloudflare 無法連線至來源，或容錯移轉要求含有無效的標頭。 | 確保容錯移轉功能會移除 Edge Optimize 標頭。 確認您的來源可供存取，且 DNS 的設定正確。 |
 
-**透過防火牆規則允許邊緣最佳化 (選用)**
+## 允許透過防火牆規則在Edge最佳化（選用）
 
 {{waf-allowlist-setup}}
 
-**驗證設定**
+## 驗證設定
 
 完成設定後，請確認機器人流量會路由至 Edge Optimize，而真人流量不受影響。
 
