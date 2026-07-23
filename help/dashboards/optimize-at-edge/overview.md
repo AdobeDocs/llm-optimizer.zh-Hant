@@ -24,10 +24,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 7df9f2722df2f532efe7f05e84c49e9f5a63b58b
 workflow-type: tm+mt
-source-wordcount: 3147
-ht-degree: 99%
+source-wordcount: 2941
+ht-degree: 98%
 
 ---
 
@@ -97,6 +97,7 @@ ht-degree: 99%
 | Cloudflare (BYOCDN) | 自備內容傳遞網路 | [檢視設定指南](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
 | CloudFront (BYOCDN) | 自備內容傳遞網路 | [檢視設定指南](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 | Azure正門(BYOCDN) | 自備內容傳遞網路 | [檢視設定指南](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
+| Apache HTTP 伺服器 | 自備內容傳遞網路 | [檢視設定指南](/help/dashboards/optimize-at-edge/apache-http-server.md) |
 
 >[!NOTE]
 >
@@ -130,8 +131,8 @@ ht-degree: 99%
 
 ### 復原內容能見度
 
-這個機會將標示那些因為用戶端轉譯，導致主要內容被隱藏使得 AI 代理無法讀取的頁面。 對於所指出的每個頁面，此機會將準確地告訴您 AI 代理視圖中缺少哪些內容、特別標示能見度缺口，並讓您直接套用變更以復原隱藏的內容。 當您透過邊緣最佳化部署此機會時，系統會將預先轉譯的 AI 最佳化頁面版本提供給 LLM 使用者代理，讓他們無需執行 Javascript 亦可存取完整內容。
-這樣做可確保 AI 代理優先完整讀取頁面內容。 在該預先轉譯的 HTML 上，再套用其他增強功能。
+此機會會標籤因使用者端轉譯而為AI代理隱藏關鍵內容的頁面。對於每個已識別的頁面，它都會精確顯示AI代理程式檢視中缺少哪些內容、醒目提示可見度差距，並可讓您直接套用變更以復原隱藏的內容。當您透過Edge的「最佳化」部署此商機時，系統會為LLM使用者代理程式提供預先轉譯的AI最佳化頁面版本，讓他們無需執行Javascript即可存取完整內容。
+這可確保頁面首先對AI代理完全可見。在該預先轉譯的HTML上套用其他增強功能。
 
 >[!IMPORTANT]
 >若使用邊緣最佳化部署，則此預先轉譯功能會自動套用至下列所有機會，以確保 AI 代理可以完整讀取頁面內容。
@@ -240,7 +241,7 @@ The CDN is where the optimized version of the page is assembled and delivered to
 
 問：當來源更新內容時會發生什麼事？
 
-只要基礎的來源頁面未變更，我們會從快取提供頁面的最佳化版本。 但是，當來源的&#x200B;**復原內容能見度**&#x200B;確實有所變更時，我們的系統會自動重新整理，讓 AI 代理總是收到最新的內容。 這是因為我們使用低快取存留時間 (TTL) 設定 (通常只有數分鐘)，以便您的網站上任何內容更新都會在該視窗中觸發新的最佳化。 針對&#x200B;**新增 LLM 友善摘要**&#x200B;等內容機會，LLM Optimizer 會監控來源頁面是否有所變更。 如果偵測到變更，我們會暫停最佳化並加上人工審閱的標記，防止 AI 代理可見頁面和真人可見頁面之間出現內容偏差。
+只要基礎來源頁面未變更，我們就會從快取中提供您頁面的最佳化版本。不過，當來源確實變更&#x200B;**復原內容可見度**&#x200B;時，我們的系統會自動重新整理，因此AI代理程式一律會收到最新的內容。這是因為我們使用低快取存留時間(TTL)設定（依分鐘數順序），因此您網站上的任何內容更新都會觸發該視窗中的新最佳化。針對&#x200B;**新增LLM友善摘要**&#x200B;等內容機會，LLM Optimizer會監控來源頁面是否有變更。如果偵測到變更，我們會暫停最佳化並將其標幟為人類檢閱，以防止代理程式可見頁面和人類可見頁面之間的內容漂移。
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 問：邊緣最佳化是否僅適用於使用 Adobe Edge Delivery Service (EDS) 的網站？
